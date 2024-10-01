@@ -381,7 +381,7 @@ class DB {
 	/**
 	 * Switch to post.
 	 *
-	 * Change the global cohesion post to the requested post.
+	 * Change the global WordPress post to the requested post.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -401,7 +401,7 @@ class DB {
 			'original_id' => get_the_ID(), // Note, it can be false if the global isn't set
 		];
 
-		$GLOBALS['post'] = get_post( $post_id ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$GLOBALS['post'] = get_post( $post_id ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		setup_postdata( $GLOBALS['post'] );
 	}
@@ -428,7 +428,7 @@ class DB {
 			return;
 		}
 
-		$GLOBALS['post'] = get_post( $data['original_id'] ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$GLOBALS['post'] = get_post( $data['original_id'] ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		setup_postdata( $GLOBALS['post'] );
 	}
@@ -437,7 +437,7 @@ class DB {
 	/**
 	 * Switch to query.
 	 *
-	 * Change the cohesion query to a new query with the requested
+	 * Change the WordPress query to a new query with the requested
 	 * query variables.
 	 *
 	 * @since 2.0.0
@@ -469,20 +469,20 @@ class DB {
 
 		$this->switched_data[] = $switched_data;
 
-		$wp_query = $new_query; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$wp_query = $new_query; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		// Ensure the global post is set only if needed
 		unset( $GLOBALS['post'] );
 
 		if ( isset( $new_query->posts[0] ) ) {
 			if ( $force_global_post || $new_query->is_singular() ) {
-				$GLOBALS['post'] = $new_query->posts[0]; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+				$GLOBALS['post'] = $new_query->posts[0]; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 				setup_postdata( $GLOBALS['post'] );
 			}
 		}
 
 		if ( $new_query->is_author() ) {
-			$GLOBALS['authordata'] = get_userdata( $new_query->get( 'author' ) ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+			$GLOBALS['authordata'] = get_userdata( $new_query->get( 'author' ) ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 		}
 	}
 
@@ -504,19 +504,19 @@ class DB {
 
 		global $wp_query;
 
-		$wp_query = $data['original']; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$wp_query = $data['original']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		// Ensure the global post/authordata is set only if needed.
 		unset( $GLOBALS['post'] );
 		unset( $GLOBALS['authordata'] );
 
 		if ( ! empty( $data['post'] ) ) {
-			$GLOBALS['post'] = $data['post']; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+			$GLOBALS['post'] = $data['post']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 			setup_postdata( $GLOBALS['post'] );
 		}
 
 		if ( $wp_query->is_author() ) {
-			$GLOBALS['authordata'] = get_userdata( $wp_query->get( 'author' ) ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+			$GLOBALS['authordata'] = get_userdata( $wp_query->get( 'author' ) ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 		}
 	}
 

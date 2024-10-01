@@ -34,7 +34,7 @@ class Images_Manager {
 		}
 
 		// PHPCS - Already validated by wp_ajax.
-		$items = Utils::get_super_global_value( $_POST, 'items' ) ?? []; // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$items = Utils::get_super_global_value( $_POST, 'items' ) ?? []; // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$urls  = [];
 
 		foreach ( $items as $item ) {

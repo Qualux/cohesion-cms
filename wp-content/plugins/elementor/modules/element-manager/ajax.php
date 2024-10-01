@@ -111,7 +111,7 @@ class Ajax {
 			wp_send_json_error( esc_html__( 'You do not have permission to edit these settings.', 'elementor' ) );
 		}
 
-		$nonce = Utils::get_super_global_value( $_POST, 'nonce' ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$nonce = Utils::get_super_global_value( $_POST, 'nonce' ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if ( empty( $nonce ) || ! wp_verify_nonce( $nonce, 'e-element-manager-app' ) ) {
 			wp_send_json_error( esc_html__( 'Invalid nonce.', 'elementor' ) );
 		}
@@ -122,8 +122,8 @@ class Ajax {
 	}
 
 	private function get_plugin_name_from_widget_instance( $widget ) {
-		if ( in_array( 'cohesion', $widget->get_categories() ) ) {
-			return esc_html__( 'cohesion Widgets', 'elementor' );
+		if ( in_array( 'wordpress', $widget->get_categories() ) ) {
+			return esc_html__( 'WordPress Widgets', 'elementor' );
 		}
 
 		$class_reflection = new \ReflectionClass( $widget );
@@ -141,7 +141,7 @@ class Ajax {
 	public function ajax_save_disabled_elements() {
 		$this->verify_permission();
 
-		$elements = Utils::get_super_global_value( $_POST, 'widgets' ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$elements = Utils::get_super_global_value( $_POST, 'widgets' ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 
 		if ( empty( $elements ) ) {
 			wp_send_json_error( esc_html__( 'No elements to save.', 'elementor' ) );

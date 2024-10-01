@@ -14,7 +14,7 @@ class Core_Render extends Render_Base {
 	public function render(): void {
 		$this->build_layout_render_attribute();
 		?>
-		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<div class="e-link-in-bio__content">
 
 				<?php

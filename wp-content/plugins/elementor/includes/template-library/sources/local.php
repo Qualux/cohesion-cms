@@ -380,7 +380,7 @@ class Source_Local extends Source_Base {
 
 	/**
 	 * Add a `current` CSS class to the `Saved Templates` submenu page when it's active.
-	 * It should work by default, but since we interfere with cohesion' builtin CPT menus it doesn't work properly.
+	 * It should work by default, but since we interfere with WordPress' builtin CPT menus it doesn't work properly.
 	 *
 	 * @return void
 	 */
@@ -764,7 +764,7 @@ class Source_Local extends Source_Base {
 	 *
 	 * @param int $template_id The template ID.
 	 *
-	 * @return \WP_Error cohesion error if template export failed.
+	 * @return \WP_Error WordPress error if template export failed.
 	 */
 	public function export_template( $template_id ) {
 		$file_data = $this->prepare_template_export( $template_id );
@@ -782,7 +782,7 @@ class Source_Local extends Source_Base {
 
 		// Output file contents.
 		// PHPCS - Export widget json
-		echo $file_data['content']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo $file_data['content']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		die;
 	}
@@ -797,7 +797,7 @@ class Source_Local extends Source_Base {
 	 *
 	 * @param array $template_ids An array of template IDs.
 	 *
-	 * @return \WP_Error cohesion error if export failed.
+	 * @return \WP_Error WordPress error if export failed.
 	 */
 	public function export_multiple_templates( array $template_ids ) {
 		$files = [];
@@ -955,7 +955,7 @@ class Source_Local extends Source_Base {
 	/**
 	 * Admin import template form.
 	 *
-	 * The import form displayed in "My Library" screen in cohesion dashboard.
+	 * The import form displayed in "My Library" screen in WordPress dashboard.
 	 *
 	 * The form allows the user to import template in json/zip format to the site.
 	 *
@@ -1185,7 +1185,7 @@ class Source_Local extends Source_Base {
 
 			// If you reach this line, the export failed
 			// PHPCS - Not user input.
-			wp_die( $result->get_error_message() ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			wp_die( $result->get_error_message() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -1204,7 +1204,7 @@ class Source_Local extends Source_Base {
 	 * @return array An updated array of available list table views.
 	 */
 	public function admin_print_tabs( $views ) {
-		//phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
 		$current_type = Utils::get_super_global_value( $_REQUEST, self::TAXONOMY_TYPE_SLUG ) ?? '';
 		$active_class = $current_type ? '' : ' nav-tab-active';
 		$current_tabs_group = $this->get_current_tab_group();
@@ -1290,7 +1290,7 @@ class Source_Local extends Source_Base {
 
 		$total_items = $wp_list_table->get_pagination_arg( 'total_items' );
 
-		//phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
 		if ( ! empty( $total_items ) || ! empty( $_REQUEST['s'] ) ) {
 			return;
 		}
@@ -1405,7 +1405,7 @@ class Source_Local extends Source_Base {
 			'value_field' => 'slug',
 			'taxonomy' => self::TAXONOMY_CATEGORY_SLUG,
 			'name' => self::TAXONOMY_CATEGORY_SLUG,
-			//phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
+			//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce is not required to retrieve the value.
 			'selected' => Utils::get_super_global_value( $_GET, self::TAXONOMY_CATEGORY_SLUG ) ?? '',
 		);
 
@@ -1693,9 +1693,9 @@ class Source_Local extends Source_Base {
 	}
 
 	public function get_current_tab_group( $default = '' ) {
-		//phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 		$current_tabs_group = Utils::get_super_global_value( $_REQUEST, 'tabs_group' ) ?? '';
-		//phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 		$type_slug = Utils::get_super_global_value( $_REQUEST, self::TAXONOMY_TYPE_SLUG );
 
 		if ( $type_slug ) {

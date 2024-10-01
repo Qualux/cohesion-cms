@@ -112,7 +112,7 @@ class Control_Box_Shadow extends Control_Base_Multiple {
 				<div class="elementor-shadow-slider elementor-control-type-slider">
 					<label for="<?php $this->print_control_uid( $slider_name ); ?>" class="elementor-control-title"><?php
 						// PHPCS - the value of $slider['label'] is already escaped.
-						echo $slider['label']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+						echo $slider['label']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?></label>
 					<div class="elementor-control-input-wrapper">
 						<div class="elementor-slider" data-input="<?php echo esc_attr( $slider_name ); ?>"></div>

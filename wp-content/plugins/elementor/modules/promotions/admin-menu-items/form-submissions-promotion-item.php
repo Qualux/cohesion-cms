@@ -32,7 +32,7 @@ class Form_Submissions_Promotion_Item extends Base_Promotion_Template {
 			esc_html__( 'Create single or multi-step forms to engage and convert visitors', 'elementor' ),
 			esc_html__( 'Use any field to collect the information you need', 'elementor' ),
 			esc_html__( 'Integrate your favorite marketing software*', 'elementor' ),
-			esc_html__( 'Collect lead submissions directly within your cohesion Admin to manage, analyze and perform bulk actions on the submitted lead*', 'elementor' ),
+			esc_html__( 'Collect lead submissions directly within your WordPress Admin to manage, analyze and perform bulk actions on the submitted lead*', 'elementor' ),
 		];
 	}
 

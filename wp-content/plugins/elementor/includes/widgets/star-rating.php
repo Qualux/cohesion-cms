@@ -474,7 +474,7 @@ class Widget_Star_Rating extends Widget_Base {
 				<div class="elementor-star-rating__title"><?php echo esc_html( $settings['title'] ); ?></div>
 			<?php endif;
 			// PHPCS - $stars_element contains an HTML string that cannot be escaped. ?>
-			<?php echo $stars_element; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo $stars_element; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</div>
 		<?php
 	}

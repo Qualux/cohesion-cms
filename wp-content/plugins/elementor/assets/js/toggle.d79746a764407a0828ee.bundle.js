@@ -69,7 +69,7 @@ class baseTabs extends elementorModules.frontend.handlers.Base {
   handleKeyboardNavigation(event) {
     const tab = event.currentTarget,
       $tabList = jQuery(tab.closest(this.getSettings('selectors').tablist)),
-      // eslint-disable-next-line @cohesion/no-unused-vars-before-return
+      // eslint-disable-next-line @wordpress/no-unused-vars-before-return
       $tabs = $tabList.find(this.getSettings('selectors').tabTitle),
       isVertical = 'vertical' === $tabList.attr('aria-orientation');
     switch (event.key) {

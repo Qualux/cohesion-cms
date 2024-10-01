@@ -11,10 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor "Tools" page in cohesion Dashboard.
+ * Elementor "Tools" page in WordPress Dashboard.
  *
  * Elementor settings page handler class responsible for creating and displaying
- * Elementor "Tools" page in cohesion dashboard.
+ * Elementor "Tools" page in WordPress dashboard.
  *
  * @since 1.0.0
  */
@@ -165,7 +165,7 @@ class Tools extends Settings_Page {
 				'version' => $version,
 				'plugin_name' => ELEMENTOR_PLUGIN_BASE,
 				'plugin_slug' => $plugin_slug,
-				'package_url' => sprintf( 'https://downloads.cohesion.org/plugin/%s.%s.zip', $plugin_slug, $version ),
+				'package_url' => sprintf( 'https://downloads.wordpress.org/plugin/%s.%s.zip', $plugin_slug, $version ),
 			] );
 		}
 
@@ -323,7 +323,7 @@ class Tools extends Settings_Page {
 								sprintf(
 									/* translators: 1: Link open tag, 2: Link close tag. */
 									esc_html__( 'It is strongly recommended to %1$sbackup the database%2$s before using replacing URLs.', 'elementor' ),
-									'<a href="https://go.elementor.com/cohesion-backups/" target="_blank">',
+									'<a href="https://go.elementor.com/wordpress-backups/" target="_blank">',
 									'</a>'
 								)
 							);
@@ -334,7 +334,7 @@ class Tools extends Settings_Page {
 								'field_args' => [
 									'type' => 'raw_html',
 									'html' => sprintf( '<input type="text" name="from" placeholder="https://old.example.com" class="large-text"><input type="text" name="to" placeholder="https://new.example.com" class="large-text"><button data-nonce="%s" class="button elementor-button-spinner" id="elementor-replace-url-button">%s</button>', wp_create_nonce( 'elementor_replace_url' ), esc_html__( 'Replace URL', 'elementor' ) ),
-									'desc' => esc_html__( 'Enter your old and new URLs for your cohesion installation, to update all Elementor data (Relevant for domain transfers or move to \'HTTPS\').', 'elementor' ),
+									'desc' => esc_html__( 'Enter your old and new URLs for your WordPress installation, to update all Elementor data (Relevant for domain transfers or move to \'HTTPS\').', 'elementor' ),
 								],
 							],
 						],

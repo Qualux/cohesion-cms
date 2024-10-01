@@ -176,7 +176,7 @@ class Deprecation {
 	 * Check Deprecation
 	 *
 	 * Checks whether the given entity is valid. If valid, this method checks whether the deprecation
-	 * should be soft (browser console notice) or hard (use cohesion' native deprecation methods).
+	 * should be soft (browser console notice) or hard (use WordPress' native deprecation methods).
 	 *
 	 * @since 3.1.0
 	 *
@@ -236,7 +236,7 @@ class Deprecation {
 
 		if ( $print_deprecated ) {
 			// PHPCS - We need to echo special characters because they can exist in function calls.
-			_deprecated_function( $function, esc_html( $version ), $replacement );  // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			_deprecated_function( $function, esc_html( $version ), $replacement );  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -294,9 +294,9 @@ class Deprecation {
 			trigger_error(
 				vsprintf(
 					// PHPCS - $translation_string is already escaped above.
-					$translation_string,  // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					$translation_string,  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					// PHPCS - $error_message_args is an array.
-					$error_message_args  // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					$error_message_args  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				) . esc_html( $message ),
 				E_USER_DEPRECATED
 			);

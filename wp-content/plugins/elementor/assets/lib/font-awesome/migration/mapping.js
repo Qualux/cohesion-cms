@@ -1775,8 +1775,8 @@
     "value": "fas fa-won-sign",
     "library": "fa-solid"
   },
-  "fa fa-cohesion": {
-    "value": "fab fa-cohesion",
+  "fa fa-wordpress": {
+    "value": "fab fa-wordpress",
     "library": "fa-brands"
   },
   "fa fa-wpbeginner": {

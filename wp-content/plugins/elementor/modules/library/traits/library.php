@@ -14,7 +14,7 @@ trait Library {
 	/**
 	 * Print Admin Column Type
 	 *
-	 * Runs on cohesion' 'manage_{custom post type}_posts_custom_column' hook to modify each row's content.
+	 * Runs on WordPress' 'manage_{custom post type}_posts_custom_column' hook to modify each row's content.
 	 *
 	 * @since 3.1.0
 	 * @access public
@@ -22,7 +22,7 @@ trait Library {
 	public function print_admin_column_type() {
 		$admin_filter_url = admin_url( Source_Local::ADMIN_MENU_SLUG . '&elementor_library_type=' . $this->get_name() );
 		//PHPCS - Not a user input
-		printf( '<a href="%s">%s</a>', $admin_filter_url, $this->get_title() ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		printf( '<a href="%s">%s</a>', $admin_filter_url, $this->get_title() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**

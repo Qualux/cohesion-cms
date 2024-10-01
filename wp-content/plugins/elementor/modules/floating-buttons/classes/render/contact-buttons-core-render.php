@@ -26,9 +26,9 @@ class Contact_Buttons_Core_Render extends Contact_Buttons_Render_Base {
 			'class' => $content_classnames,
 		] );
 		?>
-		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
-			<div <?php echo $this->widget->get_render_attribute_string( 'content-wrapper' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
-				<div <?php echo $this->widget->get_render_attribute_string( 'content' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+			<div <?php echo $this->widget->get_render_attribute_string( 'content-wrapper' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+				<div <?php echo $this->widget->get_render_attribute_string( 'content' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 					<?php
 					$this->render_top_bar();
 					$this->render_message_bubble();

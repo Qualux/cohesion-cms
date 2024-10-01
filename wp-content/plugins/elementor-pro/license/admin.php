@@ -368,101 +368,6 @@ class Admin {
 		return false;
 	}
 
-	public function admin_license_details() {
-		if ( ! current_user_can( 'manage_options' ) ) {
-			return;
-		}
-
-		if ( $this->is_block_editor_page() ) {
-			return;
-		}
-
-		$renew_url = API::RENEW_URL;
-
-		$license_key = self::get_license_key();
-
-		/**
-		 * @var Admin_Notices $admin_notices
-		 */
-		$admin_notices = Plugin::elementor()->admin->get_component( 'admin-notices' );
-
-		if ( empty( $license_key ) ) {
-			$admin_notices->print_admin_notice( [
-				'title' => esc_html__( 'Welcome to Elementor Pro!', 'elementor-pro' ),
-				'description' => $this->get_activate_message(),
-				'button' => [
-					'text' => '<i class="dashicons dashicons-update" aria-hidden="true"></i>' . esc_html__( 'Connect & Activate', 'elementor-pro' ),
-					'url' => $this->get_connect_url( [
-						'utm_source' => 'wp-notification-banner',
-						'utm_medium' => 'wp-dash',
-						'utm_campaign' => 'connect-and-activate-license',
-					] ),
-				],
-			] );
-
-			return;
-		}
-
-		$license_data = API::get_license_data();
-
-		// When the license with pro trial, the messages here are not relevant, pro trial messages will be shown instead.
-		if ( API::is_licence_pro_trial() ) {
-			return;
-		}
-
-		$errors = self::get_errors_details();
-
-		if ( ! $license_data['success'] && isset( $license_data['error'], $errors[ $license_data['error'] ] ) ) {
-			$error_data = $errors[ $license_data['error'] ];
-
-			$admin_notices->print_admin_notice( [
-				'title' => $error_data['title'],
-				'description' => $error_data['description'],
-				'button' => [
-					'text' => $error_data['button_text'],
-					'url' => $error_data['button_url'],
-					'type' => isset( $error_data['button_type'] )
-						? $error_data['button_type']
-						: '',
-				],
-			] );
-
-			return;
-		}
-
-		if ( API::is_license_active() && API::is_license_about_to_expire() ) {
-			$title = sprintf(
-				/* translators: %s: Days to expire. */
-				esc_html__( 'Your License Will Expire in %s.', 'elementor-pro' ),
-				human_time_diff(
-					current_time( 'timestamp' ),
-					strtotime( $license_data['expires'] )
-				)
-			);
-
-			if ( isset( $license_data['renewal_discount'] ) && 0 < $license_data['renewal_discount'] ) {
-				$description = sprintf(
-					/* translators: %s: Discount percent. */
-					esc_html__( 'Renew your license today, and get an exclusive, time-limited %s discount.', 'elementor-pro' ),
-					$license_data['renewal_discount'] . '%'
-				);
-			} else {
-				$description = esc_html__( 'Renew your license today, to keep getting feature updates, premium support, Pro widgets & unlimited access to the template library.', 'elementor-pro' );
-			}
-
-			$admin_notices->print_admin_notice( [
-				'title' => $title,
-				'description' => $description,
-				'type' => 'warning',
-				'button' => [
-					'text' => esc_html__( 'Renew now', 'elementor-pro' ),
-					'url' => $renew_url,
-					'type' => 'warning',
-				],
-			] );
-		}
-	}
-
 	public function filter_library_get_templates_args( $body_args ) {
 		$license_key = self::get_license_key();
 
@@ -667,14 +572,6 @@ class Admin {
 		if ( ELEMENTOR_PRO_PLUGIN_BASE !== $plugin ) {
 			return;
 		}
-
-		wp_remote_post( 'https://my.elementor.com/api/v1/feedback-pro/', [
-			'timeout' => 30,
-			'body' => [
-				'api_version' => ELEMENTOR_PRO_VERSION,
-				'site_lang' => get_bloginfo( 'language' ),
-			],
-		] );
 	}
 
 	private function is_connected() {
@@ -731,8 +628,6 @@ class Admin {
 		add_action( 'admin_init', [ $this, 'handle_tracker_actions' ], 9 );
 		add_action( 'admin_post_elementor_pro_activate_license', [ $this, 'action_activate_license' ] );
 		add_action( 'admin_post_elementor_pro_deactivate_license', [ $this, 'action_deactivate_license' ] );
-
-		add_action( 'admin_notices', [ $this, 'admin_license_details' ], 20 );
 
 		add_filter( 'elementor/core/admin/notices', function( $notices ) {
 			$notices[] = new Trial_Period_Notice();

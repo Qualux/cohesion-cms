@@ -95,7 +95,7 @@ abstract class Document extends Controls_Stack {
 	 * @since 2.0.0
 	 * @access protected
 	 *
-	 * @var \WP_Post cohesion post data.
+	 * @var \WP_Post WordPress post data.
 	 */
 	protected $post;
 
@@ -436,10 +436,10 @@ abstract class Document extends Controls_Stack {
 		$document = $this;
 
 		// Ajax request from editor.
-		$initial_document_id = Utils::get_super_global_value( $_POST, 'initial_document_id' ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$initial_document_id = Utils::get_super_global_value( $_POST, 'initial_document_id' ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 
 		if ( ! empty( $initial_document_id ) ) {
-			$document = Plugin::$instance->documents->get( $initial_document_id ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+			$document = Plugin::$instance->documents->get( $initial_document_id ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		}
 
 		$url = get_preview_post_link(
@@ -451,13 +451,13 @@ abstract class Document extends Controls_Stack {
 		);
 
 		/**
-		 * Document "cohesion preview" URL.
+		 * Document "WordPress preview" URL.
 		 *
-		 * Filters the cohesion preview URL.
+		 * Filters the WordPress preview URL.
 		 *
 		 * @since 2.0.0
 		 *
-		 * @param string   $url  cohesion preview URL.
+		 * @param string   $url  WordPress preview URL.
 		 * @param Document $this The document instance.
 		 */
 		$url = apply_filters( 'elementor/document/urls/wp_preview', $url, $this );
@@ -1853,7 +1853,7 @@ abstract class Document extends Controls_Stack {
 		}
 
 		if ( ! empty( $cached_data['content'] ) ) {
-			echo do_shortcode( $cached_data['content'] ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo do_shortcode( $cached_data['content'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 

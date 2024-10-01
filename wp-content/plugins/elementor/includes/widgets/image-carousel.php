@@ -987,7 +987,7 @@ class Widget_Image_Carousel extends Widget_Base {
 		<div <?php $this->print_render_attribute_string( 'carousel-wrapper' ); ?>>
 			<div <?php $this->print_render_attribute_string( 'carousel' ); ?>>
 				<?php // PHPCS - $slides contains the slides content, all the relevant content is escaped above. ?>
-				<?php echo implode( '', $slides ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo implode( '', $slides ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 			<?php if ( 1 < $slides_count ) : ?>
 				<?php if ( $show_arrows ) : ?>

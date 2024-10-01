@@ -58,7 +58,7 @@ class Widgets_Manager {
 	 * Init widgets.
 	 *
 	 * Initialize Elementor widgets manager. Include all the widgets files
-	 * and register each Elementor and cohesion widget.
+	 * and register each Elementor and WordPress widget.
 	 *
 	 * @since 2.0.0
 	 * @access private
@@ -146,9 +146,9 @@ class Widgets_Manager {
 	}
 
 	/**
-	 * Register cohesion widgets.
+	 * Register WordPress widgets.
 	 *
-	 * Add native cohesion widget to the list of registered widget types.
+	 * Add native WordPress widget to the list of registered widget types.
 	 *
 	 * Exclude the widgets that are in Elementor widgets black list. Theme and
 	 * plugin authors can filter the black list.
@@ -468,7 +468,7 @@ class Widgets_Manager {
 	}
 
 	/**
-	 * Ajax get cohesion widget form.
+	 * Ajax get WordPress widget form.
 	 *
 	 * Ajax handler for Elementor editor get_wp_widget_form.
 	 *

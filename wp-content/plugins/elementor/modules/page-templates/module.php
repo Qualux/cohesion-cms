@@ -105,7 +105,7 @@ class Module extends BaseModule {
 	}
 
 	/**
-	 * Add cohesion templates.
+	 * Add WordPress templates.
 	 *
 	 * Adds Elementor templates to all the post types that support
 	 * Elementor.
@@ -179,7 +179,7 @@ class Module extends BaseModule {
 	/**
 	 * Print callback.
 	 *
-	 * Prints the page template content using cohesion loop.
+	 * Prints the page template content using WordPress loop.
 	 *
 	 * @since 2.0.0
 	 * @access public
@@ -372,7 +372,7 @@ class Module extends BaseModule {
 	 *
 	 * Filters whether to update metadata of a specific type.
 	 *
-	 * Elementor don't allow cohesion to update the parent page template
+	 * Elementor don't allow WordPress to update the parent page template
 	 * during `wp_update_post`.
 	 *
 	 * Fired by `update_{$meta_type}_metadata` filter.
@@ -406,7 +406,7 @@ class Module extends BaseModule {
 	}
 
 	/**
-	 * Support `wp_body_open` action, available since cohesion 5.2.
+	 * Support `wp_body_open` action, available since WordPress 5.2.
 	 *
 	 * @since 2.7.0
 	 * @access public

@@ -75,7 +75,7 @@ abstract class Base_App {
 	 */
 	public function render_admin_widget() {
 		// PHPCS - the method get_title return a plain string.
-		echo '<h2>' . $this->get_title() . '</h2>'; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo '<h2>' . $this->get_title() . '</h2>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		if ( $this->is_connected() ) {
 			$remote_user = $this->get( 'user' );
@@ -91,9 +91,9 @@ abstract class Base_App {
 			echo sprintf(
 				'%s <a %s href="%s">%s</a>',
 				// PHPCS - the variable $title is already escaped above.
-				$title, // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+				$title, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				// PHPCS - the variable $attr is a plain string.
-				$attr, // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+				$attr, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				esc_attr( $url ),
 				esc_html( $label )
 			);
@@ -145,7 +145,7 @@ abstract class Base_App {
 
 		if ( is_wp_error( $response ) ) {
 			// PHPCS - the variable $response does not contain a user input value.
-			wp_die( $response, $response->get_error_message() ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			wp_die( $response, $response->get_error_message() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		// Use state as usual.
@@ -187,7 +187,7 @@ abstract class Base_App {
 			$this->redirect_to_admin_page();
 		}
 
-		//phpcs:ignore cohesion.Security.NonceVerification.Recommended - The user as been authorized before in 'connect'.
+		//phpcs:ignore WordPress.Security.NonceVerification.Recommended - The user as been authorized before in 'connect'.
 		$state = Utils::get_super_global_value( $_REQUEST, 'state' );
 
 		if ( $state !== $this->get( 'state' ) ) {
@@ -197,7 +197,7 @@ abstract class Base_App {
 
 		$response = $this->request( 'get_token', [
 			'grant_type' => 'authorization_code',
-			'code' => Utils::get_super_global_value( $_REQUEST, 'code' ), //phpcs:ignore cohesion.Security.NonceVerification.Recommended
+			'code' => Utils::get_super_global_value( $_REQUEST, 'code' ), //phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			'redirect_uri' => rawurlencode( $this->get_admin_url( 'get_token' ) ),
 			'client_id' => $this->get( 'client_id' ),
 		] );
@@ -473,7 +473,7 @@ abstract class Base_App {
 
 		if ( is_wp_error( $response ) && empty( $options['with_error_data'] ) ) {
 			// PHPCS - the variable $response does not contain a user input value.
-			wp_die( $response, [ 'back_link' => true ] ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			wp_die( $response, [ 'back_link' => true ] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		$body = wp_remote_retrieve_body( $response );
@@ -617,7 +617,7 @@ abstract class Base_App {
 	 * @access protected
 	 */
 	protected function set_client_id() {
-		$source = Utils::get_super_global_value( $_REQUEST, 'source' ) ?? ''; //phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+		$source = Utils::get_super_global_value( $_REQUEST, 'source' ) ?? ''; //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 		$response = $this->request(
 			'get_client_id',
 			[
@@ -627,7 +627,7 @@ abstract class Base_App {
 
 		if ( is_wp_error( $response ) ) {
 			// PHPCS - the variable $response does not contain a user input value.
-			wp_die( $response, $response->get_error_message() ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			wp_die( $response, $response->get_error_message() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		$this->set( 'client_id', $response->client_id );
@@ -657,7 +657,7 @@ abstract class Base_App {
 		<script>
 			if ( opener && opener !== window ) {
 				opener.jQuery( 'body' ).trigger(
-					'elementor/connect/success/<?php echo esc_attr( Utils::get_super_global_value( $_REQUEST, 'callback_id' ) ); //phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here. ?>',
+					'elementor/connect/success/<?php echo esc_attr( Utils::get_super_global_value( $_REQUEST, 'callback_id' ) ); //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here. ?>',
 					<?php echo wp_json_encode( $data ); ?>
 				);
 
@@ -706,10 +706,10 @@ abstract class Base_App {
 	protected function redirect_to_remote_authorize_url() {
 		switch ( $this->auth_mode ) {
 			case 'cli':
-				$this->get_app_token_from_cli_token( Utils::get_super_global_value( $_REQUEST, 'token' ) ); //phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+				$this->get_app_token_from_cli_token( Utils::get_super_global_value( $_REQUEST, 'token' ) ); //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 				return;
 			default:
-				wp_redirect( $this->get_remote_authorize_url() ); //phpcs:ignore cohesion.Security.SafeRedirect.wp_redirect_wp_redirect -- Safe redirect is used here.
+				wp_redirect( $this->get_remote_authorize_url() ); //phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect -- Safe redirect is used here.
 				die;
 		}
 	}
@@ -721,7 +721,7 @@ abstract class Base_App {
 			case 'popup':
 				$redirect_uri = add_query_arg( [
 					'mode' => 'popup',
-					'callback_id' => esc_attr( Utils::get_super_global_value( $_REQUEST, 'callback_id' ) ), //phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+					'callback_id' => esc_attr( Utils::get_super_global_value( $_REQUEST, 'callback_id' ) ), //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 				], $redirect_uri );
 				break;
 		}
@@ -772,7 +772,7 @@ abstract class Base_App {
 			}
 
 			// PHPCS - the values of $item['label'], $color, $status are plain strings.
-			printf( '%s: <strong style="color:%s">%s</strong><br>', $item['label'], $color, $status ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			printf( '%s: <strong style="color:%s">%s</strong><br>', $item['label'], $color, $status ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 	}
@@ -798,7 +798,7 @@ abstract class Base_App {
 			$this->set_auth_mode( 'xhr' );
 		}
 
-		$mode = Utils::get_super_global_value( $_REQUEST, 'mode' ); //phpcs:ignore cohesion.Security.NonceVerification.Recommended -- Nonce verification is not required here.
+		$mode = Utils::get_super_global_value( $_REQUEST, 'mode' ); //phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verification is not required here.
 
 		if ( $mode ) {
 			$allowed_auth_modes = [

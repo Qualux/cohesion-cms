@@ -28,12 +28,12 @@ class Assets_Translation_Loader {
 	 * with a file that contains all the translations for specific scripts.
 	 *
 	 * When developing a module and using Webpack's dynamic load feature, the script will be split into multiple chunks.
-	 * As a result, the cohesion translations expressions will also be split into multiple files.
+	 * As a result, the WordPress translations expressions will also be split into multiple files.
 	 * Therefore, we replace the requested translation file with another file (generated in the build process)
 	 * that contains all the translations for the specific script (including dynamically loaded chunks).
 	 *
 	 * Want to go deeper? Read the following article:
-	 * @see https://developer.cohesion.com/2022/01/06/cohesion-plugin-i18n-webpack-and-composer/
+	 * @see https://developer.wordpress.com/2022/01/06/wordpress-plugin-i18n-webpack-and-composer/
 	 *
 	 * @param array $handles
 	 * @param callable|null $replace_callback

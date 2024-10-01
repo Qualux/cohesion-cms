@@ -156,9 +156,9 @@ class Editor_Common_Scripts_Settings {
 	}
 
 	/**
-	 * Get cohesion editor config.
+	 * Get WordPress editor config.
 	 *
-	 * Config the default cohesion editor with custom settings for Elementor use.
+	 * Config the default WordPress editor with custom settings for Elementor use.
 	 *
 	 * @since 1.9.0
 	 * @access private
@@ -172,7 +172,7 @@ class Editor_Common_Scripts_Settings {
 			require ABSPATH . WPINC . '/class-wp-editor.php';
 		}
 
-		// cohesion 4.8 and higher
+		// WordPress 4.8 and higher
 		if ( method_exists( '\_WP_Editors', 'print_tinymce_scripts' ) ) {
 			\_WP_Editors::print_default_editor_scripts();
 			\_WP_Editors::print_tinymce_scripts();

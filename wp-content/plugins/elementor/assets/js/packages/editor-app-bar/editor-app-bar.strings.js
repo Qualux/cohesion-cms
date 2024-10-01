@@ -1,4 +1,4 @@
-__( 'Exit to cohesion', 'elementor' );
+__( 'Exit to WordPress', 'elementor' );
 __( 'Help', 'elementor' );
 __( 'More', 'elementor' );
 __( 'Elementor Logo', 'elementor' );

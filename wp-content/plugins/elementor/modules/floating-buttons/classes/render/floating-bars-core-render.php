@@ -44,7 +44,7 @@ class Floating_Bars_Core_Render extends Floating_Bars_Render_Base {
 		] );
 
 		if ( '' !== $icon['value'] ) : ?>
-			<span <?php echo $this->widget->get_render_attribute_string( 'cta-icon' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>><?php Icons_Manager::render_icon( $icon, [ 'aria-hidden' => 'true' ] ); ?></span>
+			<span <?php echo $this->widget->get_render_attribute_string( 'cta-icon' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>><?php Icons_Manager::render_icon( $icon, [ 'aria-hidden' => 'true' ] ); ?></span>
 		<?php endif;
 	}
 
@@ -92,7 +92,7 @@ class Floating_Bars_Core_Render extends Floating_Bars_Render_Base {
 			$this->widget->add_link_attributes( 'cta-button', $link );
 			?>
 				<div class="e-floating-bars__cta-button-container">
-					<a <?php echo $this->widget->get_render_attribute_string( 'cta-button' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+					<a <?php echo $this->widget->get_render_attribute_string( 'cta-button' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 						<?php $this->render_cta_icon(); ?>
 						<span <?php $this->widget->print_render_attribute_string( 'cta_text' ); ?>><?php echo esc_html( $text ); ?></span>
 					</a>
@@ -117,7 +117,7 @@ class Floating_Bars_Core_Render extends Floating_Bars_Render_Base {
 		] );
 
 		?>
-			<button <?php echo $this->widget->get_render_attribute_string( 'close-button' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+			<button <?php echo $this->widget->get_render_attribute_string( 'close-button' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 				<i class="eicon-close"></i>
 			</button>
 		<?php
@@ -128,7 +128,7 @@ class Floating_Bars_Core_Render extends Floating_Bars_Render_Base {
 		$has_close_button = $this->settings['floating_bar_close_switch'];
 
 		?>
-		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'layout' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<?php
 			$this->render_announcement_text();
 

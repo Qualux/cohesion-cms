@@ -1457,7 +1457,7 @@ class Element_Section extends Element_Base {
 		?>
 		<<?php
 			// PHPCS - the method get_html_tag is safe.
-			echo $this->get_html_tag(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?> <?php $this->print_render_attribute_string( '_wrapper' ); ?>>
 			<?php
 			if ( 'video' === $settings['background_background'] ) :
@@ -1482,7 +1482,7 @@ class Element_Section extends Element_Base {
 							?>
 							<video class="elementor-background-video-hosted elementor-html5-video" <?php
 								// PHPCS - the variable $video_tag_attributes is a plain string.
-								echo $video_tag_attributes; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+								echo $video_tag_attributes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							?>></video>
 						<?php endif; ?>
 					</div>
@@ -1527,7 +1527,7 @@ class Element_Section extends Element_Base {
 			</div>
 		</<?php
 			// PHPCS - the method get_html_tag is safe.
-			echo $this->get_html_tag(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?>>
 		<?php
 	}
@@ -1615,7 +1615,7 @@ class Element_Section extends Element_Base {
 		?>">
 			<?php
 				// PHPCS - The file content is being read from a strict file path structure.
-				echo Utils::file_get_contents( $shape_path ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+				echo Utils::file_get_contents( $shape_path ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			?>
 		</div>
 		<?php

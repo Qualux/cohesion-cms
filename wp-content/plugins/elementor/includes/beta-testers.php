@@ -50,7 +50,7 @@ class Beta_Testers {
 		if ( false === $beta_version ) {
 			$beta_version = 'false';
 
-			$response = wp_remote_get( 'https://plugins.svn.cohesion.org/elementor/trunk/readme.txt' );
+			$response = wp_remote_get( 'https://plugins.svn.wordpress.org/elementor/trunk/readme.txt' );
 
 			if ( ! is_wp_error( $response ) && ! empty( $response['body'] ) ) {
 				preg_match( '/Beta tag: (.*)/i', $response['body'], $matches );
@@ -70,7 +70,7 @@ class Beta_Testers {
 	 *
 	 * Checks whether a beta version exist, and retrieve the version data.
 	 *
-	 * Fired by `pre_set_site_transient_update_plugins` filter, before cohesion
+	 * Fired by `pre_set_site_transient_update_plugins` filter, before WordPress
 	 * runs the plugin update checker.
 	 *
 	 * @since 1.5.0
@@ -96,7 +96,7 @@ class Beta_Testers {
 			$response->slug = $plugin_slug;
 			$response->new_version = $beta_version;
 			$response->url = 'https://elementor.com/';
-			$response->package = sprintf( 'https://downloads.cohesion.org/plugin/elementor.%s.zip', $beta_version );
+			$response->package = sprintf( 'https://downloads.wordpress.org/plugin/elementor.%s.zip', $beta_version );
 
 			$transient->response[ ELEMENTOR_PLUGIN_BASE ] = $response;
 		}

@@ -956,7 +956,7 @@ class Element_Column extends Element_Base {
 		?>
 		<<?php
 		// PHPCS - the method get_html_tag is safe.
-		echo $this->get_html_tag(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?> <?php $this->print_render_attribute_string( '_wrapper' ); ?>>
 			<div <?php $this->print_render_attribute_string( '_widget_wrapper' ); ?>>
 		<?php if ( $has_background_overlay ) : ?>
@@ -978,7 +978,7 @@ class Element_Column extends Element_Base {
 			</div>
 		</<?php
 		// PHPCS - the method get_html_tag is safe.
-		echo $this->get_html_tag(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		echo $this->get_html_tag(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 		<?php
 	}
 

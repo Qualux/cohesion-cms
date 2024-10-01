@@ -15,10 +15,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor "Settings" page in cohesion Dashboard.
+ * Elementor "Settings" page in WordPress Dashboard.
  *
  * Elementor settings page handler class responsible for creating and displaying
- * Elementor "Settings" page in cohesion dashboard.
+ * Elementor "Settings" page in WordPress dashboard.
  *
  * @since 1.0.0
  */
@@ -81,7 +81,7 @@ class Settings extends Settings_Page {
 	public function register_admin_menu() {
 		global $menu;
 
-		$menu[] = [ '', 'read', 'separator-elementor', '', 'wp-menu-separator elementor' ]; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$menu[] = [ '', 'read', 'separator-elementor', '', 'wp-menu-separator elementor' ]; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		if ( ! current_user_can( 'manage_options' ) ) {
 			return;
@@ -187,7 +187,7 @@ class Settings extends Settings_Page {
 	/**
 	 * On admin init.
 	 *
-	 * Preform actions on cohesion admin initialization.
+	 * Preform actions on WordPress admin initialization.
 	 *
 	 * Fired by `admin_init` action.
 	 *

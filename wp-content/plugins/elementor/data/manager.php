@@ -221,7 +221,7 @@ class Manager extends BaseModule {
 	/**
 	 * Run server.
 	 *
-	 * Init cohesion reset api.
+	 * Init WordPress reset api.
 	 *
 	 * @return \WP_REST_Server
 	 */

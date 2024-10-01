@@ -54,24 +54,24 @@ class Force_Locale {
 		/**
 		 * Reset the \WP_Textdomain_Registry instance to clear its cache.
 		 *
-		 * @see https://github.com/cohesion/cohesion-develop/blob/799d7dc86f5b07b17f7a418948fc851bd2fc334b/src/wp-includes/class-wp-textdomain-registry.php#L179-L187
-		 * @see https://github.com/cohesion/cohesion-develop/blob/799d7dc86f5b07b17f7a418948fc851bd2fc334b/tests/phpunit/tests/l10n/wpLocaleSwitcher.php#L19-L31
+		 * @see https://github.com/WordPress/wordpress-develop/blob/799d7dc86f5b07b17f7a418948fc851bd2fc334b/src/wp-includes/class-wp-textdomain-registry.php#L179-L187
+		 * @see https://github.com/WordPress/wordpress-develop/blob/799d7dc86f5b07b17f7a418948fc851bd2fc334b/tests/phpunit/tests/l10n/wpLocaleSwitcher.php#L19-L31
 		 */
 		$this->reset_textdomain_registry();
 
 		/**
 		 * Reset l10n in order to clear the translations cache.
 		 *
-		 * @see https://github.com/cohesion/cohesion-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1324
-		 * @see https://github.com/cohesion/cohesion-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1222
-		 * @see https://github.com/cohesion/cohesion-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L821
+		 * @see https://github.com/WordPress/wordpress-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1324
+		 * @see https://github.com/WordPress/wordpress-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1222
+		 * @see https://github.com/WordPress/wordpress-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L821
 		 */
 		$this->reset_l10n();
 
 		/**
 		 * Force the translations of `$new_locale` to be loaded.
 		 *
-		 * @see https://github.com/cohesion/cohesion-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1294
+		 * @see https://github.com/WordPress/wordpress-develop/blob/2437ef5130f10153bc4fffa412d4f37e65e3d66b/src/wp-includes/l10n.php#L1294
 		 */
 		add_filter( 'pre_determine_locale', $this->filter );
 	}

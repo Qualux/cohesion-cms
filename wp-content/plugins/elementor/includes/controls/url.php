@@ -98,7 +98,7 @@ class Control_URL extends Control_Base_Multiple {
 				<i class="elementor-control-url-autocomplete-spinner eicon-loading eicon-animation-spin" aria-hidden="true"></i>
 				<input id="<?php $this->print_control_uid(); ?>" class="elementor-control-tag-area elementor-input" data-setting="url" placeholder="{{ view.getControlPlaceholder() }}" />
 				<?php // PHPCS - Nonces don't require escaping. ?>
-				<input id="_ajax_linking_nonce" type="hidden" value="<?php echo wp_create_nonce( 'internal-linking' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>" />
+				<input id="_ajax_linking_nonce" type="hidden" value="<?php echo wp_create_nonce( 'internal-linking' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" />
 				<# if ( !! data.options ) { #>
 				<button class="elementor-control-url-more tooltip-target elementor-control-unit-1" data-tooltip="<?php echo esc_attr__( 'Link Options', 'elementor' ); ?>">
 					<i class="eicon-cog" aria-hidden="true"></i>

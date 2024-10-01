@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				/* translators: 1: Plugin name, 2: Plugin version. */
 				esc_html__( 'Some of the plugins you’re using have not been tested with the latest version of %1$s (%2$s). To avoid issues, make sure they are all up to date and compatible before updating %1$s.', 'elementor' ),
 				esc_html( $this->get_plugin_label() ),
-				$new_version->__toString() // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+				$new_version->__toString() // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			);
 			?>
 		</div>

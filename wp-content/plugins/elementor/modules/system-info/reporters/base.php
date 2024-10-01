@@ -94,7 +94,7 @@ abstract class Base {
 
 		$report = $this->get_report( 'raw' );
 
-		echo PHP_EOL . $indent . '== ' . $this->get_title() . ' =='; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo PHP_EOL . $indent . '== ' . $this->get_title() . ' =='; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo PHP_EOL;
 
 		foreach ( $report as $field_name => $field ) :
@@ -105,7 +105,7 @@ abstract class Base {
 			if ( ! empty( $label ) ) {
 				$label .= ': ';
 			}
-			echo "{$sub_indent}{$label}{$field['value']}" . PHP_EOL; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo "{$sub_indent}{$label}{$field['value']}" . PHP_EOL; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		endforeach;
 	}
 

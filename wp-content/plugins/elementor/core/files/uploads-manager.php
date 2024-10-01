@@ -219,8 +219,8 @@ class Uploads_Manager extends Base_Object {
 	 *
 	 * A workaround for upload validation which relies on a PHP extension (fileinfo)
 	 * with inconsistent reporting behaviour.
-	 * ref: https://core.trac.cohesion.org/ticket/39550
-	 * ref: https://core.trac.cohesion.org/ticket/40175
+	 * ref: https://core.trac.wordpress.org/ticket/39550
+	 * ref: https://core.trac.wordpress.org/ticket/40175
 	 *
 	 * @since 3.5.0
 	 * @access public
@@ -392,7 +392,7 @@ class Uploads_Manager extends Base_Object {
 	 * Support Unfiltered File Uploads
 	 *
 	 * When uploading a file within Elementor, this method adds the registered
-	 * file types to cohesion' allowed mimes list. This will only happen if the user allowed unfiltered file uploads
+	 * file types to WordPress' allowed mimes list. This will only happen if the user allowed unfiltered file uploads
 	 * in Elementor's settings in the admin dashboard.
 	 *
 	 * @since 3.5.0
@@ -598,7 +598,7 @@ class Uploads_Manager extends Base_Object {
 		$is_allowed = false;
 
 		// Check if the file type (extension) is in the allowed extensions list. If it is a non-standard file type (not
-		// enabled by default in cohesion) and unfiltered file uploads are not enabled, it will not be in the allowed
+		// enabled by default in WordPress) and unfiltered file uploads are not enabled, it will not be in the allowed
 		// file extensions list.
 		foreach ( $allowed_file_extensions as $allowed_extension ) {
 			if ( preg_match( '/' . $allowed_extension . '/', $file_extension ) ) {

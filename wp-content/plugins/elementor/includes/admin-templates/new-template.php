@@ -60,7 +60,7 @@ ksort( $types );
 		<input type="hidden" name="post_type" value="elementor_library">
 		<input type="hidden" name="action" value="elementor_new_post">
 		<?php // PHPCS - a nonce doesn't have to be escaped. ?>
-		<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'elementor_action_new_post' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>">
+		<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'elementor_action_new_post' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
 		<div id="elementor-new-template__form__title"><?php echo esc_html__( 'Choose Template Type', 'elementor' ); ?></div>
 		<div id="elementor-new-template__form__template-type__wrapper" class="elementor-form-field">
 			<label for="elementor-new-template__form__template-type" class="elementor-form-field__label"><?php echo esc_html__( 'Select the type of template you want to work on', 'elementor' ); ?></label>

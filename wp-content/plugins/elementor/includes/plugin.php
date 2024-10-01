@@ -362,9 +362,9 @@ class Plugin {
 	public $icons_manager;
 
 	/**
-	 * cohesion widgets manager.
+	 * WordPress widgets manager.
 	 *
-	 * Holds the cohesion widgets manager.
+	 * Holds the WordPress widgets manager.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -508,9 +508,9 @@ class Plugin {
 	public $app;
 
 	/**
-	 * cohesion API.
+	 * WordPress API.
 	 *
-	 * Holds the methods that interact with cohesion Core API.
+	 * Holds the methods that interact with WordPress Core API.
 	 *
 	 * @since 3.0.0
 	 * @access public
@@ -535,7 +535,7 @@ class Plugin {
 	 * Uploads manager.
 	 *
 	 * Holds the plugin uploads manager responsible for handling file uploads
-	 * that are not done with cohesion Media.
+	 * that are not done with WordPress Media.
 	 *
 	 * @since 3.3.0
 	 * @access public
@@ -583,7 +583,7 @@ class Plugin {
 	public function __clone() {
 		_doing_it_wrong(
 			__FUNCTION__,
-			sprintf( 'Cloning instances of the singleton "%s" class is forbidden.', get_class( $this ) ), // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			sprintf( 'Cloning instances of the singleton "%s" class is forbidden.', get_class( $this ) ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			'1.0.0'
 		);
 	}
@@ -599,7 +599,7 @@ class Plugin {
 	public function __wakeup() {
 		_doing_it_wrong(
 			__FUNCTION__,
-			sprintf( 'Unserializing instances of the singleton "%s" class is forbidden.', get_class( $this ) ), // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			sprintf( 'Unserializing instances of the singleton "%s" class is forbidden.', get_class( $this ) ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			'1.0.0'
 		);
 	}
@@ -772,7 +772,7 @@ class Plugin {
 	 *
 	 * Register Elementor support for all the supported post types defined by
 	 * the user in the admin screen and saved as `elementor_cpt_support` option
-	 * in cohesion `$wpdb->options` table.
+	 * in WordPress `$wpdb->options` table.
 	 *
 	 * If no custom post type selected, usually in new installs, this method
 	 * will return the two default post types: `page` and `post`.

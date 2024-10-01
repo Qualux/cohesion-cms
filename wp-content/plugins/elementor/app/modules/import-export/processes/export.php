@@ -227,7 +227,7 @@ class Export {
 
 	/**
 	 * Get the default settings of all the custom post types that should be exported.
-	 * Should be all the custom post types that are not built in to cohesion and not part of Elementor.
+	 * Should be all the custom post types that are not built in to WordPress and not part of Elementor.
 	 *
 	 * @return array
 	 */

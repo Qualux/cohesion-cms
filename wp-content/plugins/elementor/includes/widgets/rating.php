@@ -276,10 +276,10 @@ class Widget_Rating extends Widget_Base {
 			?>
 			<div class="e-icon">
 				<div <?php $this->print_render_attribute_string( 'icon_marked_' . $index ); ?>>
-					<?php echo Icons_Manager::try_get_icon_html( $icon, [ 'aria-hidden' => 'true' ] ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+					<?php echo Icons_Manager::try_get_icon_html( $icon, [ 'aria-hidden' => 'true' ] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</div>
 				<div class="e-icon-wrapper e-icon-unmarked">
-					<?php echo Icons_Manager::try_get_icon_html( $icon, [ 'aria-hidden' => 'true' ] ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+					<?php echo Icons_Manager::try_get_icon_html( $icon, [ 'aria-hidden' => 'true' ] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</div>
 			</div>
 			<?php
@@ -309,9 +309,9 @@ class Widget_Rating extends Widget_Base {
 		?>
 		<div <?php $this->print_render_attribute_string( 'widget' ); ?>>
 			<meta itemprop="worstRating" content="0">
-			<meta itemprop="bestRating" content="<?php echo $this->get_rating_scale(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>">
+			<meta itemprop="bestRating" content="<?php echo $this->get_rating_scale(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
 			<div <?php $this->print_render_attribute_string( 'widget_wrapper' ); ?>>
-				<?php echo $this->get_icon_markup(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo $this->get_icon_markup(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 		</div>
 		<?php

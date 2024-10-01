@@ -24,7 +24,7 @@ $beta_tester_email = $user->user_email;
 <script type="text/template" id="tmpl-elementor-beta-tester">
 	<form id="elementor-beta-tester-form" method="post">
 		<?php // PHPCS - This is a nonce, doesn't need to be escaped. ?>
-		<input type="hidden" name="_nonce" value="<?php echo $ajax->create_nonce(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>">
+		<input type="hidden" name="_nonce" value="<?php echo $ajax->create_nonce(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
 		<input type="hidden" name="action" value="elementor_beta_tester_signup" />
 		<div id="elementor-beta-tester-form__caption"><?php echo esc_html__( 'Get Beta Updates', 'elementor' ); ?></div>
 		<div id="elementor-beta-tester-form__description"><?php echo esc_html__( 'As a beta tester, you’ll receive an update that includes a testing version of Elementor and its content directly to your Email', 'elementor' ); ?></div>

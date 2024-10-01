@@ -60,7 +60,7 @@ class Module extends BaseModule {
 	 */
 	private static $reports = [
 		'server' => [],
-		'cohesion' => [],
+		'wordpress' => [],
 		'theme' => [],
 		'user' => [],
 		'plugins' => [],

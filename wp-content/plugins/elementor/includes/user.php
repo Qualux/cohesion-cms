@@ -255,7 +255,7 @@ class User {
 	 * @static
 	 */
 	public static function ajax_set_admin_notice_viewed() {
-		// phpcs:ignore cohesion.Security.NonceVerification.NoNonceVerification
+		// phpcs:ignore WordPress.Security.NonceVerification.NoNonceVerification
 		$notice_id = Utils::get_super_global_value( $_REQUEST, 'notice_id' );
 
 		if ( ! $notice_id ) {

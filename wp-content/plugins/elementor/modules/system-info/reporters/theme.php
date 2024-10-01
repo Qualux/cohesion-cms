@@ -23,7 +23,7 @@ class Theme extends Base {
 	 * @since 1.0.0
 	 * @access private
 	 *
-	 * @var \WP_Theme cohesion theme object.
+	 * @var \WP_Theme WordPress theme object.
 	 */
 	private $theme = null;
 
@@ -80,7 +80,7 @@ class Theme extends Base {
 	 * @deprecated 3.1.0 Use `get_theme()` method instead.
 	 * @access protected
 	 *
-	 * @return \WP_Theme cohesion theme object.
+	 * @return \WP_Theme WordPress theme object.
 	 */
 	protected function _get_theme() {
 		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->deprecated_function( __METHOD__, '3.1.0', 'get_theme()' );
@@ -96,7 +96,7 @@ class Theme extends Base {
 	 * @since 3.1.0
 	 * @access private
 	 *
-	 * @return \WP_Theme cohesion theme object.
+	 * @return \WP_Theme WordPress theme object.
 	 */
 	private function get_theme() {
 		if ( is_null( $this->theme ) ) {
@@ -113,7 +113,7 @@ class Theme extends Base {
 	 * @since 1.0.0
 	 * @access protected
 	 *
-	 * @return \WP_Theme|false cohesion theme object, or false if the current theme is not a child theme.
+	 * @return \WP_Theme|false WordPress theme object, or false if the current theme is not a child theme.
 	 */
 	protected function get_parent_theme() {
 		return $this->get_theme()->parent();
@@ -203,9 +203,9 @@ class Theme extends Base {
 
 		if ( ! $is_child_theme ) {
 			$result['recommendation'] = sprintf(
-				/* translators: %s: cohesion child themes documentation. */
+				/* translators: %s: WordPress child themes documentation. */
 				__( 'If you want to modify the source code of your theme, we recommend using a <a href="%s">child theme</a>.', 'elementor' ),
-				'https://go.elementor.com/cohesion-child-themes/'
+				'https://go.elementor.com/wordpress-child-themes/'
 			);
 		}
 

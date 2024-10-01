@@ -4,7 +4,7 @@
 
 /*! @elementor/store */
 
-/*! @cohesion/i18n */
+/*! @wordpress/i18n */
 
 /*! react */
 

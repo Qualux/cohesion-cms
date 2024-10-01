@@ -268,7 +268,7 @@ class Settings_Controls {
 		<div id="<?php echo esc_attr( $field['id'] ); ?>">
 
 			<?php // PHPCS - This is a Raw HTML control, it is not escaped on purpose. ?>
-			<div><?php echo $field['html']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?></div>
+			<div><?php echo $field['html']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></div>
 			<?php
 			if ( ! empty( $field['sub_desc'] ) ) :
 				echo wp_kses_post( $field['sub_desc'] );

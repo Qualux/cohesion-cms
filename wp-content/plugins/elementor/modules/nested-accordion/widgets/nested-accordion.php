@@ -770,8 +770,8 @@ class Nested_Accordion extends Widget_Nested_Base {
 		ob_start();
 		?>
 		<span class='e-n-accordion-item-title-icon'>
-			<span class='e-opened' ><?php echo $icon_active_html; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?></span>
-			<span class='e-closed'><?php echo $icon_html; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?></span>
+			<span class='e-opened' ><?php echo $icon_active_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+			<span class='e-closed'><?php echo $icon_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 		</span>
 
 		<?php
@@ -832,10 +832,10 @@ class Nested_Accordion extends Widget_Nested_Base {
 				<summary <?php echo wp_kses_post( $summary_render_attributes ); ?> >
 					<span class='e-n-accordion-item-title-header'><?php echo wp_kses_post( "<$title_html_tag class=\"e-n-accordion-item-title-text\"> $item_title </$title_html_tag>" ); ?></span>
 					<?php if ( ! empty( $settings['accordion_item_title_icon']['value'] ) ) {
-						echo $icons_content; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+						echo $icons_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					} ?>
 				</summary>
-				<?php echo $item_content; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo $item_content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</details>
 			<?php
 			$items_title_html .= ob_get_clean();
@@ -843,7 +843,7 @@ class Nested_Accordion extends Widget_Nested_Base {
 
 		?>
 		<div <?php $this->print_render_attribute_string( 'elementor-accordion' ); ?>>
-			<?php echo $items_title_html; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo $items_title_html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 		</div>
 		<?php
 		if ( isset( $settings['faq_schema'] ) && 'yes' === $settings['faq_schema'] ) {

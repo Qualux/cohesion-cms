@@ -32,11 +32,11 @@ class Admin {
 		if ( isset( $_GET['action'], $_GET['app'] ) ) {
 			$manager = Plugin::$instance->common->get_component( 'connect' );
 
-			// phpcs:ignore cohesion.Security.NonceVerification.Recommended
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			$app_slug = Utils::get_super_global_value( $_GET, 'app' );
 			$app = $manager->get_app( $app_slug );
 
-			// phpcs:ignore cohesion.Security.NonceVerification.Recommended
+			// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 			$action = Utils::get_super_global_value( $_GET, 'action' );
 
 			$nonce_action = $app_slug . $action;

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Elementor heartbeat.
  *
  * Elementor heartbeat handler class is responsible for initializing Elementor
- * heartbeat. The class communicates with cohesion Heartbeat API while working
+ * heartbeat. The class communicates with WordPress Heartbeat API while working
  * with Elementor.
  *
  * @since 1.0.0

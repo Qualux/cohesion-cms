@@ -57,8 +57,8 @@ class App extends BaseApp {
 		// Hack to add a link to sub menu.
 		foreach ( $submenu[ Source_Local::ADMIN_MENU_SLUG ] as &$item ) {
 			if ( self::PAGE_ID === $item[2] ) {
-				$item[2] = $this->get_settings( 'menu_url' ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
-				$item[4] = 'elementor-app-link'; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+				$item[2] = $this->get_settings( 'menu_url' ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+				$item[4] = 'elementor-app-link'; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 			}
 		}
 

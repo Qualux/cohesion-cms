@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Originally made by cohesion part of cohesion/Importer.
- * https://plugins.trac.cohesion.org/browser/cohesion-importer/trunk/class-wp-import.php
+ * Originally made by WordPress part of WordPress/Importer.
+ * https://plugins.trac.wordpress.org/browser/wordpress-importer/trunk/class-wp-import.php
  *
  * What was done:
  * Reformat of the code.
@@ -1045,7 +1045,7 @@ class WP_Import extends \WP_Importer {
 		if ( is_wp_error( $remote_response ) ) {
 			@unlink( $tmp_file_name );
 
-			return new WP_Error( 'import_file_error', sprintf( /* translators: 1: cohesion error message, 2: cohesion error code. */ esc_html__( 'Request failed due to an error: %1$s (%2$s)', 'elementor' ), esc_html( $remote_response->get_error_message() ), esc_html( $remote_response->get_error_code() ) ) );
+			return new WP_Error( 'import_file_error', sprintf( /* translators: 1: WordPress error message, 2: WordPress error code. */ esc_html__( 'Request failed due to an error: %1$s (%2$s)', 'elementor' ), esc_html( $remote_response->get_error_message() ), esc_html( $remote_response->get_error_code() ) ) );
 		}
 
 		$remote_response_code = (int) wp_remote_retrieve_response_code( $remote_response );

@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Model extends CSS_Model {
 
 	/**
-	 * cohesion post object.
+	 * WordPress post object.
 	 *
 	 * Holds an instance of `WP_Post` containing the post object.
 	 *

@@ -67,7 +67,7 @@ class Module extends BaseModule {
 	}
 
 	/**
-	 * Stop cohesion core fetchpriority logic by setting the wp_high_priority_element_flag flag to false.
+	 * Stop WordPress core fetchpriority logic by setting the wp_high_priority_element_flag flag to false.
 	 */
 	public function stop_core_fetchpriority_high_logic() {
 		// wp_high_priority_element_flag was only introduced in 6.3.0
@@ -290,7 +290,7 @@ class Module extends BaseModule {
 		/**
 		 * Filter the minimum pixel threshold used to determine if an image should have fetchpriority="high" applied.
 		 *
-		 * @see https://developer.cohesion.org/reference/hooks/wp_min_priority_img_pixels/
+		 * @see https://developer.wordpress.org/reference/hooks/wp_min_priority_img_pixels/
 		 *
 		 * @param int $pixels The minimum number of pixels (with * height).
 		 * @return int The filtered value.

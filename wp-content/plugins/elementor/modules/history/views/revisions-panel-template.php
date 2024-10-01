@@ -29,13 +29,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		revisions_disabled_2 = '<?php printf(
 			/* translators: %1$s Link open tag, %2$s: Link close tag. */
 			esc_html__( 'Learn more about %1$sWordPress revisions%2$s', 'elementor' ),
-			'<a target="_blank" href="https://go.elementor.com/cohesion-revisions/">',
+			'<a target="_blank" href="https://go.elementor.com/wordpress-revisions/">',
 			'</a>'
 		); ?>';
 	#>
 	<img class="elementor-nerd-box-icon" src="<?php
 	// PHPCS - Safe Elementor SVG
-	echo ELEMENTOR_ASSETS_URL . 'images/information.svg' // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>" loading="lazy" alt="<?php echo esc_attr__( 'Elementor', 'elementor' ); ?>" />
+	echo ELEMENTOR_ASSETS_URL . 'images/information.svg' // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>" loading="lazy" alt="<?php echo esc_attr__( 'Elementor', 'elementor' ); ?>" />
 	<div class="elementor-nerd-box-title"><?php echo esc_html__( 'No Revisions Saved Yet', 'elementor' ); ?></div>
 	<div class="elementor-nerd-box-message">{{{ elementor.config.document.revisions.enabled ? no_revisions_1 : revisions_disabled_1 }}}</div>
 	<div class="elementor-nerd-box-message">{{{ elementor.config.document.revisions.enabled ? no_revisions_2 : revisions_disabled_2 }}}</div>

@@ -468,7 +468,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.WhatsNewTopBar = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
-var _i18n = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _xIcon = __webpack_require__(/*! ../icons/x-icon */ "../modules/notifications/assets/js/icons/x-icon.js");
 var WhatsNewTopBar = function WhatsNewTopBar(props) {
   var setIsOpen = props.setIsOpen;
@@ -559,7 +559,7 @@ var WhatsNew = function WhatsNew(props) {
     },
     ModalProps: {
       style: {
-        // Above the cohesion Admin Top Bar.
+        // Above the WordPress Admin Top Bar.
         zIndex: 999999
       }
     }
@@ -3156,7 +3156,7 @@ module.exports = elementorV2.ui;
 
 /***/ }),
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/

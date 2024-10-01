@@ -341,10 +341,10 @@ class Compatibility {
 	 * @return bool
 	 */
 	public static function is_wp_importer_before_0_7() {
-		$wp_importer = get_plugins( '/cohesion-importer' );
+		$wp_importer = get_plugins( '/wordpress-importer' );
 
 		if ( ! empty( $wp_importer ) ) {
-			$wp_importer_version = $wp_importer['cohesion-importer.php']['Version'];
+			$wp_importer_version = $wp_importer['wordpress-importer.php']['Version'];
 
 			if ( version_compare( $wp_importer_version, '0.7', '<' ) ) {
 				return true;

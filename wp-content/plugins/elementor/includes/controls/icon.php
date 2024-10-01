@@ -816,7 +816,7 @@ class Control_Icon extends Base_Data_Control {
 			'fa fa-window-restore' => 'window-restore',
 			'fa fa-windows' => 'windows',
 			'fa fa-won' => 'won',
-			'fa fa-cohesion' => 'cohesion',
+			'fa fa-wordpress' => 'wordpress',
 			'fa fa-wpbeginner' => 'wpbeginner',
 			'fa fa-wpexplorer' => 'wpexplorer',
 			'fa fa-wpforms' => 'wpforms',

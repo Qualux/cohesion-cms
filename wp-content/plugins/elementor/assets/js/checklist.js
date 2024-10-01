@@ -2717,7 +2717,7 @@ exports["default"] = Component;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -2929,7 +2929,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
-var _i18n = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var Header = function Header() {
   var closeChecklist = function closeChecklist() {
     $e.run('checklist/toggle');
@@ -3000,7 +3000,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.editorV2 = void 0;
 var _ui = __webpack_require__(/*! @elementor/ui */ "@elementor/ui");
-var _i18n = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var React = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _RocketIcon = _interopRequireDefault(__webpack_require__(/*! @elementor/icons/RocketIcon */ "@elementor/icons/RocketIcon"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -6864,7 +6864,7 @@ module.exports = elementorV2.ui;
 
 /***/ }),
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/

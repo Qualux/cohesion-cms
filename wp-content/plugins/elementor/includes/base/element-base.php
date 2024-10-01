@@ -35,7 +35,7 @@ abstract class Element_Base extends Controls_Stack {
 	 * Element default arguments.
 	 *
 	 * Holds all the default arguments of the element. Used to store additional
-	 * data. For example cohesion widgets use this to store widget names.
+	 * data. For example WordPress widgets use this to store widget names.
 	 *
 	 * @access private
 	 *
@@ -510,7 +510,7 @@ abstract class Element_Base extends Controls_Stack {
 
 			$this->before_render();
 			// PHPCS - The content has already been escaped by the `render` method.
-			echo $content; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $content; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			$this->after_render();
 
 			// TODO: Remove this in the future

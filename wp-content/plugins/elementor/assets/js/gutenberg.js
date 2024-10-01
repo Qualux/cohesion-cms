@@ -3,7 +3,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/
@@ -46,7 +46,7 @@ var __webpack_exports__ = {};
 /*!*******************************************!*\
   !*** ../assets/dev/js/admin/gutenberg.js ***!
   \*******************************************/
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 /* global ElementorGutenbergSettings */
@@ -144,8 +144,8 @@ var __webpack_exports__ = {};
       self.cache.$switchModeButton.on('click', function () {
         if (self.isElementorMode) {
           elementorCommon.dialogsManager.createWidget('confirm', {
-            message: __('Please note that you are switching to cohesion default editor. Your current layout, design and content might break.', 'elementor'),
-            headerMessage: __('Back to cohesion Editor', 'elementor'),
+            message: __('Please note that you are switching to WordPress default editor. Your current layout, design and content might break.', 'elementor'),
+            headerMessage: __('Back to WordPress Editor', 'elementor'),
             strings: {
               confirm: __('Continue', 'elementor'),
               cancel: __('Cancel', 'elementor')

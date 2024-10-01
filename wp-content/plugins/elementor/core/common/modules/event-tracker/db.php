@@ -106,7 +106,7 @@ class DB extends Base_Object {
 	 * @return array|object|null
 	 */
 	public function get_event_ids_from_db() {
-		// phpcs:disable cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		return $this->wpdb->get_results( "SELECT id FROM {$this->get_table_name()}" );
 	}
 
@@ -123,7 +123,7 @@ class DB extends Base_Object {
 		$table_name = $wpdb->prefix . self::TABLE_NAME;
 
 		// Delete all content of the table.
-		// phpcs:disable cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		$wpdb->query( "TRUNCATE TABLE {$table_name}" );
 	}
 
@@ -148,11 +148,11 @@ class DB extends Base_Object {
 			created_at datetime not null
 		) {$charset_collate};";
 
-		// phpcs:disable cohesion.DB.PreparedSQL.NotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 		$this->wpdb->query( $e_events_table );
 
 		// Check if table was created successfully.
-		// phpcs:disable cohesion.DB.PreparedSQL.NotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 		if ( $this->wpdb->get_var( $query ) === $table_name ) {
 			update_option( self::DB_VERSION_OPTION_KEY, self::CURRENT_DB_VERSION, false );
 		}
@@ -166,7 +166,7 @@ class DB extends Base_Object {
 	 * @since 3.6.0
 	 */
 	private function add_indexes() {
-		// phpcs:ignore cohesion.DB.PreparedSQL.NotPrepared
+		// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
 		$this->wpdb->query( 'ALTER TABLE ' . $this->get_table_name() . '
     		ADD INDEX `created_at_index` (`created_at`)
 		' );
@@ -179,7 +179,7 @@ class DB extends Base_Object {
 		// Check if table exists. If not, create it.
 		$query = $wpdb->prepare( 'SHOW TABLES LIKE %s', $wpdb->esc_like( $this->get_table_name() ) );
 
-		// phpcs:disable cohesion.DB.PreparedSQL.NotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.NotPrepared
 		if ( $wpdb->get_var( $query ) !== $this->get_table_name() ) {
 			$this->create_table( $query );
 			$this->add_indexes();

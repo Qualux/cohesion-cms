@@ -253,7 +253,7 @@ trait Shared_Widget_Controls_Trait {
 		>
 			<?php
 			// PHPCS - The file content is being read from a strict file path structure.
-			echo $shape_divider['svg']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $shape_divider['svg']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			?>
 		</div>
 		<?php

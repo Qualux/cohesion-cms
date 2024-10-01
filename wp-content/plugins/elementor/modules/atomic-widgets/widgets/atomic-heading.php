@@ -37,7 +37,7 @@ class Atomic_Heading extends Atomic_Widget_Base {
 			$class = "class='" . esc_attr( $settings['classes'] ) . "'";
 		}
 
-		// phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo "<$escaped_tag $class>$escaped_title</$escaped_tag>";
 	}
 

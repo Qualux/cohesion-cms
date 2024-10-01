@@ -11,7 +11,7 @@ use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
 /**
  * Elementor text editor widget.
  *
- * Elementor widget that displays a WYSIWYG text editor, just like the cohesion
+ * Elementor widget that displays a WYSIWYG text editor, just like the WordPress
  * editor.
  *
  * @since 1.0.0
@@ -488,7 +488,7 @@ class Widget_Text_Editor extends Widget_Base {
 			<div <?php $this->print_render_attribute_string( 'editor' ); ?>>
 		<?php } ?>
 		<?php // PHPCS - the main text of a widget should not be escaped.
-				echo $editor_content; // phpcs:ignore cohesion.Security.EscapeOutput ?>
+				echo $editor_content; // phpcs:ignore WordPress.Security.EscapeOutput ?>
 		<?php if ( $should_render_inline_editing ) { ?>
 			</div>
 		<?php } ?>

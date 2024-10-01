@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class API {
 
-	const PRODUCT_NAME = 'Elementor Pro';
+	const PRODUCT_NAME = 'Prism';
 
 	/**
 	 * @deprecated 3.8.0
@@ -293,78 +293,13 @@ class API {
 	}
 
 	public static function get_plugin_package_url( $version ) {
-		$url = 'https://my.elementor.com/api/v1/pro-downloads/';
 
-		$body_args = [
-			'item_name' => self::PRODUCT_NAME,
-			'version' => $version,
-			'license' => Admin::get_license_key(),
-			'url' => home_url(),
-		];
+		return new \WP_Error( 403, esc_html__( 'No plugin packages available.', 'elementor-pro' ) );
 
-		$response = wp_remote_post( $url, [
-			'timeout' => 40,
-			'body' => $body_args,
-		] );
-
-		if ( is_wp_error( $response ) ) {
-			return $response;
-		}
-
-		$response_code = (int) wp_remote_retrieve_response_code( $response );
-		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-
-		if ( 401 === $response_code ) {
-			return new \WP_Error( $response_code, $data['message'] );
-		}
-
-		if ( 200 !== $response_code ) {
-			return new \WP_Error( $response_code, esc_html__( 'HTTP Error', 'elementor-pro' ) );
-		}
-
-		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-		if ( empty( $data ) || ! is_array( $data ) ) {
-			return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
-		}
-
-		return $data['package_url'];
 	}
 
 	public static function get_previous_versions() {
-		$url = 'https://my.elementor.com/api/v1/pro-downloads/';
-
-		$body_args = [
-			'version' => ELEMENTOR_PRO_VERSION,
-			'license' => Admin::get_license_key(),
-			'url' => home_url(),
-		];
-
-		$response = wp_remote_get( $url, [
-			'timeout' => 40,
-			'body' => $body_args,
-		] );
-
-		if ( is_wp_error( $response ) ) {
-			return $response;
-		}
-
-		$response_code = (int) wp_remote_retrieve_response_code( $response );
-		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-
-		if ( 401 === $response_code ) {
-			return new \WP_Error( $response_code, $data['message'] );
-		}
-
-		if ( 200 !== $response_code ) {
-			return new \WP_Error( $response_code, esc_html__( 'HTTP Error', 'elementor-pro' ) );
-		}
-
-		$data = json_decode( wp_remote_retrieve_body( $response ), true );
-		if ( empty( $data ) || ! is_array( $data ) ) {
-			return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
-		}
-
-		return $data['versions'];
+		return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
 	}
 
 	public static function get_errors() {
@@ -535,21 +470,11 @@ class API {
 	 * Needed because even Expired Licences keep the features array for BC.
 	 */
 	public static function active_licence_has_feature( $feature_name ) {
-		return ! self::is_license_expired() && self::is_licence_has_feature( $feature_name, static::BC_VALIDATION_CALLBACK );
+		return true;
 	}
 
 	public static function is_license_about_to_expire() {
-		$license_data = self::get_license_data();
-
-		if ( ! empty( $license_data['recurring'] ) ) {
-			return false;
-		}
-
-		if ( 'lifetime' === $license_data['expires'] ) {
-			return false;
-		}
-
-		return time() > strtotime( '-28 days', strtotime( $license_data['expires'] ) );
+		return false;
 	}
 
 	/**

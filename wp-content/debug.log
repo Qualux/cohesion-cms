@@ -1,0 +1,88 @@
+[01-Oct-2024 01:27:12 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:27:15 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:27:52 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:27:52 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:27:53 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:27:53 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:29:02 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:29:02 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:29:02 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:29:03 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:31:01 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:31:01 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:31:01 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:31:01 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:31:10 UTC] PHP Fatal error:  Uncaught Error: Class "Elementor\Widget_WordPress" not found in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php:185
+Stack trace:
+#0 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php(117): Elementor\Widgets_Manager->register_wp_widgets()
+#1 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php(344): Elementor\Widgets_Manager->init_widgets()
+#2 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\modules\global-widget\module.php(52): Elementor\Widgets_Manager->get_widget_types()
+#3 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Modules\GlobalWidget\Module->add_templates_localize_data(Array)
+#4 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\core\editor\editor.php(80): apply_filters('elementor_pro/e...', Array)
+#6 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\base-object.php(142): ElementorPro\Core\Editor\Editor->get_init_settings()
+#7 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\base-object.php(40): Elementor\Core\Base\Base_Object->ensure_settings()
+#8 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\app.php(36): Elementor\Core\Base\Base_Object->get_settings()
+#9 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\core\editor\editor.php(112): Elementor\Core\Base\App->print_config('elementor-pro')
+#10 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Core\Editor\Editor->enqueue_editor_scripts('')
+#11 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\editor.php(359): do_action('elementor/edito...')
+#14 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Editor\Editor->enqueue_scripts('')
+#15 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#16 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\script-loader.php(2263): do_action('wp_enqueue_scri...')
+#18 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#19 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#20 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\general-template.php(3065): do_action('wp_head')
+#22 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\editor-templates\editor-wrapper.php(31): wp_head()
+#23 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\loader\v2\editor-v2-loader.php(194): include('C:\\Users\\accou\\...')
+#24 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\editor.php(169): Elementor\Core\Editor\Loader\V2\Editor_V2_Loader->print_root_template()
+#25 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Editor\Editor->init('')
+#26 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#27 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#28 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-admin\admin.php(419): do_action('admin_action_el...')
+#29 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-admin\post.php(12): require_once('C:\\Users\\accou\\...')
+#30 {main}
+  thrown in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php on line 185
+[01-Oct-2024 01:31:10 UTC] PHP Fatal error:  Uncaught Error: Class "Elementor\Widget_WordPress" not found in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php:185
+Stack trace:
+#0 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php(117): Elementor\Widgets_Manager->register_wp_widgets()
+#1 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php(344): Elementor\Widgets_Manager->init_widgets()
+#2 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\modules\global-widget\module.php(52): Elementor\Widgets_Manager->get_widget_types()
+#3 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Modules\GlobalWidget\Module->add_templates_localize_data(Array)
+#4 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\core\editor\editor.php(80): apply_filters('elementor_pro/e...', Array)
+#6 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\base-object.php(142): ElementorPro\Core\Editor\Editor->get_init_settings()
+#7 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\base-object.php(40): Elementor\Core\Base\Base_Object->ensure_settings()
+#8 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\base\app.php(36): Elementor\Core\Base\Base_Object->get_settings()
+#9 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor-pro\core\editor\editor.php(112): Elementor\Core\Base\App->print_config('elementor-pro')
+#10 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): ElementorPro\Core\Editor\Editor->enqueue_editor_scripts('')
+#11 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\editor.php(359): do_action('elementor/edito...')
+#14 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Editor\Editor->enqueue_scripts('')
+#15 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#16 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\script-loader.php(2263): do_action('wp_enqueue_scri...')
+#18 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#19 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#20 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\general-template.php(3065): do_action('wp_head')
+#22 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\editor-templates\editor-wrapper.php(31): wp_head()
+#23 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\loader\v2\editor-v2-loader.php(194): include('C:\\Users\\accou\\...')
+#24 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\core\editor\editor.php(169): Elementor\Core\Editor\Loader\V2\Editor_V2_Loader->print_root_template()
+#25 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(324): Elementor\Core\Editor\Editor->init('')
+#26 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#27 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#28 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-admin\admin.php(419): do_action('admin_action_el...')
+#29 C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-admin\post.php(12): require_once('C:\\Users\\accou\\...')
+#30 {main}
+  thrown in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-content\plugins\elementor\includes\managers\widgets.php on line 185
+[01-Oct-2024 01:36:20 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:36:21 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:40:47 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:40:47 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:41:17 UTC] PHP Deprecated:  File Theme without header.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a header.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085
+[01-Oct-2024 01:41:17 UTC] PHP Deprecated:  File Theme without footer.php is <strong>deprecated</strong> since version 3.0.0 with no alternative available. Please include a footer.php template in your theme. in C:\Users\accou\Local Sites\cohesioncms2\app\public\wp-includes\functions.php on line 6085

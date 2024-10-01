@@ -920,7 +920,7 @@ exports["default"] = NestedViewBase;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var sprintf = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["sprintf"];
+/* provided dependency */ var sprintf = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["sprintf"];
 
 
 Object.defineProperty(exports, "__esModule", ({

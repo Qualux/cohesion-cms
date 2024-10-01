@@ -6,16 +6,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor cohesion widget.
+ * Elementor WordPress widget.
  *
- * Elementor widget that displays all the cohesion widgets.
+ * Elementor widget that displays all the WordPress widgets.
  *
  * @since 1.0.0
  */
 class Widget_WordPress extends Widget_Base {
 
 	/**
-	 * cohesion widget name.
+	 * WordPress widget name.
 	 *
 	 * @access private
 	 *
@@ -24,7 +24,7 @@ class Widget_WordPress extends Widget_Base {
 	private $_widget_name = null;
 
 	/**
-	 * cohesion widget instance.
+	 * WordPress widget instance.
 	 *
 	 * @access private
 	 *
@@ -39,7 +39,7 @@ class Widget_WordPress extends Widget_Base {
 	/**
 	 * Get widget name.
 	 *
-	 * Retrieve cohesion widget name.
+	 * Retrieve WordPress widget name.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -53,7 +53,7 @@ class Widget_WordPress extends Widget_Base {
 	/**
 	 * Get widget title.
 	 *
-	 * Retrieve cohesion widget title.
+	 * Retrieve WordPress widget title.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -67,31 +67,31 @@ class Widget_WordPress extends Widget_Base {
 	/**
 	 * Get widget categories.
 	 *
-	 * Retrieve the list of categories the cohesion widget belongs to.
+	 * Retrieve the list of categories the WordPress widget belongs to.
 	 *
 	 * Used to determine where to display the widget in the editor.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 *
-	 * @return array Widget categories. Returns either a cohesion category.
+	 * @return array Widget categories. Returns either a WordPress category.
 	 */
 	public function get_categories() {
-		return [ 'cohesion' ];
+		return [ 'wordpress' ];
 	}
 
 	/**
 	 * Get widget icon.
 	 *
-	 * Retrieve cohesion widget icon.
+	 * Retrieve WordPress widget icon.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 *
-	 * @return string Widget icon. Returns either a cohesion icon.
+	 * @return string Widget icon. Returns either a WordPress icon.
 	 */
 	public function get_icon() {
-		return 'eicon-cohesion';
+		return 'eicon-wordpress';
 	}
 
 	/**
@@ -105,7 +105,7 @@ class Widget_WordPress extends Widget_Base {
 	 * @return array Widget keywords.
 	 */
 	public function get_keywords() {
-		return [ 'cohesion', 'widget' ];
+		return [ 'wordpress', 'widget' ];
 	}
 
 	public function get_help_url() {
@@ -127,9 +127,9 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Retrieve cohesion widget form.
+	 * Retrieve WordPress widget form.
 	 *
-	 * Returns the cohesion widget form, to be used in Elementor.
+	 * Returns the WordPress widget form, to be used in Elementor.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -152,9 +152,9 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Retrieve cohesion widget instance.
+	 * Retrieve WordPress widget instance.
 	 *
-	 * Returns an instance of cohesion widget, to be used in Elementor.
+	 * Returns an instance of WordPress widget, to be used in Elementor.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -177,9 +177,9 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Retrieve cohesion widget parsed settings.
+	 * Retrieve WordPress widget parsed settings.
 	 *
-	 * Returns the cohesion widget settings, to be used in Elementor.
+	 * Returns the WordPress widget settings, to be used in Elementor.
 	 *
 	 * @access protected
 	 * @since 2.3.0
@@ -200,7 +200,7 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Register cohesion widget controls.
+	 * Register WordPress widget controls.
 	 *
 	 * Adds different input fields to allow the user to change and customize the widget settings.
 	 *
@@ -220,7 +220,7 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Render cohesion widget output on the frontend.
+	 * Render WordPress widget output on the frontend.
 	 *
 	 * Written in PHP and used to generate the final HTML.
 	 *
@@ -237,16 +237,16 @@ class Widget_WordPress extends Widget_Base {
 		];
 
 		/**
-		 * cohesion widget args.
+		 * WordPress widget args.
 		 *
-		 * Filters the cohesion widget arguments when they are rendered in Elementor panel.
+		 * Filters the WordPress widget arguments when they are rendered in Elementor panel.
 		 *
 		 * @since 1.0.0
 		 *
 		 * @param array            $default_widget_args Default widget arguments.
-		 * @param Widget_WordPress $this                The cohesion widget.
+		 * @param Widget_WordPress $this                The WordPress widget.
 		 */
-		$default_widget_args = apply_filters( 'elementor/widgets/cohesion/widget_args', $default_widget_args, $this );
+		$default_widget_args = apply_filters( 'elementor/widgets/wordpress/widget_args', $default_widget_args, $this );
 		$is_gallery_widget = 'wp-widget-media_gallery' === $this->get_name();
 
 		if ( $is_gallery_widget ) {
@@ -261,7 +261,7 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Render cohesion widget output in the editor.
+	 * Render WordPress widget output in the editor.
 	 *
 	 * Written as a Backbone JavaScript template and used to generate the live preview.
 	 *
@@ -271,9 +271,9 @@ class Widget_WordPress extends Widget_Base {
 	protected function content_template() {}
 
 	/**
-	 * cohesion widget constructor.
+	 * WordPress widget constructor.
 	 *
-	 * Used to run cohesion widget constructor.
+	 * Used to run WordPress widget constructor.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -288,7 +288,7 @@ class Widget_WordPress extends Widget_Base {
 	}
 
 	/**
-	 * Render cohesion widget as plain content.
+	 * Render WordPress widget as plain content.
 	 *
 	 * Override the default render behavior, don't render widget content.
 	 *

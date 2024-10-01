@@ -1019,7 +1019,7 @@ class Frontend extends App {
 
 			$fonts_url = $this->get_stable_google_fonts_url( $google_fonts['google'] );
 
-			wp_enqueue_style( 'google-fonts-' . $this->google_fonts_index, $fonts_url ); // phpcs:ignore cohesion.WP.EnqueuedResourceParameters.MissingVersion
+			wp_enqueue_style( 'google-fonts-' . $this->google_fonts_index, $fonts_url ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 		}
 
 		if ( ! empty( $google_fonts['early'] ) ) {
@@ -1030,7 +1030,7 @@ class Frontend extends App {
 
 				//printf( '<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/%s.css">', strtolower( str_replace( ' ', '', $current_font ) ) );
 
-				wp_enqueue_style( 'google-earlyaccess-' . $this->google_fonts_index, $ea_font_url ); // phpcs:ignore cohesion.WP.EnqueuedResourceParameters.MissingVersion
+				wp_enqueue_style( 'google-earlyaccess-' . $this->google_fonts_index, $ea_font_url ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
 			}
 		}
 
@@ -1310,7 +1310,7 @@ class Frontend extends App {
 	/**
 	 * Remove content filters.
 	 *
-	 * Remove cohesion default filters that conflicted with Elementor.
+	 * Remove WordPress default filters that conflicted with Elementor.
 	 *
 	 * @since 1.5.0
 	 * @access public
@@ -1501,7 +1501,7 @@ class Frontend extends App {
 	/**
 	 * Restore content filters.
 	 *
-	 * Restore removed cohesion filters that conflicted with Elementor.
+	 * Restore removed WordPress filters that conflicted with Elementor.
 	 *
 	 * @since 1.5.0
 	 * @access public

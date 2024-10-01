@@ -224,7 +224,7 @@ class App extends BaseApp {
 	 */
 	public function print_templates() {
 		foreach ( $this->templates as $template ) {
-			echo $template; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $template; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 

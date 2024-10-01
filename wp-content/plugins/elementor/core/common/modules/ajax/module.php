@@ -154,7 +154,7 @@ class Module extends BaseModule {
 		do_action( 'elementor/ajax/register_actions', $this );
 
 		if ( ! empty( $_REQUEST['actions'] ) ) {
-			// phpcs:ignore cohesion.Security.ValidatedSanitizedInput.InputNotSanitized, each action should sanitize its own data.
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, each action should sanitize its own data.
 			$this->requests = json_decode( wp_unslash( $_REQUEST['actions'] ), true );
 		}
 
@@ -273,9 +273,9 @@ class Module extends BaseModule {
 			header( 'Content-Encoding: gzip' );
 			header( 'Content-Length: ' . strlen( $response ) );
 
-			echo $response; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $response; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		} else {
-			echo $json; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $json; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		wp_die( '', '', [ 'response' => null ] );

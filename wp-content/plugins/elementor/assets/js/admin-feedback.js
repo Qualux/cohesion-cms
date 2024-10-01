@@ -3,7 +3,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/
@@ -46,7 +46,7 @@ var __webpack_exports__ = {};
 /*!************************************************!*\
   !*** ../assets/dev/js/admin/admin-feedback.js ***!
   \************************************************/
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 (function ($) {

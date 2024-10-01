@@ -152,12 +152,12 @@ class Module extends BaseModule {
 			],
 		];
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if ( empty( $_POST['data'] ) ) {
 			return $problem_error;
 		}
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$data = json_decode( Utils::get_super_global_value( $_POST, 'data' ), true );
 
 		if ( ! isset( $data['siteName'] ) ) {
@@ -209,12 +209,12 @@ class Module extends BaseModule {
 			],
 		];
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if ( empty( $_POST['data'] ) ) {
 			return $data_error;
 		}
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$data = json_decode( Utils::get_super_global_value( $_POST, 'data' ), true );
 
 		// If there is no attachment ID passed or it is not a valid ID, exit here.
@@ -259,7 +259,7 @@ class Module extends BaseModule {
 
 		$file = Utils::get_super_global_value( $_FILES, 'fileToUpload' );
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if ( ! is_array( $file ) || empty( $file['type'] ) ) {
 			return [
 				'status' => 'error',
@@ -344,7 +344,7 @@ class Module extends BaseModule {
 
 		$file = Utils::get_super_global_value( $_FILES, 'fileToUpload' ) ?? [];
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		if ( ! is_array( $file ) || empty( $file['type'] ) ) {
 			return [
 				'status' => 'error',
@@ -419,7 +419,7 @@ class Module extends BaseModule {
 	private function maybe_handle_ajax() {
 		$result = [];
 
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		switch ( Utils::get_super_global_value( $_POST, 'action' ) ) {
 			case 'elementor_update_site_name':
 				// If no value is passed for any reason, no need to update the site name.
@@ -441,7 +441,7 @@ class Module extends BaseModule {
 				$result = $this->maybe_update_onboarding_db_option();
 				break;
 			case 'elementor_save_onboarding_features':
-				// phpcs:ignore cohesion.Security.NonceVerification.Missing
+				// phpcs:ignore WordPress.Security.NonceVerification.Missing
 				$result = $this->get_component( 'features_usage' )->save_onboarding_features( Utils::get_super_global_value( $_POST, 'data' ) ?? [] );
 		}
 

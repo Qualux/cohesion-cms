@@ -39,7 +39,7 @@ class Elementor_Dev_Notice extends Base_Notice {
 	private $promotion_plugins = [
 		'woocommerce-beta-tester/woocommerce-beta-tester.php',
 		'wp-jquery-update-test/wp-jquery-update-test.php',
-		'cohesion-beta-tester/wp-beta-tester.php',
+		'wordpress-beta-tester/wp-beta-tester.php',
 		'gutenberg/gutenberg.php',
 	];
 

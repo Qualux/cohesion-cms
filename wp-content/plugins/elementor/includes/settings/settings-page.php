@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Elementor settings page.
  *
  * An abstract class that provides the needed properties and methods to handle
- * cohesion dashboard settings pages in inheriting classes.
+ * WordPress dashboard settings pages in inheriting classes.
  *
  * @since 1.0.0
  * @abstract
@@ -102,7 +102,7 @@ abstract class Settings_Page {
 	 */
 	public function __construct() {
 		// PHPCS - The user data is not used.
-		if ( ! empty( $_POST['option_page'] ) && static::PAGE_ID === $_POST['option_page'] ) { // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		if ( ! empty( $_POST['option_page'] ) && static::PAGE_ID === $_POST['option_page'] ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 			add_action( 'admin_init', [ $this, 'register_settings_fields' ] );
 		}
 	}
@@ -334,7 +334,7 @@ abstract class Settings_Page {
 					$sanitized_tab_label = esc_html( $tab['label'] );
 
 					// PHPCS - Escaped the relevant strings above.
-					echo "<a id='elementor-settings-tab-{$sanitized_tab_id}' class='nav-tab{$active_class}' href='#tab-{$sanitized_tab_id}'>{$sanitized_tab_label}</a>"; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					echo "<a id='elementor-settings-tab-{$sanitized_tab_id}' class='nav-tab{$active_class}' href='#tab-{$sanitized_tab_id}'>{$sanitized_tab_label}</a>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 				?>
 			</div>
@@ -356,7 +356,7 @@ abstract class Settings_Page {
 					$sanitized_tab_id = esc_attr( $tab_id );
 
 					// PHPCS - $active_class is a non-dynamic string and $sanitized_tab_id is escaped above.
-					echo "<div id='tab-{$sanitized_tab_id}' class='elementor-settings-form-page{$active_class}'>"; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					echo "<div id='tab-{$sanitized_tab_id}' class='elementor-settings-form-page{$active_class}'>"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 					foreach ( $tab['sections'] as $section_id => $section ) {
 						if ( ! $this->should_render_section( $section ) ) {

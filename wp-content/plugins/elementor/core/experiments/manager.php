@@ -145,7 +145,7 @@ class Manager extends Base_Object {
 						esc_html__( 'Back', 'elementor' )
 					);
 
-					wp_die( $message ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					wp_die( $message ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			};
 
@@ -758,10 +758,10 @@ class Manager extends Base_Object {
 
 		?>
 		<div class="e-experiment__title">
-			<div class="<?php echo $indicator_classes; ?>" data-tooltip="<?php echo $indicator_tooltip; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>"></div>
-			<label class="e-experiment__title__label" for="e-experiment-<?php echo $feature['name']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>"><?php echo $feature['title']; ?></label>
+			<div class="<?php echo $indicator_classes; ?>" data-tooltip="<?php echo $indicator_tooltip; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"></div>
+			<label class="e-experiment__title__label" for="e-experiment-<?php echo $feature['name']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>"><?php echo $feature['title']; ?></label>
 			<?php foreach ( $feature['tags'] as $tag ) { ?>
-				<span class="e-experiment__title__tag e-experiment__title__tag__<?php echo $tag['type']; ?>"><?php echo $tag['label']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?></span>
+				<span class="e-experiment__title__tag e-experiment__title__tag__<?php echo $tag['type']; ?>"><?php echo $tag['label']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 			<?php } ?>
 		</div>
 		<?php
@@ -937,7 +937,7 @@ class Manager extends Base_Object {
 	}
 
 	/**
-	 * The experiments page is a cohesion options page, which means all the experiments are registered via cohesion' register_settings(),
+	 * The experiments page is a WordPress options page, which means all the experiments are registered via WordPress' register_settings(),
 	 * and their states are being sent in the POST request when saving.
 	 * The options are being updated in a chronological order based on the POST data.
 	 * This behavior interferes with the experiments dependency mechanism because the data that's being sent can be in any order,

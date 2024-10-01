@@ -154,9 +154,9 @@ class Autoloader {
 			'Tracker' => 'includes/tracker.php',
 			'User' => 'includes/user.php',
 			'Utils' => 'includes/utils.php',
-			'Widget_WordPress' => 'includes/widgets/cohesion.php',
+			'Widget_WordPress' => 'includes/widgets/wordpress.php',
 			'Widgets_Manager' => 'includes/managers/widgets.php',
-			'WordPress_Widgets_Manager' => 'includes/managers/cohesion-widgets.php',
+			'WordPress_Widgets_Manager' => 'includes/managers/wordpress-widgets.php',
 		];
 
 		$controls_names = Controls_Manager::get_controls_names();

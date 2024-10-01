@@ -1127,7 +1127,7 @@ class Widget_Divider extends Widget_Base {
 				<<?php Utils::print_validated_html_tag( $settings['html_tag'] ); ?> <?php $this->print_render_attribute_string( 'text' ); ?>>
 				<?php
 				// PHPCS - the main text of a widget should not be escaped.
-				echo $settings['text']; // phpcs:ignore cohesion.Security.EscapeOutput ?>
+				echo $settings['text']; // phpcs:ignore WordPress.Security.EscapeOutput ?>
 				</<?php Utils::print_validated_html_tag( $settings['html_tag'] ); ?>>
 			<?php endif; ?>
 			</span>

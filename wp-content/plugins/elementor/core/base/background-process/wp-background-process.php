@@ -203,7 +203,7 @@ abstract class WP_Background_Process extends WP_Async_Request {
 
 		$key = $wpdb->esc_like( $this->identifier . '_batch_' ) . '%';
 
-		// phpcs:disable cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		// Can't use placeholders for table/column names, it will be wrapped by a single quote (') instead of a backquote (`).
 		$count = $wpdb->get_var( $wpdb->prepare( "
 			SELECT COUNT(*)
@@ -281,7 +281,7 @@ abstract class WP_Background_Process extends WP_Async_Request {
 
 		$key = $wpdb->esc_like( $this->identifier . '_batch_' ) . '%';
 
-		// phpcs:disable cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		// Can't use placeholders for table/column names, it will be wrapped by a single quote (') instead of a backquote (`).
 		$query = $wpdb->get_row( $wpdb->prepare( "
 			SELECT *
@@ -350,7 +350,7 @@ abstract class WP_Background_Process extends WP_Async_Request {
 	 * Memory exceeded
 	 *
 	 * Ensures the batch process never exceeds 90%
-	 * of the maximum cohesion memory.
+	 * of the maximum WordPress memory.
 	 *
 	 * @return bool
 	 */

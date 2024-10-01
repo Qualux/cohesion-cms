@@ -6944,7 +6944,7 @@ var HashCommands = /*#__PURE__*/function () {
         // Remove first '#' and split each '&'.
         var hashList = hash.substr(1).split('&');
         hashList.forEach(function (hashItem) {
-          // eslint-disable-next-line @cohesion/no-unused-vars-before-return
+          // eslint-disable-next-line @wordpress/no-unused-vars-before-return
           var _hashItem$split = hashItem.split('?'),
             _hashItem$split2 = (0, _slicedToArray2.default)(_hashItem$split, 2),
             rawCommand = _hashItem$split2[0],

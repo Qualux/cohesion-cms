@@ -527,7 +527,7 @@ class Module extends BaseModule {
 	 * Assign each ajax action to a method.
 	 */
 	private function maybe_handle_ajax() {
-		// phpcs:ignore cohesion.Security.NonceVerification.Missing
+		// phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$action = ElementorUtils::get_super_global_value( $_POST, 'action' );
 
 		try {
@@ -576,7 +576,7 @@ class Module extends BaseModule {
 	private function handle_upload_kit() {
 		// PHPCS - A URL that should contain special chars (auth headers information).
 		$file_url = isset( $_POST['e_import_file'] )
-			// phpcs:ignore cohesion.Security.ValidatedSanitizedInput.InputNotSanitized
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 			? wp_unslash( $_POST['e_import_file'] )
 			: '';
 
@@ -654,7 +654,7 @@ class Module extends BaseModule {
 	 */
 	private function handle_import_kit() {
 		// PHPCS - Already validated in caller function
-		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$tmp_folder_id = $settings['session'];
 
 		$import = $this->import_kit( $tmp_folder_id, $settings, true );
@@ -676,7 +676,7 @@ class Module extends BaseModule {
 	 */
 	private function handle_import_kit__runner() {
 		// PHPCS - Already validated in caller function
-		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$session_id = $settings['session'];
 		$runner = $settings['runner'];
 
@@ -702,7 +702,7 @@ class Module extends BaseModule {
 	 */
 	private function handle_export_kit() {
 		// PHPCS - Already validated in caller function
-		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$settings = json_decode( ElementorUtils::get_super_global_value( $_POST, 'data' ), true ); // phpcs:ignore WordPress.Security.NonceVerification.Missing
 		$export = $this->export_kit( $settings );
 
 		$file_name = $export['file_name'];
@@ -744,7 +744,7 @@ class Module extends BaseModule {
 	}
 
 	/**
-	 * Get labels of Elementor document types, Elementor Post types, cohesion Post types and Custom Post types.
+	 * Get labels of Elementor document types, Elementor Post types, WordPress Post types and Custom Post types.
 	 */
 	private function get_summary_titles() {
 		$summary_titles = [];

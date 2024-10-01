@@ -427,7 +427,7 @@ class Widget_Progress extends Widget_Base {
 			<div <?php $this->print_render_attribute_string( 'progress-bar' ); ?>>
 				<span <?php $this->print_render_attribute_string( 'inner_text' ); ?>><?php $this->print_unescaped_setting( 'inner_text' ); ?></span>
 				<?php if ( 'show' === $settings['display_percentage'] ) { ?>
-					<span class="elementor-progress-percentage"><?php echo $progress_percentage; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>%</span>
+					<span class="elementor-progress-percentage"><?php echo $progress_percentage; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>%</span>
 				<?php } ?>
 			</div>
 		</div>

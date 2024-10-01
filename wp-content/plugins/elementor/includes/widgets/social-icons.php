@@ -113,7 +113,7 @@ class Widget_Social_Icons extends Widget_Base {
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'social',
 				'default' => [
-					'value' => 'fab fa-cohesion',
+					'value' => 'fab fa-wordpress',
 					'library' => 'fa-brands',
 				],
 				'recommended' => [
@@ -168,7 +168,7 @@ class Widget_Social_Icons extends Widget_Base {
 						'weibo',
 						'weixin',
 						'whatsapp',
-						'cohesion',
+						'wordpress',
 						'xing',
 						'x-twitter',
 						'yelp',
@@ -609,7 +609,7 @@ class Widget_Social_Icons extends Widget_Base {
 
 				// add old default
 				if ( empty( $item['social'] ) && ! $migration_allowed ) {
-					$item['social'] = isset( $fallback_defaults[ $index ] ) ? $fallback_defaults[ $index ] : 'fa fa-cohesion';
+					$item['social'] = isset( $fallback_defaults[ $index ] ) ? $fallback_defaults[ $index ] : 'fa fa-wordpress';
 				}
 
 				if ( ! empty( $item['social'] ) ) {

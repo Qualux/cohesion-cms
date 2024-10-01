@@ -48,8 +48,8 @@ class Floating_Buttons extends PageBase {
 	}
 
 	public static function is_creating_floating_buttons_page() {
-		$action = ElementorUtils::get_super_global_value( $_POST, 'action' ); //phpcs:ignore cohesion.Security.NonceVerification.Missing
-		$post_id = ElementorUtils::get_super_global_value( $_POST, 'editor_post_id' ); //phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$action = ElementorUtils::get_super_global_value( $_POST, 'action' ); //phpcs:ignore WordPress.Security.NonceVerification.Missing
+		$post_id = ElementorUtils::get_super_global_value( $_POST, 'editor_post_id' ); //phpcs:ignore WordPress.Security.NonceVerification.Missing
 
 		return 'elementor_ajax' === $action && static::is_floating_buttons_type_meta_key( $post_id );
 	}
@@ -63,10 +63,10 @@ class Floating_Buttons extends PageBase {
 
 		if ( $plugin->preview->is_preview_mode( $this->get_main_id() ) ) {
 			// PHPCS - the method builder_wrapper is safe.
-			echo $plugin->preview->builder_wrapper( '' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $plugin->preview->builder_wrapper( '' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		} else {
 			// PHPCS - the method get_content is safe.
-			echo $this->get_content(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $this->get_content(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -223,7 +223,7 @@ class Floating_Buttons extends PageBase {
 		if ( 'elementor_library_type' === $column_name ) {
 			$admin_filter_url = admin_url( Source_Local::ADMIN_MENU_SLUG . '&elementor_library_type=' . $this->get_name() );
 			$meta = static::get_floating_element_type( $this->get_main_id() );
-			printf( '<a href="%s">%s</a>', $admin_filter_url, Module::get_floating_elements_types()[ $meta ] ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			printf( '<a href="%s">%s</a>', $admin_filter_url, Module::get_floating_elements_types()[ $meta ] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 

@@ -78,7 +78,7 @@ class Control_Image_Dimensions extends Control_Base_Multiple {
 	public function content_template() {
 		if ( ! $this->is_image_editor_supports() ) : ?>
 			<div class="elementor-panel-alert elementor-panel-alert-danger">
-				<?php echo esc_html__( 'The server does not have ImageMagick or GD installed and/or enabled! Any of these libraries are required for cohesion to be able to resize images. Please contact your server administrator to enable this before continuing.', 'elementor' ); ?>
+				<?php echo esc_html__( 'The server does not have ImageMagick or GD installed and/or enabled! Any of these libraries are required for WordPress to be able to resize images. Please contact your server administrator to enable this before continuing.', 'elementor' ); ?>
 			</div>
 			<?php
 			return;

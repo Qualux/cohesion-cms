@@ -509,7 +509,7 @@ class Tracker {
 		global $wpdb;
 		$table_name = $wpdb->prefix . Events_DB_Manager::TABLE_NAME;
 
-		// phpcs:disable cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		// phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		$results = $wpdb->get_results( "SELECT event_data FROM {$table_name}" );
 
 		$events_data = [];

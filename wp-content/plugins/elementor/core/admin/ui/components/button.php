@@ -66,7 +66,7 @@ class Button extends Base_Object {
 		$html .= '<span>' . sanitize_text_field( $options['text'] ) . '</span>';
 		$html .= '</' . $html_tag . '>';
 
-		echo $html; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**

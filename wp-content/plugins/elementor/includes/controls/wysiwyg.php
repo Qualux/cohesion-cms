@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Elementor WYSIWYG control.
  *
- * A base control for creating WYSIWYG control. Displays a cohesion WYSIWYG
+ * A base control for creating WYSIWYG control. Displays a WordPress WYSIWYG
  * (TinyMCE) editor.
  *
  * @since 1.0.0

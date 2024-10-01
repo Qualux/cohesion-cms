@@ -92,7 +92,7 @@ abstract class Base extends Base_Object {
 			if ( ! empty( $submenu_item['class'] ) ) {
 				global $submenu;
 
-				$submenu[ $args['menu_slug'] ][ $index + 1 ][4] = $submenu_item['class']; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+				$submenu[ $args['menu_slug'] ][ $index + 1 ][4] = $submenu_item['class']; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 			}
 		}
 	}
@@ -120,7 +120,7 @@ abstract class Base extends Base_Object {
 
 		$slug = $this->args['menu_slug'];
 
-		$menu[] = [ '', 'read', 'separator-' . $slug, '', 'wp-menu-separator ' . $slug ]; // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$menu[] = [ '', 'read', 'separator-' . $slug, '', 'wp-menu-separator ' . $slug ]; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 	}
 
 	private function rearrange_menu_separator( $menu_order ) {

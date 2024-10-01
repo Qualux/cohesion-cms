@@ -76,9 +76,9 @@ function elementor_fail_php_version() {
 }
 
 /**
- * Elementor admin notice for minimum cohesion version.
+ * Elementor admin notice for minimum WordPress version.
  *
- * Warning when the site doesn't have the minimum required cohesion version.
+ * Warning when the site doesn't have the minimum required WordPress version.
  *
  * @since 1.5.0
  *
@@ -86,10 +86,10 @@ function elementor_fail_php_version() {
  */
 function elementor_fail_wp_version() {
 	$html_message = sprintf(
-		'<div class="error"><h3>%1$s</h3><p>%2$s <a href="https://go.elementor.com/wp-dash-update-cohesion/" target="_blank">%3$s</a></p></div>',
-		esc_html__( 'Elementor isn’t running because cohesion is outdated.', 'elementor' ),
+		'<div class="error"><h3>%1$s</h3><p>%2$s <a href="https://go.elementor.com/wp-dash-update-wordpress/" target="_blank">%3$s</a></p></div>',
+		esc_html__( 'Elementor isn’t running because WordPress is outdated.', 'elementor' ),
 		sprintf(
-			/* translators: %s: cohesion version. */
+			/* translators: %s: WordPress version. */
 			esc_html__( 'Update to version %s and get back to creating!', 'elementor' ),
 			'6.3'
 		),

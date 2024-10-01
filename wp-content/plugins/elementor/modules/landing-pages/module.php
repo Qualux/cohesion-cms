@@ -222,7 +222,7 @@ class Module extends BaseModule {
 	/**
 	 * Is Current Admin Page Edit LP
 	 *
-	 * Checks whether the current page is a native cohesion edit page for a landing page.
+	 * Checks whether the current page is a native WordPress edit page for a landing page.
 	 */
 	private function is_landing_page_admin_edit() {
 		$screen = get_current_screen();
@@ -297,7 +297,7 @@ class Module extends BaseModule {
 	 * Remove Post Type Slug
 	 *
 	 * Landing Pages are supposed to act exactly like pages. This includes their URLs being directly under the site's
-	 * domain name. Since "Landing Pages" is a CPT, cohesion automatically adds the landing page slug as a prefix to
+	 * domain name. Since "Landing Pages" is a CPT, WordPress automatically adds the landing page slug as a prefix to
 	 * it's posts' permalinks. This method checks if the post's post type is Landing Pages, and if it is, it removes
 	 * the CPT slug from the requested post URL.
 	 *
@@ -350,7 +350,7 @@ class Module extends BaseModule {
 		// Create the post types property as an array and include the landing pages CPT in it.
 		$query_post_types = [ 'post', 'page', self::CPT ];
 
-		// Since cohesion determined this is supposed to be a page, we'll pre-set the post_type query arg to make sure
+		// Since WordPress determined this is supposed to be a page, we'll pre-set the post_type query arg to make sure
 		// it includes the Landing Page CPT, so when the query is parsed, our CPT will be a legitimate match to the
 		// Landing Page's permalink (that is directly under the domain, without a CPT slug prefix). In some cases,
 		// The 'name' property will be set, and in others it is the 'pagename', so we have to cover both cases.
@@ -374,7 +374,7 @@ class Module extends BaseModule {
 	 * This method runs after a page is not found in the database, but before a page is returned as a 404.
 	 * These cases are handled in this filter callback, that runs on the 'pre_handle_404' filter.
 	 *
-	 * In some cases (such as when a site uses custom permalink structures), cohesion's WP_Query does not identify a
+	 * In some cases (such as when a site uses custom permalink structures), WordPress's WP_Query does not identify a
 	 * Landing Page's URL as a post belonging to the Landing Page CPT. Some cases are handled successfully by the
 	 * adjust_landing_page_query() method, but some are not and still trigger a 404 process. This method handles such
 	 * cases by overriding the $wp_query global to fetch the correct landing page post entry.
@@ -420,7 +420,7 @@ class Module extends BaseModule {
 
 		// Only if such a Landing Page is found, override the query to fetch the correct page.
 		if ( ! empty( $possible_new_query->posts ) ) {
-			$wp_query = $possible_new_query; //phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+			$wp_query = $possible_new_query; //phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 		}
 
 		return false;
@@ -432,7 +432,7 @@ class Module extends BaseModule {
 		$this->register_landing_page_cpt();
 
 		// If there is a permalink structure set to the site, run the hooks that modify the Landing Pages permalinks to
-		// match cohesion' native 'Pages' post type.
+		// match WordPress' native 'Pages' post type.
 		if ( '' !== $this->permalink_structure ) {
 			// Landing Pages' post link needs to be modified to be identical to the pages permalink structure. This
 			// needs to happen in both the admin and the front end, since post links are also used in the admin pages.

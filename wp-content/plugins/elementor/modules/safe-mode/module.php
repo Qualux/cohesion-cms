@@ -275,7 +275,7 @@ class Module extends \Elementor\Core\Base\Module {
 								printf(
 									/* translators: %1$s Link open tag, %2$s: Link close tag. */
 									esc_html__( '%1$sClick here%2$s to troubleshoot', 'elementor' ),
-									'<a href="' . self::DOCS_HELPED_URL . '" target="_blank">', // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+									'<a href="' . self::DOCS_HELPED_URL . '" target="_blank">', // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									'</a>'
 								);
 							?>
@@ -288,7 +288,7 @@ class Module extends \Elementor\Core\Base\Module {
 								printf(
 									/* translators: %1$s Link open tag, %2$s: Link close tag. */
 									esc_html__( '%1$sClick here%2$s to troubleshoot', 'elementor' ),
-									'<a href="' . self::DOCS_DIDNT_HELP_URL . '" target="_blank">', // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+									'<a href="' . self::DOCS_DIDNT_HELP_URL . '" target="_blank">', // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									'</a>'
 								);
 							?>
@@ -304,7 +304,7 @@ class Module extends \Elementor\Core\Base\Module {
 						printf(
 							/* translators: %1$s Link open tag, %2$s: Link close tag. */
 							esc_html__( 'Please note! We couldn\'t deactivate all of your plugins on Safe Mode. Please %1$sread more%2$s about this issue', 'elementor' ),
-							'<a href="' . self::DOCS_MU_PLUGINS_URL . '" target="_blank">', // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+							'<a href="' . self::DOCS_MU_PLUGINS_URL . '" target="_blank">', // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 							'</a>'
 						);
 						?>
@@ -401,7 +401,7 @@ class Module extends \Elementor\Core\Base\Module {
 								data: {
 									editor_post_id: '<?php
 										// PHPCS - the method get_post_id is safe.
-										echo Plugin::$instance->editor->get_post_id(); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+										echo Plugin::$instance->editor->get_post_id(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 									?>',
 								},
 								success: function( url ) {

@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Elementor gallery control.
  *
- * A base control for creating gallery chooser control. Based on the cohesion
- * media library galleries. Used to select images from the cohesion media library.
+ * A base control for creating gallery chooser control. Based on the WordPress
+ * media library galleries. Used to select images from the WordPress media library.
  *
  * @since 1.0.0
  */

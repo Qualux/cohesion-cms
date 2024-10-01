@@ -9,9 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * cohesion eXtended RSS file parser implementations,
- * Originally made by cohesion part of cohesion/Importer.
- * https://plugins.trac.cohesion.org/browser/cohesion-importer/trunk/parsers/class-wxr-parser-simplexml.php
+ * WordPress eXtended RSS file parser implementations,
+ * Originally made by WordPress part of WordPress/Importer.
+ * https://plugins.trac.wordpress.org/browser/wordpress-importer/trunk/parsers/class-wxr-parser-simplexml.php
  *
  * What was done:
  * Reformat of the code.
@@ -94,10 +94,10 @@ class WXR_Parser_SimpleXML {
 
 		$namespaces = $xml->getDocNamespaces();
 		if ( ! isset( $namespaces['wp'] ) ) {
-			$namespaces['wp'] = 'http://cohesion.org/export/1.1/';
+			$namespaces['wp'] = 'http://wordpress.org/export/1.1/';
 		}
 		if ( ! isset( $namespaces['excerpt'] ) ) {
-			$namespaces['excerpt'] = 'http://cohesion.org/export/1.1/excerpt/';
+			$namespaces['excerpt'] = 'http://wordpress.org/export/1.1/excerpt/';
 		}
 
 		// Grab authors.

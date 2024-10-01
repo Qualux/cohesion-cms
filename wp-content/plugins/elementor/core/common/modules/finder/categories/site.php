@@ -48,41 +48,41 @@ class Site extends Base_Category {
 				'icon' => 'home-heart',
 				'keywords' => [ 'home', 'page' ],
 			],
-			'cohesion-dashboard' => [
+			'wordpress-dashboard' => [
 				'title' => esc_html__( 'Dashboard', 'elementor' ),
 				'icon' => 'dashboard',
 				'url' => admin_url(),
-				'keywords' => [ 'dashboard', 'cohesion' ],
+				'keywords' => [ 'dashboard', 'wordpress' ],
 			],
-			'cohesion-menus' => [
+			'wordpress-menus' => [
 				'title' => esc_html__( 'Menus', 'elementor' ),
-				'icon' => 'cohesion',
+				'icon' => 'wordpress',
 				'url' => admin_url( 'nav-menus.php' ),
-				'keywords' => [ 'menu', 'cohesion' ],
+				'keywords' => [ 'menu', 'wordpress' ],
 			],
-			'cohesion-themes' => [
+			'wordpress-themes' => [
 				'title' => esc_html__( 'Themes', 'elementor' ),
-				'icon' => 'cohesion',
+				'icon' => 'wordpress',
 				'url' => admin_url( 'themes.php' ),
-				'keywords' => [ 'themes', 'cohesion' ],
+				'keywords' => [ 'themes', 'wordpress' ],
 			],
-			'cohesion-customizer' => [
+			'wordpress-customizer' => [
 				'title' => esc_html__( 'Customizer', 'elementor' ),
-				'icon' => 'cohesion',
+				'icon' => 'wordpress',
 				'url' => admin_url( 'customize.php' ),
-				'keywords' => [ 'customizer', 'cohesion' ],
+				'keywords' => [ 'customizer', 'wordpress' ],
 			],
-			'cohesion-plugins' => [
+			'wordpress-plugins' => [
 				'title' => esc_html__( 'Plugins', 'elementor' ),
-				'icon' => 'cohesion',
+				'icon' => 'wordpress',
 				'url' => admin_url( 'plugins.php' ),
-				'keywords' => [ 'plugins', 'cohesion' ],
+				'keywords' => [ 'plugins', 'wordpress' ],
 			],
-			'cohesion-users' => [
+			'wordpress-users' => [
 				'title' => esc_html__( 'Users', 'elementor' ),
-				'icon' => 'cohesion',
+				'icon' => 'wordpress',
 				'url' => admin_url( 'users.php' ),
-				'keywords' => [ 'users', 'profile', 'cohesion' ],
+				'keywords' => [ 'users', 'profile', 'wordpress' ],
 			],
 		];
 	}

@@ -32,7 +32,7 @@ class Embed {
 		'vimeo' => '/^.*vimeo\.com\/(?:[a-z]*\/)*([‌​0-9]{6,11})[?]?.*/',
 		'dailymotion' => '/^.*dailymotion.com\/(?:video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/',
 		'videopress' => [
-			'/^(?:http(?:s)?:\/\/)?videos\.files\.cohesion\.com\/([a-zA-Z\d]{8,})\//i',
+			'/^(?:http(?:s)?:\/\/)?videos\.files\.wordpress\.com\/([a-zA-Z\d]{8,})\//i',
 			'/^(?:http(?:s)?:\/\/)?(?:www\.)?video(?:\.word)?press\.com\/(?:v|embed)\/([a-zA-Z\d]{8,})(.+)?/i',
 		],
 	];
@@ -123,7 +123,7 @@ class Embed {
 			$time_text = '';
 
 			if ( ! empty( $options['start'] ) ) {
-				$time_text = date( 'H\hi\ms\s', $options['start'] ); // PHPCS:Ignore cohesion.DateTime.RestrictedFunctions.date_date
+				$time_text = date( 'H\hi\ms\s', $options['start'] ); // PHPCS:Ignore WordPress.DateTime.RestrictedFunctions.date_date
 			}
 
 			$replacements['{TIME}'] = $time_text;

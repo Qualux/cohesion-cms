@@ -12,8 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Elementor media control.
  *
- * A base control for creating a media chooser control. Based on the cohesion
- * media library. Used to select an image from the cohesion media library.
+ * A base control for creating a media chooser control. Based on the WordPress
+ * media library. Used to select an image from the WordPress media library.
  *
  * @since 1.0.0
  */
@@ -85,7 +85,7 @@ class Control_Media extends Control_Base_Multiple {
 	/**
 	 * Support SVG and JSON Import
 	 *
-	 * Called by the 'upload_mimes' filter. Adds SVG and JSON mime types to the list of cohesion' allowed mime types.
+	 * Called by the 'upload_mimes' filter. Adds SVG and JSON mime types to the list of WordPress' allowed mime types.
 	 *
 	 * @since 3.4.6
 	 * @deprecated 3.5.0

@@ -1,6 +1,6 @@
 /*! @elementor/editor-v1-adapters */
 
-/*! @cohesion/i18n */
+/*! @wordpress/i18n */
 
 /*! react */
 

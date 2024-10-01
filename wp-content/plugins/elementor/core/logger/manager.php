@@ -125,7 +125,7 @@ class Manager extends BaseModule {
 		$ajax = Plugin::$instance->common->get_component( 'ajax' );
 
 		// PHPCS ignore is added throughout this method because nonce verification happens in the $ajax->verify_request_nonce() method.
-		if ( ! $ajax->verify_request_nonce() || empty( $_POST['data'] ) ) { // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		if ( ! $ajax->verify_request_nonce() || empty( $_POST['data'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 			wp_send_json_error();
 		}
 
@@ -134,14 +134,14 @@ class Manager extends BaseModule {
 		}
 
 		// PHPCS - See comment above.
-		$data = Utils::get_super_global_value( $_POST, 'data' ) ?? []; // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		$data = Utils::get_super_global_value( $_POST, 'data' ) ?? []; // phpcs:ignore WordPress.Security.NonceVerification.Missing
 
 		array_walk_recursive( $data, function( &$value ) {
 			$value = sanitize_text_field( $value );
 		} );
 
 		// PHPCS - See comment above.
-		foreach ( $data as $error ) { // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		foreach ( $data as $error ) { // phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$error['type'] = Logger_Interface::LEVEL_ERROR;
 
 			if ( ! empty( $error['customFields'] ) ) {

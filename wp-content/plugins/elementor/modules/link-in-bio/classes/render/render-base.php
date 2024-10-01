@@ -56,7 +56,7 @@ abstract class Render_Base {
 		] );
 		?>
 
-		<div <?php echo $this->widget->get_render_attribute_string( 'image-links' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'image-links' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<?php
 			foreach ( $image_links_value as $key => $image_link ) {
 				$formatted_link = $image_link['image_links_url']['url'] ?? '';
@@ -84,7 +84,7 @@ abstract class Render_Base {
 					] );
 				}
 				?>
-				<a <?php echo $this->widget->get_render_attribute_string( 'image-links-link' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+				<a <?php echo $this->widget->get_render_attribute_string( 'image-links-link' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 					<?php if ( ! empty( $image_link_image['id'] ) ) {
 						echo wp_get_attachment_image( $image_link_image['id'], 'thumbnail', false, [
 							'class' => 'e-link-in-bio__image-links-img',
@@ -96,7 +96,7 @@ abstract class Render_Base {
 							'src' => esc_url( $image_link_image['url'] ),
 						] );
 						?>
-						<img <?php echo $this->widget->get_render_attribute_string( 'image-links-img-' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?> />
+						<img <?php echo $this->widget->get_render_attribute_string( 'image-links-img-' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> />
 					<?php }; ?>
 				</a>
 			<?php } ?>
@@ -126,7 +126,7 @@ abstract class Render_Base {
 		] );
 		?>
 
-		<div <?php echo $this->widget->get_render_attribute_string( 'ctas' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'ctas' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<?php
 			foreach ( $ctas_value as $key => $cta ) {
 				$formatted_link = $this->get_formatted_link_based_on_type_for_cta( $cta );
@@ -182,7 +182,7 @@ abstract class Render_Base {
 					] );
 				}
 				?>
-				<a <?php echo $this->widget->get_render_attribute_string( 'cta-' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+				<a <?php echo $this->widget->get_render_attribute_string( 'cta-' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 					<?php if ( $cta_has_image ) : ?>
 						<span class="e-link-in-bio__cta-image">
 							<?php if ( ! empty( $cta_image['id'] ) ) {
@@ -196,7 +196,7 @@ abstract class Render_Base {
 									'src' => esc_url( $cta_image['url'] ),
 								] );
 								?>
-								<img <?php echo $this->widget->get_render_attribute_string( 'cta-link-image' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?> />
+								<img <?php echo $this->widget->get_render_attribute_string( 'cta-link-image' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> />
 							<?php }; ?>
 						</span>
 					<?php endif; ?>
@@ -223,7 +223,7 @@ abstract class Render_Base {
 			'class' => 'e-link-in-bio__icons has-size-' . $icons_props_size,
 		] );
 		?>
-		<div <?php echo $this->widget->get_render_attribute_string( 'icons' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'icons' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<?php
 			foreach ( $icons_value as $key => $icon ) {
 
@@ -264,8 +264,8 @@ abstract class Render_Base {
 					] );
 				}
 				?>
-				<div <?php echo $this->widget->get_render_attribute_string( 'icon-' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
-					<a <?php echo $this->widget->get_render_attribute_string( 'icon-link-' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+				<div <?php echo $this->widget->get_render_attribute_string( 'icon-' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
+					<a <?php echo $this->widget->get_render_attribute_string( 'icon-link-' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 						<span class="e-link-in-bio__icon-svg">
 							<?php
 							$mapping = Social_Network_Provider::get_icon_mapping( $icon['icon_platform'] );
@@ -413,7 +413,7 @@ abstract class Render_Base {
 						'class' => $this->get_image_classnames( $image ),
 					] );
 					?>
-						<div <?php echo $this->widget->get_render_attribute_string( 'identity_image_' . $image_key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+						<div <?php echo $this->widget->get_render_attribute_string( 'identity_image_' . $image_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 							<?php if ( ! empty( $image['value']['id'] ) ) {
 								echo wp_get_attachment_image( $image['value']['id'], 'medium', false, [
 									'class' => 'e-link-in-bio__identity-image-element',
@@ -425,7 +425,7 @@ abstract class Render_Base {
 									'src' => esc_url( $image['value']['url'] ),
 								] );
 								?>
-								<img <?php echo $this->widget->get_render_attribute_string( 'identity_image_src' . $image_key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?> />
+								<img <?php echo $this->widget->get_render_attribute_string( 'identity_image_src' . $image_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> />
 
 							<?php }; ?>
 							<?php

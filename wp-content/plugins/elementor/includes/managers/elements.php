@@ -327,7 +327,7 @@ class Elements_Manager {
 		/**
 		 * When categories are registered.
 		 *
-		 * Fires after basic categories are registered, before cohesion
+		 * Fires after basic categories are registered, before WordPress
 		 * category have been registered.
 		 *
 		 * This is where categories registered by external developers are
@@ -339,9 +339,9 @@ class Elements_Manager {
 		 */
 		do_action( 'elementor/elements/categories_registered', $this );
 
-		$this->categories['cohesion'] = [
-			'title' => esc_html__( 'cohesion', 'elementor' ),
-			'icon' => 'eicon-cohesion',
+		$this->categories['wordpress'] = [
+			'title' => esc_html__( 'WordPress', 'elementor' ),
+			'icon' => 'eicon-wordpress',
 			'active' => false,
 		];
 	}

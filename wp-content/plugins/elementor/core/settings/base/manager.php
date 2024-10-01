@@ -270,7 +270,7 @@ abstract class Manager {
 		<#
 		const tabs = elementor.config.settings.<?php
 			// PHPCS - the variable $name does not contain a user input value.
-			echo $name; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo $name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		?>.tabs;
 
 		if ( Object.values( tabs ).length > 1 ) { #>
@@ -278,7 +278,7 @@ abstract class Manager {
 				<# _.each( tabs, function( tabTitle, tabSlug ) {
 					$e.bc.ensureTab( 'panel/<?php
 						// PHPCS - the variable $name does not contain a user input value.
-						echo $name; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+						echo $name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?>-settings', tabSlug ); #>
 					<button class="elementor-component-tab elementor-panel-navigation-tab elementor-tab-control-{{ tabSlug }}" data-tab="{{ tabSlug }}">
 						<span>{{{ tabTitle }}}</span>

@@ -189,7 +189,7 @@ class Admin extends App {
 	 * Print switch mode button.
 	 *
 	 * Adds a switch button in post edit screen (which has cpt support). To allow
-	 * the user to switch from the native cohesion editor to Elementor builder.
+	 * the user to switch from the native WordPress editor to Elementor builder.
 	 *
 	 * Fired by `edit_form_after_title` action.
 	 *
@@ -217,7 +217,7 @@ class Admin extends App {
 			<button id="elementor-switch-mode-button" type="button" class="button button-primary button-hero">
 				<span class="elementor-switch-mode-on">
 					<i class="eicon-arrow-<?php echo ( is_rtl() ) ? 'right' : 'left'; ?>" aria-hidden="true"></i>
-					<?php echo esc_html__( 'Back to cohesion Editor', 'elementor' ); ?>
+					<?php echo esc_html__( 'Back to WordPress Editor', 'elementor' ); ?>
 				</span>
 				<span class="elementor-switch-mode-off">
 					<i class="eicon-elementor-square" aria-hidden="true"></i>
@@ -418,7 +418,7 @@ class Admin extends App {
 	/**
 	 * Register dashboard widgets.
 	 *
-	 * Adds a new Elementor widgets to cohesion dashboard.
+	 * Adds a new Elementor widgets to WordPress dashboard.
 	 *
 	 * Fired by `wp_dashboard_setup` action.
 	 *
@@ -436,7 +436,7 @@ class Admin extends App {
 			'e-dashboard-overview' => $dashboard['e-dashboard-overview'],
 		];
 
-		$wp_meta_boxes['dashboard']['normal']['core'] = array_merge( $ours, $dashboard ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$wp_meta_boxes['dashboard']['normal']['core'] = array_merge( $ours, $dashboard ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 	}
 
 	/**
@@ -485,7 +485,7 @@ class Admin extends App {
 					<div class="e-logo-wrapper"><i class="eicon-elementor"></i></div>
 				</div>
 				<div class="e-overview__versions">
-					<span class="e-overview__version"><?php echo esc_html__( 'Elementor', 'elementor' ); ?> v<?php echo ELEMENTOR_VERSION; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?></span>
+					<span class="e-overview__version"><?php echo esc_html__( 'Elementor', 'elementor' ); ?> v<?php echo ELEMENTOR_VERSION; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 					<?php
 					/**
 					 * Elementor dashboard widget after the version.
@@ -535,7 +535,7 @@ class Admin extends App {
 						<li class="e-overview__post">
 							<a href="<?php echo esc_url( $document->get_edit_url() ); ?>" class="e-overview__post-link"><?php echo esc_html( get_the_title() ); ?>
 								<span class="dashicons dashicons-edit"></span></a>
-							<span><?php echo $date; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>, <?php the_modified_time(); ?></span>
+							<span><?php echo $date; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>, <?php the_modified_time(); ?></span>
 						</li>
 					<?php } ?>
 				</ul>
@@ -723,7 +723,7 @@ class Admin extends App {
 		$document = Plugin::$instance->documents->create( $type, $post_data, $meta );
 
 		if ( is_wp_error( $document ) ) {
-			wp_die( $document ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			wp_die( $document ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 
 		wp_redirect( $document->get_edit_url() );
@@ -871,7 +871,7 @@ class Admin extends App {
 	/**
 	 * Admin constructor.
 	 *
-	 * Initializing Elementor in cohesion admin.
+	 * Initializing Elementor in WordPress admin.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -947,7 +947,7 @@ class Admin extends App {
 		 *
 		 * Filters the initial localize settings in the admin.
 		 *
-		 * cohesion has it's own way to pass localized data from PHP (backend) to
+		 * WordPress has it's own way to pass localized data from PHP (backend) to
 		 * JS (frontend). Elementor uses this method to pass localize data in the
 		 * admin. This hook can be used to add more localized settings in addition
 		 * to the initial Elementor settings.

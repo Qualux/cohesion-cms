@@ -275,7 +275,7 @@ class Admin_Notices extends Module {
 
 		$options = [
 			'title' => esc_html__( 'Congrats!', 'elementor' ),
-			'description' => esc_html__( 'You created over 10 pages with Elementor. Great job! If you can spare a minute, please help us by leaving a five star review on cohesion.org.', 'elementor' ),
+			'description' => esc_html__( 'You created over 10 pages with Elementor. Great job! If you can spare a minute, please help us by leaving a five star review on WordPress.org.', 'elementor' ),
 			'id' => $notice_id,
 			'button' => [
 				'text' => esc_html__( 'Happy To Help', 'elementor' ),
@@ -534,9 +534,9 @@ class Admin_Notices extends Module {
 		}
 		?>
 		<div <?php Utils::print_html_attributes( $wrapper_attributes ); ?>>
-			<?php echo $dismiss_button; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+			<?php echo $dismiss_button; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			<div class="e-notice__aside">
-				<?php echo $icon; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>
+				<?php echo $icon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 			</div>
 			<div class="e-notice__content">
 				<?php if ( $options['title'] ) { ?>

@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * This class is responsible for the interaction with cohesion Core API.
+ * This class is responsible for the interaction with WordPress Core API.
  * The main benefit is making it easy to mock in testing
- * and it can help to create unit tests without the hustle of mocking cohesion itself.
+ * and it can help to create unit tests without the hustle of mocking WordPress itself.
  */
 class Wp_Api {
 	/**

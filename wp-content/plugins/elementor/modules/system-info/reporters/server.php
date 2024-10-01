@@ -166,11 +166,11 @@ class Server extends Base {
 
 		if ( $memory_limit_bytes < $min_recommended_bytes ) {
 			$result['recommendation'] = sprintf(
-				/* translators: 1: Minimum recommended_memory, 2: Preferred memory, 3: cohesion wp-config memory documentation. */
+				/* translators: 1: Minimum recommended_memory, 2: Preferred memory, 3: WordPress wp-config memory documentation. */
 				__( 'We recommend setting memory to at least %1$s. (%2$s or higher is preferred) For more information, read about <a href="%3$s">how to increase memory allocated to PHP</a>.', 'elementor' ),
 				$min_recommended_memory,
 				$preferred_memory,
-				'https://go.elementor.com/cohesion-wp-config-memory/'
+				'https://go.elementor.com/wordpress-wp-config-memory/'
 			);
 
 			$result['warning'] = true;
@@ -327,7 +327,7 @@ class Server extends Base {
 		$write_problems = [];
 
 		if ( ! $paths_permissions[ static::KEY_PATH_UPLOADS_DIR ]['write'] ) {
-			$write_problems[] = 'cohesion uploads directory';
+			$write_problems[] = 'WordPress uploads directory';
 		}
 
 		if ( $paths_permissions[ self::KEY_PATH_ELEMENTOR_UPLOADS_DIR ]['exists'] && ! $paths_permissions[ self::KEY_PATH_ELEMENTOR_UPLOADS_DIR ]['write'] ) {

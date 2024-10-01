@@ -30,7 +30,7 @@ class Atomic_Image extends Atomic_Widget_Base {
 		// TODO: Replace with actual URL prop
 		$image_url = $settings['url'];
 
-		// phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo "<img src='" . esc_url( $image_url ) . "' />";
 	}
 

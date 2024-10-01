@@ -243,7 +243,7 @@ exports["default"] = TemplateControls;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -407,7 +407,7 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -598,7 +598,7 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -1027,7 +1027,7 @@ var FloatingButtonsHandler = /*#__PURE__*/function (_AdminMenuHandler) {
         isContactPagesTrashPage = !!window.location.href.includes(settings.paths.contactPagesTrashPage),
         isLContactPagesCreateYourFirstPage = !!window.location.href.includes(settings.paths.contactPagesAddNewPage);
 
-      // We need this because there is a complex bug in the cohesion admin menu that causes the Contact Menu to be broken
+      // We need this because there is a complex bug in the WordPress admin menu that causes the Contact Menu to be broken
       // When the links page has at least one post and the contact page has none.
       if ((_elementorAdminConfig = elementorAdminConfig.urls) !== null && _elementorAdminConfig !== void 0 && _elementorAdminConfig.viewContactPageUrl) {
         this.elements.$templatesMenuItem.find('li.submenu-e-contact a').attr('href', elementorAdminConfig.urls.viewContactPageUrl);
@@ -1092,7 +1092,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
           paths: paths
         };
 
-      // This class modifies elements in the cohesion admin that are rendered "wrong" by the cohesion core
+      // This class modifies elements in the WordPress admin that are rendered "wrong" by the WordPress core
       // and could not be modified in the backend.
       new _floatingButtons.default(args);
     }
@@ -1171,7 +1171,7 @@ var LandingPagesHandler = /*#__PURE__*/function (_AdminMenuHandler) {
         isLandingPagesCreateYourFirstPage = !!window.location.href.includes(settings.paths.landingPagesAddNewPage);
 
       // If the current page is a Landing Pages Page (the Posts Table page, "Create Your First.." page, or a native
-      // cohesion dashboard page edit screen when using cohesion' Classic Editor).
+      // WordPress dashboard page edit screen when using WordPress' Classic Editor).
       if (isLandingPagesTablePage || isLandingPagesTrashPage || isLandingPagesCreateYourFirstPage || settings.isLandingPageAdminEdit) {
         // Make sure the active admin top level menu item is 'Templates', and not 'Pages'.
         this.highlightTopLevelMenuItem(this.elements.$templatesMenuItem, this.elements.$pagesMenuItemAndLink);
@@ -1238,7 +1238,7 @@ var _default = /*#__PURE__*/function (_elementorModules$Mod) {
           paths: paths
         };
 
-      // This class modifies elements in the cohesion admin that are rendered "wrong" by the cohesion core
+      // This class modifies elements in the WordPress admin that are rendered "wrong" by the WordPress core
       // and could not be modified in the backend.
       new _landingPages.default(args);
     }
@@ -1249,7 +1249,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/
@@ -2066,7 +2066,7 @@ var __webpack_exports__ = {};
 /*!***************************************!*\
   !*** ../assets/dev/js/admin/admin.js ***!
   \***************************************/
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -2120,8 +2120,8 @@ var _module3 = _interopRequireDefault(__webpack_require__(/*! elementor/modules/
         event.preventDefault();
         if (self.isElementorMode()) {
           elementorCommon.dialogsManager.createWidget('confirm', {
-            message: __('Please note that you are switching to cohesion default editor. Your current layout, design and content might break.', 'elementor'),
-            headerMessage: __('Back to cohesion Editor', 'elementor'),
+            message: __('Please note that you are switching to WordPress default editor. Your current layout, design and content might break.', 'elementor'),
+            headerMessage: __('Back to WordPress Editor', 'elementor'),
             strings: {
               confirm: __('Continue', 'elementor'),
               cancel: __('Cancel', 'elementor')

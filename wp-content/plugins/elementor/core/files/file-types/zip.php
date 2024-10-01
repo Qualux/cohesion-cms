@@ -123,7 +123,7 @@ class Zip extends Base {
 	private function get_allowed_files( $zip, $allowed_file_types ) {
 		$allowed_files = [];
 
-		// phpcs:ignore cohesion.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
+		// phpcs:ignore WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase
 		for ( $i = 0; $i < $zip->numFiles; $i++ ) {
 			$filename = $zip->getNameIndex( $i );
 			$extension = pathinfo( $filename, PATHINFO_EXTENSION );

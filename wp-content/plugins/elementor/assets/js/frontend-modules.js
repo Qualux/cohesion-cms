@@ -2109,11 +2109,11 @@ class FloatingBarsHandler extends _base.default {
       return;
     }
 
-    /* eslint-disable @cohesion/no-global-active-element */
+    /* eslint-disable @wordpress/no-global-active-element */
     if (this.elements.main.contains(document.activeElement)) {
       this.closeFloatingBar();
     }
-    /* eslint-enable @cohesion/no-global-active-element */
+    /* eslint-enable @wordpress/no-global-active-element */
   }
 
   initDefaultState() {
@@ -2258,11 +2258,11 @@ class ContactButtonsHandler extends _base.default {
       return;
     }
 
-    /* eslint-disable @cohesion/no-global-active-element */
+    /* eslint-disable @wordpress/no-global-active-element */
     if (!this.contentWrapperIsHidden() && this.elements.main.contains(document.activeElement)) {
       this.closeChatBox();
     }
-    /* eslint-enable @cohesion/no-global-active-element */
+    /* eslint-enable @wordpress/no-global-active-element */
   }
 
   removeAnimationClasses() {

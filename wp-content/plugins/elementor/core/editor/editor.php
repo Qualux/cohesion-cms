@@ -128,7 +128,7 @@ class Editor {
 
 		add_filter( 'show_admin_bar', '__return_false' );
 
-		// Remove all cohesion actions
+		// Remove all WordPress actions
 		remove_all_actions( 'wp_head' );
 		remove_all_actions( 'wp_print_styles' );
 		remove_all_actions( 'wp_print_head_scripts' );
@@ -344,8 +344,8 @@ class Editor {
 		global $wp_styles, $wp_scripts;
 
 		// Reset global variable
-		$wp_styles = new \WP_Styles(); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
-		$wp_scripts = new \WP_Scripts(); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$wp_styles = new \WP_Styles(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+		$wp_scripts = new \WP_Scripts(); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		$this->get_loader()->register_scripts();
 
@@ -569,7 +569,7 @@ class Editor {
 	public function filter_wp_link_query( $results ) {
 
 		// PHPCS - The user data is not used.
-		if ( isset( $_POST['editor'] ) && 'elementor' === $_POST['editor'] ) {  // phpcs:ignore cohesion.Security.NonceVerification.Missing
+		if ( isset( $_POST['editor'] ) && 'elementor' === $_POST['editor'] ) {  // phpcs:ignore WordPress.Security.NonceVerification.Missing
 			$post_type_object = get_post_type_object( 'post' );
 			$post_label = $post_type_object->labels->singular_name;
 

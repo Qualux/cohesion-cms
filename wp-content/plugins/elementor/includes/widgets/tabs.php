@@ -521,7 +521,7 @@ class Widget_Tabs extends Widget_Base {
 					?>
 					<div <?php $this->print_render_attribute_string( $tab_title_setting_key ); ?>><?php
 						// PHPCS - the main text of a widget should not be escaped.
-						echo $item['tab_title']; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+						echo $item['tab_title']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?></div>
 				<?php endforeach; ?>
 			</div>

@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<input type="hidden" name="template_type" value="<?php echo esc_attr( Module::FLOATING_BUTTONS_DOCUMENT_TYPE ); ?>">
 		<input type="hidden" name="action" value="elementor_new_post">
 		<?php // PHPCS - a nonce doesn't have to be escaped. ?>
-		<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'elementor_action_new_post' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>">
+		<input type="hidden" name="_wpnonce" value="<?php echo wp_create_nonce( 'elementor_action_new_post' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
 		<div id="elementor-new-template__form___elementor_source__wrapper" class="elementor-form-field">
 			<label for="elementor-new-template__form___elementor_source" class="elementor-form-field__label">
 				<?php echo esc_html__( 'Choose Floating Element', 'elementor' ); ?>

@@ -92,7 +92,7 @@ abstract class Contact_Buttons_Render_Base {
 
 		?>
 		<div class="e-contact-buttons__chat-button-container">
-			<button <?php echo $this->widget->get_render_attribute_string( 'button' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+			<button <?php echo $this->widget->get_render_attribute_string( 'button' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 				<?php
 					$this->render_chat_button_icon();
 				?>
@@ -116,7 +116,7 @@ abstract class Contact_Buttons_Render_Base {
 		] );
 
 		?>
-			<button <?php echo $this->widget->get_render_attribute_string( 'close-button' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+			<button <?php echo $this->widget->get_render_attribute_string( 'close-button' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 				<i class="eicon-close"></i>
 			</button>
 		<?php
@@ -150,7 +150,7 @@ abstract class Contact_Buttons_Render_Base {
 		?>
 		<div class="e-contact-buttons__top-bar">
 			<?php $this->render_close_button(); ?>
-			<div <?php echo $this->widget->get_render_attribute_string( 'profile-image' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+			<div <?php echo $this->widget->get_render_attribute_string( 'profile-image' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 				<?php if ( ! empty( $profile_image_value['id'] ) ) {
 					echo wp_get_attachment_image( $profile_image_value['id'], 'medium', false, [
 						'class' => 'e-contact-buttons__profile-image-el',
@@ -162,7 +162,7 @@ abstract class Contact_Buttons_Render_Base {
 						'src'   => esc_url( $profile_image_value['url'] ),
 					] );
 					?>
-					<img <?php echo $this->widget->get_render_attribute_string( 'profile-image-src' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?> />
+					<img <?php echo $this->widget->get_render_attribute_string( 'profile-image-src' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> />
 				<?php }; ?>
 			</div>
 
@@ -238,7 +238,7 @@ abstract class Contact_Buttons_Render_Base {
 			'class' => $message_bubble_classnames,
 		] );
 		?>
-		<div <?php echo $this->widget->get_render_attribute_string( 'message-bubble' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+		<div <?php echo $this->widget->get_render_attribute_string( 'message-bubble' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 			<?php
 				$this->render_message_bubble_typing_animation();
 				$this->render_message_bubble_container();
@@ -301,7 +301,7 @@ abstract class Contact_Buttons_Render_Base {
 
 					?>
 
-					<a <?php echo $this->widget->get_render_attribute_string( 'icon-link-' . $key ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+					<a <?php echo $this->widget->get_render_attribute_string( 'icon-link-' . $key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 						<?php
 							$mapping = Social_Network_Provider::get_icon_mapping( $icon['contact_icon_platform'] );
 							$icon_lib = explode( ' ', $mapping )[0];
@@ -367,7 +367,7 @@ abstract class Contact_Buttons_Render_Base {
 			<?php $this->render_message_bubble_powered_by(); ?>
 			<div class="e-contact-buttons__send-button-container">
 				<?php if ( $send_button_text ) { ?>
-					<a <?php echo $this->widget->get_render_attribute_string( 'formatted-cta' ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped ?>>
+					<a <?php echo $this->widget->get_render_attribute_string( 'formatted-cta' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
 						<?php
 							$mapping = Social_Network_Provider::get_icon_mapping( $platform );
 							$icon_lib = explode( ' ', $mapping )[0];

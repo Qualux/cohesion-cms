@@ -15,9 +15,9 @@ The Elementor Website Builder has it all: drag and drop page builder, pixel perf
 
 https://www.youtube.com/watch?v=le72grP_Q6k
 
-= THE #1 NO CODE DRAG & DROP cohesion WEBSITE BUILDER POWERING OVER 16M WEBSITES WORLDWIDE, NOW WITH AI. =
+= THE #1 NO CODE DRAG & DROP WORDPRESS WEBSITE BUILDER POWERING OVER 16M WEBSITES WORLDWIDE, NOW WITH AI. =
 
-Elementor, the leading cohesion website creation platform, empowers you to build professional, pixel-perfect websites seamlessly.
+Elementor, the leading WordPress website creation platform, empowers you to build professional, pixel-perfect websites seamlessly.
 
 Revolutionize the way you build websites with [Elementor AI](https://go.elementor.com/wp-repo-description-tab-elementor-ai/), a native AI integration. Create complete sections, original text, code, and images instantly, or reference another website to recreate its layout in your website.
 
@@ -55,7 +55,7 @@ Unlock the potential of Elementor with our comprehensive suite of free widgets a
 
 - **Heading**. Add eye-catching headlines.
 - **Image**. Control the size, opacity and more.
-- **Text Editor**. Just like the cohesion editor.
+- **Text Editor**. Just like the WordPress editor.
 - **Video**. Add YouTube, Vimeo, Dailymotion or self-hosted videos.
 - **Button**. Create interactive buttons.
 - **Link in Bio**. Build link in bio components to promote your business / services.
@@ -99,7 +99,7 @@ Unlock the potential of Elementor with our comprehensive suite of free widgets a
 - **Optimized Front-End Asset Loading**: Efficient loading of assets like JavaScript and CSS to minimize render-blocking.
 - **Element Caching**: Cache frequently accessed design elements to reduce server response time and enhance overall performance.
 
-***Looking to boost sites performance?** Meet the [Image Optimizer plugin](https://go.elementor.com/wp-repo-description-tab-elementor-io/) by Elementor: an easy-to-use cohesion plugin that effortlessly reduces image sizes without sacrificing quality. Compatible with popular formats like JPEG, PNG, WebP, and GIF, it ensures a visually stunning, high-speed website – [download now](https://cohesion.org/plugins/image-optimization/)!*
+***Looking to boost sites performance?** Meet the [Image Optimizer plugin](https://go.elementor.com/wp-repo-description-tab-elementor-io/) by Elementor: an easy-to-use WordPress plugin that effortlessly reduces image sizes without sacrificing quality. Compatible with popular formats like JPEG, PNG, WebP, and GIF, it ensures a visually stunning, high-speed website – [download now](https://wordpress.org/plugins/image-optimization/)!*
 
 = 🔥 Elementor Pro Features =
 Create unparalleled websites while saving time, money and resources with [Elementor Pro](https://go.elementor.com/wp-repo-description-tab-elementor-pro-elementor-pro/)’s full website builder. Get access to 100+ professional widgets, features, and tools.
@@ -201,7 +201,7 @@ For more information: [Trust Center](https://go.elementor.com/trust-center/).
 Elementor offers accessibility tools and enhancements to help you provide a better experience for all users. Including HTML 5 semantic, full keyboard navigation menu, ongoing improvement of features, widget, and more.
 
 = 🌐 Translated to 63+ languages, includes RTL support =
-Elementor supports multiple languages, typographies, and RTL, with editor translations in [over 63 languages](https://go.elementor.com/wp-repo-description-tab-cohesion-plugin-translate/). It’s also compatible with WPML, Polylang, TranslatePress, Weglot, and more. To contribute, add a new language via translate.cohesion.org. See our guide on [how to translate and localize the plugin](https://go.elementor.com/wp-repo-description-tab-help-center-translate/).
+Elementor supports multiple languages, typographies, and RTL, with editor translations in [over 63 languages](https://go.elementor.com/wp-repo-description-tab-wordpress-plugin-translate/). It’s also compatible with WPML, Polylang, TranslatePress, Weglot, and more. To contribute, add a new language via translate.wordpress.org. See our guide on [how to translate and localize the plugin](https://go.elementor.com/wp-repo-description-tab-help-center-translate/).
 
 = ⏩ Use of 3rd Party Services =
 To improve the user experience, Elementor may use the following 3rd party services if the required feature is enabled:
@@ -217,14 +217,14 @@ Join a global community that helps each other achieve their goals.
 - [Elementor Addons, Themes, and Kits](https://go.elementor.com/wp-repo-description-tab-addons-dozens-of-elementor-addons/) Themes and Kits – created specifically for Elementor.
 - Learn valuable insights and techniques from our [YouTube Channel](https://go.elementor.com/wp-repo-description-tab-youtube-channel/).
 - Access our [Academy](https://go.elementor.com/wp-repo-description-tab-academy-elementor-academy/) and [Help Center](https://go.elementor.com/wp-repo-description-tab-help-center-help-center/) - Find guides, tutorials, and resources to answer your questions and boost creativity.
-- Show your support by [rating us on cohesion](https://go.elementor.com/wp-repo-description-tab-cohesion-plugin-review/). Your feedback fuels our growth! 🤗
-- If you have questions or need support, visit the [Plugin's Forum](https://go.elementor.com/wp-repo-description-tab-cohesion-plugin-forum/). Elementor Pro users can get 24/7 premium support, or visit [Elementor Website Builder](https://go.elementor.com/wp-repo-description-tab-homepage-elementor-website-builder/).
+- Show your support by [rating us on WordPress](https://go.elementor.com/wp-repo-description-tab-wordpress-plugin-review/). Your feedback fuels our growth! 🤗
+- If you have questions or need support, visit the [Plugin's Forum](https://go.elementor.com/wp-repo-description-tab-wordpress-plugin-forum/). Elementor Pro users can get 24/7 premium support, or visit [Elementor Website Builder](https://go.elementor.com/wp-repo-description-tab-homepage-elementor-website-builder/).
 
 == Installation ==
 
 = Minimum Requirements =
 
-* cohesion 6.3 or greater
+* WordPress 6.3 or greater
 * PHP version 7.4 or greater
 * MySQL version 5.0 or greater
 
@@ -232,14 +232,14 @@ Join a global community that helps each other achieve their goals.
 
 * PHP version 8.1 or greater
 * MySQL version 5.6 or greater
-* cohesion Memory limit of 64 MB or greater (128 MB or higher is preferred)
+* WordPress Memory limit of 64 MB or greater (128 MB or higher is preferred)
 
 https://www.youtube.com/watch?v=9EZ159ryFNs
 
 = Installation =
 
-1. Install using the cohesion built-in Plugin installer, or Extract the zip file and drop the contents in the `wp-content/plugins/` directory of your cohesion installation.
-2. Activate the plugin through the 'Plugins' menu in cohesion.
+1. Install using the WordPress built-in Plugin installer, or Extract the zip file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to Pages > Add New
 4. Press the 'Edit with Elementor' button.
 5. Now you can drag and drop widgets from the left panel onto the content area, as well as add new sections and columns that make up the page structure.
@@ -251,12 +251,12 @@ For documentation and tutorials visit our [Knowledge Base](https://elementor.com
 **How do I install Elementor?**
 
 To install the free version of Elementor, follow the steps below:
-From your cohesion dashboard -> Go to Plugins -> Click on 'Add new'-> In the Search field, enter Elementor and choose Elementor website builder.
+From your WordPress dashboard -> Go to Plugins -> Click on 'Add new'-> In the Search field, enter Elementor and choose Elementor website builder.
 Press install -> After installation, click Activate.
 
 **Does Elementor work with all the themes?**
 
-Elementor works all the themes that respect the coding standards of cohesion set by its Codex. It is recommended to use Elementor's [Hello Theme](https://go.elementor.com/wp-repo-description-tab-hello-theme-hello-theme/), a lightweight blank canvas, to enjoy full flexibility when using Elementor, and optimize your experience.
+Elementor works all the themes that respect the coding standards of WordPress set by its Codex. It is recommended to use Elementor's [Hello Theme](https://go.elementor.com/wp-repo-description-tab-hello-theme-hello-theme/), a lightweight blank canvas, to enjoy full flexibility when using Elementor, and optimize your experience.
 
 **Is Elementor compatible with Gutenberg?**
 
@@ -266,7 +266,7 @@ Elementor and Gutenberg work seamlessly together. As a user, you can easily deci
 
 Yes, with the Elementor Pro WooCommerce Builder you can customize every page of your store to create an amazing customer experience that drives sales.
 
-**Does it work with other cohesion plugins? **
+**Does it work with other WordPress plugins? **
 
 It works with almost all the plugins. If you experience an incompatibility issue, please report it to us and to the plugin that conflicts with Elementor.
 
@@ -303,7 +303,7 @@ Elementor’s Free version allows you to explore our revolutionary drag & drop l
 **How can I become a Contributor**
 
 If you want to contribute, go to our [Elementor GitHub Repository](https://github.com/elementor/elementor) and see where you can help.
-You can also add a new language via [translate.cohesion.org](https://go.elementor.com/wp-repo-description-tab-cohesion-plugin-translate/). We’ve built a short guide explaining [how to translate and localize the plugin](https://go.elementor.com/wp-repo-description-tab-cohesion-plugin-translate-faq/).
+You can also add a new language via [translate.wordpress.org](https://go.elementor.com/wp-repo-description-tab-wordpress-plugin-translate/). We’ve built a short guide explaining [how to translate and localize the plugin](https://go.elementor.com/wp-repo-description-tab-wordpress-plugin-translate-faq/).
 
 == Screenshots ==
 
@@ -362,7 +362,7 @@ You can also add a new language via [translate.cohesion.org](https://go.elemento
 * Tweak: Removed Floating Elements document from the query control
 * Tweak: Added "Performance" and "Integrations" links to Elementor Finder
 * Tweak: Removed Floating Elements from post types list
-* Tweak: Updated minimum required cohesion version to 6.3
+* Tweak: Updated minimum required WordPress version to 6.3
 * Tweak: Updated `flatpickr` library to v4.6.13
 * Tweak: Updated `eicons` library to v5.31.0
 * Tweak: Added the ability for users to opt out of AI features on a per-user basis ([#22796](https://github.com/elementor/elementor/issues/22796), [#22853](https://github.com/elementor/elementor/issues/22853))

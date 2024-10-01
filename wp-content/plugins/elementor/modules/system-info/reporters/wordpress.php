@@ -6,19 +6,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor cohesion environment report.
+ * Elementor WordPress environment report.
  *
  * Elementor system report handler class responsible for generating a report for
- * the cohesion environment.
+ * the WordPress environment.
  *
  * @since 1.0.0
  */
-class cohesion extends Base {
+class WordPress extends Base {
 
 	/**
-	 * Get cohesion environment reporter title.
+	 * Get WordPress environment reporter title.
 	 *
-	 * Retrieve cohesion environment reporter title.
+	 * Retrieve WordPress environment reporter title.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -26,13 +26,13 @@ class cohesion extends Base {
 	 * @return string Reporter title.
 	 */
 	public function get_title() {
-		return 'cohesion Environment';
+		return 'WordPress Environment';
 	}
 
 	/**
-	 * Get cohesion environment report fields.
+	 * Get WordPress environment report fields.
 	 *
-	 * Retrieve the required fields for the cohesion environment report.
+	 * Retrieve the required fields for the WordPress environment report.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -57,9 +57,9 @@ class cohesion extends Base {
 	}
 
 	/**
-	 * Get cohesion memory limit.
+	 * Get WordPress memory limit.
 	 *
-	 * Retrieve the cohesion memory limit.
+	 * Retrieve the WordPress memory limit.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -67,7 +67,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion memory limit.
+	 *    @type string $value WordPress memory limit.
 	 * }
 	 */
 	public function get_memory_limit() {
@@ -77,14 +77,14 @@ class cohesion extends Base {
 	}
 
 	/**
-	 * Get cohesion max memory limit.
+	 * Get WordPress max memory limit.
 	 *
-	 * Retrieve the cohesion max memory limit.
+	 * Retrieve the WordPress max memory limit.
 	 *
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion max memory limit.
+	 *    @type string $value WordPress max memory limit.
 	 * }
 	 */
 	public function get_max_memory_limit() {
@@ -94,9 +94,9 @@ class cohesion extends Base {
 	}
 
 	/**
-	 * Get cohesion version.
+	 * Get WordPress version.
 	 *
-	 * Retrieve the cohesion version.
+	 * Retrieve the WordPress version.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -104,7 +104,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion version.
+	 *    @type string $value WordPress version.
 	 * }
 	 */
 	public function get_version() {
@@ -136,7 +136,7 @@ class cohesion extends Base {
 	/**
 	 * Get site URL.
 	 *
-	 * Retrieve cohesion site URL.
+	 * Retrieve WordPress site URL.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -144,7 +144,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion site URL.
+	 *    @type string $value WordPress site URL.
 	 * }
 	 */
 	public function get_site_url() {
@@ -156,7 +156,7 @@ class cohesion extends Base {
 	/**
 	 * Get home URL.
 	 *
-	 * Retrieve cohesion home URL.
+	 * Retrieve WordPress home URL.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -164,7 +164,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion home URL.
+	 *    @type string $value WordPress home URL.
 	 * }
 	 */
 	public function get_home_url() {
@@ -184,7 +184,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion permalink structure.
+	 *    @type string $value WordPress permalink structure.
 	 * }
 	 */
 	public function get_permalink_structure() {
@@ -212,7 +212,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion site language.
+	 *    @type string $value WordPress site language.
 	 * }
 	 */
 	public function get_language() {
@@ -242,9 +242,9 @@ class cohesion extends Base {
 	}
 
 	/**
-	 * Get cohesion timezone.
+	 * Get WordPress timezone.
 	 *
-	 * Retrieve cohesion timezone.
+	 * Retrieve WordPress timezone.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -252,7 +252,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion timezone.
+	 *    @type string $value WordPress timezone.
 	 * }
 	 */
 	public function get_timezone() {
@@ -267,9 +267,9 @@ class cohesion extends Base {
 	}
 
 	/**
-	 * Get cohesion administrator email.
+	 * Get WordPress administrator email.
 	 *
-	 * Retrieve cohesion administrator email.
+	 * Retrieve WordPress administrator email.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -277,7 +277,7 @@ class cohesion extends Base {
 	 * @return array {
 	 *    Report data.
 	 *
-	 *    @type string $value cohesion administrator email.
+	 *    @type string $value WordPress administrator email.
 	 * }
 	 */
 	public function get_admin_email() {
@@ -289,7 +289,7 @@ class cohesion extends Base {
 	/**
 	 * Get debug mode.
 	 *
-	 * Whether cohesion debug mode is enabled or not.
+	 * Whether WordPress debug mode is enabled or not.
 	 *
 	 * @since 1.0.0
 	 * @access public

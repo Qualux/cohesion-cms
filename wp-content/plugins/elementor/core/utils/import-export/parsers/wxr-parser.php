@@ -6,9 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * cohesion eXtended RSS file parser implementations,
- * Originally made by cohesion part of cohesion/Importer.
- * https://plugins.trac.cohesion.org/browser/cohesion-importer/trunk/parsers/class-wxr-parser.php
+ * WordPress eXtended RSS file parser implementations,
+ * Originally made by WordPress part of WordPress/Importer.
+ * https://plugins.trac.wordpress.org/browser/wordpress-importer/trunk/parsers/class-wxr-parser.php
  *
  * What was done:
  * Reformat of the code.
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 /**
- * cohesion Importer class for managing parsing of WXR files.
+ * WordPress Importer class for managing parsing of WXR files.
  */
 class WXR_Parser {
 

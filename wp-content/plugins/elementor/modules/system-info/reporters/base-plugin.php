@@ -61,7 +61,7 @@ abstract class Base_Plugin extends Base {
 		foreach ( $this->get_report( 'raw' ) as $field_name => $field ) :
 			$sub_indent = str_repeat( "\t", $tabs_count );
 
-			echo "== {$field['label']} ==" . PHP_EOL; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			echo "== {$field['label']} ==" . PHP_EOL; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 			foreach ( $field['value'] as $plugin_info ) :
 				$plugin_properties = array_intersect_key( $plugin_info, $required_plugins_properties );
@@ -69,7 +69,7 @@ abstract class Base_Plugin extends Base {
 				echo esc_html( $sub_indent . $plugin_info['Name'] );
 
 				foreach ( $plugin_properties as $property_name => $property ) :
-					echo PHP_EOL . "{$sub_indent}\t{$property_name}: {$property}"; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+					echo PHP_EOL . "{$sub_indent}\t{$property_name}: {$property}"; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				endforeach;
 
 				echo PHP_EOL . PHP_EOL;

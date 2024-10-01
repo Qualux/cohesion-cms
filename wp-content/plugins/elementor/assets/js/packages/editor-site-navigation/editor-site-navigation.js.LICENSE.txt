@@ -14,9 +14,9 @@
 
 /*! @elementor/ui */
 
-/*! @cohesion/api-fetch */
+/*! @wordpress/api-fetch */
 
-/*! @cohesion/i18n */
+/*! @wordpress/i18n */
 
 /*! react */
 

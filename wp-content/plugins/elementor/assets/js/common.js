@@ -2091,7 +2091,7 @@ var autoBatchEnhancer = function (options) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -2783,9 +2783,9 @@ function getUserTimestamp() {
 
 /***/ }),
 
-/***/ "../core/common/assets/js/components/cohesion/commands-data/index.js":
+/***/ "../core/common/assets/js/components/wordpress/commands-data/index.js":
 /*!****************************************************************************!*\
-  !*** ../core/common/assets/js/components/cohesion/commands-data/index.js ***!
+  !*** ../core/common/assets/js/components/wordpress/commands-data/index.js ***!
   \****************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2801,18 +2801,18 @@ Object.defineProperty(exports, "Media", ({
     return _media.Media;
   }
 }));
-var _media = __webpack_require__(/*! ./media */ "../core/common/assets/js/components/cohesion/commands-data/media.js");
+var _media = __webpack_require__(/*! ./media */ "../core/common/assets/js/components/wordpress/commands-data/media.js");
 
 /***/ }),
 
-/***/ "../core/common/assets/js/components/cohesion/commands-data/media.js":
+/***/ "../core/common/assets/js/components/wordpress/commands-data/media.js":
 /*!****************************************************************************!*\
-  !*** ../core/common/assets/js/components/cohesion/commands-data/media.js ***!
+  !*** ../core/common/assets/js/components/wordpress/commands-data/media.js ***!
   \****************************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -2866,7 +2866,7 @@ var Media = /*#__PURE__*/function (_CommandData) {
       args.data = this.file;
       if ((_args$options = args.options) !== null && _args$options !== void 0 && _args$options.progress) {
         this.toast = elementor.notifications.showToast({
-          // eslint-disable-next-line @cohesion/i18n-ellipsis
+          // eslint-disable-next-line @wordpress/i18n-ellipsis
           message: __('Uploading...'),
           sticky: true
         });
@@ -2931,9 +2931,9 @@ exports.Media = Media;
 
 /***/ }),
 
-/***/ "../core/common/assets/js/components/cohesion/component.js":
+/***/ "../core/common/assets/js/components/wordpress/component.js":
 /*!******************************************************************!*\
-  !*** ../core/common/assets/js/components/cohesion/component.js ***!
+  !*** ../core/common/assets/js/components/wordpress/component.js ***!
   \******************************************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -2952,7 +2952,7 @@ var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/h
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
 var _componentBase = _interopRequireDefault(__webpack_require__(/*! elementor-api/modules/component-base */ "../modules/web-cli/assets/js/modules/component-base.js"));
-var dataCommands = _interopRequireWildcard(__webpack_require__(/*! ./commands-data/ */ "../core/common/assets/js/components/cohesion/commands-data/index.js"));
+var dataCommands = _interopRequireWildcard(__webpack_require__(/*! ./commands-data/ */ "../core/common/assets/js/components/wordpress/commands-data/index.js"));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
@@ -3606,7 +3606,7 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -4629,7 +4629,7 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -4713,7 +4713,7 @@ exports["default"] = _default;
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
-/* provided dependency */ var __ = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n")["__"];
+/* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
 
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
@@ -7969,7 +7969,7 @@ var createStructuredSelector = function createStructuredSelector(selectors, sele
 
 /***/ }),
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/
@@ -9112,7 +9112,7 @@ var _debug = _interopRequireDefault(__webpack_require__(/*! ./utils/debug */ "..
 var _ajax = _interopRequireDefault(__webpack_require__(/*! elementor-common-modules/ajax/assets/js/ajax */ "../core/common/modules/ajax/assets/js/ajax.js"));
 var _finder = _interopRequireDefault(__webpack_require__(/*! elementor-common-modules/finder/assets/js/finder */ "../core/common/modules/finder/assets/js/finder.js"));
 var _connect = _interopRequireDefault(__webpack_require__(/*! elementor-common-modules/connect/assets/js/connect */ "../core/common/modules/connect/assets/js/connect.js"));
-var _component = _interopRequireDefault(__webpack_require__(/*! ./components/cohesion/component */ "../core/common/assets/js/components/cohesion/component.js"));
+var _component = _interopRequireDefault(__webpack_require__(/*! ./components/wordpress/component */ "../core/common/assets/js/components/wordpress/component.js"));
 var _component2 = _interopRequireDefault(__webpack_require__(/*! elementor-common-modules/event-tracker/assets/js/data/component */ "../core/common/modules/event-tracker/assets/js/data/component.js"));
 var _events = _interopRequireDefault(__webpack_require__(/*! elementor-common-modules/event-tracker/assets/js/events */ "../core/common/modules/event-tracker/assets/js/events.js"));
 var _notifications = _interopRequireDefault(__webpack_require__(/*! elementor-utils/notifications */ "../assets/dev/js/utils/notifications.js"));

@@ -8,7 +8,7 @@
 
 /*! @elementor/ui */
 
-/*! @cohesion/i18n */
+/*! @wordpress/i18n */
 
 /*! react */
 

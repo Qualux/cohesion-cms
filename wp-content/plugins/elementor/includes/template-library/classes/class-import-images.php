@@ -94,7 +94,7 @@ class Import_Images {
 	/**
 	 * Import image.
 	 *
-	 * Import a single image from a remote server, upload the image cohesion
+	 * Import a single image from a remote server, upload the image WordPress
 	 * uploads folder, create a new attachment in the database and updates the
 	 * attachment metadata.
 	 *
@@ -142,7 +142,7 @@ class Import_Images {
 
 		$filetype = wp_check_filetype( $filename );
 
-		// If the file type is not recognized by cohesion, exit here to avoid creation of an empty attachment document.
+		// If the file type is not recognized by WordPress, exit here to avoid creation of an empty attachment document.
 		if ( ! $filetype['ext'] ) {
 			return false;
 		}
@@ -214,7 +214,7 @@ class Import_Images {
 	 * Template library import images constructor.
 	 *
 	 * Initializing the images import class used by the template library through
-	 * the cohesion Filesystem API.
+	 * the WordPress Filesystem API.
 	 *
 	 * @since 1.0.0
 	 * @access public

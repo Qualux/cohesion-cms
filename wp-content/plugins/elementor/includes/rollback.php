@@ -118,7 +118,7 @@ class Rollback {
 	/**
 	 * Apply package.
 	 *
-	 * Change the plugin data when cohesion checks for updates. This method
+	 * Change the plugin data when WordPress checks for updates. This method
 	 * modifies package data to update the plugin from a specific URL containing
 	 * the version package.
 	 *
@@ -148,7 +148,7 @@ class Rollback {
 	/**
 	 * Upgrade.
 	 *
-	 * Run cohesion upgrade to rollback Elementor to previous version.
+	 * Run WordPress upgrade to rollback Elementor to previous version.
 	 *
 	 * @since 1.5.0
 	 * @access protected

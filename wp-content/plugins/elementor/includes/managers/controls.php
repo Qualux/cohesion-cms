@@ -179,7 +179,7 @@ class Controls_Manager {
 	const IMAGE_DIMENSIONS = 'image_dimensions';
 
 	/**
-	 * cohesion widget control.
+	 * WordPress widget control.
 	 */
 	const WP_WIDGET = 'wp_widget';
 

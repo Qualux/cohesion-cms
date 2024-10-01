@@ -2,9 +2,9 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../node_modules/@cohesion/element/build-module/create-interpolate-element.js":
+/***/ "../node_modules/@wordpress/element/build-module/create-interpolate-element.js":
 /*!*************************************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/create-interpolate-element.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/create-interpolate-element.js ***!
   \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -327,9 +327,9 @@ function closeOuterElement(endOffset) {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/index.js":
+/***/ "../node_modules/@wordpress/element/build-module/index.js":
 /*!****************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/index.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/index.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -382,13 +382,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   useSyncExternalStore: () => (/* reexport safe */ _react__WEBPACK_IMPORTED_MODULE_1__.useSyncExternalStore),
 /* harmony export */   useTransition: () => (/* reexport safe */ _react__WEBPACK_IMPORTED_MODULE_1__.useTransition)
 /* harmony export */ });
-/* harmony import */ var _create_interpolate_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create-interpolate-element */ "../node_modules/@cohesion/element/build-module/create-interpolate-element.js");
-/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./react */ "../node_modules/@cohesion/element/build-module/react.js");
-/* harmony import */ var _react_platform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./react-platform */ "../node_modules/@cohesion/element/build-module/react-platform.js");
-/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils */ "../node_modules/@cohesion/element/build-module/utils.js");
-/* harmony import */ var _platform__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./platform */ "../node_modules/@cohesion/element/build-module/platform.js");
-/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./serialize */ "../node_modules/@cohesion/element/build-module/serialize.js");
-/* harmony import */ var _raw_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./raw-html */ "../node_modules/@cohesion/element/build-module/raw-html.js");
+/* harmony import */ var _create_interpolate_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./create-interpolate-element */ "../node_modules/@wordpress/element/build-module/create-interpolate-element.js");
+/* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./react */ "../node_modules/@wordpress/element/build-module/react.js");
+/* harmony import */ var _react_platform__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./react-platform */ "../node_modules/@wordpress/element/build-module/react-platform.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils */ "../node_modules/@wordpress/element/build-module/utils.js");
+/* harmony import */ var _platform__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./platform */ "../node_modules/@wordpress/element/build-module/platform.js");
+/* harmony import */ var _serialize__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./serialize */ "../node_modules/@wordpress/element/build-module/serialize.js");
+/* harmony import */ var _raw_html__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./raw-html */ "../node_modules/@wordpress/element/build-module/raw-html.js");
 
 
 
@@ -400,9 +400,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/platform.js":
+/***/ "../node_modules/@wordpress/element/build-module/platform.js":
 /*!*******************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/platform.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/platform.js ***!
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -435,7 +435,7 @@ const Platform = {
  * Here is an example of how to use the select method:
  * @example
  * ```js
- * import { Platform } from '@cohesion/element';
+ * import { Platform } from '@wordpress/element';
  *
  * const placeholderLabel = Platform.select( {
  *   native: __( 'Add media' ),
@@ -448,9 +448,9 @@ const Platform = {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/raw-html.js":
+/***/ "../node_modules/@wordpress/element/build-module/raw-html.js":
 /*!*******************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/raw-html.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/raw-html.js ***!
   \*******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -506,9 +506,9 @@ function RawHTML({
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/react-platform.js":
+/***/ "../node_modules/@wordpress/element/build-module/react-platform.js":
 /*!*************************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/react-platform.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/react-platform.js ***!
   \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -561,7 +561,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Renders a given element into the target DOM node.
  *
- * @deprecated since cohesion 6.2.0. Use `createRoot` instead.
+ * @deprecated since WordPress 6.2.0. Use `createRoot` instead.
  * @see https://react.dev/reference/react-dom/render
  */
 
@@ -569,7 +569,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Hydrates a given element into the target DOM node.
  *
- * @deprecated since cohesion 6.2.0. Use `hydrateRoot` instead.
+ * @deprecated since WordPress 6.2.0. Use `hydrateRoot` instead.
  * @see https://react.dev/reference/react-dom/hydrate
  */
 
@@ -577,7 +577,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Creates a new React root for the target DOM node.
  *
- * @since 6.2.0 Introduced in cohesion core.
+ * @since 6.2.0 Introduced in WordPress core.
  * @see https://react.dev/reference/react-dom/client/createRoot
  */
 
@@ -585,7 +585,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Creates a new React root for the target DOM node and hydrates it with a pre-generated markup.
  *
- * @since 6.2.0 Introduced in cohesion core.
+ * @since 6.2.0 Introduced in WordPress core.
  * @see https://react.dev/reference/react-dom/client/hydrateRoot
  */
 
@@ -593,7 +593,7 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Removes any mounted element from the target DOM node.
  *
- * @deprecated since cohesion 6.2.0. Use `root.unmount()` instead.
+ * @deprecated since WordPress 6.2.0. Use `root.unmount()` instead.
  * @see https://react.dev/reference/react-dom/unmountComponentAtNode
  */
 
@@ -601,9 +601,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/react.js":
+/***/ "../node_modules/@wordpress/element/build-module/react.js":
 /*!****************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/react.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/react.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -692,7 +692,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * A base class to create cohesion Components (Refs, state and lifecycle hooks)
+ * A base class to create WordPress Components (Refs, state and lifecycle hooks)
  */
 
 
@@ -910,9 +910,9 @@ function switchChildrenNodeName(children, nodeName) {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/serialize.js":
+/***/ "../node_modules/@wordpress/element/build-module/serialize.js":
 /*!********************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/serialize.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/serialize.js ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -927,12 +927,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   renderNativeComponent: () => (/* binding */ renderNativeComponent),
 /* harmony export */   renderStyle: () => (/* binding */ renderStyle)
 /* harmony export */ });
-/* harmony import */ var is_plain_object__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! is-plain-object */ "../node_modules/@cohesion/element/node_modules/is-plain-object/dist/is-plain-object.mjs");
+/* harmony import */ var is_plain_object__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! is-plain-object */ "../node_modules/@wordpress/element/node_modules/is-plain-object/dist/is-plain-object.mjs");
 /* harmony import */ var change_case__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! change-case */ "../node_modules/param-case/dist.es2015/index.js");
-/* harmony import */ var _wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @cohesion/escape-html */ "../node_modules/@cohesion/escape-html/build-module/index.js");
+/* harmony import */ var _wordpress_escape_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/escape-html */ "../node_modules/@wordpress/escape-html/build-module/index.js");
 /* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./react */ "react");
 /* harmony import */ var _react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _raw_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./raw-html */ "../node_modules/@cohesion/element/build-module/raw-html.js");
+/* harmony import */ var _raw_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./raw-html */ "../node_modules/@wordpress/element/build-module/raw-html.js");
 /**
  * Parts of this source were derived and modified from fast-react-render,
  * released under the MIT license.
@@ -967,7 +967,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * cohesion dependencies
+ * WordPress dependencies
  */
 
 
@@ -1428,9 +1428,9 @@ function renderStyle(style) {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/build-module/utils.js":
+/***/ "../node_modules/@wordpress/element/build-module/utils.js":
 /*!****************************************************************!*\
-  !*** ../node_modules/@cohesion/element/build-module/utils.js ***!
+  !*** ../node_modules/@wordpress/element/build-module/utils.js ***!
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1458,9 +1458,9 @@ const isEmptyElement = element => {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/escape-html/build-module/escape-greater.js":
+/***/ "../node_modules/@wordpress/escape-html/build-module/escape-greater.js":
 /*!*****************************************************************************!*\
-  !*** ../node_modules/@cohesion/escape-html/build-module/escape-greater.js ***!
+  !*** ../node_modules/@wordpress/escape-html/build-module/escape-greater.js ***!
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1475,7 +1475,7 @@ __webpack_require__.r(__webpack_exports__);
  * Note that if a resolution for Trac#45387 comes to fruition, it is no longer
  * necessary for `__unstableEscapeGreaterThan` to exist.
  *
- * See: https://core.trac.cohesion.org/ticket/45387
+ * See: https://core.trac.wordpress.org/ticket/45387
  *
  * @param {string} value Original string.
  *
@@ -1488,9 +1488,9 @@ function __unstableEscapeGreaterThan(value) {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/escape-html/build-module/index.js":
+/***/ "../node_modules/@wordpress/escape-html/build-module/index.js":
 /*!********************************************************************!*\
-  !*** ../node_modules/@cohesion/escape-html/build-module/index.js ***!
+  !*** ../node_modules/@wordpress/escape-html/build-module/index.js ***!
   \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1505,7 +1505,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   escapeQuotationMark: () => (/* binding */ escapeQuotationMark),
 /* harmony export */   isValidAttributeName: () => (/* binding */ isValidAttributeName)
 /* harmony export */ });
-/* harmony import */ var _escape_greater__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./escape-greater */ "../node_modules/@cohesion/escape-html/build-module/escape-greater.js");
+/* harmony import */ var _escape_greater__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./escape-greater */ "../node_modules/@wordpress/escape-html/build-module/escape-greater.js");
 /**
  * Internal dependencies
  */
@@ -1573,12 +1573,12 @@ function escapeLessThan(value) {
  * any literal U+0022 QUOTATION MARK characters (")"
  *
  * Note we also escape the greater than symbol, as this is used by wptexturize to
- * split HTML strings. This is a cohesion specific fix
+ * split HTML strings. This is a WordPress specific fix
  *
  * Note that if a resolution for Trac#45387 comes to fruition, it is no longer
  * necessary for `__unstableEscapeGreaterThan` to be used.
  *
- * See: https://core.trac.cohesion.org/ticket/45387
+ * See: https://core.trac.wordpress.org/ticket/45387
  *
  * @param {string} value Attribute value.
  *
@@ -1855,9 +1855,9 @@ var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ "../node_modules/@babel/runtime/helpers/asyncToGenerator.js"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _element = __webpack_require__(/*! @cohesion/element */ "../node_modules/@cohesion/element/build-module/index.js");
-var _components = __webpack_require__(/*! @cohesion/components */ "@cohesion/components");
-var _i18n = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n");
+var _element = __webpack_require__(/*! @wordpress/element */ "../node_modules/@wordpress/element/build-module/index.js");
+var _components = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 var _upgradeButton = __webpack_require__(/*! ./upgrade-button */ "../modules/element-manager/assets/js/upgrade-button.js");
 var _api = __webpack_require__(/*! ./api */ "../modules/element-manager/assets/js/api.js");
 var _rolePermissions = __webpack_require__(/*! ./role-permissions */ "../modules/element-manager/assets/js/role-permissions.js");
@@ -2460,8 +2460,8 @@ Object.defineProperty(exports, "__esModule", ({
 exports.RolePermissions = exports.EditButtonDisabled = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
-var _components = __webpack_require__(/*! @cohesion/components */ "@cohesion/components");
-var _i18n = __webpack_require__(/*! @cohesion/i18n */ "@cohesion/i18n");
+var _components = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+var _i18n = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; } /* eslint-disable react/prop-types */
 var toggleRoleRestrictions = function toggleRoleRestrictions(widgetName, roleId, widgetsRoleRestrictions, setWidgetsRoleRestrictions) {
@@ -2592,7 +2592,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.UpgradeButton = void 0;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../node_modules/@babel/runtime/helpers/extends.js"));
-var _components = __webpack_require__(/*! @cohesion/components */ "@cohesion/components");
+var _components = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 var UpgradeButton = function UpgradeButton(props) {
   return /*#__PURE__*/_react.default.createElement(_components.Button, (0, _extends2.default)({}, props, {
     variant: "primary",
@@ -2817,7 +2817,7 @@ module.exports = ReactDOM;
 
 /***/ }),
 
-/***/ "@cohesion/components":
+/***/ "@wordpress/components":
 /*!********************************!*\
   !*** external "wp.components" ***!
   \********************************/
@@ -2828,7 +2828,7 @@ module.exports = wp.components;
 
 /***/ }),
 
-/***/ "@cohesion/dom-ready":
+/***/ "@wordpress/dom-ready":
 /*!******************************!*\
   !*** external "wp.domReady" ***!
   \******************************/
@@ -2839,7 +2839,7 @@ module.exports = wp.domReady;
 
 /***/ }),
 
-/***/ "@cohesion/i18n":
+/***/ "@wordpress/i18n":
 /*!**************************!*\
   !*** external "wp.i18n" ***!
   \**************************/
@@ -3519,9 +3519,9 @@ try {
 
 /***/ }),
 
-/***/ "../node_modules/@cohesion/element/node_modules/is-plain-object/dist/is-plain-object.mjs":
+/***/ "../node_modules/@wordpress/element/node_modules/is-plain-object/dist/is-plain-object.mjs":
 /*!************************************************************************************************!*\
-  !*** ../node_modules/@cohesion/element/node_modules/is-plain-object/dist/is-plain-object.mjs ***!
+  !*** ../node_modules/@wordpress/element/node_modules/is-plain-object/dist/is-plain-object.mjs ***!
   \************************************************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -4479,8 +4479,8 @@ var __webpack_exports__ = {};
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _element = __webpack_require__(/*! @cohesion/element */ "../node_modules/@cohesion/element/build-module/index.js");
-var _domReady = _interopRequireDefault(__webpack_require__(/*! @cohesion/dom-ready */ "@cohesion/dom-ready"));
+var _element = __webpack_require__(/*! @wordpress/element */ "../node_modules/@wordpress/element/build-module/index.js");
+var _domReady = _interopRequireDefault(__webpack_require__(/*! @wordpress/dom-ready */ "@wordpress/dom-ready"));
 var _app = __webpack_require__(/*! ./app */ "../modules/element-manager/assets/js/app.js");
 (0, _domReady.default)(function () {
   var htmlOutput = document.getElementById('elementor-element-manager-wrap');

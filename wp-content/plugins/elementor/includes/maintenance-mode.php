@@ -155,7 +155,7 @@ class Maintenance_Mode {
 		}
 
 		// Setup global post for Elementor\frontend so `_has_elementor_in_page = true`.
-		$GLOBALS['post'] = get_post( self::get( 'template_id' ) ); // phpcs:ignore cohesion.WP.GlobalVariablesOverride.Prohibited
+		$GLOBALS['post'] = get_post( self::get( 'template_id' ) ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
 
 		// Set the template as `$wp_query->current_object` for `wp_title` and etc.
 		query_posts( [
@@ -268,7 +268,7 @@ class Maintenance_Mode {
 	/**
 	 * Add menu in admin bar.
 	 *
-	 * Adds "Maintenance Mode" items to the cohesion admin bar.
+	 * Adds "Maintenance Mode" items to the WordPress admin bar.
 	 *
 	 * Fired by `admin_bar_menu` filter.
 	 *

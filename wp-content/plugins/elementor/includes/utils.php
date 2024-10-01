@@ -344,7 +344,7 @@ class Utils {
 	/**
 	 * Do not cache.
 	 *
-	 * Tell cohesion cache plugins not to cache this request.
+	 * Tell WordPress cache plugins not to cache this request.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -378,7 +378,7 @@ class Utils {
 	/**
 	 * Get timezone string.
 	 *
-	 * Retrieve timezone string from the cohesion database.
+	 * Retrieve timezone string from the WordPress database.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -448,7 +448,7 @@ class Utils {
 			$where .= $wpdb->prepare( ' AND post_author = %d', $user_id );
 		}
 
-		$revision = $wpdb->get_row( "SELECT * FROM $wpdb->posts WHERE $where AND post_type = 'revision'" ); // phpcs:ignore cohesion.DB.PreparedSQL.InterpolatedNotPrepared
+		$revision = $wpdb->get_row( "SELECT * FROM $wpdb->posts WHERE $where AND post_type = 'revision'" ); // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 
 		if ( $revision ) {
 			$revision = new \WP_Post( $revision );
@@ -521,7 +521,7 @@ class Utils {
 	 */
 	public static function print_html_attributes( array $attributes ) {
 		// PHPCS - the method render_html_attributes is safe.
-		echo self::render_html_attributes( $attributes ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo self::render_html_attributes( $attributes ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	public static function get_meta_viewport( $context = '' ) {
@@ -576,7 +576,7 @@ class Utils {
 		$alias_version_as_float = (float) $alias_version[0];
 
 		if ( round( $current_version_as_float - $alias_version_as_float, 1 ) >= self::DEPRECATION_RANGE ) {
-			_deprecated_file( $item, $version, $replacement ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+			_deprecated_file( $item, $version, $replacement ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -734,14 +734,14 @@ class Utils {
 	 */
 	public static function print_validated_html_tag( $tag ) {
 		// PHPCS - the method validate_html_tag is safe.
-		echo self::validate_html_tag( $tag ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo self::validate_html_tag( $tag ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
 	 * Print internal content (not user input) without escaping.
 	 */
 	public static function print_unescaped_internal_string( $string ) {
-		echo $string; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo $string; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**

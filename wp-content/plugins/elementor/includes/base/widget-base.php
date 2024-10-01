@@ -470,7 +470,7 @@ abstract class Widget_Base extends Element_Base {
 	 */
 	final protected function print_text_editor( $content ) {
 		// PHPCS - the method `parse_text_editor` is safe.
-		echo static::parse_text_editor( $content ); // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo static::parse_text_editor( $content ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**
@@ -677,10 +677,10 @@ abstract class Widget_Base extends Element_Base {
 	 * Render widget plain content.
 	 *
 	 * Elementor saves the page content in a unique way, but it's not the way
-	 * cohesion saves data. This method is used to save generated HTML to the
-	 * database as plain content the cohesion way.
+	 * WordPress saves data. This method is used to save generated HTML to the
+	 * database as plain content the WordPress way.
 	 *
-	 * When rendering plain content, it allows other cohesion plugins to
+	 * When rendering plain content, it allows other WordPress plugins to
 	 * interact with the content - to search, check SEO and other purposes. It
 	 * also allows the site to keep working even if Elementor is deactivated.
 	 *
@@ -793,7 +793,7 @@ abstract class Widget_Base extends Element_Base {
 			$output = $this->get_settings_for_display( $setting );
 		}
 
-		echo $output; // phpcs:ignore cohesion.Security.EscapeOutput.OutputNotEscaped
+		echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 
 	/**

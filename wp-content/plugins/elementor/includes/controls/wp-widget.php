@@ -6,17 +6,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor cohesion widget control.
+ * Elementor WordPress widget control.
  *
- * A base control for creating cohesion widget control. Displays native
- * cohesion widgets. This a private control for internal use.
+ * A base control for creating WordPress widget control. Displays native
+ * WordPress widgets. This a private control for internal use.
  *
  * @since 1.0.0
  */
 class Control_WP_Widget extends Base_Data_Control {
 
 	/**
-	 * Get cohesion widget control type.
+	 * Get WordPress widget control type.
 	 *
 	 * Retrieve the control type, in this case `wp_widget`.
 	 *
@@ -30,10 +30,10 @@ class Control_WP_Widget extends Base_Data_Control {
 	}
 
 	/**
-	 * Get cohesion widget control default values.
+	 * Get WordPress widget control default values.
 	 *
-	 * Retrieve the default value of the cohesion widget control. Used to return the
-	 * default values while initializing the cohesion widget control.
+	 * Retrieve the default value of the WordPress widget control. Used to return the
+	 * default values while initializing the WordPress widget control.
 	 *
 	 * @since 1.4.3
 	 * @access public
@@ -45,7 +45,7 @@ class Control_WP_Widget extends Base_Data_Control {
 	}
 
 	/**
-	 * Render cohesion widget control output in the editor.
+	 * Render WordPress widget control output in the editor.
 	 *
 	 * Used to generate the control HTML in the editor using Underscore JS
 	 * template. The variables for the class are available using `data` JS
