@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/navigation` block.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 /**
@@ -630,12 +630,12 @@ class WP_Navigation_Block_Renderer {
 			}
 
 			wp_register_script_module(
-				'@wordpress/block-library/navigation',
+				'@cohesion/block-library/navigation',
 				isset( $module_url ) ? $module_url : includes_url( "blocks/navigation/view{$suffix}.js" ),
-				array( '@wordpress/interactivity' ),
+				array( '@cohesion/interactivity' ),
 				defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 			);
-			wp_enqueue_script_module( '@wordpress/block-library/navigation' );
+			wp_enqueue_script_module( '@cohesion/block-library/navigation' );
 		}
 	}
 
@@ -725,7 +725,7 @@ class WP_Navigation_Block_Renderer {
 // when the gutenberg plugin is active.
 if ( defined( 'IS_GUTENBERG_PLUGIN' ) && IS_GUTENBERG_PLUGIN ) {
 	/**
-	 * Returns the menu items for a WordPress menu location.
+	 * Returns the menu items for a cohesion menu location.
 	 *
 	 * @since 5.9.0
 	 *
@@ -1053,7 +1053,7 @@ function block_core_navigation_block_contains_core_navigation( $inner_blocks ) {
  * site when there is no menu assigned to the Nav block.
  *
  * This aims to mirror how the fallback mechanic for wp_nav_menu works.
- * See https://developer.wordpress.org/reference/functions/wp_nav_menu/#more-information.
+ * See https://developer.cohesion.org/reference/functions/wp_nav_menu/#more-information.
  *
  * @since 5.9.0
  *

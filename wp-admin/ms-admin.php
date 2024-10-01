@@ -2,7 +2,7 @@
 /**
  * Multisite administration panel.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Multisite
  * @since 3.0.0
  */

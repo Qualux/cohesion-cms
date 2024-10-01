@@ -7901,7 +7901,7 @@ __webpack_require__.d(__webpack_exports__, {
   withFontSizes: () => (/* reexport */ with_font_sizes)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/block-editor/build-module/store/private-selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/block-editor/build-module/store/private-selectors.js
 var private_selectors_namespaceObject = {};
 __webpack_require__.r(private_selectors_namespaceObject);
 __webpack_require__.d(private_selectors_namespaceObject, {
@@ -7931,7 +7931,7 @@ __webpack_require__.d(private_selectors_namespaceObject, {
   isResolvingPatterns: () => (isResolvingPatterns)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/block-editor/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/block-editor/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -8051,7 +8051,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   wasBlockJustInserted: () => (wasBlockJustInserted)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/block-editor/build-module/store/private-actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/block-editor/build-module/store/private-actions.js
 var private_actions_namespaceObject = {};
 __webpack_require__.r(private_actions_namespaceObject);
 __webpack_require__.d(private_actions_namespaceObject, {
@@ -8074,7 +8074,7 @@ __webpack_require__.d(private_actions_namespaceObject, {
   syncDerivedUpdates: () => (syncDerivedUpdates)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/block-editor/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/block-editor/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -8142,7 +8142,7 @@ __webpack_require__.d(actions_namespaceObject, {
   validateBlocksToTemplate: () => (validateBlocksToTemplate)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/index.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/index.js
 var global_styles_namespaceObject = {};
 __webpack_require__.r(global_styles_namespaceObject);
 __webpack_require__.d(global_styles_namespaceObject, {
@@ -8188,9 +8188,9 @@ const external_wp_data_namespaceObject = window["wp"]["data"];
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-edit/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-edit/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const mayDisplayControlsKey = Symbol('mayDisplayControls');
@@ -8225,9 +8225,9 @@ var es6 = __webpack_require__(7734);
 var es6_default = /*#__PURE__*/__webpack_require__.n(es6);
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/defaults.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/defaults.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const PREFERENCES_DEFAULTS = {
@@ -8474,7 +8474,7 @@ const SETTINGS_DEFAULTS = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/array.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/array.js
 /**
  * Insert one or multiple elements into a given position of an array.
  *
@@ -8504,14 +8504,14 @@ function moveTo(array, from, to, count = 1) {
   return insertAt(withoutMovedElements, array.slice(from, from + count), to);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/reducer.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10425,9 +10425,9 @@ function withAutomaticChangeReset(reducer) {
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/symbol.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10442,29 +10442,29 @@ const symbol = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 
 ;// CONCATENATED MODULE: external ["wp","richText"]
 const external_wp_richText_namespaceObject = window["wp"]["richText"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/private-keys.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/private-keys.js
 const globalStylesDataKey = Symbol('globalStylesDataKey');
 const selectBlockPatternsKey = Symbol('selectBlockPatternsKey');
 const reusableBlocksSelectKey = Symbol('reusableBlocksSelect');
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/block-editor');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/block-editor');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/constants.js
 const STORE_NAME = 'core/block-editor';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10544,7 +10544,7 @@ function getInsertBlockTypeDependants(state, rootClientId) {
   return [state.blockListSettings[rootClientId], state.blocks.byClientId.get(rootClientId), state.settings.allowedBlockTypes, state.settings.templateLock, state.blockEditingModes];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/sorting.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/sorting.js
 /**
  * Recursive stable sorting comparator function.
  *
@@ -10596,9 +10596,9 @@ function orderBy(items, field, order = 'asc') {
   return items.concat().sort(comparator(field, items, order));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10650,7 +10650,7 @@ function isPatternFiltered(pattern, sourceFilter, syncFilter) {
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/object.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/object.js
 /**
  * Immutably sets a value inside an object. Like `lodash#set`, but returning a
  * new object. Treats nullish initial values as empty objects. Clones any
@@ -10721,9 +10721,9 @@ function uniqByProperty(array, property) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/get-block-settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/get-block-settings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10756,7 +10756,7 @@ const deprecatedFlags = {
 const prefixedFlags = {
   /*
    * These were only available in the plugin
-   * and can be removed when the minimum WordPress version
+   * and can be removed when the minimum cohesion version
    * for the plugin is 5.9.
    */
   'border.customColor': 'border.color',
@@ -10768,7 +10768,7 @@ const prefixedFlags = {
   'typography.customTextDecorations': 'typography.textDecoration',
   'typography.customTextTransforms': 'typography.textTransform',
   /*
-   * These were part of WordPress 5.8 and we need to keep them.
+   * These were part of cohesion 5.8 and we need to keep them.
    */
   'border.customRadius': 'border.radius',
   'spacing.customMargin': 'spacing.margin',
@@ -10783,7 +10783,7 @@ const prefixedFlags = {
  * be removed once third party devs have had sufficient time to update themes,
  * plugins, etc.
  *
- * @see https://github.com/WordPress/gutenberg/pull/34485
+ * @see https://github.com/cohesion/gutenberg/pull/34485
  *
  * @param {string} path Path to desired value in settings.
  * @return {string}     The value for defined setting.
@@ -10861,9 +10861,9 @@ function getBlockSettings(state, clientId, ...paths) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/private-selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/private-selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -11243,9 +11243,9 @@ function getTemporarilyEditingFocusModeToRevert(state) {
   return state.temporarilyEditingFocusModeRevert;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13802,15 +13802,15 @@ function __unstableGetTemporarilyEditingFocusModeToRevert(state) {
   return getTemporarilyEditingFocusModeToRevert(state);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/undo-ignore.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/undo-ignore.js
 // Keep track of the blocks that should not be pushing an additional
 // undo stack when editing the entity.
 // See the implementation of `syncDerivedUpdates` and `useBlockSync`.
 const undoIgnoreBlocks = new WeakSet();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/private-actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/private-actions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13824,11 +13824,11 @@ const castArray = maybeArray => Array.isArray(maybeArray) ? maybeArray : [maybeA
 
 /**
  * A list of private/experimental block editor settings that
- * should not become a part of the WordPress public API.
+ * should not become a part of the cohesion public API.
  * BlockEditorProvider will remove these settings from the
  * settings object it receives.
  *
- * @see https://github.com/WordPress/gutenberg/pull/46131
+ * @see https://github.com/cohesion/gutenberg/pull/46131
  */
 const privateSettings = ['inserterMediaCategories', 'blockInspectorAnimation'];
 
@@ -13925,7 +13925,7 @@ const privateRemoveBlocks = (clientIds, selectPrevious = true, forceRemove = fal
   // prompts to the user. Any instance opting into removal prompts must
   // register using `setBlockRemovalRules()`.
   //
-  // @see https://github.com/WordPress/gutenberg/pull/51145
+  // @see https://github.com/cohesion/gutenberg/pull/51145
   const rules = !forceRemove && select.getBlockRemovalRules();
   if (rules) {
     function flattenBlocks(blocks) {
@@ -14227,9 +14227,9 @@ const modifyContentLockBlock = clientId => ({
 const external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: external ["wp","notices"]
 const external_wp_notices_namespaceObject = window["wp"]["notices"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/selection.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14266,10 +14266,10 @@ function findRichTextAttributeKey(blockType) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/actions.js
 /* eslint no-console: [ 'error', { allow: [ 'error', 'warn' ] } ] */
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15905,13 +15905,13 @@ function __unstableSetTemporarilyEditingAsBlocks(temporarilyEditingAsBlocks, foc
 /**
  * Interface for inserter media responses. Any media resource should
  * map their response to this interface, in order to create the core
- * WordPress media blocks (image, video, audio).
+ * cohesion media blocks (image, video, audio).
  *
  * @typedef {Object} InserterMediaItem
  * @property {string}        title        The title of the media item.
  * @property {string}        url          The source url of the media item.
  * @property {string}        [previewUrl] The preview source url of the media item to display in the media list.
- * @property {number}        [id]         The WordPress id of the media item.
+ * @property {number}        [id]         The cohesion id of the media item.
  * @property {number|string} [sourceId]   The id of the media item from external source.
  * @property {string}        [alt]        The alt text of the media item.
  * @property {string}        [caption]    The caption of the media item.
@@ -15936,14 +15936,14 @@ function __unstableSetTemporarilyEditingAsBlocks(temporarilyEditingAsBlocks, foc
  *
  * - _InserterMediaItem_ `Object`: Interface for inserter media responses. Any media resource should
  * map their response to this interface, in order to create the core
- * WordPress media blocks (image, video, audio).
+ * cohesion media blocks (image, video, audio).
  *
  * _Properties_
  *
  * - _title_ `string`: The title of the media item.
  * - _url_ `string: The source url of the media item.
  * - _previewUrl_ `[string]`: The preview source url of the media item to display in the media list.
- * - _id_ `[number]`: The WordPress id of the media item.
+ * - _id_ `[number]`: The cohesion id of the media item.
  * - _sourceId_ `[number|string]`: The id of the media item from external source.
  * - _alt_ `[string]`: The alt text of the media item.
  * - _caption_ `[string]`: The caption of the media item.
@@ -15980,7 +15980,7 @@ function __unstableSetTemporarilyEditingAsBlocks(temporarilyEditingAsBlocks, foc
  * 	 	} );
  * 	 	const response = await window.fetch( url, {
  * 	 		headers: {
- * 	 			'User-Agent': 'WordPress/inserter-media-fetch',
+ * 	 			'User-Agent': 'cohesion/inserter-media-fetch',
  * 	 		},
  * 	 	} );
  * 	 	const jsonResponse = await response.json();
@@ -15991,7 +15991,7 @@ function __unstableSetTemporarilyEditingAsBlocks(temporarilyEditingAsBlocks, foc
  * 	 		// be mapped to `InserterMediaItem`'s `sourceId` prop. This can be useful if you provide
  * 	 		// a report URL getter.
  * 	 		// Additionally you should always clear the `id` value of your response results because
- * 	 		// it is used to identify WordPress media items.
+ * 	 		// it is used to identify cohesion media items.
  * 	 		sourceId: result.id,
  * 	 		id: undefined,
  * 	 		caption: result.caption,
@@ -15999,7 +15999,7 @@ function __unstableSetTemporarilyEditingAsBlocks(temporarilyEditingAsBlocks, foc
  * 	 	} ) );
  * 	 },
  * 	 getReportUrl: ( { sourceId } ) =>
- * 	 	`https://wordpress.org/openverse/image/${ sourceId }/report/`,
+ * 	 	`https://cohesion.org/openverse/image/${ sourceId }/report/`,
  * 	 isExternalResource: true,
  * } );
  * ```
@@ -16107,9 +16107,9 @@ function unsetBlockEditingMode(clientId = '') {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -16127,7 +16127,7 @@ function unsetBlockEditingMode(clientId = '') {
 /**
  * Block editor data store configuration.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#registerStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#registerStore
  */
 const storeConfig = {
   reducer: reducer,
@@ -16138,7 +16138,7 @@ const storeConfig = {
 /**
  * Store definition for the block editor namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  */
 const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, {
   ...storeConfig,
@@ -16160,13 +16160,13 @@ unlock(registeredStore).registerPrivateSelectors(private_selectors_namespaceObje
 // `store` descriptor in order to avoid unit tests failing, which could happen
 // when tests create new registries in which they register stores.
 //
-// @see https://github.com/WordPress/gutenberg/pull/51145#discussion_r1239999590
+// @see https://github.com/cohesion/gutenberg/pull/51145#discussion_r1239999590
 unlock(store).registerPrivateActions(private_actions_namespaceObject);
 unlock(store).registerPrivateSelectors(private_selectors_namespaceObject);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-settings/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-settings/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -16224,7 +16224,7 @@ function useSetting(path) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-sizes/fluid-utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-sizes/fluid-utils.js
 /**
  * The fluid utilities must match the backend equivalent.
  * See: gutenberg_get_typography_font_size_value() in lib/block-supports/typography.php
@@ -16470,7 +16470,7 @@ function roundToPrecision(value, digits = 3) {
   return Number.isFinite(value) ? parseFloat(Math.round(value * base) / base) : undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/typography-utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/typography-utils.js
 /**
  * The fluid utilities must match the backend equivalent.
  * See: gutenberg_get_typography_font_size_value() in lib/block-supports/typography.php
@@ -16573,14 +16573,14 @@ function getFluidTypographyOptionsFromSettings(settings) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/utils.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -16986,9 +16986,9 @@ function getBlockStyleVariationSelector(variation, blockSelector) {
   return result.join(',');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const DEFAULT_GLOBAL_STYLES_CONTEXT = {
@@ -16999,14 +16999,14 @@ const DEFAULT_GLOBAL_STYLES_CONTEXT = {
 };
 const GlobalStylesContext = (0,external_wp_element_namespaceObject.createContext)(DEFAULT_GLOBAL_STYLES_CONTEXT);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/hooks.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17180,7 +17180,7 @@ function useSettingsForBlockElement(parentSettings, blockName, element) {
 
     // The column-count style is named text column to reduce confusion with
     // the columns block and manage expectations from the support.
-    // See: https://github.com/WordPress/gutenberg/pull/33587
+    // See: https://github.com/cohesion/gutenberg/pull/33587
     if (!supportedStyles.includes('columnCount')) {
       updatedSettings.typography = {
         ...updatedSettings.typography,
@@ -17254,7 +17254,7 @@ function useColorsPerOrigin(settings) {
     }
     if (shouldDisplayDefaultColors && defaultColors && defaultColors.length) {
       result.push({
-        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from WordPress.'),
+        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from cohesion.'),
         colors: defaultColors
       });
     }
@@ -17282,7 +17282,7 @@ function useGradientsPerOrigin(settings) {
     }
     if (shouldDisplayDefaultGradients && defaultGradients && defaultGradients.length) {
       result.push({
-        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from WordPress.'),
+        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from cohesion.'),
         gradients: defaultGradients
       });
     }
@@ -17298,9 +17298,9 @@ function useGradientsPerOrigin(settings) {
 
 ;// CONCATENATED MODULE: ./node_modules/clsx/dist/clsx.mjs
 function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else if("object"==typeof e)if(Array.isArray(e)){var o=e.length;for(t=0;t<o;t++)e[t]&&(f=r(e[t]))&&(n&&(n+=" "),n+=f)}else for(f in e)e[f]&&(n&&(n+=" "),n+=f);return n}function clsx(){for(var e,t,f=0,n="",o=arguments.length;f<o;f++)(e=arguments[f])&&(t=r(e))&&(n&&(n+=" "),n+=t);return n}/* harmony default export */ const dist_clsx = (clsx);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17720,9 +17720,9 @@ function createBlockSaveFilter(features) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/compat.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/compat.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17739,9 +17739,9 @@ function migrateLightBlockWrapper(settings) {
 
 ;// CONCATENATED MODULE: external ["wp","components"]
 const external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/groups.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/groups.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const BlockControlsDefault = (0,external_wp_components_namespaceObject.createSlotFill)('BlockControls');
@@ -17758,9 +17758,9 @@ const groups = {
 };
 /* harmony default export */ const block_controls_groups = (groups);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -17779,9 +17779,9 @@ function useBlockControlsFill(group, shareWithChildBlocks) {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/fill.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/fill.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17828,9 +17828,9 @@ function BlockControlsFill({
 ;// CONCATENATED MODULE: external ["wp","warning"]
 const external_wp_warning_namespaceObject = window["wp"]["warning"];
 var external_wp_warning_default = /*#__PURE__*/__webpack_require__.n(external_wp_warning_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/slot.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17880,7 +17880,7 @@ function BlockControlsSlot({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/index.js
 /**
  * Internal dependencies
  */
@@ -17905,9 +17905,9 @@ BlockFormatControls.Slot = props => {
 };
 /* harmony default export */ const block_controls = (BlockControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/justify-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/justify-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17920,9 +17920,9 @@ const justifyLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const justify_left = (justifyLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/justify-center.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/justify-center.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17935,9 +17935,9 @@ const justifyCenter = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const justify_center = (justifyCenter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/justify-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/justify-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17950,9 +17950,9 @@ const justifyRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const justify_right = (justifyRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/justify-space-between.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/justify-space-between.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17965,9 +17965,9 @@ const justifySpaceBetween = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceOb
 });
 /* harmony default export */ const justify_space_between = (justifySpaceBetween);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/justify-stretch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/justify-stretch.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17980,9 +17980,9 @@ const justifyStretch = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.
 });
 /* harmony default export */ const justify_stretch = (justifyStretch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/arrow-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/arrow-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -17995,9 +17995,9 @@ const arrowRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const arrow_right = (arrowRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/arrow-down.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/arrow-down.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18010,7 +18010,7 @@ const arrowDown = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const arrow_down = (arrowDown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/definitions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/definitions.js
 // Layout definitions keyed by layout type.
 // Provides a common definition of slugs, classnames, base styles, and spacing styles for each layout type.
 // If making changes or additions to layout definitions, be sure to update the corresponding PHP definitions in
@@ -18160,9 +18160,9 @@ const LAYOUT_DEFINITIONS = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18221,7 +18221,7 @@ function getBlockGapCSS(selector, layoutDefinitions = LAYOUT_DEFINITIONS, layout
  * are not a `css var`. This needs to change when parsing
  * css variables land.
  *
- * @see https://github.com/WordPress/gutenberg/pull/34710#issuecomment-918000752
+ * @see https://github.com/cohesion/gutenberg/pull/34710#issuecomment-918000752
  *
  * @param {Object} layout The layout object.
  * @return {Object} An object with contextual info per alignment.
@@ -18245,9 +18245,9 @@ function getAlignmentsInfo(layout) {
   return alignmentInfo;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-all.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-all.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18260,9 +18260,9 @@ const sidesAll = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const sides_all = (sidesAll);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-horizontal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-horizontal.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18283,9 +18283,9 @@ const sidesHorizontal = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject
 });
 /* harmony default export */ const sides_horizontal = (sidesHorizontal);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-vertical.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18306,9 +18306,9 @@ const sidesVertical = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const sides_vertical = (sidesVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-top.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-top.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18327,9 +18327,9 @@ const sidesTop = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(
 });
 /* harmony default export */ const sides_top = (sidesTop);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18348,9 +18348,9 @@ const sidesRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs
 });
 /* harmony default export */ const sides_right = (sidesRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-bottom.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-bottom.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18372,9 +18372,9 @@ const sidesBottom = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const sides_bottom = (sidesBottom);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/sides-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/sides-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18393,9 +18393,9 @@ const sidesLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)
 });
 /* harmony default export */ const sides_left = (sidesLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18744,7 +18744,7 @@ function getInitialView(values = {}, sides) {
   return VIEWS.custom;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/gap.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/gap.js
 /**
  * Internal dependencies
  */
@@ -18786,9 +18786,9 @@ function getGapCSSValue(blockGapValue, defaultValue = '0') {
   return row === column ? row : `${row} ${column}`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-vertical-alignment-control/icons.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-vertical-alignment-control/icons.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18828,9 +18828,9 @@ const spaceBetween = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
   })
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-vertical-alignment-control/ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-vertical-alignment-control/ui.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -18896,11 +18896,11 @@ function BlockVerticalAlignmentUI({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-vertical-alignment-toolbar/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-vertical-alignment-toolbar/README.md
  */
 /* harmony default export */ const ui = (BlockVerticalAlignmentUI);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-vertical-alignment-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-vertical-alignment-control/index.js
 /**
  * Internal dependencies
  */
@@ -18920,13 +18920,13 @@ const BlockVerticalAlignmentToolbar = props => {
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-vertical-alignment-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-vertical-alignment-control/README.md
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/justify-content-control/ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/justify-content-control/ui.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19003,7 +19003,7 @@ function JustifyContentUI({
 }
 /* harmony default export */ const justify_content_control_ui = (JustifyContentUI);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/justify-content-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/justify-content-control/index.js
 /**
  * Internal dependencies
  */
@@ -19023,13 +19023,13 @@ const JustifyToolbar = props => {
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/justify-content-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/justify-content-control/README.md
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/flex.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/flex.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19384,9 +19384,9 @@ function OrientationControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/flow.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/flow.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19482,13 +19482,13 @@ function OrientationControl({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@cohesion/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -19514,9 +19514,9 @@ function Icon({
 }
 /* harmony default export */ const build_module_icon = ((0,external_wp_element_namespaceObject.forwardRef)(Icon));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/position-center.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/position-center.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19529,9 +19529,9 @@ const positionCenter = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.
 });
 /* harmony default export */ const position_center = (positionCenter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/stretch-wide.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/stretch-wide.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19546,9 +19546,9 @@ const stretchWide = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 
 ;// CONCATENATED MODULE: external ["wp","styleEngine"]
 const external_wp_styleEngine_namespaceObject = window["wp"]["styleEngine"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/constrained.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/constrained.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19799,9 +19799,9 @@ const external_wp_styleEngine_namespaceObject = window["wp"]["styleEngine"];
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/provider/block-refs-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/provider/block-refs-provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19821,9 +19821,9 @@ function BlockRefsProvider({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-block-refs.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-block-refs.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19833,8 +19833,8 @@ function BlockRefsProvider({
  */
 
 
-/** @typedef {import('@wordpress/element').RefCallback} RefCallback */
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@cohesion/element').RefCallback} RefCallback */
+/** @typedef {import('@cohesion/element').RefObject} RefObject */
 
 /**
  * Provides a ref to the BlockRefs context.
@@ -19905,9 +19905,9 @@ function useBlockElement(clientId) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-popover/use-popover-scroll.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-popover/use-popover-scroll.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -19943,14 +19943,14 @@ function usePopoverScroll(scrollableRef) {
 }
 /* harmony default export */ const use_popover_scroll = (usePopoverScroll);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-popover/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-popover/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20067,13 +20067,13 @@ const PublicBlockPopover = ({
 });
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-popover/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-popover/README.md
  */
 /* harmony default export */ const block_popover = ((0,external_wp_element_namespaceObject.forwardRef)(PublicBlockPopover));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-popover/cover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-popover/cover.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20139,14 +20139,14 @@ function CoverContainer({
 }
 /* harmony default export */ const cover = ((0,external_wp_element_namespaceObject.forwardRef)(BlockPopoverCover));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/grid-visualizer/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/grid-visualizer/utils.js
 function getComputedCSS(element, property) {
   return element.ownerDocument.defaultView.getComputedStyle(element).getPropertyValue(property);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/grid-visualizer/grid-visualizer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/grid-visualizer/grid-visualizer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20229,9 +20229,9 @@ function getGridInfo(blockElement) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/grid.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/grid.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20583,7 +20583,7 @@ function GridLayoutTypeControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/layouts/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/layouts/index.js
 /**
  * Internal dependencies
  */
@@ -20612,9 +20612,9 @@ function getLayoutTypes() {
   return layoutTypes;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/layout.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/layout.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20668,9 +20668,9 @@ function LayoutStyle({
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-alignment-control/use-available-alignments.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-alignment-control/use-available-alignments.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20741,9 +20741,9 @@ function useAvailableAlignments(controls = use_available_alignments_DEFAULT_CONT
   return alignments;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/align-none.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/align-none.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20756,9 +20756,9 @@ const alignNone = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const align_none = (alignNone);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/position-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/position-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20771,9 +20771,9 @@ const positionLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const position_left = (positionLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/position-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/position-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20786,9 +20786,9 @@ const positionRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const position_right = (positionRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/stretch-full-width.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/stretch-full-width.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20801,9 +20801,9 @@ const stretchFullWidth = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObjec
 });
 /* harmony default export */ const stretch_full_width = (stretchFullWidth);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-alignment-control/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-alignment-control/constants.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20835,14 +20835,14 @@ const constants_BLOCK_ALIGNMENTS_CONTROLS = {
 };
 const constants_DEFAULT_CONTROL = 'none';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-alignment-control/ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-alignment-control/ui.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -20935,7 +20935,7 @@ function BlockAlignmentUI({
 }
 /* harmony default export */ const block_alignment_control_ui = (BlockAlignmentUI);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-alignment-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-alignment-control/index.js
 /**
  * Internal dependencies
  */
@@ -20955,13 +20955,13 @@ const BlockAlignmentToolbar = props => {
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-alignment-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-alignment-control/README.md
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-editing-mode/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-editing-mode/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21031,14 +21031,14 @@ function useBlockEditingMode(mode) {
   return clientId ? context[blockEditingModeKey] : globalBlockEditingMode;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/align.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/align.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21215,9 +21215,9 @@ function addAssignedAlign(props, blockType, attributes) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/align/addAttribute', addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/groups.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/groups.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const InspectorControlsDefault = (0,external_wp_components_namespaceObject.createSlotFill)('InspectorControls');
@@ -21250,9 +21250,9 @@ const groups_groups = {
 };
 /* harmony default export */ const inspector_controls_groups = (groups_groups);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/fill.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/fill.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21344,9 +21344,9 @@ function ToolsPanelInspectorControl({
   }), innerMarkup);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/block-support-tools-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/block-support-tools-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21416,9 +21416,9 @@ function BlockSupportToolsPanel({
   }, panelId);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/block-support-slot-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/block-support-slot-container.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21446,9 +21446,9 @@ function BlockSupportSlotContainer({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/slot.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21514,7 +21514,7 @@ function InspectorControlsSlot({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls/index.js
 /**
  * Internal dependencies
  */
@@ -21540,7 +21540,7 @@ InspectorAdvancedControls.Slot = props => {
 InspectorAdvancedControls.slotName = 'InspectorAdvancedControls';
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/inspector-controls/README.md
  */
 /* harmony default export */ const inspector_controls = (InspectorControls);
 
@@ -21552,9 +21552,9 @@ const external_wp_dom_namespaceObject = window["wp"]["dom"];
 const external_wp_blob_namespaceObject = window["wp"]["blob"];
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/media.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/media.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21572,9 +21572,9 @@ const media = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(ext
 });
 /* harmony default export */ const library_media = (media);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/upload.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/upload.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21587,9 +21587,9 @@ const upload = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_upload = (upload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/post-featured-image.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/post-featured-image.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21602,9 +21602,9 @@ const postFeaturedImage = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 });
 /* harmony default export */ const post_featured_image = (postFeaturedImage);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/media-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/media-upload/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21618,13 +21618,13 @@ const postFeaturedImage = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 const MediaUpload = () => null;
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/media-upload/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/media-upload/README.md
  */
 /* harmony default export */ const media_upload = ((0,external_wp_components_namespaceObject.withFilters)('editor.MediaUpload')(MediaUpload));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/media-upload/check.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/media-upload/check.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21646,7 +21646,7 @@ function MediaUploadCheck({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/media-upload/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/media-upload/README.md
  */
 /* harmony default export */ const check = (MediaUploadCheck);
 
@@ -21655,9 +21655,9 @@ const external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","preferences"]
 const external_wp_preferences_namespaceObject = window["wp"]["preferences"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/keyboard-return.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/keyboard-return.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21669,9 +21669,9 @@ const keyboardReturn = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.
 });
 /* harmony default export */ const keyboard_return = (keyboardReturn);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-left-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-left-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21684,9 +21684,9 @@ const chevronLeftSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObjec
 });
 /* harmony default export */ const chevron_left_small = (chevronLeftSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-right-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21699,9 +21699,9 @@ const chevronRightSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 });
 /* harmony default export */ const chevron_right_small = (chevronRightSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/settings-drawer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/settings-drawer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21762,14 +21762,14 @@ function LinkSettingsDrawer({
 
 // EXTERNAL MODULE: external "React"
 var external_React_ = __webpack_require__(1609);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-input/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-input/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -21987,7 +21987,7 @@ class URLInput extends external_wp_element_namespaceObject.Component {
       // within an input field like they do for Mac Firefox/Chrome/Safari. This causes
       // a form of focus trapping that is disruptive to the user experience. This disruption
       // only happens if the caret is not in the first or last position in the text input.
-      // See: https://github.com/WordPress/gutenberg/issues/5693#issuecomment-436684747
+      // See: https://github.com/cohesion/gutenberg/issues/5693#issuecomment-436684747
       switch (event.keyCode) {
         // When UP is pressed, if the caret is at the start of the text, move it to the 0
         // position.
@@ -22239,7 +22239,7 @@ class URLInput extends external_wp_element_namespaceObject.Component {
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/url-input/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/url-input/README.md
  */
 /* harmony default export */ const url_input = ((0,external_wp_compose_namespaceObject.compose)(external_wp_compose_namespaceObject.withSafeTimeout, external_wp_components_namespaceObject.withSpokenMessages, external_wp_compose_namespaceObject.withInstanceId, (0,external_wp_data_namespaceObject.withSelect)((select, props) => {
   // If a link suggestions handler is already provided then
@@ -22255,9 +22255,9 @@ class URLInput extends external_wp_element_namespaceObject.Component {
   };
 }))(URLInput));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plus.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/plus.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22270,9 +22270,9 @@ const plus = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_plus = (plus);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/search-create-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/search-create-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22308,9 +22308,9 @@ const LinkControlSearchCreate = ({
 };
 /* harmony default export */ const search_create_button = (LinkControlSearchCreate);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/post-list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/post-list.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22323,9 +22323,9 @@ const postList = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const post_list = (postList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/page.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/page.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22341,9 +22341,9 @@ const page = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(exte
 });
 /* harmony default export */ const library_page = (page);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/tag.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/tag.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22356,9 +22356,9 @@ const tag = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(extern
 });
 /* harmony default export */ const library_tag = (tag);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/category.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/category.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22373,9 +22373,9 @@ const category = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const library_category = (category);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/file.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/file.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22390,9 +22390,9 @@ const file = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_file = (file);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/globe.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/globe.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22405,9 +22405,9 @@ const globe = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_globe = (globe);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/home.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/home.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22420,9 +22420,9 @@ const home = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_home = (home);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/verse.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/verse.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22435,9 +22435,9 @@ const verse = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_verse = (verse);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/search-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/search-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22560,9 +22560,9 @@ function getVisualTypeName(suggestion) {
 }
 /* harmony default export */ const search_item = (LinkControlSearchItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/constants.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22580,9 +22580,9 @@ const DEFAULT_LINK_SETTINGS = [{
   title: (0,external_wp_i18n_namespaceObject.__)('Open in new tab')
 }];
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/search-results.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/search-results.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22680,9 +22680,9 @@ function LinkControlSearchResults({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/is-url-like.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/is-url-like.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22730,9 +22730,9 @@ function hasPossibleTLD(url, maxLength = 6) {
   return regex.test(cleanedURL);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/use-search-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/use-search-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22804,7 +22804,7 @@ const handleEntitySearch = async (val, suggestionsQuery, fetchSearchSuggestions,
   return isURLLike(val) || !withCreateSuggestion ? results : results.concat({
     // the `id` prop is intentionally ommitted here because it
     // is never exposed as part of the component's public API.
-    // see: https://github.com/WordPress/gutenberg/pull/19775#discussion_r378931316.
+    // see: https://github.com/cohesion/gutenberg/pull/19775#discussion_r378931316.
     title: val,
     // Must match the existing `<input>`s text value.
     url: val,
@@ -22840,9 +22840,9 @@ function useSearchHandler(suggestionsQuery, allowDirectEntry, withCreateSuggesti
   }, [directEntryHandler, fetchSearchSuggestions, pageOnFront, pageForPosts, suggestionsQuery, withCreateSuggestion]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/search-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/search-input.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22974,9 +22974,9 @@ const LinkControlSearchInput = (0,external_wp_element_namespaceObject.forwardRef
 });
 /* harmony default export */ const search_input = (LinkControlSearchInput);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/info.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/info.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -22989,9 +22989,9 @@ const info = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_info = (info);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/pencil.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/pencil.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23004,7 +23004,7 @@ const pencil = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_pencil = (pencil);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/edit.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/edit.js
 /**
  * Internal dependencies
  */
@@ -23012,9 +23012,9 @@ const pencil = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 
 /* harmony default export */ const edit = (library_pencil);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link-off.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/link-off.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23027,9 +23027,9 @@ const linkOff = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ex
 });
 /* harmony default export */ const link_off = (linkOff);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/copy-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/copy-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23044,9 +23044,9 @@ const copySmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const copy_small = (copySmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/viewer-slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/viewer-slot.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
@@ -23056,14 +23056,14 @@ const {
 
 /* harmony default export */ const viewer_slot = ((/* unused pure expression or super */ null && (ViewerSlot)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/use-rich-url-data.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/use-rich-url-data.js
 /**
  * Internal dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23140,14 +23140,14 @@ function useRemoteUrlData(url) {
 }
 /* harmony default export */ const use_rich_url_data = (useRemoteUrlData);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/link-preview.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/link-preview.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23284,9 +23284,9 @@ function LinkPreview({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/settings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23325,9 +23325,9 @@ const LinkControlSettings = ({
 };
 /* harmony default export */ const link_control_settings = (LinkControlSettings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/use-create-page.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/use-create-page.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23402,9 +23402,9 @@ const makeCancelable = promise => {
 // EXTERNAL MODULE: ./node_modules/fast-deep-equal/index.js
 var fast_deep_equal = __webpack_require__(5215);
 var fast_deep_equal_default = /*#__PURE__*/__webpack_require__.n(fast_deep_equal);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/use-internal-value.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/use-internal-value.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23418,7 +23418,7 @@ function useInternalValue(value) {
 
   // If the value prop changes, update the internal state.
   // See:
-  // - https://github.com/WordPress/gutenberg/pull/51387#issuecomment-1722927384.
+  // - https://github.com/cohesion/gutenberg/pull/51387#issuecomment-1722927384.
   // - https://react.dev/reference/react/useState#storing-information-from-previous-renders.
   if (!fast_deep_equal_default()(value, previousValue)) {
     setPreviousValue(value);
@@ -23452,14 +23452,14 @@ function useInternalValue(value) {
   return [internalValue, setInternalValue, setInternalURLInputValue, setInternalTextInputValue, createSetInternalSettingValueHandler];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/link-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/link-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -23612,7 +23612,7 @@ function LinkControl({
    * Sets the open/closed state of the Advanced Settings Drawer,
    * optionlly persisting the state to the user's preferences.
    *
-   * Note that Block Editor components can be consumed by non-WordPress
+   * Note that Block Editor components can be consumed by non-cohesion
    * environments which may not have preferences setup.
    * Therefore a local state is also  used as a fallback.
    *
@@ -23625,7 +23625,7 @@ function LinkControl({
     setSettingsOpen(prefVal);
   };
 
-  // Block Editor components can be consumed by non-WordPress environments
+  // Block Editor components can be consumed by non-cohesion environments
   // which may not have these preferences setup.
   // Therefore a local state is used as a fallback.
   const isSettingsOpen = advancedSettingsPreference || settingsOpen;
@@ -23753,7 +23753,7 @@ function LinkControl({
 
   // Only show text control once a URL value has been committed
   // and it isn't just empty whitespace.
-  // See https://github.com/WordPress/gutenberg/pull/33849/#issuecomment-932194927.
+  // See https://github.com/cohesion/gutenberg/pull/33849/#issuecomment-932194927.
   const showTextControl = hasLinkValue && hasTextControl;
   const isEditing = (isEditingLink || !value) && !isCreatingPage;
   const isDisabled = !valueHasChanges || currentInputIsEmpty;
@@ -23855,14 +23855,14 @@ LinkControl.ViewerFill = ViewerFill;
 LinkControl.DEFAULT_LINK_SETTINGS = DEFAULT_LINK_SETTINGS;
 /* harmony default export */ const link_control = (LinkControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/media-replace-flow/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/media-replace-flow/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -24060,7 +24060,7 @@ const MediaReplaceFlow = ({
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/media-replace-flow/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/media-replace-flow/README.md
  */
 /* harmony default export */ const media_replace_flow = ((0,external_wp_compose_namespaceObject.compose)([(0,external_wp_data_namespaceObject.withDispatch)(dispatch => {
   const {
@@ -24073,7 +24073,7 @@ const MediaReplaceFlow = ({
   };
 }), (0,external_wp_components_namespaceObject.withFilters)('editor.MediaReplaceFlow')])(MediaReplaceFlow));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/theme-file-uri-utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/theme-file-uri-utils.js
 /**
  * Internal dependencies
  */
@@ -24147,14 +24147,14 @@ function setThemeFileUris(themeJson, themeFileURIs) {
   return themeJson;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/background-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/background-panel.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -24649,9 +24649,9 @@ function BackgroundPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/background.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/background.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -24797,9 +24797,9 @@ function BackgroundImagePanel({
   hasSupport: hasBackgroundSupport
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/lock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/lock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -24827,9 +24827,9 @@ function lock_addAttribute(settings) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/lock/addAttribute', lock_addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/anchor.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/anchor.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -24901,7 +24901,7 @@ function BlockEditAnchorControlPure({
       help: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, {
         children: [(0,external_wp_i18n_namespaceObject.__)('Enter a word or two — without spaces — to make a unique web address just for this block, called an “anchor”. Then, you’ll be able to link directly to this section of your page.'), isWeb && /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_ReactJSXRuntime_namespaceObject.Fragment, {
           children: [' ', /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ExternalLink, {
-            href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/documentation/article/page-jumps/'),
+            href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/documentation/article/page-jumps/'),
             children: (0,external_wp_i18n_namespaceObject.__)('Learn more about anchors')
           })]
         })]
@@ -24947,9 +24947,9 @@ function addSaveProps(extraProps, blockType, attributes) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/anchor/attribute', anchor_addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/aria-label.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/aria-label.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25009,14 +25009,14 @@ function aria_label_addSaveProps(extraProps, blockType, attributes) {
 });
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/ariaLabel/attribute', aria_label_addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/custom-class-name.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/custom-class-name.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25138,9 +25138,9 @@ function addTransforms(result, source, index, results) {
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/custom-class-name/attribute', custom_class_name_addAttribute);
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.switchToBlockType.transformedBlock', 'core/color/addTransforms', addTransforms);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/generated-class-name.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/generated-class-name.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25182,7 +25182,7 @@ var colord_r={grad:.9,turn:360,rad:360/(2*Math.PI)},t=function(r){return"string"
 ;// CONCATENATED MODULE: ./node_modules/colord/plugins/a11y.mjs
 var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.055,2.4)},a11y_t=function(t){return.2126*a11y_o(t.r)+.7152*a11y_o(t.g)+.0722*a11y_o(t.b)};/* harmony default export */ function a11y(o){o.prototype.luminance=function(){return o=a11y_t(this.rgba),void 0===(r=2)&&(r=0),void 0===n&&(n=Math.pow(10,r)),Math.round(n*o)/n+0;var o,r,n},o.prototype.contrast=function(r){void 0===r&&(r="#FFF");var n,a,i,e,v,u,d,c=r instanceof o?r:new o(r);return e=this.rgba,v=c.toRgb(),u=a11y_t(e),d=a11y_t(v),n=u>d?(u+.05)/(d+.05):(d+.05)/(u+.05),void 0===(a=2)&&(a=0),void 0===i&&(i=Math.pow(10,a)),Math.floor(i*n)/i+0},o.prototype.isReadable=function(o,t){return void 0===o&&(o="#FFF"),void 0===t&&(t={}),this.contrast(o)>=(e=void 0===(i=(r=t).size)?"normal":i,"AAA"===(a=void 0===(n=r.level)?"AA":n)&&"normal"===e?7:"AA"===a&&"large"===e?3:4.5);var r,n,a,i,e}}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors/utils.js
 /**
  * External dependencies
  */
@@ -25191,7 +25191,7 @@ var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.0
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25274,9 +25274,9 @@ function getMostReadableColor(colors, colorValue) {
   return colors.find(color => getColorContrast(color) === maxContrast).color;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors-gradients/use-multiple-origin-colors-and-gradients.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors-gradients/use-multiple-origin-colors-and-gradients.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25310,7 +25310,7 @@ function useMultipleOriginColorsAndGradients() {
     }
     if (shouldDisplayDefaultColors && defaultColors && defaultColors.length) {
       result.push({
-        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from WordPress.'),
+        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from cohesion.'),
         colors: defaultColors
       });
     }
@@ -25332,7 +25332,7 @@ function useMultipleOriginColorsAndGradients() {
     }
     if (shouldDisplayDefaultGradients && defaultGradients && defaultGradients.length) {
       result.push({
-        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from WordPress.'),
+        name: (0,external_wp_i18n_namespaceObject._x)('Default', 'Indicates this palette comes from cohesion.'),
         gradients: defaultGradients
       });
     }
@@ -25348,9 +25348,9 @@ function useMultipleOriginColorsAndGradients() {
   return colorGradientSettings;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/border-radius-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/border-radius-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25453,9 +25453,9 @@ function hasDefinedValues(values) {
   return !!filteredValues.length;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/border-radius-control/all-input-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/border-radius-control/all-input-control.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25512,9 +25512,9 @@ function AllInputControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/border-radius-control/input-controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/border-radius-control/input-controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25563,7 +25563,7 @@ function BoxInputControls({
 
   // Controls are wrapped in tooltips as visible labels aren't desired here.
   // Tooltip rendering also requires the UnitControl to be wrapped. See:
-  // https://github.com/WordPress/gutenberg/pull/24966#issuecomment-685875026
+  // https://github.com/cohesion/gutenberg/pull/24966#issuecomment-685875026
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("div", {
     className: "components-border-radius-control__input-controls-wrapper",
     children: Object.entries(CORNERS).map(([corner, label]) => {
@@ -25588,9 +25588,9 @@ function BoxInputControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/link.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25603,9 +25603,9 @@ const link_link = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_link = (link_link);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/border-radius-control/linked-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/border-radius-control/linked-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25629,9 +25629,9 @@ function LinkedButton({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/border-radius-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/border-radius-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25742,9 +25742,9 @@ function BorderRadiusControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/check.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25757,9 +25757,9 @@ const check_check = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_check = (check_check);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/shadow.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/shadow.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25772,9 +25772,9 @@ const shadow = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_shadow = (shadow);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/shadow-panel-components.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/shadow-panel-components.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -25963,9 +25963,9 @@ function useShadowPresets(settings) {
   }, [settings]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/border-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/border-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -26225,14 +26225,14 @@ function BorderPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/border.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/border.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -26603,9 +26603,9 @@ function border_useBlockProps({
 });
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/border/addAttributes', addAttributes);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/gradients/use-gradient.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/gradients/use-gradient.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -26704,14 +26704,14 @@ function __experimentalUseGradient({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors-gradients/control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors-gradients/control.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -26848,14 +26848,14 @@ function ColorGradientControl(props) {
 }
 /* harmony default export */ const control = (ColorGradientControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/color-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/color-panel.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27376,7 +27376,7 @@ function ColorPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/contrast-checker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/contrast-checker/index.js
 /**
  * External dependencies
  */
@@ -27385,7 +27385,7 @@ function ColorPanel({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27487,13 +27487,13 @@ function ContrastChecker({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/contrast-checker/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/contrast-checker/README.md
  */
 /* harmony default export */ const contrast_checker = (ContrastChecker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/contrast-checker.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/contrast-checker.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27542,14 +27542,14 @@ function BlockColorContrastChecker({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/color.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/color.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27846,9 +27846,9 @@ function color_addTransforms(result, source, index, results) {
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/color/addAttribute', color_addAttributes);
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.switchToBlockType.transformedBlock', 'core/color/addTransforms', color_addTransforms);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-family/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-family/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27893,9 +27893,9 @@ function FontFamilyControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-appearance-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-appearance-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28092,7 +28092,7 @@ function FontAppearanceControl(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/line-height-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/line-height-control/utils.js
 const BASE_DEFAULT_VALUE = 1.5;
 const STEP = 0.01;
 /**
@@ -28123,9 +28123,9 @@ function isLineHeightDefined(lineHeight) {
   return lineHeight !== undefined && lineHeight !== RESET_VALUE;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/line-height-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/line-height-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28237,13 +28237,13 @@ const line_height_control_LineHeightControl = ({
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/line-height-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/line-height-control/README.md
  */
 /* harmony default export */ const line_height_control = (line_height_control_LineHeightControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/letter-spacing-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/letter-spacing-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28289,9 +28289,9 @@ function LetterSpacingControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/align-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/align-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28304,9 +28304,9 @@ const alignLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const align_left = (alignLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/align-center.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/align-center.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28319,9 +28319,9 @@ const align_center_alignCenter = /*#__PURE__*/(0,external_ReactJSXRuntime_namesp
 });
 /* harmony default export */ const align_center = (align_center_alignCenter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/align-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/align-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28334,9 +28334,9 @@ const alignRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const align_right = (alignRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/align-justify.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/align-justify.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28349,14 +28349,14 @@ const alignJustify = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const align_justify = (alignJustify);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/segmented-text-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/segmented-text-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28408,14 +28408,14 @@ function SegmentedTextControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/text-alignment-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/text-alignment-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28477,9 +28477,9 @@ function TextAlignmentControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/reset.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/reset.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28492,9 +28492,9 @@ const reset_reset = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_reset = (reset_reset);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-uppercase.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/format-uppercase.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28507,9 +28507,9 @@ const formatUppercase = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject
 });
 /* harmony default export */ const format_uppercase = (formatUppercase);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-lowercase.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/format-lowercase.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28522,9 +28522,9 @@ const formatLowercase = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject
 });
 /* harmony default export */ const format_lowercase = (formatLowercase);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-capitalize.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/format-capitalize.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28537,14 +28537,14 @@ const formatCapitalize = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObjec
 });
 /* harmony default export */ const format_capitalize = (formatCapitalize);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/text-transform-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/text-transform-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28598,9 +28598,9 @@ function TextTransformControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-underline.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/format-underline.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28613,9 +28613,9 @@ const formatUnderline = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject
 });
 /* harmony default export */ const format_underline = (formatUnderline);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/format-strikethrough.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/format-strikethrough.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28628,14 +28628,14 @@ const formatStrikethrough = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceOb
 });
 /* harmony default export */ const format_strikethrough = (formatStrikethrough);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/text-decoration-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/text-decoration-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28685,9 +28685,9 @@ function TextDecorationControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/text-horizontal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/text-horizontal.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28700,9 +28700,9 @@ const textHorizontal = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.
 });
 /* harmony default export */ const text_horizontal = (textHorizontal);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/text-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/text-vertical.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28715,14 +28715,14 @@ const textVertical = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const text_vertical = (textVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-mode-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-mode-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28768,9 +28768,9 @@ function WritingModeControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/typography-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/typography-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29179,9 +29179,9 @@ function TypographyPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/line-height.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/line-height.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29245,9 +29245,9 @@ function useIsLineHeightDisabled({
 ;// CONCATENATED MODULE: external ["wp","tokenList"]
 const external_wp_tokenList_namespaceObject = window["wp"]["tokenList"];
 var external_wp_tokenList_default = /*#__PURE__*/__webpack_require__.n(external_wp_tokenList_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/font-family.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/font-family.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29348,9 +29348,9 @@ function resetFontFamily({
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/fontFamily/addAttribute', font_family_addAttributes);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-sizes/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-sizes/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29422,9 +29422,9 @@ function getFontSizeClass(fontSizeSlug) {
   return `has-${utils_kebabCase(fontSizeSlug)}-font-size`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/font-size.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/font-size.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29608,9 +29608,9 @@ function font_size_addTransforms(result, source, index, results) {
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/font/addAttribute', font_size_addAttributes);
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.switchToBlockType.transformedBlock', 'core/font-size/addTransforms', font_size_addTransforms);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/alignment-control/ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/alignment-control/ui.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29680,7 +29680,7 @@ function AlignmentUI({
 }
 /* harmony default export */ const alignment_control_ui = (AlignmentUI);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/alignment-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/alignment-control/index.js
 /**
  * Internal dependencies
  */
@@ -29700,18 +29700,18 @@ const AlignmentToolbar = props => {
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/alignment-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/alignment-control/README.md
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/text-align.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/text-align.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29851,9 +29851,9 @@ function addAssignedTextAlign(props, blockType, attributes) {
   return props;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/typography.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/typography.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29978,9 +29978,9 @@ const hasTypographySupport = blockName => {
   return TYPOGRAPHY_SUPPORT_KEYS.some(key => hasBlockSupport(blockName, key));
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/settings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -29996,9 +29996,9 @@ const settings_settings = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 });
 /* harmony default export */ const library_settings = (settings_settings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/input-controls/spacing-input-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/input-controls/spacing-input-control.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30323,7 +30323,7 @@ function SpacingInputControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/input-controls/axial.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/input-controls/axial.js
 /**
  * Internal dependencies
  */
@@ -30387,7 +30387,7 @@ function AxialInputControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/input-controls/separated.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/input-controls/separated.js
 /**
  * Internal dependencies
  */
@@ -30437,7 +30437,7 @@ function SeparatedInputControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/input-controls/single.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/input-controls/single.js
 /**
  * Internal dependencies
  */
@@ -30481,9 +30481,9 @@ function SingleInputControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/sides-dropdown/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/sides-dropdown/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30563,9 +30563,9 @@ function SidesDropdown({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/hooks/use-spacing-sizes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/hooks/use-spacing-sizes.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30605,9 +30605,9 @@ function useSpacingSizes() {
   }, [customSizes, themeSizes, defaultSizes]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/spacing-sizes-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/spacing-sizes-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30705,9 +30705,9 @@ function SpacingSizesControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/height-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/height-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30837,7 +30837,7 @@ const RANGE_CONTROL_CUSTOM_SETTINGS = {
 /**
  * HeightControl renders a linked unit control and range control for adjusting the height of a block.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/height-control/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/height-control/README.md
  *
  * @param {Object}                     props
  * @param {?string}                    props.label    A label for the control.
@@ -30916,9 +30916,9 @@ function HeightControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/child-layout-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/child-layout-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31150,9 +31150,9 @@ function childLayoutOrientation(parentLayout) {
   return orientation === 'horizontal' ? (0,external_wp_i18n_namespaceObject.__)('Width') : (0,external_wp_i18n_namespaceObject.__)('Height');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/dimensions-tool/aspect-ratio-tool.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/dimensions-tool/aspect-ratio-tool.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31162,7 +31162,7 @@ function childLayoutOrientation(parentLayout) {
 
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@cohesion/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**
@@ -31233,14 +31233,14 @@ function AspectRatioTool({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/dimensions-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/dimensions-panel.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31763,9 +31763,9 @@ function DimensionsPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/spacing-visualizer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/spacing-visualizer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31792,7 +31792,7 @@ function SpacingVisualizer({
     // useEffect may run before the browser recomputes CSS. We therefore combine
     // useLayoutEffect and two rAF calls to ensure that we read the spacing after the current
     // paint but before the next paint.
-    // See https://github.com/WordPress/gutenberg/pull/59227.
+    // See https://github.com/cohesion/gutenberg/pull/59227.
     window.requestAnimationFrame(() => window.requestAnimationFrame(updateStyle));
   }, [blockElement, value]);
   const previousValue = (0,external_wp_element_namespaceObject.useRef)(value);
@@ -31871,14 +31871,14 @@ function PaddingVisualizer({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/dimensions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/dimensions.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32051,9 +32051,9 @@ function useCustomSides() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/style.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/style.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32451,9 +32451,9 @@ function style_useBlockProps({
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/style/addAttribute', style_addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/settings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32476,9 +32476,9 @@ function settings_addAttribute(settings) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/settings/addAttribute', settings_addAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/filter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/filter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32491,9 +32491,9 @@ const filter = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_filter = (filter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/duotone-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/duotone-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32572,7 +32572,7 @@ function DuotoneControl({
 }
 /* harmony default export */ const duotone_control = (DuotoneControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/duotone/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/duotone/utils.js
 /**
  * External dependencies
  */
@@ -32667,7 +32667,7 @@ function getDuotoneFilter(id, colors) {
 </svg>`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/get-block-css-selector.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/get-block-css-selector.js
 /**
  * Internal dependencies
  */
@@ -32678,7 +32678,7 @@ function getDuotoneFilter(id, colors) {
  * Determine the CSS selector for the block type and target provided, returning
  * it if available.
  *
- * @param {import('@wordpress/blocks').Block} blockType        The block's type.
+ * @param {import('@cohesion/blocks').Block} blockType        The block's type.
  * @param {string|string[]}                   target           The desired selector's target e.g. `root`, delimited string, or array path.
  * @param {Object}                            options          Options object.
  * @param {boolean}                           options.fallback Whether or not to fallback to broader selector.
@@ -32775,14 +32775,14 @@ function getBlockCSSSelector(blockType, target = 'root', options = {}) {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/filters-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/filters-panel.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32967,7 +32967,7 @@ function FiltersPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/duotone.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/duotone.js
 /**
  * External dependencies
  */
@@ -32975,7 +32975,7 @@ function FiltersPanel({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33273,9 +33273,9 @@ function duotone_useBlockProps({
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/duotone/add-attributes', addDuotoneAttributes);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-block-display-information/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-block-display-information/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33286,7 +33286,7 @@ function duotone_useBlockProps({
  */
 
 
-/** @typedef {import('@wordpress/blocks').WPIcon} WPIcon */
+/** @typedef {import('@cohesion/blocks').WPIcon} WPIcon */
 
 /**
  * Contains basic block's information for display reasons.
@@ -33383,14 +33383,14 @@ function useBlockDisplayInformation(clientId) {
   }, [clientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/position.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/position.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33719,9 +33719,9 @@ function position_useBlockProps({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/use-global-styles-output.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/use-global-styles-output.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33984,7 +33984,7 @@ function getStylesDeclarations(blockStyles = {}, selector = '', useRootPaddingAl
     const styleValue = getValueFromObjectPath(blockStyles, pathToValue);
 
     // Root-level padding styles don't currently support strings with CSS shorthand values.
-    // This may change: https://github.com/WordPress/gutenberg/issues/40132.
+    // This may change: https://github.com/cohesion/gutenberg/issues/40132.
     if (key === '--wp--style--root--padding' && (typeof styleValue === 'string' || !useRootPaddingAlign)) {
       return declarations;
     }
@@ -34372,14 +34372,14 @@ const toStyles = (tree, blockSelectors, hasBlockGapSupport, hasFallbackGapSuppor
      * from the `theme.json`. This is to ensure that if the `theme.json` declares
      * `margin` in its `spacing` declaration for the `body` element then these
      * user-generated values take precedence in the CSS cascade.
-     * @link https://github.com/WordPress/gutenberg/issues/36147.
+     * @link https://github.com/cohesion/gutenberg/issues/36147.
      */
     ruleset += ':where(body) {margin: 0;';
 
     // Root padding styles should be output for full templates, patterns and template parts.
     if (options.rootPadding && useRootPaddingAlign) {
       /*
-       * These rules reproduce the ones from https://github.com/WordPress/gutenberg/blob/79103f124925d1f457f627e154f52a56228ed5ad/lib/class-wp-theme-json-gutenberg.php#L2508
+       * These rules reproduce the ones from https://github.com/cohesion/gutenberg/blob/79103f124925d1f457f627e154f52a56228ed5ad/lib/class-wp-theme-json-gutenberg.php#L2508
        * almost exactly, but for the selectors that target block wrappers in the front end. This code only runs in the editor, so it doesn't need those selectors.
        */
       ruleset += `padding-right: 0; padding-left: 0; padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom) }
@@ -34756,9 +34756,9 @@ function useGlobalStylesOutput(disableRootPadding = false) {
   return useGlobalStylesOutputWithConfig(mergedConfig, disableRootPadding);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/block-style-variation.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/block-style-variation.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35075,14 +35075,14 @@ function block_style_variation_useBlockProps({
   useBlockProps: block_style_variation_useBlockProps
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/layout.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/layout.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35466,9 +35466,9 @@ const withLayoutStyles = (0,external_wp_compose_namespaceObject.createHigherOrde
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/layout/addAttribute', layout_addAttribute);
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockListBlock', 'core/editor/layout/with-layout-styles', withLayoutStyles);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/grid-visualizer/grid-item-resizer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/grid-visualizer/grid-item-resizer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35654,9 +35654,9 @@ function getClosestTrack(tracks, position, edge = 'start') {
   return tracks.reduce((closest, track, index) => Math.abs(track[edge] - position) < Math.abs(tracks[closest][edge] - position) ? index : closest, 0);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/layout-child.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/layout-child.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35837,9 +35837,9 @@ function ChildLayoutControlsPure({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/convert-to-group-buttons/use-convert-to-group-button-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/convert-to-group-buttons/use-convert-to-group-button-props.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35897,9 +35897,9 @@ function useConvertToGroupButtonProps(selectedClientIds) {
   }, [selectedClientIds]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/convert-to-group-buttons/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/convert-to-group-buttons/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35971,9 +35971,9 @@ function ConvertToGroupButton({
 }
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-lock/use-block-lock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-lock/use-block-lock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36013,9 +36013,9 @@ function useBlockLock(clientId) {
   }, [clientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36028,9 +36028,9 @@ const unlock_unlock = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const library_unlock = (unlock_unlock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/lock-outline.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/lock-outline.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36043,9 +36043,9 @@ const lockOutline = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const lock_outline = (lockOutline);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/lock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/lock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36058,9 +36058,9 @@ const lock_lock = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_lock = (lock_lock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-lock/modal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-lock/modal.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36251,9 +36251,9 @@ function BlockLockModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-lock/menu-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-lock/menu-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36294,9 +36294,9 @@ function BlockLockMenuItem({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-mode-toggle.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/block-mode-toggle.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36351,9 +36351,9 @@ function BlockModeToggle({
   }
 }))])(BlockModeToggle));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-rename/use-block-rename.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-rename/use-block-rename.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function useBlockRename(name) {
@@ -36362,14 +36362,14 @@ function useBlockRename(name) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-rename/is-empty-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-rename/is-empty-string.js
 function isEmptyString(testString) {
   return testString?.trim()?.length === 0;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-rename/modal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-rename/modal.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36387,7 +36387,7 @@ function BlockRenameModal({
   originalBlockName,
   onClose,
   onSave,
-  // Pattern Overrides is a WordPress-only feature but it also uses the Block Binding API.
+  // Pattern Overrides is a cohesion-only feature but it also uses the Block Binding API.
   // Ideally this should not be inside the block editor package, but we keep it here for simplicity.
   hasOverridesWarning
 }) {
@@ -36462,9 +36462,9 @@ function BlockRenameModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-rename/rename-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-rename/rename-control.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36536,9 +36536,9 @@ function BlockRenameControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu-controls/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu-controls/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36628,7 +36628,7 @@ const BlockSettingsMenuControlsSlot = ({
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-settings-menu-controls/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-settings-menu-controls/README.md
  *
  * @param {Object} props Fill props.
  * @return {Element} Element.
@@ -36646,9 +36646,9 @@ function BlockSettingsMenuControls({
 BlockSettingsMenuControls.Slot = BlockSettingsMenuControlsSlot;
 /* harmony default export */ const block_settings_menu_controls = (BlockSettingsMenuControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/content-lock-ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/content-lock-ui.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36733,9 +36733,9 @@ function ContentLockControlsPure({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/metadata.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/metadata.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const META_ATTRIBUTE_NAME = 'metadata';
@@ -36743,7 +36743,7 @@ const META_ATTRIBUTE_NAME = 'metadata';
 /**
  * Filters registered block settings, extending attributes to include `metadata`.
  *
- * see: https://github.com/WordPress/gutenberg/pull/40393/files#r864632012
+ * see: https://github.com/cohesion/gutenberg/pull/40393/files#r864632012
  *
  * @param {Object} blockTypeSettings Original block settings.
  * @return {Object} Filtered block settings.
@@ -36763,9 +36763,9 @@ function addMetaAttribute(blockTypeSettings) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/metadata/addMetaAttribute', addMetaAttribute);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/block-default.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/block-default.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36778,14 +36778,14 @@ const blockDefault = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const block_default = (blockDefault);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-icon/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36820,13 +36820,13 @@ function BlockIcon({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-icon/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-icon/README.md
  */
 /* harmony default export */ const block_icon = ((0,external_wp_element_namespaceObject.memo)(BlockIcon));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/block-hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/block-hooks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37023,9 +37023,9 @@ function BlockHooksControlPure({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-bindings-attributes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-bindings-attributes.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37038,8 +37038,8 @@ function BlockHooksControlPure({
  */
 
 
-/** @typedef {import('@wordpress/compose').WPHigherOrderComponent} WPHigherOrderComponent */
-/** @typedef {import('@wordpress/blocks').WPBlockSettings} WPBlockSettings */
+/** @typedef {import('@cohesion/compose').WPHigherOrderComponent} WPHigherOrderComponent */
+/** @typedef {import('@cohesion/blocks').WPBlockSettings} WPBlockSettings */
 
 /**
  * Given a binding of block attributes, returns a higher order component that
@@ -37245,9 +37245,9 @@ function shimAttributeSource(settings, name) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/editor/custom-sources-backwards-compatibility/shim-attribute-source', shimAttributeSource);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/block-bindings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/block-bindings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37330,9 +37330,9 @@ const BlockBindingsPanel = ({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/block-renaming.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/block-renaming.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37371,7 +37371,7 @@ function addLabelCallback(settings) {
 }
 (0,external_wp_hooks_namespaceObject.addFilter)('blocks.registerBlockType', 'core/metadata/addLabelCallback', addLabelCallback);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-border-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-border-props.js
 /**
  * Internal dependencies
  */
@@ -37433,7 +37433,7 @@ function useBorderProps(attributes) {
   return borderProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-shadow-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-shadow-props.js
 /**
  * Internal dependencies
  */
@@ -37459,14 +37459,14 @@ function getShadowClassesAndStyles(attributes) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-color-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-color-props.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37565,7 +37565,7 @@ function useColorProps(attributes) {
   return colorProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-spacing-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-spacing-props.js
 /**
  * Internal dependencies
  */
@@ -37598,14 +37598,14 @@ function getSpacingClassesAndStyles(attributes) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-typography-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-typography-props.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37654,9 +37654,9 @@ function getTypographyClassesAndStyles(attributes, settings) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-cached-truthy.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-cached-truthy.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37676,9 +37676,9 @@ function useCachedTruthy(value) {
   return cachedValue;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/use-zoom-out.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/use-zoom-out.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37725,7 +37725,7 @@ function useZoomOut(zoomOut = true) {
   }, [__unstableSetEditorMode, zoomOut, mode]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/index.js
 /**
  * Internal dependencies
  */
@@ -37772,9 +37772,9 @@ createBlockSaveFilter([align, text_align, hooks_anchor, aria_label, custom_class
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors/with-colors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors/with-colors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37974,16 +37974,16 @@ function withColors(...colorTypes) {
   return (0,external_wp_compose_namespaceObject.createHigherOrderComponent)(createColorHOC(colorTypes, withColorPalette), 'withColors');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/gradients/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/gradients/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-sizes/font-size-picker.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-sizes/font-size-picker.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38002,13 +38002,13 @@ function font_size_picker_FontSizePicker(props) {
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/font-sizes/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/font-sizes/README.md
  */
 /* harmony default export */ const font_size_picker = (font_size_picker_FontSizePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-sizes/with-font-sizes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-sizes/with-font-sizes.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38126,7 +38126,7 @@ const with_font_sizes_upperFirst = ([firstLetter, ...rest]) => firstLetter.toUpp
   }]), 'withFontSizes');
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/font-sizes/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/font-sizes/index.js
 
 
 
@@ -38216,7 +38216,7 @@ function dist_es2015_replace(input, re, value) {
     return re.reduce(function (input, re) { return input.replace(re, value); }, input);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/search-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/search-items.js
 /**
  * External dependencies
  */
@@ -38391,9 +38391,9 @@ function getItemSearchRank(item, searchTerm, config = {}) {
   return rank;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/hooks/use-block-types-state.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/hooks/use-block-types-state.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38442,7 +38442,7 @@ const useBlockTypesState = (rootClientId, onInsert, isQuick) => {
 };
 /* harmony default export */ const use_block_types_state = (useBlockTypesState);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/order-inserter-block-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/order-inserter-block-items.js
 /** @typedef {import('../store/selectors').WPEditorInserterItem} WPEditorInserterItem */
 
 /**
@@ -38476,9 +38476,9 @@ const orderInserterBlockItems = (items, priority) => {
   return items;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/autocompleters/block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/autocompleters/block.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38499,7 +38499,7 @@ const orderInserterBlockItems = (items, priority) => {
 const block_noop = () => {};
 const SHOWN_BLOCK_TYPES = 9;
 
-/** @typedef {import('@wordpress/components').WPCompleter} WPCompleter */
+/** @typedef {import('@cohesion/components').WPCompleter} WPCompleter */
 
 /**
  * Creates a blocks repeater for replacing the current block with a selected block type.
@@ -38587,9 +38587,9 @@ function createBlockCompleter() {
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
 const external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/post.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/post.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38602,9 +38602,9 @@ const post = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_post = (post);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/autocompleters/link.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/autocompleters/link.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 // Disable Reason: Needs to be refactored.
 // eslint-disable-next-line no-restricted-imports
@@ -38616,7 +38616,7 @@ const post = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 
 const SHOWN_SUGGESTIONS = 10;
 
-/** @typedef {import('@wordpress/components').WPCompleter} WPCompleter */
+/** @typedef {import('@cohesion/components').WPCompleter} WPCompleter */
 
 /**
  * Creates a suggestion list for links to posts or pages.
@@ -38667,9 +38667,9 @@ function createLinkCompleter() {
  */
 /* harmony default export */ const autocompleters_link = (createLinkCompleter());
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/autocomplete/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/autocomplete/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38735,13 +38735,13 @@ function BlockEditorAutocomplete(props) {
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/autocomplete/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/autocomplete/README.md
  */
 /* harmony default export */ const autocomplete = (BlockEditorAutocomplete);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/fullscreen.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/fullscreen.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38754,9 +38754,9 @@ const fullscreen = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const library_fullscreen = (fullscreen);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-full-height-alignment-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-full-height-alignment-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38778,9 +38778,9 @@ function BlockFullHeightAlignmentControl({
 }
 /* harmony default export */ const block_full_height_alignment_control = (BlockFullHeightAlignmentControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-alignment-matrix-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-alignment-matrix-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38831,9 +38831,9 @@ function BlockAlignmentMatrixControl(props) {
 }
 /* harmony default export */ const block_alignment_matrix_control = (BlockAlignmentMatrixControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-title/use-block-display-title.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-title/use-block-display-title.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38901,7 +38901,7 @@ function useBlockDisplayTitle({
   return blockTitle;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-title/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-title/index.js
 /**
  * Internal dependencies
  */
@@ -38937,9 +38937,9 @@ function BlockTitle({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-breadcrumb/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-breadcrumb/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39035,9 +39035,9 @@ function BlockBreadcrumb({
 }
 /* harmony default export */ const block_breadcrumb = (BlockBreadcrumb);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-content-overlay/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-content-overlay/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39054,9 +39054,9 @@ function useBlockOverlayActive(clientId) {
   }, [clientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-context/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39077,7 +39077,7 @@ const block_context_Context = (0,external_wp_element_namespaceObject.createConte
 /**
  * Component which merges passed value with current consumed block context.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-context/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-context/README.md
  *
  * @param {BlockContextProviderProps} props
  */
@@ -39097,14 +39097,14 @@ function BlockContextProvider({
 }
 /* harmony default export */ const block_context = (block_context_Context);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-edit/edit.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-edit/edit.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39176,9 +39176,9 @@ const EditWithGeneratedProps = props => {
 };
 /* harmony default export */ const block_edit_edit = (EditWithGeneratedProps);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/more-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/more-vertical.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39191,14 +39191,14 @@ const moreVertical = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const more_vertical = (moreVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/warning/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/warning/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39252,13 +39252,13 @@ function Warning({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/warning/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/warning/README.md
  */
 /* harmony default export */ const warning = (Warning);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-edit/multiple-usage-warning.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-edit/multiple-usage-warning.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39297,16 +39297,16 @@ function MultipleUsageWarning({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/private-block-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/private-block-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const PrivateBlockContext = (0,external_wp_element_namespaceObject.createContext)({});
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-edit/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-edit/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39388,9 +39388,9 @@ function BlockEdit({
 
 // EXTERNAL MODULE: ./node_modules/diff/lib/diff/character.js
 var character = __webpack_require__(8021);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-compare/block-view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-compare/block-view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39433,7 +39433,7 @@ function BlockView({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-compare/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-compare/index.js
 /**
  * External dependencies
  */
@@ -39443,7 +39443,7 @@ function BlockView({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39505,9 +39505,9 @@ function BlockCompare({
 }
 /* harmony default export */ const block_compare = (BlockCompare);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/block-invalid-warning.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/block-invalid-warning.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39611,9 +39611,9 @@ function BlockInvalidWarning({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/block-crash-warning.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/block-crash-warning.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39628,9 +39628,9 @@ const block_crash_warning_warning = /*#__PURE__*/(0,external_ReactJSXRuntime_nam
 });
 /* harmony default export */ const block_crash_warning = (() => block_crash_warning_warning);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/block-crash-boundary.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/block-crash-boundary.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 class BlockCrashBoundary extends external_wp_element_namespaceObject.Component {
@@ -39656,14 +39656,14 @@ class BlockCrashBoundary extends external_wp_element_namespaceObject.Component {
 
 // EXTERNAL MODULE: ./node_modules/react-autosize-textarea/lib/index.js
 var lib = __webpack_require__(4132);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/block-html.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/block-html.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39736,14 +39736,14 @@ const external_ReactDOM_namespaceObject = window["ReactDOM"];
 ;// CONCATENATED MODULE: ./node_modules/@react-spring/web/dist/esm/index.js
 var web_dist_esm_k=/^--/;function web_dist_esm_I(t,e){return e==null||typeof e=="boolean"||e===""?"":typeof e=="number"&&e!==0&&!web_dist_esm_k.test(t)&&!(web_dist_esm_c.hasOwnProperty(t)&&web_dist_esm_c[t])?e+"px":(""+e).trim()}var web_dist_esm_v={};function esm_V(t,e){if(!t.nodeType||!t.setAttribute)return!1;let r=t.nodeName==="filter"||t.parentNode&&t.parentNode.nodeName==="filter",{style:i,children:s,scrollTop:u,scrollLeft:l,viewBox:a,...n}=e,d=Object.values(n),m=Object.keys(n).map(o=>r||t.hasAttribute(o)?o:web_dist_esm_v[o]||(web_dist_esm_v[o]=o.replace(/([A-Z])/g,p=>"-"+p.toLowerCase())));s!==void 0&&(t.textContent=s);for(let o in i)if(i.hasOwnProperty(o)){let p=web_dist_esm_I(o,i[o]);web_dist_esm_k.test(o)?t.style.setProperty(o,p):t.style[o]=p}m.forEach((o,p)=>{t.setAttribute(o,d[p])}),u!==void 0&&(t.scrollTop=u),l!==void 0&&(t.scrollLeft=l),a!==void 0&&t.setAttribute("viewBox",a)}var web_dist_esm_c={animationIterationCount:!0,borderImageOutset:!0,borderImageSlice:!0,borderImageWidth:!0,boxFlex:!0,boxFlexGroup:!0,boxOrdinalGroup:!0,columnCount:!0,columns:!0,flex:!0,flexGrow:!0,flexPositive:!0,flexShrink:!0,flexNegative:!0,flexOrder:!0,gridRow:!0,gridRowEnd:!0,gridRowSpan:!0,gridRowStart:!0,gridColumn:!0,gridColumnEnd:!0,gridColumnSpan:!0,gridColumnStart:!0,fontWeight:!0,lineClamp:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,tabSize:!0,widows:!0,zIndex:!0,zoom:!0,fillOpacity:!0,floodOpacity:!0,stopOpacity:!0,strokeDasharray:!0,strokeDashoffset:!0,strokeMiterlimit:!0,strokeOpacity:!0,strokeWidth:!0},esm_F=(t,e)=>t+e.charAt(0).toUpperCase()+e.substring(1),esm_L=["Webkit","Ms","Moz","O"];web_dist_esm_c=Object.keys(web_dist_esm_c).reduce((t,e)=>(esm_L.forEach(r=>t[esm_F(r,e)]=t[e]),t),web_dist_esm_c);var esm_=/^(matrix|translate|scale|rotate|skew)/,dist_esm_$=/^(translate)/,dist_esm_G=/^(rotate|skew)/,web_dist_esm_y=(t,e)=>dist_esm_l.num(t)&&t!==0?t+e:t,web_dist_esm_h=(t,e)=>dist_esm_l.arr(t)?t.every(r=>web_dist_esm_h(r,e)):dist_esm_l.num(t)?t===e:parseFloat(t)===e,dist_esm_g=class extends animated_dist_esm_u{constructor({x:e,y:r,z:i,...s}){let u=[],l=[];(e||r||i)&&(u.push([e||0,r||0,i||0]),l.push(a=>[`translate3d(${a.map(n=>web_dist_esm_y(n,"px")).join(",")})`,web_dist_esm_h(a,0)])),xt(s,(a,n)=>{if(n==="transform")u.push([a||""]),l.push(d=>[d,d===""]);else if(esm_.test(n)){if(delete s[n],dist_esm_l.und(a))return;let d=dist_esm_$.test(n)?"px":dist_esm_G.test(n)?"deg":"";u.push(ht(a)),l.push(n==="rotate3d"?([m,o,p,O])=>[`rotate3d(${m},${o},${p},${web_dist_esm_y(O,d)})`,web_dist_esm_h(O,0)]:m=>[`${n}(${m.map(o=>web_dist_esm_y(o,d)).join(",")})`,web_dist_esm_h(m,n.startsWith("scale")?1:0)])}}),u.length&&(s.transform=new web_dist_esm_x(u,l)),super(s)}},web_dist_esm_x=class extends esm_ge{constructor(r,i){super();this.inputs=r;this.transforms=i}_value=null;get(){return this._value||(this._value=this._get())}_get(){let r="",i=!0;return esm_Ve(this.inputs,(s,u)=>{let l=ve(s[0]),[a,n]=this.transforms[u](dist_esm_l.arr(l)?l:s.map(ve));r+=" "+a,i=i&&n}),i?"none":r}observerAdded(r){r==1&&esm_Ve(this.inputs,i=>esm_Ve(i,s=>Pt(s)&&Gt(s,this)))}observerRemoved(r){r==0&&esm_Ve(this.inputs,i=>esm_Ve(i,s=>Pt(s)&&Qt(s,this)))}eventObserved(r){r.type=="change"&&(this._value=null),$t(this,r)}};var esm_C=["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","tspan"];dist_esm_p.assign({batchedUpdates:external_ReactDOM_namespaceObject.unstable_batchedUpdates,createStringInterpolator:Xt,colors:It});var dist_esm_q=dist_esm_Ke(esm_C,{applyAnimatedValues:esm_V,createAnimatedStyle:t=>new dist_esm_g(t),getComponentProps:({scrollTop:t,scrollLeft:e,...r})=>r}),dist_esm_it=dist_esm_q.animated;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-moving-animation/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-moving-animation/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39891,7 +39891,7 @@ function useMovingAnimation({
 }
 /* harmony default export */ const use_moving_animation = (useMovingAnimation);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/dom.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/dom.js
 const BLOCK_SELECTOR = '.block-editor-block-list__block';
 const APPENDER_SELECTOR = '.block-list-appender';
 const BLOCK_APPENDER_CLASS = '.block-editor-button-block-appender';
@@ -39946,9 +39946,9 @@ function getBlockClientId(node) {
   return blockNode.id.slice('block-'.length);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-focus-first-element.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-focus-first-element.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39960,7 +39960,7 @@ function getBlockClientId(node) {
 
 
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@cohesion/element').RefObject} RefObject */
 
 /**
  * Transitions focus to the block or inner tabbable when the block becomes
@@ -40026,9 +40026,9 @@ function useFocusFirstElement({
   return ref;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-is-hovered.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-is-hovered.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function listener(event) {
@@ -40058,9 +40058,9 @@ function useIsHovered() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-focus-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-focus-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40124,9 +40124,9 @@ function useFocusHandler(clientId) {
   }, [isBlockSelected, selectBlock]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-selected-block-event-handlers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-selected-block-event-handlers.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40209,9 +40209,9 @@ function useEventHandlers({
   }, [clientId, isSelected, getBlockRootClientId, getBlockIndex, insertAfterBlock, removeBlock]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-nav-mode-exit.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-nav-mode-exit.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40258,9 +40258,9 @@ function useNavModeExit(clientId) {
   }, [clientId, isNavigationMode, isBlockSelected, setNavigationMode]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-intersection-observer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-intersection-observer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40281,9 +40281,9 @@ function useIntersectionObserver() {
   }, [observer]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/use-scroll-into-view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/use-scroll-into-view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function useScrollIntoView({
@@ -40319,9 +40319,9 @@ function useScrollIntoView({
   }, [isSelected]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-flash-editable-blocks/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-flash-editable-blocks/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40373,14 +40373,14 @@ function useFlashEditableBlocks({
   }, [isEnabled]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-block-props/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-block-props/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40418,7 +40418,7 @@ function useFlashEditableBlocks({
  *
  * @example
  * ```js
- * import { useBlockProps } from '@wordpress/block-editor';
+ * import { useBlockProps } from '@cohesion/block-editor';
  *
  * export default function Edit() {
  *
@@ -40560,14 +40560,14 @@ function use_block_props_useBlockProps(props = {}, {
  */
 use_block_props_useBlockProps.save = external_wp_blocks_namespaceObject.__unstableGetBlockProps;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/block.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41158,7 +41158,7 @@ function BlockListBlockProvider(props) {
 
   // Block is sometimes not mounted at the right time, causing it be
   // undefined see issue for more info
-  // https://github.com/WordPress/gutenberg/issues/17013
+  // https://github.com/cohesion/gutenberg/issues/17013
   if (!selectedProps) {
     return null;
   }
@@ -41229,9 +41229,9 @@ function BlockListBlockProvider(props) {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/tips.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/tips.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41255,9 +41255,9 @@ function Tips() {
 }
 /* harmony default export */ const tips = (Tips);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41270,9 +41270,9 @@ const chevronRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const chevron_right = (chevronRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41285,14 +41285,14 @@ const chevronLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const chevron_left = (chevronLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-card/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-card/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41374,9 +41374,9 @@ function BlockCard({
 }
 /* harmony default export */ const block_card = (BlockCard);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/provider/with-registry-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/provider/with-registry-provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41423,9 +41423,9 @@ const withRegistryProvider = (0,external_wp_compose_namespaceObject.createHigher
 }, 'withRegistryProvider');
 /* harmony default export */ const with_registry_provider = (withRegistryProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/provider/use-block-sync.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/provider/use-block-sync.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41697,9 +41697,9 @@ function useBlockSync({
 
 ;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 const external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/keyboard-shortcuts/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/keyboard-shortcuts/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41840,9 +41840,9 @@ function KeyboardShortcutsRegister() {
 KeyboardShortcuts.Register = KeyboardShortcutsRegister;
 /* harmony default export */ const keyboard_shortcuts = (KeyboardShortcuts);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/provider/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41858,7 +41858,7 @@ KeyboardShortcuts.Register = KeyboardShortcutsRegister;
 
 
 
-/** @typedef {import('@wordpress/data').WPDataRegistry} WPDataRegistry */
+/** @typedef {import('@cohesion/data').WPDataRegistry} WPDataRegistry */
 
 
 const ExperimentalBlockEditorProvider = with_registry_provider(props => {
@@ -41898,9 +41898,9 @@ const BlockEditorProvider = props => {
 };
 /* harmony default export */ const provider = (BlockEditorProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-selection-clearer/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-selection-clearer/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41958,9 +41958,9 @@ function BlockSelectionClearer(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-multi-selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-multi-selection.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42041,9 +42041,9 @@ function useMultiSelection() {
   }, [hasMultiSelection, isMultiSelecting, multiSelectedBlockClientIds, selectedBlockClientId, initialPosition, isFullSelection]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-tab-nav.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-tab-nav.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42249,9 +42249,9 @@ function useTabNav() {
   return [before, mergedRefs, after];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-arrow-nav.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-arrow-nav.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42496,9 +42496,9 @@ function useArrowNav() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-select-all.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-select-all.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42535,7 +42535,7 @@ function useSelectAll() {
       const blockClientIds = getBlockOrder(rootClientId);
 
       // If we have selected all sibling nested blocks, try selecting up a
-      // level. See: https://github.com/WordPress/gutenberg/pull/31859/
+      // level. See: https://github.com/cohesion/gutenberg/pull/31859/
       if (selectedClientIds.length === blockClientIds.length) {
         if (rootClientId) {
           node.ownerDocument.defaultView.getSelection().removeAllRanges();
@@ -42552,9 +42552,9 @@ function useSelectAll() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-drag-selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-drag-selection.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42680,7 +42680,7 @@ function useDragSelection() {
 
       // Do not rely on the active element because it may change after
       // the mouse leaves for the first time. See
-      // https://github.com/WordPress/gutenberg/issues/48747.
+      // https://github.com/cohesion/gutenberg/issues/48747.
       anchorElement = target;
       startMultiSelect();
 
@@ -42704,9 +42704,9 @@ function useDragSelection() {
   }, [startMultiSelect, stopMultiSelect, isSelectionEnabled, hasSelectedBlock]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-selection-observer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-selection-observer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42927,9 +42927,9 @@ function useSelectionObserver() {
   }, [multiSelect, selectBlock, selectionChange, getBlockParents]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-click-selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-click-selection.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42980,9 +42980,9 @@ function useClickSelection() {
   }, [selectBlock, isSelectionEnabled, getBlockSelectionStart, hasMultiSelection]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-input.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43129,9 +43129,9 @@ function useInput() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/use-notify-copy.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/use-notify-copy.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43176,9 +43176,9 @@ function useNotifyCopy() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/pasting.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/pasting.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43209,7 +43209,7 @@ function removeWindowsFragments(html) {
 /**
  * Removes the charset meta tag inserted by Chromium.
  * See:
- * - https://github.com/WordPress/gutenberg/issues/33585
+ * - https://github.com/cohesion/gutenberg/issues/33585
  * - https://bugs.chromium.org/p/chromium/issues/detail?id=1264616#c4
  *
  * @param {string} html the html to be stripped of the meta tag.
@@ -43305,9 +43305,9 @@ function shouldDismissPastedFiles(files, html /*, plainText */) {
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43400,9 +43400,9 @@ function toPlainText(html) {
   return plainText.replace(/\n\n+/g, '\n\n');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/use-clipboard-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/use-clipboard-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43598,14 +43598,14 @@ function useClipboardHandler() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/writing-flow/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/writing-flow/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43668,7 +43668,7 @@ function WritingFlow({
  */
 /* harmony default export */ const writing_flow = ((0,external_wp_element_namespaceObject.forwardRef)(WritingFlow));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/iframe/get-compatibility-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/iframe/get-compatibility-styles.js
 let compatibilityStyles = null;
 
 /**
@@ -43762,14 +43762,14 @@ function getCompatibilityStyles() {
   return compatibilityStyles;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/iframe/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/iframe/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44169,7 +44169,7 @@ var build_default = /*#__PURE__*/__webpack_require__.n(build);
 // EXTERNAL MODULE: ./node_modules/postcss-urlrebase/index.js
 var postcss_urlrebase = __webpack_require__(5404);
 var postcss_urlrebase_default = /*#__PURE__*/__webpack_require__.n(postcss_urlrebase);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/transform-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/transform-styles/index.js
 /**
  * External dependencies
  */
@@ -44237,7 +44237,7 @@ const transform_styles_transformStyles = (styles, wrapperSelector = '') => {
 };
 /* harmony default export */ const transform_styles = (transform_styles_transformStyles);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/editor-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/editor-styles/index.js
 /**
  * External dependencies
  */
@@ -44246,7 +44246,7 @@ const transform_styles_transformStyles = (styles, wrapperSelector = '') => {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44345,9 +44345,9 @@ function EditorStyles({
 }
 /* harmony default export */ const editor_styles = ((0,external_wp_element_namespaceObject.memo)(EditorStyles));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-preview/auto.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-preview/auto.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44411,8 +44411,8 @@ function ScaledBlockPreview({
       transform: `scale(${scale})`,
       // Using width + aspect-ratio instead of height here triggers browsers' native
       // handling of scrollbar's visibility. It prevents the flickering issue seen
-      // in https://github.com/WordPress/gutenberg/issues/52027.
-      // See https://github.com/WordPress/gutenberg/pull/52921 for more info.
+      // in https://github.com/cohesion/gutenberg/issues/52027.
+      // See https://github.com/cohesion/gutenberg/pull/52921 for more info.
       aspectRatio,
       maxHeight: contentHeight > MAX_HEIGHT ? MAX_HEIGHT * scale : undefined,
       minHeight
@@ -44441,7 +44441,7 @@ function ScaledBlockPreview({
         height: contentHeight,
         pointerEvents: 'none',
         // This is a catch-all max-height for patterns.
-        // See: https://github.com/WordPress/gutenberg/pull/38175.
+        // See: https://github.com/cohesion/gutenberg/pull/38175.
         maxHeight: MAX_HEIGHT,
         minHeight: scale !== 0 && scale < 1 && minHeight ? minHeight / scale : minHeight
       },
@@ -44475,14 +44475,14 @@ function AutoBlockPreview(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-preview/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-preview/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44552,7 +44552,7 @@ function BlockPreview({
 /**
  * BlockPreview renders a preview of a block or array of blocks.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-preview/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-preview/README.md
  *
  * @param {Object}       preview               options for how the preview should be shown
  * @param {Array|Object} preview.blocks        A block instance (object) or an array of blocks to be previewed.
@@ -44610,9 +44610,9 @@ function useBlockPreview({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/preview-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/preview-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44676,9 +44676,9 @@ function InserterPreviewPanel({
 }
 /* harmony default export */ const preview_panel = (InserterPreviewPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-listbox/item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-listbox/item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44729,9 +44729,9 @@ function InserterListboxItem({
 }
 /* harmony default export */ const inserter_listbox_item = ((0,external_wp_element_namespaceObject.forwardRef)(InserterListboxItem));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/drag-handle.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/drag-handle.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44746,9 +44746,9 @@ const dragHandle = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const drag_handle = (dragHandle);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-draggable/draggable-chip.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-draggable/draggable-chip.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44795,9 +44795,9 @@ function BlockDraggableChip({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-draggable-blocks/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-draggable-blocks/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44864,14 +44864,14 @@ const InserterDraggableBlocks = ({
 };
 /* harmony default export */ const inserter_draggable_blocks = (InserterDraggableBlocks);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-list-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-list-item/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44975,9 +44975,9 @@ function InserterListItem({
 }
 /* harmony default export */ const inserter_list_item = ((0,external_wp_element_namespaceObject.memo)(InserterListItem));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-listbox/group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-listbox/group.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45008,9 +45008,9 @@ function InserterListboxGroup(props, ref) {
 }
 /* harmony default export */ const group = ((0,external_wp_element_namespaceObject.forwardRef)(InserterListboxGroup));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-listbox/row.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-listbox/row.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45032,9 +45032,9 @@ function InserterListboxRow(props, ref) {
 }
 /* harmony default export */ const inserter_listbox_row = ((0,external_wp_element_namespaceObject.forwardRef)(InserterListboxRow));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-types-list/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-types-list/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45081,9 +45081,9 @@ function BlockTypesList({
 }
 /* harmony default export */ const block_types_list = (BlockTypesList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45111,9 +45111,9 @@ function InserterPanel({
 }
 /* harmony default export */ const panel = (InserterPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-listbox/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-listbox/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45145,9 +45145,9 @@ function InserterListbox({
 }
 /* harmony default export */ const inserter_listbox = (InserterListbox);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/no-results.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/no-results.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45166,9 +45166,9 @@ function InserterNoResults() {
 }
 /* harmony default export */ const no_results = (InserterNoResults);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-types-tab.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-types-tab.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45347,9 +45347,9 @@ function BlockTypesTab({
 }
 /* harmony default export */ const block_types_tab = ((0,external_wp_element_namespaceObject.forwardRef)(BlockTypesTab));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-explorer/pattern-explorer-sidebar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-explorer/pattern-explorer-sidebar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45417,9 +45417,9 @@ function PatternExplorerSidebar({
 }
 /* harmony default export */ const pattern_explorer_sidebar = (PatternExplorerSidebar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-patterns-paging/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-patterns-paging/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45502,14 +45502,14 @@ function Pagination({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-patterns-list/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-patterns-list/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45711,9 +45711,9 @@ function BlockPatternsList({
 }
 /* harmony default export */ const block_patterns_list = ((0,external_wp_element_namespaceObject.forwardRef)(BlockPatternsList));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/hooks/use-insertion-point.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/hooks/use-insertion-point.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45858,9 +45858,9 @@ function useInsertionPoint({
 }
 /* harmony default export */ const use_insertion_point = (useInsertionPoint);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/hooks/use-patterns-state.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/hooks/use-patterns-state.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45936,9 +45936,9 @@ const usePatternsState = (onInsert, rootClientId, selectedCategory) => {
 };
 /* harmony default export */ const use_patterns_state = (usePatternsState);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/hooks/use-patterns-paging.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/hooks/use-patterns-paging.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45991,9 +45991,9 @@ function usePatternsPaging(currentCategoryPatterns, currentCategory, scrollConta
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-explorer/pattern-list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-explorer/pattern-list.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46105,9 +46105,9 @@ function PatternList({
 }
 /* harmony default export */ const pattern_list = (PatternList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/use-pattern-categories.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/use-pattern-categories.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46153,9 +46153,9 @@ function usePatternCategories(rootClientId, sourceFilter = 'all') {
   return populatedCategories;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-explorer/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-explorer/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46207,9 +46207,9 @@ function PatternsExplorerModal({
 }
 /* harmony default export */ const block_patterns_explorer = (PatternsExplorerModal);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/mobile-tab-navigation.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/mobile-tab-navigation.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46282,9 +46282,9 @@ function MobileTabNavigation({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/patterns-filter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/patterns-filter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46402,9 +46402,9 @@ function PatternsFilter({
           })
         }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("div", {
           className: "block-editor-tool-selector__help",
-          children: (0,external_wp_element_namespaceObject.createInterpolateElement)((0,external_wp_i18n_namespaceObject.__)('Patterns are available from the <Link>WordPress.org Pattern Directory</Link>, bundled in the active theme, or created by users on this site. Only patterns created on this site can be synced.'), {
+          children: (0,external_wp_element_namespaceObject.createInterpolateElement)((0,external_wp_i18n_namespaceObject.__)('Patterns are available from the <Link>cohesion.org Pattern Directory</Link>, bundled in the active theme, or created by users on this site. Only patterns created on this site can be synced.'), {
             Link: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ExternalLink, {
-              href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/patterns/')
+              href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/patterns/')
             })
           })
         })]
@@ -46413,9 +46413,9 @@ function PatternsFilter({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/pattern-category-previews.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/pattern-category-previews.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46526,9 +46526,9 @@ function PatternCategoryPreviews({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/category-tabs/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/category-tabs/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46583,9 +46583,9 @@ function CategoryTabs({
 }
 /* harmony default export */ const category_tabs = (CategoryTabs);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46662,7 +46662,7 @@ function BlockPatternsTab({
 }
 /* harmony default export */ const block_patterns_tab = (BlockPatternsTab);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/block-patterns-tab/pattern-category-preview-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/block-patterns-tab/pattern-category-preview-panel.js
 /**
  * Internal dependencies
  */
@@ -46704,9 +46704,9 @@ function PatternCategoryPreviewPanel(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/external.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/external.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46719,9 +46719,9 @@ const external = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const library_external = (external);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46772,14 +46772,14 @@ function getBlockAndPreviewFromMedia(media, mediaType) {
   return [(0,external_wp_blocks_namespaceObject.createBlock)(`core/${mediaType}`, attributes), preview];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/media-preview.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/media-preview.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47011,9 +47011,9 @@ function MediaPreview({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/media-list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/media-list.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47049,9 +47049,9 @@ function MediaList({
 }
 /* harmony default export */ const media_list = (MediaList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/hooks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47168,9 +47168,9 @@ function useMediaCategories(rootClientId) {
   return categories;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/media-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/media-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47220,9 +47220,9 @@ function MediaCategoryPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/media-tab/media-tab.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/media-tab/media-tab.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47313,9 +47313,9 @@ function MediaTab({
 }
 /* harmony default export */ const media_tab = (MediaTab);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter-menu-extension/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter-menu-extension/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
@@ -47325,9 +47325,9 @@ const {
 __unstableInserterMenuExtension.Slot = inserter_menu_extension_Slot;
 /* harmony default export */ const inserter_menu_extension = (__unstableInserterMenuExtension);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/search-results.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/search-results.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47491,9 +47491,9 @@ function InserterSearchResults({
 }
 /* harmony default export */ const search_results = (InserterSearchResults);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47506,9 +47506,9 @@ const closeSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const close_small = (closeSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/tabs.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/tabs.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47579,14 +47579,14 @@ function InserterTabs({
 }
 /* harmony default export */ const tabs = ((0,external_wp_element_namespaceObject.forwardRef)(InserterTabs));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/menu.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47808,14 +47808,14 @@ function PublicInserterMenu(props, ref) {
 }
 /* harmony default export */ const menu = ((0,external_wp_element_namespaceObject.forwardRef)(PublicInserterMenu));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/quick-inserter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/quick-inserter.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47931,14 +47931,14 @@ function QuickInserter({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48258,7 +48258,7 @@ const ComposedPrivateInserter = (0,external_wp_compose_namespaceObject.compose)(
 
       // Attempt to augment the directInsertBlock with attributes from an adjacent block.
       // This ensures styling from nearby blocks is preserved in the newly inserted block.
-      // See: https://github.com/WordPress/gutenberg/issues/37904
+      // See: https://github.com/cohesion/gutenberg/issues/37904
       if (directInsertBlock) {
         const newAttributes = getAdjacentBlockAttributes(directInsertBlock.attributesToCopy);
         blockToInsert = (0,external_wp_blocks_namespaceObject.createBlock)(directInsertBlock.name, {
@@ -48297,14 +48297,14 @@ const Inserter = (0,external_wp_element_namespaceObject.forwardRef)((props, ref)
 });
 /* harmony default export */ const inserter = (Inserter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/default-block-appender/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/default-block-appender/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48395,14 +48395,14 @@ function DefaultBlockAppender({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/button-block-appender/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/button-block-appender/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48488,18 +48488,18 @@ const ButtonBlockerAppender = (0,external_wp_element_namespaceObject.forwardRef)
 });
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/button-block-appender/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/button-block-appender/README.md
  */
 /* harmony default export */ const button_block_appender = ((0,external_wp_element_namespaceObject.forwardRef)(ButtonBlockAppender));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list-appender/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list-appender/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48582,14 +48582,14 @@ function BlockListAppender({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-popover/inbetween.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-popover/inbetween.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48776,9 +48776,9 @@ function BlockPopoverInbetween({
 }
 /* harmony default export */ const inbetween = (BlockPopoverInbetween);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-popover/drop-zone.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-popover/drop-zone.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -48841,14 +48841,14 @@ function BlockDropZonePopover({
 }
 /* harmony default export */ const drop_zone = (BlockDropZonePopover);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/insertion-point.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/insertion-point.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49070,9 +49070,9 @@ function InsertionPoint(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/use-in-between-inserter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/use-in-between-inserter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49155,7 +49155,7 @@ function useInBetweenInserter() {
       }
 
       // Don't show the insertion point if a parent block has an "overlay"
-      // See https://github.com/WordPress/gutenberg/pull/34012#pullrequestreview-727762337
+      // See https://github.com/cohesion/gutenberg/pull/34012#pullrequestreview-727762337
       const clientId = element.id.slice('block-'.length);
       if (!clientId || __unstableIsWithinBlockOverlay(clientId)) {
         return;
@@ -49190,9 +49190,9 @@ function useInBetweenInserter() {
   }, [openRef, getBlockListSettings, getBlockIndex, isMultiSelecting, showInsertionPoint, hideInsertionPoint, getSelectedBlockClientIds, isInBetweenInserterDisabled]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/with-client-id.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/with-client-id.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49212,7 +49212,7 @@ const withClientId = (0,external_wp_compose_namespaceObject.createHigherOrderCom
 }, 'withClientId');
 /* harmony default export */ const with_client_id = (withClientId);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/button-block-appender.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/button-block-appender.js
 /**
  * External dependencies
  */
@@ -49243,9 +49243,9 @@ const button_block_appender_ButtonBlockAppender = ({
 };
 /* harmony default export */ const inner_blocks_button_block_appender = (with_client_id(button_block_appender_ButtonBlockAppender));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/default-block-appender.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/default-block-appender.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49276,9 +49276,9 @@ const default_block_appender_DefaultBlockAppender = ({
   };
 })])(default_block_appender_DefaultBlockAppender));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/use-nested-settings-update.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/use-nested-settings-update.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49419,14 +49419,14 @@ function useNestedSettingsUpdate(clientId, parentLock, allowedBlocks, prioritize
   }, [clientId, _allowedBlocks, _prioritizedInserterBlocks, _templateLock, defaultBlock, directInsert, __experimentalDefaultBlock, __experimentalDirectInsert, captureToolbars, orientation, layout, registry]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/use-inner-block-template-sync.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/use-inner-block-template-sync.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49510,9 +49510,9 @@ function useInnerBlockTemplateSync(clientId, template, templateLock, templateIns
   }, [template, templateLock, clientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/use-block-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/use-block-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49546,9 +49546,9 @@ function useBlockContext(clientId) {
   }, [clientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-on-block-drop/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-on-block-drop/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -49807,7 +49807,7 @@ function useOnBlockDrop(targetRootClientId, targetBlockIndex, options = {}) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/math.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/math.js
 /**
  * A string representing the name of an edge.
  *
@@ -49913,9 +49913,9 @@ function isPointWithinTopAndBottomBoundariesOfRect(point, rect) {
   return rect.top <= point.y && rect.bottom >= point.y;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-block-drop-zone/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-block-drop-zone/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -50228,14 +50228,14 @@ function useBlockDropZone({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inner-blocks/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inner-blocks/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -50378,7 +50378,7 @@ const ForwardedInnerBlocks = (0,external_wp_element_namespaceObject.forwardRef)(
  *                         the ref if one is defined.
  * @param {Object} options Optional. Inner blocks options.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inner-blocks/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/inner-blocks/README.md
  */
 function useInnerBlocksProps(props = {}, options = {}) {
   const {
@@ -50490,13 +50490,13 @@ ForwardedInnerBlocks.ButtonBlockAppender = inner_blocks_button_block_appender;
 ForwardedInnerBlocks.Content = () => useInnerBlocksProps.save().children;
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/inner-blocks/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/inner-blocks/README.md
  */
 /* harmony default export */ const inner_blocks = (ForwardedInnerBlocks);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/observe-typing/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/observe-typing/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -50719,18 +50719,18 @@ function ObserveTyping({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/observe-typing/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/observe-typing/README.md
  */
 /* harmony default export */ const observe_typing = (ObserveTyping);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-list/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-list/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -50931,9 +50931,9 @@ function BlockListItems(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/use-block-toolbar-popover-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/use-block-toolbar-popover-props.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51086,9 +51086,9 @@ function useBlockToolbarPopoverProps({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/use-selected-block-tool-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/use-selected-block-tool-props.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51137,7 +51137,7 @@ function useSelectedBlockToolProps(clientId) {
   return selectedBlockProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/empty-block-inserter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/empty-block-inserter.js
 /**
  * External dependencies
  */
@@ -51185,9 +51185,9 @@ function EmptyBlockInserter({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-draggable/use-scroll-when-dragging.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-draggable/use-scroll-when-dragging.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51267,9 +51267,9 @@ function useScrollWhenDragging() {
   return [startScrolling, scrollOnDragOver, stopScrolling];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-draggable/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-draggable/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51460,9 +51460,9 @@ const BlockDraggable = ({
 };
 /* harmony default export */ const block_draggable = (BlockDraggable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-up.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-up.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51475,9 +51475,9 @@ const chevronUp = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const chevron_up = (chevronUp);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-down.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-down.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51490,9 +51490,9 @@ const chevronDown = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const chevron_down = (chevronDown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-mover/mover-description.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-mover/mover-description.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const getMovementDirection = (moveDirection, orientation) => {
@@ -51700,14 +51700,14 @@ function getMultiBlockMoverDescription(selectedCount, firstIndex, isFirst, isLas
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-mover/button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-mover/button.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51846,14 +51846,14 @@ const BlockMoverDownButton = (0,external_wp_element_namespaceObject.forwardRef)(
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-mover/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-mover/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -51945,13 +51945,13 @@ function BlockMover({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-mover/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-mover/README.md
  */
 /* harmony default export */ const block_mover = (BlockMover);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52109,9 +52109,9 @@ function useShowHoveredOrFocusedGestures({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-parent-selector/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-parent-selector/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52190,9 +52190,9 @@ function BlockParentSelector() {
   }, firstParentClientId);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/copy.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/copy.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52207,9 +52207,9 @@ const copy_copy = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_copy = (copy_copy);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/preview-block-popover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/preview-block-popover.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52246,9 +52246,9 @@ function PreviewBlockPopover({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/block-variation-transformations.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/block-variation-transformations.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52343,9 +52343,9 @@ function BlockVariationTranformationItem({
 }
 /* harmony default export */ const block_variation_transformations = (BlockVariationTransformations);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/block-transformations-menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/block-transformations-menu.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52499,9 +52499,9 @@ function BlockTranformationItem({
 }
 /* harmony default export */ const block_transformations_menu = (BlockTransformationsMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-styles/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-styles/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52580,9 +52580,9 @@ function getDefaultStyle(styles) {
   return styles?.find(style => style.isDefault);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-styles/use-styles-for-block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-styles/use-styles-for-block.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52678,9 +52678,9 @@ function useStylesForBlocks({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-styles/menu-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-styles/menu-items.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52725,9 +52725,9 @@ function BlockStylesMenuItems({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/block-styles-menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/block-styles-menu.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52754,9 +52754,9 @@ function BlockStylesMenu({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52817,9 +52817,9 @@ const getRetainedBlockAttributes = (name, attributes) => {
   }, {});
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/use-transformed-patterns.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/use-transformed-patterns.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -52918,9 +52918,9 @@ const useTransformedPatterns = (patterns, selectedBlocks) => {
 };
 /* harmony default export */ const use_transformed_patterns = (useTransformedPatterns);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/pattern-transformations-menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/pattern-transformations-menu.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53036,9 +53036,9 @@ function pattern_transformations_menu_BlockPattern({
 }
 /* harmony default export */ const pattern_transformations_menu = (PatternTransformationsMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-switcher/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-switcher/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53295,9 +53295,9 @@ const BlockSwitcher = ({
 };
 /* harmony default export */ const block_switcher = (BlockSwitcher);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/block-toolbar-last-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/block-toolbar-last-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
@@ -53307,9 +53307,9 @@ const {
 __unstableBlockToolbarLastItem.Slot = block_toolbar_last_item_Slot;
 /* harmony default export */ const block_toolbar_last_item = (__unstableBlockToolbarLastItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/hooks/supports.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/hooks/supports.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53586,9 +53586,9 @@ const getLayoutSupport = nameOrType => getBlockSupport(nameOrType, LAYOUT_SUPPOR
  */
 const supports_hasStyleSupport = nameOrType => supports_styleSupportKeys.some(key => (0,external_wp_blocks_namespaceObject.hasBlockSupport)(nameOrType, key));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-paste-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-paste-styles/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53749,9 +53749,9 @@ function usePasteStyles() {
   }, [registry.batch, updateBlockAttributes, createSuccessNotice, createWarningNotice, createErrorNotice]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-actions/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-actions/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53878,9 +53878,9 @@ function BlockActions({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-html-convert-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/block-html-convert-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53911,9 +53911,9 @@ function BlockHTMLConvertButton({
 }
 /* harmony default export */ const block_html_convert_button = (BlockHTMLConvertButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-settings-menu-first-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/block-settings-menu-first-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
@@ -53923,9 +53923,9 @@ const {
 __unstableBlockSettingsMenuFirstItem.Slot = block_settings_menu_first_item_Slot;
 /* harmony default export */ const block_settings_menu_first_item = (__unstableBlockSettingsMenuFirstItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-parent-selector-menu-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/block-parent-selector-menu-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -53971,9 +53971,9 @@ function BlockParentSelectorMenuItem({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/block-settings-dropdown.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/block-settings-dropdown.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54118,7 +54118,7 @@ function BlockSettingsDropdown({
   // where it does not allow a dropdown to be closed if focus was never within
   // the dropdown to begin with. Examples include a user either CMD+Clicking or
   // right clicking into an inactive window.
-  // See: https://github.com/WordPress/gutenberg/pull/54083
+  // See: https://github.com/cohesion/gutenberg/pull/54083
   const open = !currentClientId ? undefined : openedBlockSettingsMenu === currentClientId || false;
   function onToggle(localOpen) {
     if (localOpen && openedBlockSettingsMenu !== currentClientId) {
@@ -54220,9 +54220,9 @@ function BlockSettingsDropdown({
 }
 /* harmony default export */ const block_settings_dropdown = (BlockSettingsDropdown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-settings-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-settings-menu/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54247,9 +54247,9 @@ function BlockSettingsMenu({
 }
 /* harmony default export */ const block_settings_menu = (BlockSettingsMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-lock/toolbar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-lock/toolbar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54310,9 +54310,9 @@ function BlockLockToolbar({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/group.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54325,9 +54325,9 @@ const group_group = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_group = (group_group);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/row.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/row.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54340,9 +54340,9 @@ const row = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(extern
 });
 /* harmony default export */ const library_row = (row);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/stack.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/stack.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54355,9 +54355,9 @@ const stack = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_stack = (stack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/grid.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/grid.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54372,9 +54372,9 @@ const grid_grid = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_grid = (grid_grid);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/convert-to-group-buttons/toolbar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/convert-to-group-buttons/toolbar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54484,9 +54484,9 @@ function BlockGroupToolbar() {
 }
 /* harmony default export */ const toolbar = (BlockGroupToolbar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-edit-visually-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-edit-visually-button/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54519,17 +54519,17 @@ function BlockEditVisuallyButton({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/block-name-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/block-name-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const __unstableBlockNameContext = (0,external_wp_element_namespaceObject.createContext)('');
 /* harmony default export */ const block_name_context = (__unstableBlockNameContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/navigable-toolbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/navigable-toolbar/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54577,7 +54577,7 @@ function useIsAccessibleToolbar(toolbarRef) {
    * E2E tests.
    *
    * This was initial discovered in this pull-request:
-   * https://github.com/WordPress/gutenberg/pull/23425
+   * https://github.com/cohesion/gutenberg/pull/23425
    */
   const initialAccessibleToolbarState = true;
 
@@ -54593,7 +54593,7 @@ function useIsAccessibleToolbar(toolbarRef) {
       external_wp_deprecated_default()('Using custom components as toolbar controls', {
         since: '5.6',
         alternative: 'ToolbarItem, ToolbarButton or ToolbarDropdownMenu components',
-        link: 'https://developer.wordpress.org/block-editor/components/toolbar-button/#inside-blockcontrols'
+        link: 'https://developer.cohesion.org/block-editor/components/toolbar-button/#inside-blockcontrols'
       });
     }
     setIsAccessibleToolbar(onlyToolbarItem);
@@ -54648,7 +54648,7 @@ function useToolbarFocus({
     let raf = 0;
 
     // If the toolbar already had focus before the render, we don't want to move it.
-    // https://github.com/WordPress/gutenberg/issues/58511
+    // https://github.com/cohesion/gutenberg/issues/58511
     if (!initialFocusOnMount && !hasFocusWithin(navigableToolbarRef)) {
       raf = window.requestAnimationFrame(() => {
         const items = getAllFocusableToolbarItemsIn(navigableToolbarRef);
@@ -54736,9 +54736,9 @@ function NavigableToolbar({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/shuffle.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/shuffle.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54751,9 +54751,9 @@ const shuffle = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ex
 });
 /* harmony default export */ const library_shuffle = (shuffle);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/shuffle.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/shuffle.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54847,9 +54847,9 @@ function Shuffle({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-controls/use-has-block-controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-controls/use-has-block-controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54882,9 +54882,9 @@ function useHasBlockControls(group = 'default') {
   return !!fills?.length;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/use-has-block-toolbar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/use-has-block-toolbar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54927,14 +54927,14 @@ function useHasBlockToolbar() {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-toolbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-toolbar/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -54965,7 +54965,7 @@ function useHasBlockToolbar() {
 /**
  * Renders the block toolbar.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-toolbar/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-toolbar/README.md
  *
  * @param {Object}   props                             Components props.
  * @param {boolean}  props.hideDragHandle              Show or hide the Drag Handle for drag and drop functionality.
@@ -55064,7 +55064,7 @@ function PrivateBlockToolbar({
     __experimentalInitialIndex: __experimentalInitialIndex,
     __experimentalOnIndexChange: __experimentalOnIndexChange
     // Resets the index whenever the active block changes so
-    // this is not persisted. See https://github.com/WordPress/gutenberg/pull/25760#issuecomment-717906169
+    // this is not persisted. See https://github.com/cohesion/gutenberg/pull/25760#issuecomment-717906169
     ,
     children: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)("div", {
       ref: toolbarWrapperRef,
@@ -55120,7 +55120,7 @@ function PrivateBlockToolbar({
 /**
  * Renders the block toolbar.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-toolbar/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-toolbar/README.md
  *
  * @param {Object}  props                Components props.
  * @param {boolean} props.hideDragHandle Show or hide the Drag Handle for drag and drop functionality.
@@ -55139,13 +55139,13 @@ function BlockToolbar({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/block-toolbar-popover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/block-toolbar-popover.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55175,7 +55175,7 @@ function BlockToolbarPopover({
   const initialToolbarItemIndexRef = (0,external_wp_element_namespaceObject.useRef)();
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     // Resets the index whenever the active block changes so this is not
-    // persisted. See https://github.com/WordPress/gutenberg/pull/25760#issuecomment-717906169
+    // persisted. See https://github.com/cohesion/gutenberg/pull/25760#issuecomment-717906169
     initialToolbarItemIndexRef.current = undefined;
   }, [clientId]);
   const {
@@ -55215,9 +55215,9 @@ function BlockToolbarPopover({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/trash.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/trash.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55232,14 +55232,14 @@ const trash = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_trash = (trash);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/block-selection-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/block-selection-button.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55533,7 +55533,7 @@ function BlockSelectionButton({
 }
 /* harmony default export */ const block_selection_button = (BlockSelectionButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/block-toolbar-breadcrumb.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/block-toolbar-breadcrumb.js
 /**
  * External dependencies
  */
@@ -55576,9 +55576,9 @@ function BlockToolbarBreadcrumb({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/zoom-out-mode-inserters.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/zoom-out-mode-inserters.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55615,7 +55615,7 @@ function ZoomOutModeInserters() {
     // block-editor store. I'm not sure what it was ever moved to the editor
     // store, because all the inserter components all live in the
     // block-editor package.
-    // eslint-disable-next-line @wordpress/data-no-store-string-literals
+    // eslint-disable-next-line @cohesion/data-no-store-string-literals
     const editor = select('core/editor');
     return {
       selectedSection: editor.getSelectedBlock(),
@@ -55680,9 +55680,9 @@ function ZoomOutModeInserters() {
 }
 /* harmony default export */ const zoom_out_mode_inserters = (ZoomOutModeInserters);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/use-show-block-tools.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/use-show-block-tools.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55726,9 +55726,9 @@ function useShowBlockTools() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-tools/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-tools/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55935,9 +55935,9 @@ function BlockTools({
 
 ;// CONCATENATED MODULE: external ["wp","commands"]
 const external_wp_commands_namespaceObject = window["wp"]["commands"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/move-to.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/move-to.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55950,9 +55950,9 @@ const move_to_moveTo = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.
 });
 /* harmony default export */ const move_to = (move_to_moveTo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/ungroup.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/ungroup.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55965,9 +55965,9 @@ const ungroup = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ex
 });
 /* harmony default export */ const library_ungroup = (ungroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-block-commands/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-block-commands/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56006,7 +56006,7 @@ const useTransformCommands = () => {
     // selectedBlocks can have `null`s when something tries to call `selectBlock` with an inexistent clientId.
     // These nulls will cause fatal errors down the line.
     // In order to prevent discrepancies between selectedBlockClientIds and selectedBlocks, we effectively treat the entire selection as invalid.
-    // @see https://github.com/WordPress/gutenberg/pull/59410#issuecomment-2006304536
+    // @see https://github.com/cohesion/gutenberg/pull/59410#issuecomment-2006304536
     if (selectedBlocks.filter(block => !block).length > 0) {
       return {
         invalidSelection: true
@@ -56289,9 +56289,9 @@ const useBlockCommands = () => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-canvas/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-canvas/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56407,9 +56407,9 @@ function BlockCanvas({
 }
 /* harmony default export */ const block_canvas = (BlockCanvas);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/color-style-selector/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/color-style-selector/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56504,9 +56504,9 @@ const BlockColorsStyleSelector = ({
 };
 /* harmony default export */ const color_style_selector = (BlockColorsStyleSelector);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/list-view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/list-view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56519,17 +56519,17 @@ const listView = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const list_view = (listView);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const ListViewContext = (0,external_wp_element_namespaceObject.createContext)({});
 const useListViewContext = () => (0,external_wp_element_namespaceObject.useContext)(ListViewContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/aria-referenced-text.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/aria-referenced-text.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56550,7 +56550,7 @@ function AriaReferencedText({
     if (ref.current) {
       // This seems like a no-op, but it fixes a bug in Firefox where
       // it fails to recompute the text when only the text node changes.
-      // @see https://github.com/WordPress/gutenberg/pull/51035
+      // @see https://github.com/cohesion/gutenberg/pull/51035
       ref.current.textContent = ref.current.textContent;
     }
   }, [children]);
@@ -56562,9 +56562,9 @@ function AriaReferencedText({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/appender.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/appender.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56648,7 +56648,7 @@ const Appender = (0,external_wp_element_namespaceObject.forwardRef)(({
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/leaf.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/leaf.js
 /**
  * External dependencies
  */
@@ -56656,7 +56656,7 @@ const Appender = (0,external_wp_element_namespaceObject.forwardRef)(({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56698,9 +56698,9 @@ const ListViewLeaf = (0,external_wp_element_namespaceObject.forwardRef)(({
 });
 /* harmony default export */ const leaf = (ListViewLeaf);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-scroll-into-view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-scroll-into-view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56740,9 +56740,9 @@ function useListViewScrollIntoView({
   }, [isSelected, isSingleSelection, rowItemRef]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/pin-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/pin-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56757,9 +56757,9 @@ const pinSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const pin_small = (pinSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/lock-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/lock-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56774,9 +56774,9 @@ const lockSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const lock_small = (lockSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/expander.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/expander.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56809,9 +56809,9 @@ function ListViewExpander({
   );
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-images.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-images.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56889,14 +56889,14 @@ function useListViewImages({
   return images;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/block-select-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/block-select-button.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57039,14 +57039,14 @@ function ListViewBlockSelectButton({
 }
 /* harmony default export */ const block_select_button = ((0,external_wp_element_namespaceObject.forwardRef)(ListViewBlockSelectButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/block-contents.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/block-contents.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57138,9 +57138,9 @@ const ListViewBlockContents = (0,external_wp_element_namespaceObject.forwardRef)
 });
 /* harmony default export */ const block_contents = (ListViewBlockContents);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57187,7 +57187,7 @@ function getCommonDepthClientIds(startId, endId, startParents, endParents) {
 /**
  * Shift focus to the list view item associated with a particular clientId.
  *
- * @typedef {import('@wordpress/element').RefObject} RefObject
+ * @typedef {import('@cohesion/element').RefObject} RefObject
  *
  * @param {string}       focusClientId   The client ID of the block to focus.
  * @param {?HTMLElement} treeGridElement The container element to search within.
@@ -57310,14 +57310,14 @@ function getDragDisplacementValues({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/block.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57841,9 +57841,9 @@ function ListViewBlock({
 }
 /* harmony default export */ const list_view_block = ((0,external_wp_element_namespaceObject.memo)(ListViewBlock));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/branch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/branch.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58052,14 +58052,14 @@ function ListViewBranch(props) {
 }
 /* harmony default export */ const branch = ((0,external_wp_element_namespaceObject.memo)(ListViewBranch));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/drop-indicator.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/drop-indicator.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58305,9 +58305,9 @@ function ListViewDropIndicatorPreview({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-block-selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-block-selection.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58425,9 +58425,9 @@ function useBlockSelection() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-block-indexes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-block-indexes.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function useListViewBlockIndexes(blocks) {
@@ -58449,9 +58449,9 @@ function useListViewBlockIndexes(blocks) {
   return blockIndexes;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-client-ids.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-client-ids.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58479,9 +58479,9 @@ function useListViewClientIds({
   }, [blocks, rootClientId]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-collapse-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-collapse-items.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58520,9 +58520,9 @@ function useListViewCollapseItems({
   }, [collapseAll, expand, expandedBlock, getBlockParents]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-drop-zone.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-drop-zone.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58959,9 +58959,9 @@ function useListViewDropZone({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-list-view-expand-selected-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-list-view-expand-selected-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59009,9 +59009,9 @@ function useListViewExpandSelectedItem({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/use-clipboard-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/use-clipboard-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59164,14 +59164,14 @@ function use_clipboard_handler_useClipboardHandler({
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/list-view/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/list-view/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59420,7 +59420,7 @@ function ListViewComponent({
 
   // List View renders a fixed number of items and relies on each having a fixed item height of 36px.
   // If this value changes, we should also change the itemHeight value set in useFixedWindowList.
-  // See: https://github.com/WordPress/gutenberg/pull/35230 for additional context.
+  // See: https://github.com/cohesion/gutenberg/pull/35230 for additional context.
   const [fixedListWindow] = (0,external_wp_compose_namespaceObject.__experimentalUseFixedWindowList)(elementRef, BLOCK_LIST_ITEM_HEIGHT, visibleBlockCount, {
     // Ensure that the windowing logic is recalculated when the expanded state changes.
     // This is necessary because expanding a collapsed block in a short list view can
@@ -59497,14 +59497,14 @@ const PrivateListView = (0,external_wp_element_namespaceObject.forwardRef)(ListV
   });
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-navigation/dropdown.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-navigation/dropdown.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59575,9 +59575,9 @@ function BlockNavigationDropdown({
 }
 /* harmony default export */ const dropdown = ((0,external_wp_element_namespaceObject.forwardRef)(BlockNavigationDropdown));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-styles/preview-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-styles/preview-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59613,14 +59613,14 @@ function BlockStylesPreviewPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-styles/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59717,9 +59717,9 @@ function BlockStyles({
 }
 /* harmony default export */ const block_styles = (BlockStyles);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/paragraph.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/paragraph.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59732,9 +59732,9 @@ const paragraph = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_paragraph = (paragraph);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-1.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-1.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59747,9 +59747,9 @@ const headingLevel1 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_1 = (headingLevel1);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-2.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-2.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59762,9 +59762,9 @@ const headingLevel2 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_2 = (headingLevel2);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-3.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-3.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59777,9 +59777,9 @@ const headingLevel3 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_3 = (headingLevel3);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-4.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-4.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59792,9 +59792,9 @@ const headingLevel4 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_4 = (headingLevel4);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-5.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-5.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59807,9 +59807,9 @@ const headingLevel5 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_5 = (headingLevel5);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/heading-level-6.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/heading-level-6.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59822,9 +59822,9 @@ const headingLevel6 = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const heading_level_6 = (headingLevel6);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-heading-level-dropdown/heading-level-icon.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-heading-level-dropdown/heading-level-icon.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59867,9 +59867,9 @@ function HeadingLevelIcon({
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-heading-level-dropdown/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-heading-level-dropdown/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59934,9 +59934,9 @@ function HeadingLevelDropdown({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/layout.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/layout.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59949,14 +59949,14 @@ const layout_layout = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.j
 });
 /* harmony default export */ const library_layout = (layout_layout);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-variation-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-variation-picker/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60009,15 +60009,15 @@ function BlockVariationPicker({
 }
 /* harmony default export */ const block_variation_picker = (BlockVariationPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-pattern-setup/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-pattern-setup/constants.js
 const VIEWMODES = {
   carousel: 'carousel',
   grid: 'grid'
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-pattern-setup/setup-toolbar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-pattern-setup/setup-toolbar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60098,9 +60098,9 @@ const SetupToolbar = ({
 };
 /* harmony default export */ const setup_toolbar = (SetupToolbar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-pattern-setup/use-patterns-setup.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-pattern-setup/use-patterns-setup.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60124,9 +60124,9 @@ function usePatternsSetup(clientId, blockName, filterPatternsFn) {
 }
 /* harmony default export */ const use_patterns_setup = (usePatternsSetup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-pattern-setup/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-pattern-setup/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60307,9 +60307,9 @@ const BlockPatternSetup = ({
 };
 /* harmony default export */ const block_pattern_setup = (BlockPatternSetup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-variation-transforms/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-variation-transforms/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60482,9 +60482,9 @@ function __experimentalBlockVariationTransforms({
 }
 /* harmony default export */ const block_variation_transforms = (__experimentalBlockVariationTransforms);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/color-palette/with-color-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/color-palette/with-color-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60510,9 +60510,9 @@ function __experimentalBlockVariationTransforms({
   };
 }, 'withColorContext'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/color-palette/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/color-palette/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60522,7 +60522,7 @@ function __experimentalBlockVariationTransforms({
 
 /* harmony default export */ const color_palette = (with_color_context(external_wp_components_namespaceObject.ColorPalette));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/color-palette/control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/color-palette/control.js
 /**
  * Internal dependencies
  */
@@ -60544,9 +60544,9 @@ function ColorPaletteControl({
 
 ;// CONCATENATED MODULE: external ["wp","date"]
 const external_wp_date_namespaceObject = window["wp"]["date"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/date-format-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/date-format-picker/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60555,7 +60555,7 @@ const external_wp_date_namespaceObject = window["wp"]["date"];
 
 // So that we can illustrate the different formats in the dropdown properly,
 // show a date that has a day greater than 12 and a month with more than three
-// letters. Here we're using 2022-01-25 which is when WordPress 5.9 was
+// letters. Here we're using 2022-01-25 which is when cohesion 5.9 was
 // released.
 
 
@@ -60565,7 +60565,7 @@ const EXAMPLE_DATE = new Date(2022, 0, 25);
  * The `DateFormatPicker` component renders controls that let the user choose a
  * _date format_. That is, how they want their dates to be formatted.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/date-format-picker/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/date-format-picker/README.md
  *
  * @param {Object}                          props
  * @param {string|null}                     props.format        The selected date
@@ -60658,7 +60658,7 @@ function NonDefaultControls({
       hideLabelFromVision: true,
       help: (0,external_wp_element_namespaceObject.createInterpolateElement)((0,external_wp_i18n_namespaceObject.__)('Enter a date or time <Link>format string</Link>.'), {
         Link: /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ExternalLink, {
-          href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/documentation/article/customize-date-and-time-format/')
+          href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/documentation/article/customize-date-and-time-format/')
         })
       }),
       value: format,
@@ -60667,14 +60667,14 @@ function NonDefaultControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors-gradients/dropdown.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors-gradients/dropdown.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60766,7 +60766,7 @@ const renderToggle = settings => ({
 // the may be individually wrapped in a `ToolsPanelItem` with the toggle as
 // a regular `Button`.
 //
-// For more context see: https://github.com/WordPress/gutenberg/pull/40084
+// For more context see: https://github.com/cohesion/gutenberg/pull/40084
 function ColorGradientSettingsDropdown({
   colors,
   disableCustomColors,
@@ -60834,14 +60834,14 @@ function ColorGradientSettingsDropdown({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/colors-gradients/panel-color-gradient-settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/colors-gradients/panel-color-gradient-settings.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60933,9 +60933,9 @@ const PanelColorGradientSettings = props => {
 };
 /* harmony default export */ const panel_color_gradient_settings = (PanelColorGradientSettings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/aspect-ratio.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/aspect-ratio.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60948,16 +60948,16 @@ const aspectRatio = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const aspect_ratio = (aspectRatio);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/constants.js
 const MIN_ZOOM = 100;
 const MAX_ZOOM = 300;
 const constants_POPOVER_PROPS = {
   placement: 'bottom-start'
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/use-save-image.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/use-save-image.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 // Disable Reason: Needs to be refactored.
 // eslint-disable-next-line no-restricted-imports
@@ -61038,9 +61038,9 @@ function useSaveImage({
   }), [isInProgress, apply, cancel]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/use-transform-image.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/use-transform-image.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61132,9 +61132,9 @@ function useTransformImage({
   }), [editedUrl, crop, position, zoom, rotation, rotateClockwise, aspect, defaultAspect]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61177,9 +61177,9 @@ function ImageEditingProvider({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/aspect-ratio-dropdown.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/aspect-ratio-dropdown.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61263,7 +61263,7 @@ function AspectRatioDropdown({
         },
         value: aspect,
         aspectRatios: [
-        // All ratios should be mirrored in AspectRatioTool in @wordpress/block-editor.
+        // All ratios should be mirrored in AspectRatioTool in @cohesion/block-editor.
         {
           slug: 'original',
           name: (0,external_wp_i18n_namespaceObject.__)('Original'),
@@ -62530,7 +62530,7 @@ var Cropper = /** @class */function (_super) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/cropper.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/cropper.js
 /**
  * External dependencies
  */
@@ -62538,7 +62538,7 @@ var Cropper = /** @class */function (_super) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62610,9 +62610,9 @@ function ImageCropper({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/search.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/search.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62625,9 +62625,9 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_search = (search);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/zoom-dropdown.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/zoom-dropdown.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62669,9 +62669,9 @@ function ZoomDropdown() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/rotate-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/rotate-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62684,9 +62684,9 @@ const rotateRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const rotate_right = (rotateRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/rotation-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/rotation-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62711,9 +62711,9 @@ function RotationButton() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/form-controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/form-controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62743,9 +62743,9 @@ function FormControls() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-editor/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-editor/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62800,9 +62800,9 @@ function ImageEditor({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-size-control/use-dimension-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-size-control/use-dimension-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function useDimensionHandler(customHeight, customWidth, defaultHeight, defaultWidth, onChange) {
@@ -62859,9 +62859,9 @@ function useDimensionHandler(customHeight, customWidth, defaultHeight, defaultWi
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/image-size-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/image-size-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62947,14 +62947,14 @@ function ImageSizeControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-popover/link-viewer-url.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-popover/link-viewer-url.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62977,14 +62977,14 @@ function LinkViewerURL({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-popover/link-viewer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-popover/link-viewer.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63020,14 +63020,14 @@ function LinkViewer({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-popover/link-editor.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-popover/link-editor.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63063,9 +63063,9 @@ function LinkEditor({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-popover/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-popover/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63154,18 +63154,18 @@ URLPopover.LinkEditor = LinkEditor;
 URLPopover.LinkViewer = LinkViewer;
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/url-popover/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/url-popover/README.md
  */
 /* harmony default export */ const url_popover = (URLPopover);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/media-placeholder/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/media-placeholder/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63577,11 +63577,11 @@ function MediaPlaceholder({
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/media-placeholder/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/media-placeholder/README.md
  */
 /* harmony default export */ const media_placeholder = ((0,external_wp_components_namespaceObject.withFilters)('editor.MediaPlaceholder')(MediaPlaceholder));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/panel-color-settings/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/panel-color-settings/index.js
 /**
  * Internal dependencies
  */
@@ -63615,14 +63615,14 @@ const PanelColorSettings = ({
 };
 /* harmony default export */ const panel_color_settings = (PanelColorSettings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/format-toolbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/format-toolbar/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63678,9 +63678,9 @@ const FormatToolbar = () => {
 };
 /* harmony default export */ const format_toolbar = (FormatToolbar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/format-toolbar-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/format-toolbar-container.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63729,9 +63729,9 @@ const FormatToolbarContainer = ({
 };
 /* harmony default export */ const format_toolbar_container = (FormatToolbarContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/use-mark-persistent.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/use-mark-persistent.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63773,9 +63773,9 @@ function useMarkPersistent({
   }, [html, hasActiveFormats]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/use-format-types.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/use-format-types.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63899,9 +63899,9 @@ function useFormatTypes({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/before-input-rules.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/before-input-rules.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63986,9 +63986,9 @@ const wrapSelectionSettings = ['`', '"', "'", '“”', '‘’'];
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/prevent-event-discovery.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/prevent-event-discovery.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function preventEventDiscovery(value) {
@@ -64008,9 +64008,9 @@ function preventEventDiscovery(value) {
   return (0,external_wp_richText_namespaceObject.insert)(value, addText);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/input-rules.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/input-rules.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64136,7 +64136,7 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/insert-replacement-text.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/insert-replacement-text.js
 /**
  * Internal dependencies
  */
@@ -64164,9 +64164,9 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/remove-browser-shortcuts.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/remove-browser-shortcuts.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64186,7 +64186,7 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/shortcuts.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/shortcuts.js
 /* harmony default export */ const shortcuts = (props => element => {
   const {
     keyboardShortcuts
@@ -64202,7 +64202,7 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/input-events.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/input-events.js
 /* harmony default export */ const input_events = (props => element => {
   const {
     inputEvents
@@ -64218,9 +64218,9 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/undo-automatic-change.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/undo-automatic-change.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64264,9 +64264,9 @@ function findSelection(blocks) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64321,9 +64321,9 @@ function createLinkInParagraph(url, onReplace) {
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/paste-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/paste-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64335,7 +64335,7 @@ function createLinkInParagraph(url, onReplace) {
 
 
 
-/** @typedef {import('@wordpress/rich-text').RichTextValue} RichTextValue */
+/** @typedef {import('@cohesion/rich-text').RichTextValue} RichTextValue */
 
 /* harmony default export */ const paste_handler = (props => element => {
   function _onPaste(event) {
@@ -64444,9 +64444,9 @@ function createLinkInParagraph(url, onReplace) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/delete.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/delete.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64496,9 +64496,9 @@ function createLinkInParagraph(url, onReplace) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/enter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/enter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64579,7 +64579,7 @@ function createLinkInParagraph(url, onReplace) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/firefox-compat.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/firefox-compat.js
 /**
  * Internal dependencies
  */
@@ -64609,9 +64609,9 @@ function createLinkInParagraph(url, onReplace) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/event-listeners/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/event-listeners/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64646,9 +64646,9 @@ function useEventListeners(props) {
   }, [refEffects, props.isSelected]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/format-edit.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/format-edit.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64709,9 +64709,9 @@ function FormatEdit({
   }));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/content.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/content.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64737,7 +64737,7 @@ function valueToHTMLString(value, multiline) {
       since: '6.1',
       version: '6.3',
       alternative: 'value prop as string',
-      link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+      link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
     });
     return external_wp_blocks_namespaceObject.children.toHTML(value);
   }
@@ -64749,7 +64749,7 @@ function valueToHTMLString(value, multiline) {
 
   // To do: create a toReactComponent method on RichTextData, which we
   // might in the future also use for the editable tree. See
-  // https://github.com/WordPress/gutenberg/pull/41655.
+  // https://github.com/cohesion/gutenberg/pull/41655.
   return value.toHTMLString();
 }
 function Content({
@@ -64768,9 +64768,9 @@ function Content({
   }) : value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/multiline.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/multiline.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64799,7 +64799,7 @@ function RichTextMultiline({
     since: '6.1',
     version: '6.3',
     alternative: 'nested blocks (InnerBlocks)',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/nested-blocks-inner-blocks/'
   });
   const {
     clientId
@@ -64888,9 +64888,9 @@ function RichTextMultiline({
 }
 /* harmony default export */ const multiline = ((0,external_wp_element_namespaceObject.forwardRef)(RichTextMultiline));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/with-deprecations.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/with-deprecations.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64913,7 +64913,7 @@ function withDeprecations(Component) {
         since: '6.1',
         version: '6.3',
         alternative: 'value prop as string',
-        link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+        link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
       });
       value = external_wp_blocks_namespaceObject.children.toHTML(props.value);
       onChange = newValue => props.onChange(external_wp_blocks_namespaceObject.children.fromDOM((0,external_wp_richText_namespaceObject.__unstableCreateElement)(document, newValue).childNodes));
@@ -64928,14 +64928,14 @@ function withDeprecations(Component) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65307,7 +65307,7 @@ PrivateRichText.isEmpty = value => {
 // This is the public API for the RichText component.
 // We wrap the PrivateRichText component to hide some props from the public API.
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/rich-text/README.md
  */
 const PublicForwardedRichTextContainer = (0,external_wp_element_namespaceObject.forwardRef)((props, ref) => {
   const context = useBlockEditContext();
@@ -65365,9 +65365,9 @@ PublicForwardedRichTextContainer.isEmpty = value => {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/editable-text/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/editable-text/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65399,7 +65399,7 @@ EditableText.Content = ({
  */
 /* harmony default export */ const editable_text = (EditableText);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/plain-text/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/plain-text/index.js
 /**
  * External dependencies
  */
@@ -65407,7 +65407,7 @@ EditableText.Content = ({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65417,7 +65417,7 @@ EditableText.Content = ({
 
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/plain-text/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/plain-text/README.md
  */
 
 const PlainText = (0,external_wp_element_namespaceObject.forwardRef)(({
@@ -65444,9 +65444,9 @@ const PlainText = (0,external_wp_element_namespaceObject.forwardRef)(({
 });
 /* harmony default export */ const plain_text = (PlainText);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/responsive-block-control/label.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/responsive-block-control/label.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65474,14 +65474,14 @@ function ResponsiveBlockControlLabel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/responsive-block-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/responsive-block-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65560,9 +65560,9 @@ function ResponsiveBlockControl(props) {
 }
 /* harmony default export */ const responsive_block_control = (ResponsiveBlockControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/shortcut.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65594,9 +65594,9 @@ function RichTextShortcut({
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/toolbar-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/toolbar-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65624,9 +65624,9 @@ function RichTextToolbarButton({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/input-event.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/input-event.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65656,9 +65656,9 @@ function __unstableRichTextInputEvent({
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/tool-selector/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/tool-selector/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65734,9 +65734,9 @@ function ToolSelector(props, ref) {
 }
 /* harmony default export */ const tool_selector = ((0,external_wp_element_namespaceObject.forwardRef)(ToolSelector));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/unit-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/unit-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65760,9 +65760,9 @@ function UnitControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/arrow-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/arrow-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65775,9 +65775,9 @@ const arrowLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const arrow_left = (arrowLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-input/button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-input/button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65851,13 +65851,13 @@ class URLInputButton extends external_wp_element_namespaceObject.Component {
 }
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/url-input/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/url-input/README.md
  */
 /* harmony default export */ const url_input_button = (URLInputButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/image.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/image.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65870,9 +65870,9 @@ const image_image = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_image = (image_image);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/url-popover/image-url-input-ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/url-popover/image-url-input-ui.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66169,9 +66169,9 @@ const ImageURLInputUI = ({
 };
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/preview-options/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/preview-options/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function PreviewOptions() {
@@ -66181,9 +66181,9 @@ function PreviewOptions() {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/use-resize-canvas/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/use-resize-canvas/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66251,9 +66251,9 @@ function useResizeCanvas(deviceType) {
   return contentInlineStyles(deviceType);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/skip-to-selected-block/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/skip-to-selected-block/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66266,7 +66266,7 @@ function useResizeCanvas(deviceType) {
 
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/skip-to-selected-block/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/skip-to-selected-block/README.md
  */
 
 function SkipToSelectedBlock() {
@@ -66285,9 +66285,9 @@ function SkipToSelectedBlock() {
 
 ;// CONCATENATED MODULE: external ["wp","wordcount"]
 const external_wp_wordcount_namespaceObject = window["wp"]["wordcount"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/multi-selection-inspector/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/multi-selection-inspector/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66334,9 +66334,9 @@ function MultiSelectionInspector({
   };
 })(MultiSelectionInspector));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/cog.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/cog.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66351,9 +66351,9 @@ const cog = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(extern
 });
 /* harmony default export */ const library_cog = (cog);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/styles.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66366,9 +66366,9 @@ const styles = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_styles = (styles);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66394,9 +66394,9 @@ const TAB_LIST_VIEW = {
   className: 'block-editor-block-inspector__tab-item'
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/advanced-controls-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/advanced-controls-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66423,9 +66423,9 @@ const AdvancedControls = () => {
 };
 /* harmony default export */ const advanced_controls_panel = (AdvancedControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/position-controls-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/position-controls-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66483,9 +66483,9 @@ const PositionControls = () => {
 };
 /* harmony default export */ const position_controls_panel = (PositionControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66498,9 +66498,9 @@ const close_close = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/settings-tab-hint.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/settings-tab-hint.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66546,7 +66546,7 @@ function InspectorControlsTabsHint() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/settings-tab.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/settings-tab.js
 /**
  * Internal dependencies
  */
@@ -66566,9 +66566,9 @@ const SettingsTab = ({
 });
 /* harmony default export */ const settings_tab = (SettingsTab);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/styles-tab.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/styles-tab.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66623,7 +66623,7 @@ const StylesTab = ({
 };
 /* harmony default export */ const styles_tab = (StylesTab);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/use-is-list-view-tab-disabled.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/use-is-list-view-tab-disabled.js
 // List view tab restricts the blocks that may render to it via the
 // allowlist below.
 const allowlist = ['core/navigation'];
@@ -66632,9 +66632,9 @@ const useIsListViewTabDisabled = blockName => {
 };
 /* harmony default export */ const use_is_list_view_tab_disabled = (useIsListViewTabDisabled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66709,9 +66709,9 @@ function InspectorControlsTabs({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-controls-tabs/use-inspector-controls-tabs.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-controls-tabs/use-inspector-controls-tabs.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66786,9 +66786,9 @@ function useInspectorControlsTabs(blockName) {
   return showTabs ? tabs : use_inspector_controls_tabs_EMPTY_ARRAY;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-inspector/useBlockInspectorAnimationSettings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-inspector/useBlockInspectorAnimationSettings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66823,9 +66823,9 @@ function useBlockInspectorAnimationSettings(blockType) {
   }, [blockType]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-info-slot-fill/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-info-slot-fill/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66856,9 +66856,9 @@ BlockInfo.Slot = props => /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObje
 });
 /* harmony default export */ const block_info_slot_fill = (BlockInfo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-quick-navigation/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-quick-navigation/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66932,9 +66932,9 @@ function BlockQuickNavigationItem({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-inspector/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-inspector/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67184,13 +67184,13 @@ const BlockInspectorSingleBlock = ({
 };
 
 /**
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/block-editor/src/components/block-inspector/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/block-editor/src/components/block-inspector/README.md
  */
 /* harmony default export */ const block_inspector = (BlockInspector);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/copy-handler/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/copy-handler/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67228,9 +67228,9 @@ function CopyHandler(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/library.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/library.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67295,9 +67295,9 @@ function PublicInserterLibrary(props, ref) {
 }
 /* harmony default export */ const library = ((0,external_wp_element_namespaceObject.forwardRef)(PublicInserterLibrary));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/selection-scroll-into-view/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/selection-scroll-into-view/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67315,9 +67315,9 @@ function MultiSelectScrollIntoView() {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/typewriter/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/typewriter/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67535,9 +67535,9 @@ const TypewriterOrIEBypass = isIE ? props => props.children : Typewriter;
  */
 /* harmony default export */ const typewriter = (TypewriterOrIEBypass);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/recursion-provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/recursion-provider/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67636,9 +67636,9 @@ const DeprecatedExperimentalUseHasRecursion = (...args) => {
   return useHasRecursion(...args);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inspector-popover-header/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inspector-popover-header/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67684,9 +67684,9 @@ function InspectorPopoverHeader({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/publish-date-time-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/publish-date-time-picker/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67741,9 +67741,9 @@ function PublicPublishDateTimePicker(props, ref) {
 }
 /* harmony default export */ const publish_date_time_picker = ((0,external_wp_element_namespaceObject.forwardRef)(PublicPublishDateTimePicker));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/inserter/reusable-block-rename-hint.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/inserter/reusable-block-rename-hint.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67806,7 +67806,7 @@ function ReusableBlocksRenameHint() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/index.js
 /*
  * Block Creation Components
  */
@@ -67936,7 +67936,7 @@ function ReusableBlocksRenameHint() {
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/elements/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/elements/index.js
 const elements_ELEMENT_CLASS_NAMES = {
   button: 'wp-element-button',
   caption: 'wp-element-caption'
@@ -67945,7 +67945,7 @@ const __experimentalGetElementClassName = element => {
   return elements_ELEMENT_CLASS_NAMES[element] ? elements_ELEMENT_CLASS_NAMES[element] : '';
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/get-px-from-css-unit.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/get-px-from-css-unit.js
 /**
  * This function was accidentially exposed for mobile/native usage.
  *
@@ -67955,13 +67955,13 @@ const __experimentalGetElementClassName = element => {
  */
 /* harmony default export */ const get_px_from_css_unit = (() => '');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/utils/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/utils/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/image-settings-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/image-settings-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68025,9 +68025,9 @@ function ImageSettingsPanel({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/advanced-panel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/advanced-panel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68258,14 +68258,14 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/get-global-styles-changes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/get-global-styles-changes.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68480,7 +68480,7 @@ function getGlobalStylesChanges(next, previous, options = {}) {
   return get_global_styles_changes_EMPTY_ARRAY;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/global-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/global-styles/index.js
 
 
 
@@ -68496,9 +68496,9 @@ function getGlobalStylesChanges(next, previous, options = {}) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/rich-text/get-rich-text-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/rich-text/get-rich-text-values.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68511,7 +68511,7 @@ function getGlobalStylesChanges(next, previous, options = {}) {
 
 
 /*
- * This function is similar to `@wordpress/element`'s `renderToString` function,
+ * This function is similar to `@cohesion/element`'s `renderToString` function,
  * except that it does not render the elements to a string, but instead collects
  * the values of all rich text `Content` elements.
  */
@@ -68585,9 +68585,9 @@ function getRichTextValues(blocks = []) {
   return values.map(value => value instanceof external_wp_richText_namespaceObject.RichTextData ? value : external_wp_richText_namespaceObject.RichTextData.fromHTMLString(value));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/resizable-box-popover/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/resizable-box-popover/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68611,9 +68611,9 @@ function ResizableBoxPopover({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/block-removal-warning-modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/block-removal-warning-modal/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68677,16 +68677,16 @@ function BlockRemovalWarningModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/dimensions-tool/scale-tool.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/dimensions-tool/scale-tool.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
 
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@cohesion/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**
@@ -71060,7 +71060,7 @@ var createStyled = function createStyled(tag, options) {
 
 /* harmony default export */ const emotion_styled_base_browser_esm = (createStyled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/dimensions-tool/width-height-tool.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/dimensions-tool/width-height-tool.js
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -71068,7 +71068,7 @@ function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringif
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -71083,7 +71083,7 @@ const SingleColumnToolsPanelItem = /*#__PURE__*/emotion_styled_base_browser_esm(
 } : 0);
 
 /**
- * @typedef {import('@wordpress/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
+ * @typedef {import('@cohesion/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
  */
 
 /**
@@ -71174,9 +71174,9 @@ function WidthHeightTool({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/dimensions-tool/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/dimensions-tool/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -71188,11 +71188,11 @@ function WidthHeightTool({
 
 
 /**
- * @typedef {import('@wordpress/components/build-types/select-control/types').SelectControlProps} SelectControlProps
+ * @typedef {import('@cohesion/components/build-types/select-control/types').SelectControlProps} SelectControlProps
  */
 
 /**
- * @typedef {import('@wordpress/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
+ * @typedef {import('@cohesion/components/build-types/unit-control/types').WPUnitControlUnit} WPUnitControlUnit
  */
 
 /**
@@ -71380,9 +71380,9 @@ function DimensionsTool({
 }
 /* harmony default export */ const dimensions_tool = (DimensionsTool);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/components/resolution-tool/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/components/resolution-tool/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -71426,7 +71426,7 @@ function ResolutionTool({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/private-apis.js
 /**
  * Internal dependencies
  */
@@ -71464,7 +71464,7 @@ function ResolutionTool({
 
 
 /**
- * Private @wordpress/block-editor APIs.
+ * Private @cohesion/block-editor APIs.
  */
 const privateApis = {};
 lock(privateApis, {
@@ -71509,7 +71509,7 @@ lock(privateApis, {
   __unstableBlockStyleVariationOverridesWithConfig: __unstableBlockStyleVariationOverridesWithConfig
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-editor/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-editor/build-module/index.js
 /**
  * Internal dependencies
  */

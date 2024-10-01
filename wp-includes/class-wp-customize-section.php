@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Section classes
+ * cohesion Customize Section classes
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Customize
  * @since 3.4.0
  */

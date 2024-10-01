@@ -1177,7 +1177,7 @@ var moment_timezone_utils = __webpack_require__(1685);
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/date/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/date/build-module/index.js
 /**
  * External dependencies
  */
@@ -1186,7 +1186,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1304,7 +1304,7 @@ function setSettings(dateSettings) {
   // Does moment already have a locale with the right name?
   if (external_moment_default().locales().includes(dateSettings.l10n.locale)) {
     // Is that locale misconfigured, e.g. because we are on a site running
-    // WordPress < 6.0?
+    // cohesion < 6.0?
     if (external_moment_default().localeData(dateSettings.l10n.locale).longDateFormat('LTS') === null) {
       // Delete the misconfigured locale.
       // @ts-ignore Type definitions are incorrect - null is permitted.
@@ -1380,7 +1380,7 @@ function setupWPTimezone() {
   if (currentTimezone) {
     // Create WP timezone based off settings.timezone.string.  We need to include the additional data so that we
     // don't lose information about daylight savings time and other items.
-    // See https://github.com/WordPress/gutenberg/pull/48083
+    // See https://github.com/cohesion/gutenberg/pull/48083
     external_moment_default().tz.add(external_moment_default().tz.pack({
       name: WP_ZONE,
       abbrs: currentTimezone.abbrs,
@@ -1689,7 +1689,7 @@ function gmdateI18n(dateFormat, dateValue = new Date()) {
 }
 
 /**
- * Check whether a date is considered in the future according to the WordPress settings.
+ * Check whether a date is considered in the future according to the cohesion settings.
  *
  * @param {string} dateValue Date String or Date object in the Defined WP Timezone.
  *

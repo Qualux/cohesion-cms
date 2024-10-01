@@ -2,12 +2,12 @@
 /**
  * Network Privacy administration panel.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Multisite
  * @since 4.9.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load cohesion Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 require ABSPATH . 'wp-admin/privacy.php';

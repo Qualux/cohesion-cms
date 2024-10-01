@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress FTP Sockets Filesystem.
+ * cohesion FTP Sockets Filesystem.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP Sockets.
+ * cohesion Filesystem Class for implementing FTP Sockets.
  *
  * @since 2.5.0
  *
@@ -431,7 +431,7 @@ class WP_Filesystem_ftpsockets extends WP_Filesystem_Base {
 		 * Check for empty path. If ftp::nlist() receives an empty path,
 		 * it checks the current working directory and may return true.
 		 *
-		 * See https://core.trac.wordpress.org/ticket/33058.
+		 * See https://core.trac.cohesion.org/ticket/33058.
 		 */
 		if ( '' === $path ) {
 			return false;

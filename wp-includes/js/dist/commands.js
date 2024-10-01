@@ -232,7 +232,7 @@ __webpack_require__.d(__webpack_exports__, {
   useCommandLoader: () => (/* reexport */ useCommandLoader)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/commands/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -244,7 +244,7 @@ __webpack_require__.d(actions_namespaceObject, {
   unregisterCommandLoader: () => (unregisterCommandLoader)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/commands/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -254,7 +254,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   isOpen: () => (selectors_isOpen)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/private-actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/commands/build-module/store/private-actions.js
 var private_actions_namespaceObject = {};
 __webpack_require__.r(private_actions_namespaceObject);
 __webpack_require__.d(private_actions_namespaceObject, {
@@ -3148,13 +3148,13 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 const external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 const external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@cohesion/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -3184,9 +3184,9 @@ function Icon({
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/search.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/search.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3199,9 +3199,9 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_search = (search);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3311,8 +3311,8 @@ const reducer = (0,external_wp_data_namespaceObject.combineReducers)({
 });
 /* harmony default export */ const store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/actions.js
-/** @typedef {import('@wordpress/keycodes').WPKeycodeModifier} WPKeycodeModifier */
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/store/actions.js
+/** @typedef {import('@cohesion/keycodes').WPKeycodeModifier} WPKeycodeModifier */
 
 /**
  * Configuration of a registered keyboard shortcut.
@@ -3421,9 +3421,9 @@ function actions_close() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3475,7 +3475,7 @@ function getContext(state) {
   return state.context;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/private-actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/store/private-actions.js
 /**
  * Sets the active context.
  *
@@ -3492,19 +3492,19 @@ function setContext(context) {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/commands');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/commands');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3521,14 +3521,14 @@ const STORE_NAME = 'core/commands';
 /**
  * Store definition for the commands namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  *
  * @example
  * ```js
- * import { store as commandsStore } from '@wordpress/commands';
- * import { useDispatch } from '@wordpress/data';
+ * import { store as commandsStore } from '@cohesion/commands';
+ * import { useDispatch } from '@cohesion/data';
  * ...
  * const { open: openCommandCenter } = useDispatch( commandsStore );
  * ```
@@ -3541,7 +3541,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 (0,external_wp_data_namespaceObject.register)(store);
 unlock(store).registerPrivateActions(private_actions_namespaceObject);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/components/command-menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/components/command-menu.js
 /**
  * External dependencies
  */
@@ -3549,7 +3549,7 @@ unlock(store).registerPrivateActions(private_actions_namespaceObject);
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3831,9 +3831,9 @@ function CommandMenu() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/hooks/use-command-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3869,7 +3869,7 @@ function useCommandContext(context) {
   }, [setContext]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/private-apis.js
 /**
  * Internal dependencies
  */
@@ -3884,9 +3884,9 @@ lock(privateApis, {
   useCommandContext: useCommandContext
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/hooks/use-command.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3903,8 +3903,8 @@ lock(privateApis, {
  *
  * @example
  * ```js
- * import { useCommand } from '@wordpress/commands';
- * import { plus } from '@wordpress/icons';
+ * import { useCommand } from '@cohesion/commands';
+ * import { plus } from '@cohesion/icons';
  *
  * useCommand( {
  *     name: 'myplugin/my-command-name',
@@ -3944,9 +3944,9 @@ function useCommand(command) {
   }, [command.name, command.label, command.searchLabel, command.icon, command.context, command.disabled, registerCommand, unregisterCommand]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command-loader.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/hooks/use-command-loader.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3963,8 +3963,8 @@ function useCommand(command) {
  *
  * @example
  * ```js
- * import { useCommandLoader } from '@wordpress/commands';
- * import { post, page, layout, symbolFilled } from '@wordpress/icons';
+ * import { useCommandLoader } from '@cohesion/commands';
+ * import { post, page, layout, symbolFilled } from '@cohesion/icons';
  *
  * const icons = {
  *     post,
@@ -4045,7 +4045,7 @@ function useCommandLoader(loader) {
   }, [loader.name, loader.hook, loader.context, loader.disabled, registerCommandLoader, unregisterCommandLoader]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/commands/build-module/index.js
 
 
 

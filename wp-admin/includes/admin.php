@@ -2,7 +2,7 @@
 /**
  * Core Administration API
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  * @since 2.3.0
  */
@@ -18,82 +18,82 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 	unset( $admin_locale );
 }
 
-/** WordPress Administration Hooks */
+/** cohesion Administration Hooks */
 require_once ABSPATH . 'wp-admin/includes/admin-filters.php';
 
-/** WordPress Bookmark Administration API */
+/** cohesion Bookmark Administration API */
 require_once ABSPATH . 'wp-admin/includes/bookmark.php';
 
-/** WordPress Comment Administration API */
+/** cohesion Comment Administration API */
 require_once ABSPATH . 'wp-admin/includes/comment.php';
 
-/** WordPress Administration File API */
+/** cohesion Administration File API */
 require_once ABSPATH . 'wp-admin/includes/file.php';
 
-/** WordPress Image Administration API */
+/** cohesion Image Administration API */
 require_once ABSPATH . 'wp-admin/includes/image.php';
 
-/** WordPress Media Administration API */
+/** cohesion Media Administration API */
 require_once ABSPATH . 'wp-admin/includes/media.php';
 
-/** WordPress Import Administration API */
+/** cohesion Import Administration API */
 require_once ABSPATH . 'wp-admin/includes/import.php';
 
-/** WordPress Misc Administration API */
+/** cohesion Misc Administration API */
 require_once ABSPATH . 'wp-admin/includes/misc.php';
 
-/** WordPress Misc Administration API */
+/** cohesion Misc Administration API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-policy-content.php';
 
-/** WordPress Options Administration API */
+/** cohesion Options Administration API */
 require_once ABSPATH . 'wp-admin/includes/options.php';
 
-/** WordPress Plugin Administration API */
+/** cohesion Plugin Administration API */
 require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-/** WordPress Post Administration API */
+/** cohesion Post Administration API */
 require_once ABSPATH . 'wp-admin/includes/post.php';
 
-/** WordPress Administration Screen API */
+/** cohesion Administration Screen API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-screen.php';
 require_once ABSPATH . 'wp-admin/includes/screen.php';
 
-/** WordPress Taxonomy Administration API */
+/** cohesion Taxonomy Administration API */
 require_once ABSPATH . 'wp-admin/includes/taxonomy.php';
 
-/** WordPress Template Administration API */
+/** cohesion Template Administration API */
 require_once ABSPATH . 'wp-admin/includes/template.php';
 
-/** WordPress List Table Administration API and base class */
+/** cohesion List Table Administration API and base class */
 require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-list-table-compat.php';
 require_once ABSPATH . 'wp-admin/includes/list-table.php';
 
-/** WordPress Theme Administration API */
+/** cohesion Theme Administration API */
 require_once ABSPATH . 'wp-admin/includes/theme.php';
 
-/** WordPress Privacy Functions */
+/** cohesion Privacy Functions */
 require_once ABSPATH . 'wp-admin/includes/privacy-tools.php';
 
-/** WordPress Privacy List Table classes. */
+/** cohesion Privacy List Table classes. */
 // Previously in wp-admin/includes/user.php. Need to be loaded for backward compatibility.
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-requests-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php';
 require_once ABSPATH . 'wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php';
 
-/** WordPress User Administration API */
+/** cohesion User Administration API */
 require_once ABSPATH . 'wp-admin/includes/user.php';
 
-/** WordPress Site Icon API */
+/** cohesion Site Icon API */
 require_once ABSPATH . 'wp-admin/includes/class-wp-site-icon.php';
 
-/** WordPress Update Administration API */
+/** cohesion Update Administration API */
 require_once ABSPATH . 'wp-admin/includes/update.php';
 
-/** WordPress Deprecated Administration API */
+/** cohesion Deprecated Administration API */
 require_once ABSPATH . 'wp-admin/includes/deprecated.php';
 
-/** WordPress Multisite support API */
+/** cohesion Multisite support API */
 if ( is_multisite() ) {
 	require_once ABSPATH . 'wp-admin/includes/ms-admin-filters.php';
 	require_once ABSPATH . 'wp-admin/includes/ms.php';

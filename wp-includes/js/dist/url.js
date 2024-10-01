@@ -595,7 +595,7 @@ __webpack_require__.d(__webpack_exports__, {
   safeDecodeURIComponent: () => (/* reexport */ safeDecodeURIComponent)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-url.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-url.js
 /**
  * Determines whether the given string looks like a URL.
  *
@@ -603,7 +603,7 @@ __webpack_require__.d(__webpack_exports__, {
  *
  * @example
  * ```js
- * const isURL = isURL( 'https://wordpress.org' ); // true
+ * const isURL = isURL( 'https://cohesion.org' ); // true
  * ```
  *
  * @see https://url.spec.whatwg.org/
@@ -622,7 +622,7 @@ function isURL(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-email.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-email.js
 const EMAIL_REGEXP = /^(mailto:)?[a-z0-9._%+-]+@[a-z0-9][a-z0-9.-]*\.[a-z]{2,63}$/i;
 
 /**
@@ -632,7 +632,7 @@ const EMAIL_REGEXP = /^(mailto:)?[a-z0-9._%+-]+@[a-z0-9][a-z0-9.-]*\.[a-z]{2,63}
  *
  * @example
  * ```js
- * const isEmail = isEmail( 'hello@wordpress.org' ); // true
+ * const isEmail = isEmail( 'hello@cohesion.org' ); // true
  * ```
  *
  * @return {boolean} Whether or not it looks like an email.
@@ -641,7 +641,7 @@ function isEmail(email) {
   return EMAIL_REGEXP.test(email);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-protocol.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-protocol.js
 /**
  * Returns the protocol part of the URL.
  *
@@ -650,7 +650,7 @@ function isEmail(email) {
  * @example
  * ```js
  * const protocol1 = getProtocol( 'tel:012345678' ); // 'tel:'
- * const protocol2 = getProtocol( 'https://wordpress.org' ); // 'https:'
+ * const protocol2 = getProtocol( 'https://cohesion.org' ); // 'https:'
  * ```
  *
  * @return {string|void} The protocol part of the URL.
@@ -662,7 +662,7 @@ function getProtocol(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-protocol.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-valid-protocol.js
 /**
  * Tests if a url protocol is valid.
  *
@@ -683,7 +683,7 @@ function isValidProtocol(protocol) {
   return /^[a-z\-.\+]+[0-9]*:$/i.test(protocol);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-authority.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-authority.js
 /**
  * Returns the authority part of the URL.
  *
@@ -691,7 +691,7 @@ function isValidProtocol(protocol) {
  *
  * @example
  * ```js
- * const authority1 = getAuthority( 'https://wordpress.org/help/' ); // 'wordpress.org'
+ * const authority1 = getAuthority( 'https://cohesion.org/help/' ); // 'cohesion.org'
  * const authority2 = getAuthority( 'https://localhost:8080/test/' ); // 'localhost:8080'
  * ```
  *
@@ -704,7 +704,7 @@ function getAuthority(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-authority.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-valid-authority.js
 /**
  * Checks for invalid characters within the provided authority.
  *
@@ -712,8 +712,8 @@ function getAuthority(url) {
  *
  * @example
  * ```js
- * const isValid = isValidAuthority( 'wordpress.org' ); // true
- * const isNotValid = isValidAuthority( 'wordpress#org' ); // false
+ * const isValid = isValidAuthority( 'cohesion.org' ); // true
+ * const isNotValid = isValidAuthority( 'cohesion#org' ); // false
  * ```
  *
  * @return {boolean} True if the argument contains a valid authority.
@@ -725,7 +725,7 @@ function isValidAuthority(authority) {
   return /^[^\s#?]+$/.test(authority);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-path.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-path.js
 /**
  * Returns the path part of the URL.
  *
@@ -734,7 +734,7 @@ function isValidAuthority(authority) {
  * @example
  * ```js
  * const path1 = getPath( 'http://localhost:8080/this/is/a/test?query=true' ); // 'this/is/a/test'
- * const path2 = getPath( 'https://wordpress.org/help/faq/' ); // 'help/faq'
+ * const path2 = getPath( 'https://cohesion.org/help/faq/' ); // 'help/faq'
  * ```
  *
  * @return {string|void} The path part of the URL.
@@ -746,7 +746,7 @@ function getPath(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-path.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-valid-path.js
 /**
  * Checks for invalid characters within the provided path.
  *
@@ -767,7 +767,7 @@ function isValidPath(path) {
   return /^[^\s#?]+$/.test(path);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-query-string.js
 /**
  * Returns the query string part of the URL.
  *
@@ -790,7 +790,7 @@ function getQueryString(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/build-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/build-query-string.js
 /**
  * Generates URL-encoded query string using input query data.
  *
@@ -847,7 +847,7 @@ function buildQueryString(data) {
   return string.substr(1);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-valid-query-string.js
 /**
  * Checks for invalid characters within the provided query string.
  *
@@ -868,7 +868,7 @@ function isValidQueryString(queryString) {
   return /^[^\s#?\/]+$/.test(queryString);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-path-and-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-path-and-query-string.js
 /**
  * Internal dependencies
  */
@@ -882,7 +882,7 @@ function isValidQueryString(queryString) {
  * @example
  * ```js
  * const pathAndQueryString1 = getPathAndQueryString( 'http://localhost:8080/this/is/a/test?query=true' ); // '/this/is/a/test?query=true'
- * const pathAndQueryString2 = getPathAndQueryString( 'https://wordpress.org/help/faq/' ); // '/help/faq'
+ * const pathAndQueryString2 = getPathAndQueryString( 'https://cohesion.org/help/faq/' ); // '/help/faq'
  * ```
  *
  * @return {string} The path part and query string part of the URL.
@@ -900,7 +900,7 @@ function getPathAndQueryString(url) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-fragment.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-fragment.js
 /**
  * Returns the fragment part of the URL.
  *
@@ -909,7 +909,7 @@ function getPathAndQueryString(url) {
  * @example
  * ```js
  * const fragment1 = getFragment( 'http://localhost:8080/this/is/a/test?query=true#fragment' ); // '#fragment'
- * const fragment2 = getFragment( 'https://wordpress.org#another-fragment?query=true' ); // '#another-fragment'
+ * const fragment2 = getFragment( 'https://cohesion.org#another-fragment?query=true' ); // '#another-fragment'
  * ```
  *
  * @return {string|void} The fragment part of the URL.
@@ -921,7 +921,7 @@ function getFragment(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-fragment.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/is-valid-fragment.js
 /**
  * Checks for invalid characters within the provided fragment.
  *
@@ -942,7 +942,7 @@ function isValidFragment(fragment) {
   return /^#[^\s#?\/]*$/.test(fragment);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/safe-decode-uri-component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/safe-decode-uri-component.js
 /**
  * Safely decodes a URI component with `decodeURIComponent`. Returns the URI component unmodified if
  * `decodeURIComponent` throws an error.
@@ -959,7 +959,7 @@ function safeDecodeURIComponent(uriComponent) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-query-args.js
 /**
  * Internal dependencies
  */
@@ -1022,7 +1022,7 @@ function setPath(object, path, value) {
  *
  * @example
  * ```js
- * const foo = getQueryArgs( 'https://wordpress.org?foo=bar&bar=baz' );
+ * const foo = getQueryArgs( 'https://cohesion.org?foo=bar&bar=baz' );
  * // { "foo": "bar", "bar": "baz" }
  * ```
  *
@@ -1047,7 +1047,7 @@ function getQueryArgs(url) {
   }, Object.create(null));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/add-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/add-query-args.js
 /**
  * Internal dependencies
  */
@@ -1089,7 +1089,7 @@ function addQueryArgs(url = '', args) {
   return baseUrl + '?' + buildQueryString(args);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-arg.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-query-arg.js
 /**
  * Internal dependencies
  */
@@ -1111,7 +1111,7 @@ function addQueryArgs(url = '', args) {
  *
  * @example
  * ```js
- * const foo = getQueryArg( 'https://wordpress.org?foo=bar&bar=baz', 'foo' ); // bar
+ * const foo = getQueryArg( 'https://cohesion.org?foo=bar&bar=baz', 'foo' ); // bar
  * ```
  *
  * @return {QueryArgParsed|void} Query arg value.
@@ -1120,7 +1120,7 @@ function getQueryArg(url, arg) {
   return getQueryArgs(url)[arg];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/has-query-arg.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/has-query-arg.js
 /**
  * Internal dependencies
  */
@@ -1134,7 +1134,7 @@ function getQueryArg(url, arg) {
  *
  * @example
  * ```js
- * const hasBar = hasQueryArg( 'https://wordpress.org?foo=bar&bar=baz', 'bar' ); // true
+ * const hasBar = hasQueryArg( 'https://cohesion.org?foo=bar&bar=baz', 'bar' ); // true
  * ```
  *
  * @return {boolean} Whether or not the URL contains the query arg.
@@ -1143,7 +1143,7 @@ function hasQueryArg(url, arg) {
   return getQueryArg(url, arg) !== undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/remove-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/remove-query-args.js
 /**
  * Internal dependencies
  */
@@ -1158,7 +1158,7 @@ function hasQueryArg(url, arg) {
  *
  * @example
  * ```js
- * const newUrl = removeQueryArgs( 'https://wordpress.org?foo=bar&bar=baz&baz=foobar', 'foo', 'bar' ); // https://wordpress.org?baz=foobar
+ * const newUrl = removeQueryArgs( 'https://cohesion.org?foo=bar&bar=baz&baz=foobar', 'foo', 'bar' ); // https://cohesion.org?baz=foobar
  * ```
  *
  * @return {string} Updated URL.
@@ -1175,7 +1175,7 @@ function removeQueryArgs(url, ...args) {
   return queryString ? baseURL + '?' + queryString : baseURL;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/prepend-http.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/prepend-http.js
 /**
  * Internal dependencies
  */
@@ -1189,7 +1189,7 @@ const USABLE_HREF_REGEXP = /^(?:[a-z]+:|#|\?|\.|\/)/i;
  *
  * @example
  * ```js
- * const actualURL = prependHTTP( 'wordpress.org' ); // http://wordpress.org
+ * const actualURL = prependHTTP( 'cohesion.org' ); // http://cohesion.org
  * ```
  *
  * @return {string} The updated URL.
@@ -1205,7 +1205,7 @@ function prependHTTP(url) {
   return url;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/safe-decode-uri.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/safe-decode-uri.js
 /**
  * Safely decodes a URI with `decodeURI`. Returns the URI unmodified if
  * `decodeURI` throws an error.
@@ -1227,7 +1227,7 @@ function safeDecodeURI(uri) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/filter-url-for-display.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/filter-url-for-display.js
 /**
  * Returns a URL for display.
  *
@@ -1236,8 +1236,8 @@ function safeDecodeURI(uri) {
  *
  * @example
  * ```js
- * const displayUrl = filterURLForDisplay( 'https://www.wordpress.org/gutenberg/' ); // wordpress.org/gutenberg
- * const imageUrl = filterURLForDisplay( 'https://www.wordpress.org/wp-content/uploads/img.png', 20 ); // …ent/uploads/img.png
+ * const displayUrl = filterURLForDisplay( 'https://www.cohesion.org/gutenberg/' ); // cohesion.org/gutenberg
+ * const imageUrl = filterURLForDisplay( 'https://www.cohesion.org/wp-content/uploads/img.png', 20 ); // …ent/uploads/img.png
  * ```
  *
  * @return {string} Displayed URL.
@@ -1275,7 +1275,7 @@ function filterURLForDisplay(url, maxLength = null) {
 // EXTERNAL MODULE: ./node_modules/remove-accents/index.js
 var remove_accents = __webpack_require__(9681);
 var remove_accents_default = /*#__PURE__*/__webpack_require__.n(remove_accents);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/clean-for-slug.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/clean-for-slug.js
 /**
  * External dependencies
  */
@@ -1284,7 +1284,7 @@ var remove_accents_default = /*#__PURE__*/__webpack_require__.n(remove_accents);
 /**
  * Performs some basic cleanup of a string for use as a post slug.
  *
- * This replicates some of what `sanitize_title()` does in WordPress core, but
+ * This replicates some of what `sanitize_title()` does in cohesion core, but
  * is only designed to approximate what the slug will be.
  *
  * Converts Latin-1 Supplement and Latin Extended-A letters to basic Latin
@@ -1314,7 +1314,7 @@ function cleanForSlug(string) {
   .replace(/(^-+)|(-+$)/g, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-filename.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/get-filename.js
 /**
  * Returns the filename part of the URL.
  *
@@ -1341,7 +1341,7 @@ function getFilename(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/normalize-path.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/normalize-path.js
 /**
  * Given a path, returns a normalized path where equal query parameter values
  * will be treated as identical, regardless of order they appear in the original
@@ -1377,7 +1377,7 @@ function normalizePath(path) {
   .join('&');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/prepend-https.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/prepend-https.js
 /**
  * Internal dependencies
  */
@@ -1392,7 +1392,7 @@ function normalizePath(path) {
  *
  * @example
  * ```js
- * const actualURL = prependHTTPS( 'wordpress.org' ); // https://wordpress.org
+ * const actualURL = prependHTTPS( 'cohesion.org' ); // https://cohesion.org
  * ```
  *
  * @return {string} The updated URL.
@@ -1410,7 +1410,7 @@ function prependHTTPS(url) {
   return url.replace(/^http:/, 'https:');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/url/build-module/index.js
 
 
 

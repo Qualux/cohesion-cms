@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base cohesion Image Editor
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Image_Editor
  */
 

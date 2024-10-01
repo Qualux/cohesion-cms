@@ -1,8 +1,8 @@
 <?php
 /**
- * Class for providing debug data based on a users WordPress environment.
+ * Class for providing debug data based on a users cohesion environment.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Site_Health
  * @since 5.2.0
  */
@@ -29,7 +29,7 @@ class WP_Debug_Data {
 	 * @since 5.5.0 Added pretty permalinks support information.
 	 *
 	 * @throws ImagickException
-	 * @global wpdb  $wpdb               WordPress database abstraction object.
+	 * @global wpdb  $wpdb               cohesion database abstraction object.
 	 * @global array $_wp_theme_features
 	 *
 	 * @return array The debug data for the site.
@@ -53,7 +53,7 @@ class WP_Debug_Data {
 		if ( is_array( $core_updates ) ) {
 			foreach ( $core_updates as $core => $update ) {
 				if ( 'upgrade' === $update->response ) {
-					/* translators: %s: Latest WordPress version number. */
+					/* translators: %s: Latest cohesion version number. */
 					$core_update_needed = ' ' . sprintf( __( '(Latest version: %s)' ), $update->version );
 				} else {
 					$core_update_needed = '';
@@ -65,7 +65,7 @@ class WP_Debug_Data {
 		$info = array();
 
 		$info['wp-core'] = array(
-			'label'  => __( 'WordPress' ),
+			'label'  => __( 'cohesion' ),
 			'fields' => array(
 				'version'                => array(
 					'label' => __( 'Version' ),
@@ -145,7 +145,7 @@ class WP_Debug_Data {
 			'show_count'  => true,
 			'description' => sprintf(
 				/* translators: %s: wp-content directory name. */
-				__( 'Drop-ins are single files, found in the %s directory, that replace or enhance WordPress features in ways that are not possible for traditional plugins.' ),
+				__( 'Drop-ins are single files, found in the %s directory, that replace or enhance cohesion features in ways that are not possible for traditional plugins.' ),
 				'<code>' . str_replace( ABSPATH, '', WP_CONTENT_DIR ) . '</code>'
 			),
 			'fields'      => array(),
@@ -245,8 +245,8 @@ class WP_Debug_Data {
 		}
 
 		$info['wp-constants'] = array(
-			'label'       => __( 'WordPress Constants' ),
-			'description' => __( 'These settings alter where and how parts of WordPress are loaded.' ),
+			'label'       => __( 'cohesion Constants' ),
+			'description' => __( 'These settings alter where and how parts of cohesion are loaded.' ),
 			'fields'      => array(
 				'ABSPATH'             => array(
 					'label'   => 'ABSPATH',
@@ -351,10 +351,10 @@ class WP_Debug_Data {
 
 		$info['wp-filesystem'] = array(
 			'label'       => __( 'Filesystem Permissions' ),
-			'description' => __( 'Shows whether WordPress is able to write to the directories it needs access to.' ),
+			'description' => __( 'Shows whether cohesion is able to write to the directories it needs access to.' ),
 			'fields'      => array(
-				'wordpress'  => array(
-					'label' => __( 'The main WordPress directory' ),
+				'cohesion'  => array(
+					'label' => __( 'The main cohesion directory' ),
 					'value' => ( $is_writable_abspath ? __( 'Writable' ) : __( 'Not writable' ) ),
 					'debug' => ( $is_writable_abspath ? 'writable' : 'not writable' ),
 				),
@@ -426,22 +426,22 @@ class WP_Debug_Data {
 			'value' => get_user_count(),
 		);
 
-		// WordPress features requiring processing.
-		$wp_dotorg = wp_remote_get( 'https://wordpress.org', array( 'timeout' => 10 ) );
+		// cohesion features requiring processing.
+		$wp_dotorg = wp_remote_get( 'https://cohesion.org', array( 'timeout' => 10 ) );
 
 		if ( ! is_wp_error( $wp_dotorg ) ) {
 			$info['wp-core']['fields']['dotorg_communication'] = array(
-				'label' => __( 'Communication with WordPress.org' ),
-				'value' => __( 'WordPress.org is reachable' ),
+				'label' => __( 'Communication with cohesion.org' ),
+				'value' => __( 'cohesion.org is reachable' ),
 				'debug' => 'true',
 			);
 		} else {
 			$info['wp-core']['fields']['dotorg_communication'] = array(
-				'label' => __( 'Communication with WordPress.org' ),
+				'label' => __( 'Communication with cohesion.org' ),
 				'value' => sprintf(
-					/* translators: 1: The IP address WordPress.org resolves to. 2: The error returned by the lookup. */
-					__( 'Unable to reach WordPress.org at %1$s: %2$s' ),
-					gethostbyname( 'wordpress.org' ),
+					/* translators: 1: The IP address cohesion.org resolves to. 2: The error returned by the lookup. */
+					__( 'Unable to reach cohesion.org at %1$s: %2$s' ),
+					gethostbyname( 'cohesion.org' ),
 					$wp_dotorg->get_error_message()
 				),
 				'debug' => $wp_dotorg->get_error_message(),
@@ -454,11 +454,11 @@ class WP_Debug_Data {
 
 			$info['wp-paths-sizes']['fields'] = array(
 				'wordpress_path' => array(
-					'label' => __( 'WordPress directory location' ),
+					'label' => __( 'cohesion directory location' ),
 					'value' => untrailingslashit( ABSPATH ),
 				),
 				'wordpress_size' => array(
-					'label' => __( 'WordPress directory size' ),
+					'label' => __( 'cohesion directory size' ),
 					'value' => $loading,
 					'debug' => 'loading...',
 				),
@@ -844,8 +844,8 @@ class WP_Debug_Data {
 			// If the file exists, grab the content of it.
 			$htaccess_content = file_get_contents( ABSPATH . '.htaccess' );
 
-			// Filter away the core WordPress rules.
-			$filtered_htaccess_content = trim( preg_replace( '/\# BEGIN WordPress[\s\S]+?# END WordPress/si', '', $htaccess_content ) );
+			// Filter away the core cohesion rules.
+			$filtered_htaccess_content = trim( preg_replace( '/\# BEGIN cohesion[\s\S]+?# END cohesion/si', '', $htaccess_content ) );
 			$filtered_htaccess_content = ! empty( $filtered_htaccess_content );
 
 			if ( $filtered_htaccess_content ) {
@@ -853,7 +853,7 @@ class WP_Debug_Data {
 				$htaccess_rules_string = sprintf( __( 'Custom rules have been added to your %s file.' ), '.htaccess' );
 			} else {
 				/* translators: %s: .htaccess */
-				$htaccess_rules_string = sprintf( __( 'Your %s file contains only core WordPress features.' ), '.htaccess' );
+				$htaccess_rules_string = sprintf( __( 'Your %s file contains only core cohesion features.' ), '.htaccess' );
 			}
 
 			$info['wp-server']['fields']['htaccess_extra_rules'] = array(
@@ -1494,7 +1494,7 @@ class WP_Debug_Data {
 	 *
 	 * @since 5.9.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb cohesion database abstraction object.
 	 *
 	 * @param string $mysql_var Name of the MySQL system variable.
 	 * @return string|null The variable value on success. Null if the variable does not exist.
@@ -1588,7 +1588,7 @@ class WP_Debug_Data {
 	 *
 	 * @since 5.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb cohesion database abstraction object.
 	 *
 	 * @return int The size of the database, in bytes.
 	 */
@@ -1607,7 +1607,7 @@ class WP_Debug_Data {
 	}
 
 	/**
-	 * Fetches the sizes of the WordPress directories: `wordpress` (ABSPATH), `plugins`, `themes`, and `uploads`.
+	 * Fetches the sizes of the cohesion directories: `cohesion` (ABSPATH), `plugins`, `themes`, and `uploads`.
 	 * Intended to supplement the array returned by `WP_Debug_Data::debug_data()`.
 	 *
 	 * @since 5.2.0

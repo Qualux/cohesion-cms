@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/image` block.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 /**
@@ -34,7 +34,7 @@ function render_block_core_image( $attributes, $content, $block ) {
 	if ( $has_id_binding ) {
 		// If there's a mismatch with the 'wp-image-' class and the actual id, the id was
 		// probably overridden by block bindings. Update it to the correct value.
-		// See https://github.com/WordPress/gutenberg/issues/62886 for why this is needed.
+		// See https://github.com/cohesion/gutenberg/issues/62886 for why this is needed.
 		$id                       = $attributes['id'];
 		$image_classnames         = $p->get_attribute( 'class' );
 		$class_with_binding_value = "wp-image-$id";
@@ -76,13 +76,13 @@ function render_block_core_image( $attributes, $content, $block ) {
 		}
 
 		wp_register_script_module(
-			'@wordpress/block-library/image',
+			'@cohesion/block-library/image',
 			isset( $module_url ) ? $module_url : includes_url( "blocks/image/view{$suffix}.js" ),
-			array( '@wordpress/interactivity' ),
+			array( '@cohesion/interactivity' ),
 			defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 		);
 
-		wp_enqueue_script_module( '@wordpress/block-library/image' );
+		wp_enqueue_script_module( '@cohesion/block-library/image' );
 
 		/*
 		 * This render needs to happen in a filter with priority 15 to ensure that

@@ -2,7 +2,7 @@
 /**
  * Interactivity API: WP_Interactivity_API class.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Interactivity API
  * @since 6.5.0
  */
@@ -306,7 +306,7 @@ final class WP_Interactivity_API {
 	}
 
 	/**
-	 * Registers the `@wordpress/interactivity` script modules.
+	 * Registers the `@cohesion/interactivity` script modules.
 	 *
 	 * @since 6.5.0
 	 */
@@ -314,14 +314,14 @@ final class WP_Interactivity_API {
 		$suffix = wp_scripts_get_suffix();
 
 		wp_register_script_module(
-			'@wordpress/interactivity',
+			'@cohesion/interactivity',
 			includes_url( "js/dist/interactivity$suffix.js" )
 		);
 
 		wp_register_script_module(
-			'@wordpress/interactivity-router',
+			'@cohesion/interactivity-router',
 			includes_url( "js/dist/interactivity-router$suffix.js" ),
-			array( '@wordpress/interactivity' )
+			array( '@cohesion/interactivity' )
 		);
 	}
 

@@ -42,9 +42,9 @@ __webpack_require__.d(__webpack_exports__, {
   __dangerousOptInToUnstableAPIsOnlyForCoreModules: () => (/* reexport */ __dangerousOptInToUnstableAPIsOnlyForCoreModules)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-module/implementation.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/private-apis/build-module/implementation.js
 /**
- * wordpress/private-apis – the utilities to enable private cross-package
+ * cohesion/private-apis – the utilities to enable private cross-package
  * exports of private APIs.
  *
  * This "implementation.js" file is needed for the sake of the unit tests. It
@@ -54,7 +54,7 @@ __webpack_require__.d(__webpack_exports__, {
 /**
  * The list of core modules allowed to opt-in to the private APIs.
  */
-const CORE_MODULES_USING_PRIVATE_APIS = ['@wordpress/block-directory', '@wordpress/block-editor', '@wordpress/block-library', '@wordpress/blocks', '@wordpress/commands', '@wordpress/components', '@wordpress/core-commands', '@wordpress/core-data', '@wordpress/customize-widgets', '@wordpress/data', '@wordpress/edit-post', '@wordpress/edit-site', '@wordpress/edit-widgets', '@wordpress/editor', '@wordpress/format-library', '@wordpress/interface', '@wordpress/patterns', '@wordpress/preferences', '@wordpress/reusable-blocks', '@wordpress/router', '@wordpress/dataviews'];
+const CORE_MODULES_USING_PRIVATE_APIS = ['@cohesion/block-directory', '@cohesion/block-editor', '@cohesion/block-library', '@cohesion/blocks', '@cohesion/commands', '@cohesion/components', '@cohesion/core-commands', '@cohesion/core-data', '@cohesion/customize-widgets', '@cohesion/data', '@cohesion/edit-post', '@cohesion/edit-site', '@cohesion/edit-widgets', '@cohesion/editor', '@cohesion/format-library', '@cohesion/interface', '@cohesion/patterns', '@cohesion/preferences', '@cohesion/reusable-blocks', '@cohesion/router', '@cohesion/dataviews'];
 
 /**
  * A list of core modules that already opted-in to
@@ -67,22 +67,22 @@ const registeredPrivateApis = [];
 /*
  * Warning for theme and plugin developers.
  *
- * The use of private developer APIs is intended for use by WordPress Core
+ * The use of private developer APIs is intended for use by cohesion Core
  * and the Gutenberg plugin exclusively.
  *
  * Dangerously opting in to using these APIs is NOT RECOMMENDED. Furthermore,
- * the WordPress Core philosophy to strive to maintain backward compatibility
+ * the cohesion Core philosophy to strive to maintain backward compatibility
  * for third-party developers DOES NOT APPLY to private APIs.
  *
  * THE CONSENT STRING FOR OPTING IN TO THESE APIS MAY CHANGE AT ANY TIME AND
  * WITHOUT NOTICE. THIS CHANGE WILL BREAK EXISTING THIRD-PARTY CODE. SUCH A
  * CHANGE MAY OCCUR IN EITHER A MAJOR OR MINOR RELEASE.
  */
-const requiredConsent = 'I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.';
+const requiredConsent = 'I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.';
 
 /** @type {boolean} */
 let allowReRegistration;
-// The safety measure is meant for WordPress core where IS_WORDPRESS_CORE
+// The safety measure is meant for cohesion core where IS_WORDPRESS_CORE
 // is set to true.
 // For the general use-case, the re-registration should be allowed by default
 // Let's default to true, then. Try/catch will fall back to "true" even if the
@@ -94,7 +94,7 @@ try {
 }
 
 /**
- * Called by a @wordpress package wishing to opt-in to accessing or exposing
+ * Called by a @cohesion package wishing to opt-in to accessing or exposing
  * private private APIs.
  *
  * @param {string} consent    The consent string.
@@ -103,16 +103,16 @@ try {
  */
 const __dangerousOptInToUnstableAPIsOnlyForCoreModules = (consent, moduleName) => {
   if (!CORE_MODULES_USING_PRIVATE_APIS.includes(moduleName)) {
-    throw new Error(`You tried to opt-in to unstable APIs as module "${moduleName}". ` + 'This feature is only for JavaScript modules shipped with WordPress core. ' + 'Please do not use it in plugins and themes as the unstable APIs will be removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on one of the next WordPress releases.');
+    throw new Error(`You tried to opt-in to unstable APIs as module "${moduleName}". ` + 'This feature is only for JavaScript modules shipped with cohesion core. ' + 'Please do not use it in plugins and themes as the unstable APIs will be removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on one of the next cohesion releases.');
   }
   if (!allowReRegistration && registeredPrivateApis.includes(moduleName)) {
     // This check doesn't play well with Story Books / Hot Module Reloading
     // and isn't included in the Gutenberg plugin. It only matters in the
-    // WordPress core release.
-    throw new Error(`You tried to opt-in to unstable APIs as module "${moduleName}" which is already registered. ` + 'This feature is only for JavaScript modules shipped with WordPress core. ' + 'Please do not use it in plugins and themes as the unstable APIs will be removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on one of the next WordPress releases.');
+    // cohesion core release.
+    throw new Error(`You tried to opt-in to unstable APIs as module "${moduleName}" which is already registered. ` + 'This feature is only for JavaScript modules shipped with cohesion core. ' + 'Please do not use it in plugins and themes as the unstable APIs will be removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on one of the next cohesion releases.');
   }
   if (consent !== requiredConsent) {
-    throw new Error(`You tried to opt-in to unstable APIs without confirming you know the consequences. ` + 'This feature is only for JavaScript modules shipped with WordPress core. ' + 'Please do not use it in plugins and themes as the unstable APIs will removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on the next WordPress release.');
+    throw new Error(`You tried to opt-in to unstable APIs without confirming you know the consequences. ` + 'This feature is only for JavaScript modules shipped with cohesion core. ' + 'Please do not use it in plugins and themes as the unstable APIs will removed ' + 'without a warning. If you ignore this error and depend on unstable features, ' + 'your product will inevitably break on the next cohesion release.');
   }
   registeredPrivateApis.push(moduleName);
   return {
@@ -226,7 +226,7 @@ function resetRegisteredPrivateApis() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/private-apis/build-module/index.js
 
 
 (window.wp = window.wp || {}).privateApis = __webpack_exports__;

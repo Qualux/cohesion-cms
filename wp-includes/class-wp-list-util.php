@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress List utility class
+ * cohesion List utility class
  *
- * @package WordPress
+ * @package cohesion
  * @since 4.7.0
  */
 

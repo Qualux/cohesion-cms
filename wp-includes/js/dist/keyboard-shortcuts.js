@@ -45,7 +45,7 @@ __webpack_require__.d(__webpack_exports__, {
   useShortcut: () => (/* reexport */ useShortcut)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -53,7 +53,7 @@ __webpack_require__.d(actions_namespaceObject, {
   unregisterShortcut: () => (unregisterShortcut)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -68,7 +68,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/reducer.js
 /**
  * Reducer returning the registered shortcuts
  *
@@ -100,8 +100,8 @@ function reducer(state = {}, action) {
 }
 /* harmony default export */ const store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/actions.js
-/** @typedef {import('@wordpress/keycodes').WPKeycodeModifier} WPKeycodeModifier */
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/actions.js
+/** @typedef {import('@cohesion/keycodes').WPKeycodeModifier} WPKeycodeModifier */
 
 /**
  * Keyboard key combination.
@@ -133,9 +133,9 @@ function reducer(state = {}, action) {
  *
  *```js
  * import { useEffect } from 'react';
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect, useDispatch } from '@wordpress/data';
- * import { __ } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect, useDispatch } from '@cohesion/data';
+ * import { __ } from '@cohesion/i18n';
  *
  * const ExampleComponent = () => {
  *     const { registerShortcut } = useDispatch( keyboardShortcutsStore );
@@ -195,9 +195,9 @@ function registerShortcut({
  *
  *```js
  * import { useEffect } from 'react';
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect, useDispatch } from '@wordpress/data';
- * import { __ } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect, useDispatch } from '@cohesion/data';
+ * import { __ } from '@cohesion/i18n';
  *
  * const ExampleComponent = () => {
  *     const { unregisterShortcut } = useDispatch( keyboardShortcutsStore );
@@ -232,16 +232,16 @@ function unregisterShortcut(name) {
 
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
 
 /** @typedef {import('./actions').WPShortcutKeyCombination} WPShortcutKeyCombination */
 
-/** @typedef {import('@wordpress/keycodes').WPKeycodeHandlerByModifier} WPKeycodeHandlerByModifier */
+/** @typedef {import('@cohesion/keycodes').WPKeycodeHandlerByModifier} WPKeycodeHandlerByModifier */
 
 /**
  * Shared reference to an empty array for cases where it is important to avoid
@@ -289,10 +289,10 @@ function getKeyCombinationRepresentation(shortcut, representation) {
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { createInterpolateElement } from '@wordpress/element';
- * import { sprintf } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { createInterpolateElement } from '@cohesion/element';
+ * import { sprintf } from '@cohesion/i18n';
  * const ExampleComponent = () => {
  *     const {character, modifier} = useSelect(
  *         ( select ) =>
@@ -335,9 +335,9 @@ function getShortcutKeyCombination(state, name) {
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { sprintf } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { sprintf } from '@cohesion/i18n';
  *
  * const ExampleComponent = () => {
  *     const {display, raw, ariaLabel} = useSelect(
@@ -377,9 +377,9 @@ function getShortcutRepresentation(state, name, representation = 'display') {
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { __ } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { __ } from '@cohesion/i18n';
  * const ExampleComponent = () => {
  *     const shortcutDescription = useSelect(
  *         ( select ) =>
@@ -408,10 +408,10 @@ function getShortcutDescription(state, name) {
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { createInterpolateElement } from '@wordpress/element';
- * import { sprintf } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { createInterpolateElement } from '@cohesion/element';
+ * import { sprintf } from '@cohesion/i18n';
  * const ExampleComponent = () => {
  *     const shortcutAliases = useSelect(
  *         ( select ) =>
@@ -458,10 +458,10 @@ function getShortcutAliases(state, name) {
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { createInterpolateElement } from '@wordpress/element';
- * import { sprintf } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { createInterpolateElement } from '@cohesion/element';
+ * import { sprintf } from '@cohesion/i18n';
  *
  * const ExampleComponent = () => {
  *     const allShortcutKeyCombinations = useSelect(
@@ -512,10 +512,10 @@ const getAllShortcutKeyCombinations = (0,external_wp_data_namespaceObject.create
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
- * import { createInterpolateElement } from '@wordpress/element';
- * import { sprintf } from '@wordpress/i18n';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
+ * import { createInterpolateElement } from '@cohesion/element';
+ * import { sprintf } from '@cohesion/i18n';
  *
  * const ExampleComponent = () => {
  *     const allShortcutRawKeyCombinations = useSelect(
@@ -564,8 +564,8 @@ const getAllShortcutRawKeyCombinations = (0,external_wp_data_namespaceObject.cre
  * @example
  *
  *```js
- * import { store as keyboardShortcutsStore } from '@wordpress/keyboard-shortcuts';
- * import { useSelect } from '@wordpress/data';
+ * import { store as keyboardShortcutsStore } from '@cohesion/keyboard-shortcuts';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const categoryShortcuts = useSelect(
@@ -593,9 +593,9 @@ const getCategoryShortcuts = (0,external_wp_data_namespaceObject.createSelector)
   return Object.entries(state).filter(([, shortcut]) => shortcut.category === categoryName).map(([name]) => name);
 }, state => [state]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -610,7 +610,7 @@ const STORE_NAME = 'core/keyboard-shortcuts';
 /**
  * Store definition for the keyboard shortcuts namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -623,9 +623,9 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 
 ;// CONCATENATED MODULE: external ["wp","element"]
 const external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut-event-match.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/hooks/use-shortcut-event-match.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -666,9 +666,9 @@ function useShortcutEventMatch() {
   return isMatch;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const globalShortcuts = new Set();
@@ -692,9 +692,9 @@ const context = (0,external_wp_element_namespaceObject.createContext)({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/hooks/use-shortcut.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -739,9 +739,9 @@ function useShortcut(name, callback, {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/components/shortcut-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/components/shortcut-provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -785,7 +785,7 @@ function ShortcutProvider(props) {
   /* eslint-enable jsx-a11y/no-static-element-interactions */
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/keyboard-shortcuts/build-module/index.js
 
 
 

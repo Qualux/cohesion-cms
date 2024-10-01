@@ -2,12 +2,12 @@
 /**
  * Edit Site Info Administration Screen
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load cohesion Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_sites' ) ) {

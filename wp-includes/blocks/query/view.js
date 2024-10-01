@@ -1,10 +1,10 @@
-import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
+import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@cohesion/interactivity";
 /******/ var __webpack_modules__ = ({
 
 /***/ 438:
 /***/ ((module) => {
 
-module.exports = import("@wordpress/interactivity-router");;
+module.exports = import("@cohesion/interactivity-router");;
 
 /***/ })
 
@@ -57,15 +57,15 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 
-;// CONCATENATED MODULE: external "@wordpress/interactivity"
+;// CONCATENATED MODULE: external "@cohesion/interactivity"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const interactivity_namespaceObject = x({ ["getContext"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.getContext), ["getElement"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.getElement), ["store"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.store) });
-;// CONCATENATED MODULE: ./node_modules/@wordpress/block-library/build-module/query/view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/block-library/build-module/query/view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const isValidLink = ref => ref && ref instanceof window.HTMLAnchorElement && ref.href && (!ref.target || ref.target === '_self') && ref.origin === window.location.origin;

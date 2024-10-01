@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User Administration Bootstrap
+ * cohesion User Administration Bootstrap
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  * @since 3.1.0
  */

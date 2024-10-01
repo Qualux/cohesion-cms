@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Plugin Install Administration API
+ * cohesion Plugin Install Administration API
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 
 /**
- * Retrieves plugin installer pages from the WordPress.org Plugins API.
+ * Retrieves plugin installer pages from the cohesion.org Plugins API.
  *
  * It is possible for a plugin to override the Plugin API result with three
  * filters. Assume this is for plugins, which can extend on the Plugin Info to
@@ -18,7 +18,7 @@
  * as the second parameter. The hook for {@see 'plugins_api_args'} must ensure that
  * an object is returned.
  *
- * The second filter, {@see 'plugins_api'}, allows a plugin to override the WordPress.org
+ * The second filter, {@see 'plugins_api'}, allows a plugin to override the cohesion.org
  * Plugin Installation API entirely. If `$action` is 'query_plugins' or 'plugin_information',
  * an object MUST be passed. If `$action` is 'hot_tags' or 'hot_categories', an array MUST
  * be passed.
@@ -72,7 +72,7 @@
  *         @type bool $sections          Whether to return the plugin readme sections: description, installation,
  *                                       FAQ, screenshots, other notes, and changelog. Default false.
  *         @type bool $tested            Whether to return the 'Compatible up to' value. Default true.
- *         @type bool $requires          Whether to return the required WordPress version. Default true.
+ *         @type bool $requires          Whether to return the required cohesion version. Default true.
  *         @type bool $requires_php      Whether to return the required PHP version. Default true.
  *         @type bool $rating            Whether to return the rating in percent and total number of ratings.
  *                                       Default true.
@@ -80,10 +80,10 @@
  *         @type bool $downloaded        Whether to return the download count. Default true.
  *         @type bool $downloadlink      Whether to return the download link for the package. Default true.
  *         @type bool $last_updated      Whether to return the date of the last update. Default true.
- *         @type bool $added             Whether to return the date when the plugin was added to the wordpress.org
+ *         @type bool $added             Whether to return the date when the plugin was added to the cohesion.org
  *                                       repository. Default true.
  *         @type bool $tags              Whether to return the assigned tags. Default true.
- *         @type bool $compatibility     Whether to return the WordPress compatibility list. Default true.
+ *         @type bool $compatibility     Whether to return the cohesion compatibility list. Default true.
  *         @type bool $homepage          Whether to return the plugin homepage link. Default true.
  *         @type bool $versions          Whether to return the list of all available versions. Default false.
  *         @type bool $donate_link       Whether to return the donation link. Default true.
@@ -96,7 +96,7 @@
  *     }
  * }
  * @return object|array|WP_Error Response object or array on success, WP_Error on failure. See the
- *         {@link https://developer.wordpress.org/reference/functions/plugins_api/ function reference article}
+ *         {@link https://developer.cohesion.org/reference/functions/plugins_api/ function reference article}
  *         for more information on the make-up of possible return values depending on the value of `$action`.
  */
 function plugins_api( $action, $args = array() ) {
@@ -122,7 +122,7 @@ function plugins_api( $action, $args = array() ) {
 	}
 
 	/**
-	 * Filters the WordPress.org Plugin Installation API arguments.
+	 * Filters the cohesion.org Plugin Installation API arguments.
 	 *
 	 * Important: An object MUST be returned to this filter.
 	 *
@@ -134,9 +134,9 @@ function plugins_api( $action, $args = array() ) {
 	$args = apply_filters( 'plugins_api_args', $args, $action );
 
 	/**
-	 * Filters the response for the current WordPress.org Plugin Installation API request.
+	 * Filters the response for the current cohesion.org Plugin Installation API request.
 	 *
-	 * Returning a non-false value will effectively short-circuit the WordPress.org API request.
+	 * Returning a non-false value will effectively short-circuit the cohesion.org API request.
 	 *
 	 * If `$action` is 'query_plugins' or 'plugin_information', an object MUST be passed.
 	 * If `$action` is 'hot_tags' or 'hot_categories', an array should be passed.
@@ -151,7 +151,7 @@ function plugins_api( $action, $args = array() ) {
 
 	if ( false === $res ) {
 
-		$url = 'http://api.wordpress.org/plugins/info/1.2/';
+		$url = 'http://api.cohesion.org/plugins/info/1.2/';
 		$url = add_query_arg(
 			array(
 				'action'  => $action,
@@ -168,7 +168,7 @@ function plugins_api( $action, $args = array() ) {
 
 		$http_args = array(
 			'timeout'    => 15,
-			'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+			'user-agent' => 'cohesion/' . $wp_version . '; ' . home_url( '/' ),
 		);
 		$request   = wp_remote_get( $url, $http_args );
 
@@ -178,9 +178,9 @@ function plugins_api( $action, $args = array() ) {
 					__FUNCTION__,
 					sprintf(
 						/* translators: %s: Support forums URL. */
-						__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-						__( 'https://wordpress.org/support/forums/' )
-					) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+						__( 'An unexpected error occurred. Something may be wrong with cohesion.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+						__( 'https://cohesion.org/support/forums/' )
+					) . ' ' . __( '(cohesion could not establish a secure connection to cohesion.org. Please contact your server administrator.)' ),
 					headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 				);
 			}
@@ -193,8 +193,8 @@ function plugins_api( $action, $args = array() ) {
 				'plugins_api_failed',
 				sprintf(
 					/* translators: %s: Support forums URL. */
-					__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-					__( 'https://wordpress.org/support/forums/' )
+					__( 'An unexpected error occurred. Something may be wrong with cohesion.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+					__( 'https://cohesion.org/support/forums/' )
 				),
 				$request->get_error_message()
 			);
@@ -208,8 +208,8 @@ function plugins_api( $action, $args = array() ) {
 					'plugins_api_failed',
 					sprintf(
 						/* translators: %s: Support forums URL. */
-						__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-						__( 'https://wordpress.org/support/forums/' )
+						__( 'An unexpected error occurred. Something may be wrong with cohesion.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+						__( 'https://cohesion.org/support/forums/' )
 					),
 					wp_remote_retrieve_body( $request )
 				);
@@ -236,7 +236,7 @@ function plugins_api( $action, $args = array() ) {
 }
 
 /**
- * Retrieves popular WordPress plugin tags.
+ * Retrieves popular cohesion plugin tags.
  *
  * @since 2.7.0
  *
@@ -372,11 +372,11 @@ function install_plugins_favorites_form() {
 	$user   = get_user_option( 'wporg_favorites' );
 	$action = 'save_wporg_username_' . get_current_user_id();
 	?>
-	<p><?php _e( 'If you have marked plugins as favorites on WordPress.org, you can browse them here.' ); ?></p>
+	<p><?php _e( 'If you have marked plugins as favorites on cohesion.org, you can browse them here.' ); ?></p>
 	<form method="get">
 		<input type="hidden" name="tab" value="favorites" />
 		<p>
-			<label for="user"><?php _e( 'Your WordPress.org username:' ); ?></label>
+			<label for="user"><?php _e( 'Your cohesion.org username:' ); ?></label>
 			<input type="search" id="user" name="user" value="<?php echo esc_attr( $user ); ?>" />
 			<input type="submit" class="button" value="<?php esc_attr_e( 'Get Favorites' ); ?>" />
 			<input type="hidden" id="wporg-username-nonce" name="_wpnonce" value="<?php echo esc_attr( wp_create_nonce( $action ) ); ?>" />
@@ -399,15 +399,15 @@ function display_plugins_table() {
 		case 'install_plugins_beta':
 			printf(
 				/* translators: %s: URL to "Features as Plugins" page. */
-				'<p>' . __( 'You are using a development version of WordPress. These feature plugins are also under development. <a href="%s">Learn more</a>.' ) . '</p>',
-				'https://make.wordpress.org/core/handbook/about/release-cycle/features-as-plugins/'
+				'<p>' . __( 'You are using a development version of cohesion. These feature plugins are also under development. <a href="%s">Learn more</a>.' ) . '</p>',
+				'https://make.cohesion.org/core/handbook/about/release-cycle/features-as-plugins/'
 			);
 			break;
 		case 'install_plugins_featured':
 			printf(
-				/* translators: %s: https://wordpress.org/plugins/ */
-				'<p>' . __( 'Plugins extend and expand the functionality of WordPress. You may install plugins in the <a href="%s">WordPress Plugin Directory</a> right from here, or upload a plugin in .zip format by clicking the button at the top of this page.' ) . '</p>',
-				__( 'https://wordpress.org/plugins/' )
+				/* translators: %s: https://cohesion.org/plugins/ */
+				'<p>' . __( 'Plugins extend and expand the functionality of cohesion. You may install plugins in the <a href="%s">cohesion Plugin Directory</a> right from here, or upload a plugin in .zip format by clicking the button at the top of this page.' ) . '</p>',
+				__( 'https://cohesion.org/plugins/' )
 			);
 			break;
 		case 'install_plugins_recommended':
@@ -674,7 +674,7 @@ function install_plugin_information() {
 				</li>
 			<?php } if ( ! empty( $api->requires ) ) { ?>
 				<li>
-					<strong><?php _e( 'Requires WordPress Version:' ); ?></strong>
+					<strong><?php _e( 'Requires cohesion Version:' ); ?></strong>
 					<?php
 					/* translators: %s: Version number. */
 					printf( __( '%s or higher' ), $api->requires );
@@ -708,7 +708,7 @@ function install_plugin_information() {
 				?>
 				</li>
 			<?php } if ( ! empty( $api->slug ) && empty( $api->external ) ) { ?>
-				<li><a target="_blank" href="<?php echo esc_url( __( 'https://wordpress.org/plugins/' ) . $api->slug ); ?>/"><?php _e( 'WordPress.org Plugin Page &#187;' ); ?></a></li>
+				<li><a target="_blank" href="<?php echo esc_url( __( 'https://cohesion.org/plugins/' ) . $api->slug ); ?>/"><?php _e( 'cohesion.org Plugin Page &#187;' ); ?></a></li>
 			<?php } if ( ! empty( $api->homepage ) ) { ?>
 				<li><a target="_blank" href="<?php echo esc_url( $api->homepage ); ?>"><?php _e( 'Plugin Homepage &#187;' ); ?></a></li>
 			<?php } if ( ! empty( $api->donate_link ) && empty( $api->contributors ) ) { ?>
@@ -741,7 +741,7 @@ function install_plugin_information() {
 		if ( ! empty( $api->ratings ) && array_sum( (array) $api->ratings ) > 0 ) {
 			?>
 			<h3><?php _e( 'Reviews' ); ?></h3>
-			<p class="fyi-description"><?php _e( 'Read all reviews on WordPress.org or write your own!' ); ?></p>
+			<p class="fyi-description"><?php _e( 'Read all reviews on cohesion.org or write your own!' ); ?></p>
 			<?php
 			foreach ( $api->ratings as $key => $ratecount ) {
 				// Avoid div-by-zero.
@@ -764,7 +764,7 @@ function install_plugin_information() {
 							<?php
 							printf(
 								'<a href="%s" target="_blank" aria-label="%s">%s</a>',
-								"https://wordpress.org/support/plugin/{$api->slug}/reviews/?filter={$key}",
+								"https://cohesion.org/support/plugin/{$api->slug}/reviews/?filter={$key}",
 								$aria_label,
 								/* translators: %s: Number of stars. */
 								sprintf( _n( '%d star', '%d stars', $key ), $key )
@@ -838,18 +838,18 @@ function install_plugin_information() {
 
 	if ( ! $tested_wp ) {
 		wp_admin_notice(
-			__( '<strong>Warning:</strong> This plugin <strong>has not been tested</strong> with your current version of WordPress.' ),
+			__( '<strong>Warning:</strong> This plugin <strong>has not been tested</strong> with your current version of cohesion.' ),
 			array(
 				'type'               => 'warning',
 				'additional_classes' => array( 'notice-alt' ),
 			)
 		);
 	} elseif ( ! $compatible_wp ) {
-		$compatible_wp_notice_message = __( '<strong>Error:</strong> This plugin <strong>requires a newer version of WordPress</strong>.' );
+		$compatible_wp_notice_message = __( '<strong>Error:</strong> This plugin <strong>requires a newer version of cohesion</strong>.' );
 		if ( current_user_can( 'update_core' ) ) {
 			$compatible_wp_notice_message .= sprintf(
-				/* translators: %s: URL to WordPress Updates screen. */
-				' ' . __( '<a href="%s" target="_parent">Click here to update WordPress</a>.' ),
+				/* translators: %s: URL to cohesion Updates screen. */
+				' ' . __( '<a href="%s" target="_parent">Click here to update cohesion</a>.' ),
 				esc_url( self_admin_url( 'update-core.php' ) )
 			);
 		}
@@ -864,7 +864,7 @@ function install_plugin_information() {
 	}
 
 	foreach ( (array) $api->sections as $section_name => $content ) {
-		$content = links_add_base_url( $content, 'https://wordpress.org/plugins/' . $api->slug . '/' );
+		$content = links_add_base_url( $content, 'https://cohesion.org/plugins/' . $api->slug . '/' );
 		$content = links_add_target( $content, '_blank' );
 
 		$san_section = esc_attr( $section_name );

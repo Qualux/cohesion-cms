@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress database access abstraction class.
+ * cohesion database access abstraction class.
  *
  * This file is deprecated, use 'wp-includes/class-wpdb.php' instead.
  *
  * @deprecated 6.1.0
- * @package WordPress
+ * @package cohesion
  */
 
 if ( function_exists( '_deprecated_file' ) ) {

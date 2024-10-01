@@ -705,7 +705,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ createMiddleware)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/is-generator.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/redux-routine/build-module/is-generator.js
 /* eslint-disable jsdoc/valid-types */
 /**
  * Returns true if the given object is a generator, or false otherwise.
@@ -766,7 +766,7 @@ function isPlainObject(o) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/is-action.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/redux-routine/build-module/is-action.js
 /**
  * External dependencies
  */
@@ -798,7 +798,7 @@ function isActionOfType(object, expectedType) {
   return isAction(object) && object.type === expectedType;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/runtime.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/redux-routine/build-module/runtime.js
 /**
  * External dependencies
  */
@@ -848,7 +848,7 @@ function createRuntime(controls = {}, dispatch) {
   }, reject));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/redux-routine/build-module/index.js
 /**
  * Internal dependencies
  */

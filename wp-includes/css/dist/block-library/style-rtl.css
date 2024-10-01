@@ -3004,7 +3004,7 @@ ul.wp-block-rss.is-grid li{
   background-color:#4680c2;
   color:#fff;
 }
-:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-wordpress{
+:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-cohesion{
   background-color:#3499cd;
   color:#fff;
 }
@@ -3153,7 +3153,7 @@ ul.wp-block-rss.is-grid li{
 :where(.wp-block-social-links.is-style-logos-only) .wp-social-link-whatsapp{
   color:#25d366;
 }
-:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-wordpress{
+:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-cohesion{
   color:#3499cd;
 }
 :where(.wp-block-social-links.is-style-logos-only) .wp-social-link-x{

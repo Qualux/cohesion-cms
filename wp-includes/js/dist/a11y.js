@@ -60,9 +60,9 @@ const external_wp_domReady_namespaceObject = window["wp"]["domReady"];
 var external_wp_domReady_default = /*#__PURE__*/__webpack_require__.n(external_wp_domReady_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-intro-text.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/a11y/build-module/add-intro-text.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -90,7 +90,7 @@ function addIntroText() {
   return introText;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/a11y/build-module/add-container.js
 /**
  * Build the live regions markup.
  *
@@ -115,7 +115,7 @@ function addContainer(ariaLive = 'polite') {
   return container;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/clear.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/a11y/build-module/clear.js
 /**
  * Clears the a11y-speak-region elements and hides the explanatory text.
  */
@@ -132,7 +132,7 @@ function clear() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/filter-message.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/a11y/build-module/filter-message.js
 let previousMessage = '';
 
 /**
@@ -163,9 +163,9 @@ function filterMessage(message) {
   return message;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/a11y/build-module/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -209,7 +209,7 @@ external_wp_domReady_default()(setup);
  *
  * @example
  * ```js
- * import { speak } from '@wordpress/a11y';
+ * import { speak } from '@cohesion/a11y';
  *
  * // For polite messages that shouldn't interrupt what screen readers are currently announcing.
  * speak( 'The message you want to send to the ARIA live region' );

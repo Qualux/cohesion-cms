@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/notices/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/notices/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -56,7 +56,7 @@ __webpack_require__.d(actions_namespaceObject, {
   removeNotices: () => (removeNotices)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/notices/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/notices/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -65,7 +65,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/utils/on-sub-key.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/utils/on-sub-key.js
 /**
  * Higher-order reducer creator which creates a combined reducer object, keyed
  * by a property on the action object.
@@ -95,7 +95,7 @@ const onSubKey = actionProperty => reducer => (state = {}, action) => {
 };
 /* harmony default export */ const on_sub_key = (onSubKey);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/reducer.js
 /**
  * Internal dependencies
  */
@@ -134,7 +134,7 @@ const notices = on_sub_key('context')((state = [], action) => {
 });
 /* harmony default export */ const reducer = (notices);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/constants.js
 /**
  * Default context to use for notice grouping when not otherwise specified. Its
  * specific value doesn't hold much meaning, but it must be reasonably unique
@@ -151,7 +151,7 @@ const DEFAULT_CONTEXT = 'global';
  */
 const DEFAULT_STATUS = 'info';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/actions.js
 /**
  * Internal dependencies
  */
@@ -201,10 +201,10 @@ let uniqueId = 0;
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     const { createNotice } = useDispatch( noticesStore );
@@ -268,10 +268,10 @@ function createNotice(status = DEFAULT_STATUS, content, options = {}) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     const { createSuccessNotice } = useDispatch( noticesStore );
@@ -307,10 +307,10 @@ function createSuccessNotice(content, options) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     const { createInfoNotice } = useDispatch( noticesStore );
@@ -345,10 +345,10 @@ function createInfoNotice(content, options) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     const { createErrorNotice } = useDispatch( noticesStore );
@@ -386,10 +386,10 @@ function createErrorNotice(content, options) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     const { createWarningNotice, createInfoNotice } = useDispatch( noticesStore );
@@ -426,10 +426,10 @@ function createWarningNotice(content, options) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *    const notices = useSelect( ( select ) => select( noticesStore ).getNotices() );
@@ -474,10 +474,10 @@ function removeNotice(id, context = DEFAULT_CONTEXT) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch, useSelect } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch, useSelect } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * export const ExampleComponent = () => {
  * 	const notices = useSelect( ( select ) =>
@@ -528,10 +528,10 @@ function removeAllNotices(noticeType = 'default', context = DEFAULT_CONTEXT) {
  *                                      intended to appear. Defaults to default context.
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { useDispatch, useSelect } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { useDispatch, useSelect } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  * 	const notices = useSelect( ( select ) =>
@@ -566,7 +566,7 @@ function removeNotices(ids, context = DEFAULT_CONTEXT) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/selectors.js
 /**
  * Internal dependencies
  */
@@ -620,8 +620,8 @@ const DEFAULT_NOTICES = [];
  * @example
  *
  *```js
- * import { useSelect } from '@wordpress/data';
- * import { store as noticesStore } from '@wordpress/notices';
+ * import { useSelect } from '@cohesion/data';
+ * import { store as noticesStore } from '@cohesion/notices';
  *
  * const ExampleComponent = () => {
  *     const notices = useSelect( ( select ) => select( noticesStore ).getNotices() );
@@ -641,9 +641,9 @@ function getNotices(state, context = DEFAULT_CONTEXT) {
   return state[context] || DEFAULT_NOTICES;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -657,7 +657,7 @@ function getNotices(state, context = DEFAULT_CONTEXT) {
 /**
  * Store definition for the notices namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  */
 const store = (0,external_wp_data_namespaceObject.createReduxStore)('core/notices', {
   reducer: reducer,
@@ -666,7 +666,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)('core/notice
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/notices/build-module/index.js
 
 
 (window.wp = window.wp || {}).notices = __webpack_exports__;

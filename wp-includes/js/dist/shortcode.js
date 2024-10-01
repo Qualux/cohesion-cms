@@ -193,7 +193,7 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/shortcode/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/shortcode/build-module/index.js
 /**
  * External dependencies
  */

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Revisions API
+ * cohesion Administration Revisions API
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  * @since 3.6.0
  */

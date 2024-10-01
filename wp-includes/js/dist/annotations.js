@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/annotations/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -52,7 +52,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   __experimentalGetAnnotationsForRichText: () => (__experimentalGetAnnotationsForRichText)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/annotations/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -66,7 +66,7 @@ __webpack_require__.d(actions_namespaceObject, {
 const external_wp_richText_namespaceObject = window["wp"]["richText"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -74,9 +74,9 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
  */
 const STORE_NAME = 'core/annotations';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/annotation.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/format/annotation.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -248,9 +248,9 @@ const annotation = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/format/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -268,9 +268,9 @@ const {
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/block/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/block/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -300,7 +300,7 @@ const addAnnotationClassName = OriginalComponent => {
 };
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockListBlock', 'core/annotations', addAnnotationClassName);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/store/reducer.js
 /**
  * Filters an array based on the predicate, but keeps the reference the same if
  * the array hasn't changed.
@@ -402,9 +402,9 @@ function annotations(state = {}, action) {
 }
 /* harmony default export */ const reducer = (annotations);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -570,7 +570,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ const esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/store/actions.js
 /**
  * External dependencies
  */
@@ -671,9 +671,9 @@ function __experimentalRemoveAnnotationsBySource(source) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -692,7 +692,7 @@ function __experimentalRemoveAnnotationsBySource(source) {
 /**
  * Store definition for the annotations namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -703,7 +703,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/annotations/build-module/index.js
 /**
  * Internal dependencies
  */

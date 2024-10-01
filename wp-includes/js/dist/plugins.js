@@ -233,9 +233,9 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/components/plugin-context/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -278,9 +278,9 @@ const withPluginContext = mapContextToProps => (0,external_wp_compose_namespaceO
   });
 }, 'withPluginContext');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-error-boundary/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/components/plugin-error-boundary/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 class PluginErrorBoundary extends external_wp_element_namespaceObject.Component {
@@ -321,9 +321,9 @@ class PluginErrorBoundary extends external_wp_element_namespaceObject.Component 
 
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plugins.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/plugins.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -336,14 +336,14 @@ const plugins = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ex
 });
 /* harmony default export */ const library_plugins = (plugins);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/api/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/api/index.js
 /* eslint no-console: [ 'error', { allow: [ 'error' ] } ] */
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -405,9 +405,9 @@ const api_plugins = {};
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@wordpress/editor';
- * import { registerPlugin } from '@wordpress/plugins';
- * import { more } from '@wordpress/icons';
+ * import { PluginSidebar, PluginSidebarMoreMenuItem } from '@cohesion/editor';
+ * import { registerPlugin } from '@cohesion/plugins';
+ * import { more } from '@cohesion/icons';
  *
  * const Component = () => (
  * 	<>
@@ -494,7 +494,7 @@ function registerPlugin(name, settings) {
  * @example
  * ```js
  * // Using ESNext syntax
- * import { unregisterPlugin } from '@wordpress/plugins';
+ * import { unregisterPlugin } from '@cohesion/plugins';
  *
  * unregisterPlugin( 'plugin-name' );
  * ```
@@ -536,14 +536,14 @@ function getPlugins(scope) {
   return Object.values(api_plugins).filter(plugin => plugin.scope === scope);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/plugin-area/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/components/plugin-area/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -586,7 +586,7 @@ const getPluginContext = memize((icon, name) => ({
  * @example
  * ```js
  * // Using ESNext syntax
- * import { PluginArea } from '@wordpress/plugins';
+ * import { PluginArea } from '@cohesion/plugins';
  *
  * const Layout = () => (
  * 	<div>
@@ -643,11 +643,11 @@ function PluginArea({
 }
 /* harmony default export */ const plugin_area = (PluginArea);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/components/index.js
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/plugins/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/plugins/build-module/index.js
 
 
 

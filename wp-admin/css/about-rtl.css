@@ -922,7 +922,7 @@
 	margin: 1.5em auto;
 }
 
-/* WordPress Version Badge */
+/* cohesion Version Badge */
 
 .wp-badge {
 	background: #0073aa url(../images/w-logo-white.png?ver=20160308) no-repeat;
@@ -942,7 +942,7 @@
 }
 
 .svg .wp-badge {
-	background-image: url(../images/wordpress-logo-white.svg?ver=20160308);
+	background-image: url(../images/cohesion-logo-white.svg?ver=20160308);
 }
 
 .about-wrap .wp-badge {

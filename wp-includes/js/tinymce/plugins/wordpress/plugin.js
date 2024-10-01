@@ -5,7 +5,7 @@ if ( ! tinymce.ui.FloatPanel.zIndex || tinymce.ui.FloatPanel.zIndex < 100100 ) {
 	tinymce.ui.FloatPanel.zIndex = 100100;
 }
 
-tinymce.PluginManager.add( 'wordpress', function( editor ) {
+tinymce.PluginManager.add( 'cohesion', function( editor ) {
 	var wpAdvButton, style,
 		DOM = tinymce.DOM,
 		each = tinymce.each,

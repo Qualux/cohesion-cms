@@ -5,7 +5,7 @@
  *
  * Allows for some configuration in wp-config.php (see ms-default-constants.php)
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Multisite
  * @since 3.0.0
  */

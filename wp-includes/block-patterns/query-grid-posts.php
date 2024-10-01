@@ -2,7 +2,7 @@
 /**
  * Query: Grid.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 return array(

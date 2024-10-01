@@ -1953,7 +1953,7 @@ __webpack_require__.d(__webpack_exports__, {
   withSpokenMessages: () => (/* reexport */ with_spoken_messages)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/components/build-module/text/styles.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/components/build-module/text/styles.js
 var text_styles_namespaceObject = {};
 __webpack_require__.r(text_styles_namespaceObject);
 __webpack_require__.d(text_styles_namespaceObject, {
@@ -1966,7 +1966,7 @@ __webpack_require__.d(text_styles_namespaceObject, {
   upperCase: () => (upperCase)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
 var toggle_group_control_option_base_styles_namespaceObject = {};
 __webpack_require__.r(toggle_group_control_option_base_styles_namespaceObject);
 __webpack_require__.d(toggle_group_control_option_base_styles_namespaceObject, {
@@ -9870,7 +9870,7 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/shortcut/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/shortcut/index.js
 
 /**
  * Internal dependencies
@@ -9880,7 +9880,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
  * Shortcut component is used to display keyboard shortcuts, and it can be customized with a custom display and aria label if needed.
  *
  * ```jsx
- * import { Shortcut } from '@wordpress/components';
+ * import { Shortcut } from '@cohesion/components';
  *
  * const MyShortcut = () => {
  * 	return (
@@ -9914,7 +9914,7 @@ function Shortcut(props) {
 }
 /* harmony default export */ const build_module_shortcut = (Shortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/popover/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/popover/utils.js
 /**
  * External dependencies
  */
@@ -10164,7 +10164,7 @@ const getReferenceElement = ({
  */
 const computePopoverPosition = c => c === null || Number.isNaN(c) ? undefined : Math.round(c);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tooltip/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tooltip/index.js
 /**
  * External dependencies
  */
@@ -10172,7 +10172,7 @@ const computePopoverPosition = c => c === null || Number.isNaN(c) ? undefined : 
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10315,9 +10315,9 @@ function isPlainObject(o) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-update-effect.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/hooks/use-update-effect.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10340,13 +10340,13 @@ function use_update_effect_useUpdateEffect(effect, deps) {
     // Disable reasons:
     // 1. This hook needs to pass a dep list that isn't an array literal
     // 2. `effect` is missing from the array, and will need to be added carefully to avoid additional warnings
-    // see https://github.com/WordPress/gutenberg/pull/41166
+    // see https://github.com/cohesion/gutenberg/pull/41166
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, deps);
 }
 /* harmony default export */ const use_update_effect = (use_update_effect_useUpdateEffect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/context-system-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/context-system-provider.js
 /**
  * External dependencies
  */
@@ -10355,7 +10355,7 @@ function use_update_effect_useUpdateEffect(effect, deps) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10444,7 +10444,7 @@ const BaseContextSystemProvider = ({
 };
 const ContextSystemProvider = (0,external_wp_element_namespaceObject.memo)(BaseContextSystemProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/constants.js
 const COMPONENT_NAMESPACE = 'data-wp-component';
 const CONNECTED_NAMESPACE = 'data-wp-c16t';
 
@@ -10454,7 +10454,7 @@ const CONNECTED_NAMESPACE = 'data-wp-c16t';
  */
 const CONNECT_STATIC_NAMESPACE = '__contextSystemKey__';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/utils.js
 /**
  * Internal dependencies
  */
@@ -11126,7 +11126,7 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/get-styled-class-name-from-key.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/get-styled-class-name-from-key.js
 /**
  * External dependencies
  */
@@ -13378,7 +13378,7 @@ var _createEmotion = emotion_css_create_instance_esm({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-cx.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/hooks/use-cx.js
 /**
  * External dependencies
  */
@@ -13390,7 +13390,7 @@ var _createEmotion = emotion_css_create_instance_esm({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const isSerializedStyles = o => typeof o !== 'undefined' && o !== null && ['name', 'styles'].every(p => typeof o[p] !== 'undefined');
@@ -13434,9 +13434,9 @@ const useCx = () => {
   return cx;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/use-context-system.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/use-context-system.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13507,13 +13507,13 @@ function useContextSystem(props, namespace) {
   return finalComponentProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/context/context-connect.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/context/context-connect.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13572,7 +13572,7 @@ function _contextConnect(Component, namespace, options) {
   }
 
   // @ts-expect-error We can't rely on inferred types here because of the
-  // `as` prop polymorphism we're handling in https://github.com/WordPress/gutenberg/blob/4f3a11243c365f94892e479bff0b922ccc4ccda3/packages/components/src/context/wordpress-component.ts#L32-L33
+  // `as` prop polymorphism we're handling in https://github.com/cohesion/gutenberg/blob/4f3a11243c365f94892e479bff0b922ccc4ccda3/packages/components/src/context/cohesion-component.ts#L32-L33
   return Object.assign(WrappedComponent, {
     [CONNECT_STATIC_NAMESPACE]: [...new Set(mergedNamespace)],
     displayName: namespace,
@@ -13625,7 +13625,7 @@ function hasConnectNamespace(Component, match) {
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/visually-hidden/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/visually-hidden/styles.js
 /**
  * External dependencies
  */
@@ -13856,14 +13856,14 @@ var createStyled = function createStyled(tag, options) {
 
 /* harmony default export */ const emotion_styled_base_browser_esm = (createStyled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/view/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/view/component.js
 
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13890,7 +13890,7 @@ function UnforwardedView({
  * It is the principle component in the entire library.
  *
  * ```jsx
- * import { View } from `@wordpress/components`;
+ * import { View } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -13906,7 +13906,7 @@ const View = Object.assign((0,external_wp_element_namespaceObject.forwardRef)(Un
 });
 /* harmony default export */ const component = (View);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/visually-hidden/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/visually-hidden/component.js
 /**
  * External dependencies
  */
@@ -13939,7 +13939,7 @@ function UnconnectedVisuallyHidden(props, forwardedRef) {
  * hidden, but will show for alternate devices, for example a screen reader.
  *
  * ```jsx
- * import { VisuallyHidden } from `@wordpress/components`;
+ * import { VisuallyHidden } from `@cohesion/components`;
  *
  * function Example() {
  *   return (
@@ -13953,9 +13953,9 @@ function UnconnectedVisuallyHidden(props, forwardedRef) {
 const component_VisuallyHidden = contextConnect(UnconnectedVisuallyHidden, 'VisuallyHidden');
 /* harmony default export */ const visually_hidden_component = (component_VisuallyHidden);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14413,13 +14413,13 @@ if (false) { var globalKey, globalContext, isTestEnv, emotion_react_browser_esm_
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/colors-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/colors-values.js
 /**
  * Internal dependencies
  */
 const white = '#fff';
 
-// Matches the grays in @wordpress/base-styles
+// Matches the grays in @cohesion/base-styles
 const GRAY = {
   900: '#1e1e1e',
   800: '#2f2f2f',
@@ -14436,7 +14436,7 @@ const GRAY = {
   100: '#f0f0f0'
 };
 
-// Matches @wordpress/base-styles
+// Matches @cohesion/base-styles
 const ALERT = {
   yellow: '#f0b849',
   red: '#d94f4f',
@@ -14474,7 +14474,7 @@ const UI = {
   borderFocus: THEME.accent,
   borderDisabled: THEME.gray[400],
   textDisabled: THEME.gray[600],
-  // Matches @wordpress/base-styles
+  // Matches @cohesion/base-styles
   darkGrayPlaceholder: `color-mix(in srgb, ${THEME.foreground}, transparent 38%)`,
   lightGrayPlaceholder: `color-mix(in srgb, ${THEME.background}, transparent 35%)`
 };
@@ -14501,7 +14501,7 @@ const COLORS = Object.freeze({
 });
 /* harmony default export */ const colors_values = ((/* unused pure expression or super */ null && (COLORS)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-styles.js
 
 function _EMOTION_STRINGIFIED_CSS_ERROR__() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -14556,7 +14556,7 @@ const Cell = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? {
   styles: "appearance:none;border:none;box-sizing:border-box;margin:0;display:flex;position:relative;outline:none;align-items:center;justify-content:center;padding:0"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/cell.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/cell.js
 /**
  * Internal dependencies
  */
@@ -15531,7 +15531,7 @@ if (false) {}
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-icon-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/styles/alignment-matrix-control-icon-styles.js
 
 function alignment_matrix_control_icon_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -15581,7 +15581,7 @@ const alignment_matrix_control_icon_styles_Point = /*#__PURE__*/emotion_styled_b
 } : 0)("height:2px;width:2px;", pointBase, ";", alignment_matrix_control_icon_styles_pointActive, ";" + ( true ? "" : 0));
 const alignment_matrix_control_icon_styles_Cell = Cell;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/icon.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/icon.js
 /**
  * External dependencies
  */
@@ -15627,14 +15627,14 @@ function AlignmentMatrixControlIcon({
 }
 /* harmony default export */ const icon = (AlignmentMatrixControlIcon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/alignment-matrix-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/alignment-matrix-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15653,8 +15653,8 @@ function AlignmentMatrixControlIcon({
  * AlignmentMatrixControl components enable adjustments to horizontal and vertical alignments for UI.
  *
  * ```jsx
- * import { __experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalAlignmentMatrixControl as AlignmentMatrixControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const Example = () => {
  * 	const [ alignment, setAlignment ] = useState( 'center center' );
@@ -15721,7 +15721,7 @@ function AlignmentMatrixControl({
 AlignmentMatrixControl.Icon = icon;
 /* harmony default export */ const alignment_matrix_control = (AlignmentMatrixControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/animate/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/animate/index.js
 /**
  * External dependencies
  */
@@ -15769,7 +15769,7 @@ function getAnimateClassName(options) {
  * Simple interface to introduce animations to components.
  *
  * ```jsx
- * import { Animate, Notice } from '@wordpress/components';
+ * import { Animate, Notice } from '@cohesion/components';
  *
  * const MyAnimatedNotice = () => (
  * 	<Animate type="slide-in" options={ { origin: 'top' } }>
@@ -26836,9 +26836,9 @@ const AnimatePresence = ({ children, custom, initial = true, onExitComplete, exi
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/use-responsive-value.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/use-responsive-value.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const breakpoints = ['40em', '52em', '64em'];
@@ -26888,7 +26888,7 @@ function useResponsiveValue(values, options = {}) {
   index >= array.length ? array.length - 1 : index];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/space.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/space.js
 /**
  * The argument value for the `space()` utility function.
  *
@@ -26930,7 +26930,7 @@ function space(value) {
   return `calc(${GRID_BASE} * ${value})`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/styles.js
 function styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -26970,14 +26970,14 @@ const ItemsRow =  true ? {
   styles: ">*{min-width:0;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex/hook.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27042,9 +27042,9 @@ function useFlex(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const FlexContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -27052,7 +27052,7 @@ const FlexContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 const useFlexContext = () => (0,external_wp_element_namespaceObject.useContext)(FlexContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex/component.js
 /**
  * External dependencies
  */
@@ -27093,7 +27093,7 @@ function UnconnectedFlex(props, forwardedRef) {
  * `FlexBlock`.
  *
  * ```jsx
- * import { Flex, FlexBlock, FlexItem } from '@wordpress/components';
+ * import { Flex, FlexBlock, FlexItem } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -27112,7 +27112,7 @@ function UnconnectedFlex(props, forwardedRef) {
 const component_Flex = contextConnect(UnconnectedFlex, 'Flex');
 /* harmony default export */ const flex_component = (component_Flex);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex-item/hook.js
 /**
  * External dependencies
  */
@@ -27147,7 +27147,7 @@ function useFlexItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-block/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex-block/hook.js
 /**
  * Internal dependencies
  */
@@ -27163,7 +27163,7 @@ function useFlexBlock(props) {
   return flexItemProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-block/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex-block/component.js
 /**
  * External dependencies
  */
@@ -27189,7 +27189,7 @@ function UnconnectedFlexBlock(props, forwardedRef) {
  * within layout containers like `Flex`.
  *
  * ```jsx
- * import { Flex, FlexBlock } from '@wordpress/components';
+ * import { Flex, FlexBlock } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -27203,14 +27203,14 @@ function UnconnectedFlexBlock(props, forwardedRef) {
 const FlexBlock = contextConnect(UnconnectedFlexBlock, 'FlexBlock');
 /* harmony default export */ const flex_block_component = (FlexBlock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/rtl.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/rtl.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const LOWER_LEFT_REGEXP = new RegExp(/-left/g);
@@ -27292,7 +27292,7 @@ function rtl(ltrStyles = {}, rtlStyles) {
  */
 rtl.watch = () => (0,external_wp_i18n_namespaceObject.isRTL)();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spacer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/spacer/hook.js
 /**
  * External dependencies
  */
@@ -27341,7 +27341,7 @@ function useSpacer(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spacer/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/spacer/component.js
 /**
  * External dependencies
  */
@@ -27370,13 +27370,13 @@ function UnconnectedSpacer(props, forwardedRef) {
  * or a literal CSS value string.
  *
  * ```jsx
- * import { Spacer } from `@wordpress/components`
+ * import { Spacer } from `@cohesion/components`
  *
  * function Example() {
  *   return (
  *     <View>
  *       <Spacer>
- *         <Heading>WordPress.org</Heading>
+ *         <Heading>cohesion.org</Heading>
  *       </Spacer>
  *       <Text>
  *         Code is Poetry
@@ -27389,9 +27389,9 @@ function UnconnectedSpacer(props, forwardedRef) {
 const Spacer = contextConnect(UnconnectedSpacer, 'Spacer');
 /* harmony default export */ const spacer_component = (Spacer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plus.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/plus.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27404,9 +27404,9 @@ const plus = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_plus = (plus);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/reset.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/reset.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27419,7 +27419,7 @@ const reset_reset = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_reset = (reset_reset);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/flex-item/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/flex/flex-item/component.js
 /**
  * External dependencies
  */
@@ -27445,7 +27445,7 @@ function UnconnectedFlexItem(props, forwardedRef) {
  * containers like `Flex`.
  *
  * ```jsx
- * import { Flex, FlexItem } from '@wordpress/components';
+ * import { Flex, FlexItem } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -27459,7 +27459,7 @@ function UnconnectedFlexItem(props, forwardedRef) {
 const FlexItem = contextConnect(UnconnectedFlexItem, 'FlexItem');
 /* harmony default export */ const flex_item_component = (FlexItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/truncate/styles.js
 function truncate_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -27470,7 +27470,7 @@ const Truncate =  true ? {
   styles: "display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/values.js
 /* eslint-disable jsdoc/valid-types */
 /**
  * Determines if a value is null or undefined.
@@ -27534,7 +27534,7 @@ const ensureNumber = value => {
   return typeof value === 'string' ? stringToNumber(value) : value;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/truncate/utils.js
 /**
  * Internal dependencies
  */
@@ -27607,14 +27607,14 @@ function truncateContent(words = '', props) {
   return truncatedContent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/truncate/hook.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -27653,7 +27653,7 @@ function useTruncate(props) {
   const classes = (0,external_wp_element_namespaceObject.useMemo)(() => {
     // The `word-break: break-all` property first makes sure a text line
     // breaks even when it contains 'unbreakable' content such as long URLs.
-    // See https://github.com/WordPress/gutenberg/issues/60860.
+    // See https://github.com/cohesion/gutenberg/issues/60860.
     const truncateLines = /*#__PURE__*/emotion_react_browser_esm_css(numberOfLines === 1 ? 'word-break: break-all;' : '', " -webkit-box-orient:vertical;-webkit-line-clamp:", numberOfLines, ";display:-webkit-box;overflow:hidden;" + ( true ? "" : 0),  true ? "" : 0);
     return cx(shouldTruncate && !numberOfLines && Truncate, shouldTruncate && !!numberOfLines && truncateLines, className);
   }, [className, cx, numberOfLines, shouldTruncate]);
@@ -27670,7 +27670,7 @@ var colord_r={grad:.9,turn:360,rad:360/(2*Math.PI)},t=function(r){return"string"
 ;// CONCATENATED MODULE: ./node_modules/colord/plugins/names.mjs
 /* harmony default export */ function names(e,f){var a={white:"#ffffff",bisque:"#ffe4c4",blue:"#0000ff",cadetblue:"#5f9ea0",chartreuse:"#7fff00",chocolate:"#d2691e",coral:"#ff7f50",antiquewhite:"#faebd7",aqua:"#00ffff",azure:"#f0ffff",whitesmoke:"#f5f5f5",papayawhip:"#ffefd5",plum:"#dda0dd",blanchedalmond:"#ffebcd",black:"#000000",gold:"#ffd700",goldenrod:"#daa520",gainsboro:"#dcdcdc",cornsilk:"#fff8dc",cornflowerblue:"#6495ed",burlywood:"#deb887",aquamarine:"#7fffd4",beige:"#f5f5dc",crimson:"#dc143c",cyan:"#00ffff",darkblue:"#00008b",darkcyan:"#008b8b",darkgoldenrod:"#b8860b",darkkhaki:"#bdb76b",darkgray:"#a9a9a9",darkgreen:"#006400",darkgrey:"#a9a9a9",peachpuff:"#ffdab9",darkmagenta:"#8b008b",darkred:"#8b0000",darkorchid:"#9932cc",darkorange:"#ff8c00",darkslateblue:"#483d8b",gray:"#808080",darkslategray:"#2f4f4f",darkslategrey:"#2f4f4f",deeppink:"#ff1493",deepskyblue:"#00bfff",wheat:"#f5deb3",firebrick:"#b22222",floralwhite:"#fffaf0",ghostwhite:"#f8f8ff",darkviolet:"#9400d3",magenta:"#ff00ff",green:"#008000",dodgerblue:"#1e90ff",grey:"#808080",honeydew:"#f0fff0",hotpink:"#ff69b4",blueviolet:"#8a2be2",forestgreen:"#228b22",lawngreen:"#7cfc00",indianred:"#cd5c5c",indigo:"#4b0082",fuchsia:"#ff00ff",brown:"#a52a2a",maroon:"#800000",mediumblue:"#0000cd",lightcoral:"#f08080",darkturquoise:"#00ced1",lightcyan:"#e0ffff",ivory:"#fffff0",lightyellow:"#ffffe0",lightsalmon:"#ffa07a",lightseagreen:"#20b2aa",linen:"#faf0e6",mediumaquamarine:"#66cdaa",lemonchiffon:"#fffacd",lime:"#00ff00",khaki:"#f0e68c",mediumseagreen:"#3cb371",limegreen:"#32cd32",mediumspringgreen:"#00fa9a",lightskyblue:"#87cefa",lightblue:"#add8e6",midnightblue:"#191970",lightpink:"#ffb6c1",mistyrose:"#ffe4e1",moccasin:"#ffe4b5",mintcream:"#f5fffa",lightslategray:"#778899",lightslategrey:"#778899",navajowhite:"#ffdead",navy:"#000080",mediumvioletred:"#c71585",powderblue:"#b0e0e6",palegoldenrod:"#eee8aa",oldlace:"#fdf5e6",paleturquoise:"#afeeee",mediumturquoise:"#48d1cc",mediumorchid:"#ba55d3",rebeccapurple:"#663399",lightsteelblue:"#b0c4de",mediumslateblue:"#7b68ee",thistle:"#d8bfd8",tan:"#d2b48c",orchid:"#da70d6",mediumpurple:"#9370db",purple:"#800080",pink:"#ffc0cb",skyblue:"#87ceeb",springgreen:"#00ff7f",palegreen:"#98fb98",red:"#ff0000",yellow:"#ffff00",slateblue:"#6a5acd",lavenderblush:"#fff0f5",peru:"#cd853f",palevioletred:"#db7093",violet:"#ee82ee",teal:"#008080",slategray:"#708090",slategrey:"#708090",aliceblue:"#f0f8ff",darkseagreen:"#8fbc8f",darkolivegreen:"#556b2f",greenyellow:"#adff2f",seagreen:"#2e8b57",seashell:"#fff5ee",tomato:"#ff6347",silver:"#c0c0c0",sienna:"#a0522d",lavender:"#e6e6fa",lightgreen:"#90ee90",orange:"#ffa500",orangered:"#ff4500",steelblue:"#4682b4",royalblue:"#4169e1",turquoise:"#40e0d0",yellowgreen:"#9acd32",salmon:"#fa8072",saddlebrown:"#8b4513",sandybrown:"#f4a460",rosybrown:"#bc8f8f",darksalmon:"#e9967a",lightgoldenrodyellow:"#fafad2",snow:"#fffafa",lightgrey:"#d3d3d3",lightgray:"#d3d3d3",dimgray:"#696969",dimgrey:"#696969",olivedrab:"#6b8e23",olive:"#808000"},r={};for(var d in a)r[a[d]]=d;var l={};e.prototype.toName=function(f){if(!(this.rgba.a||this.rgba.r||this.rgba.g||this.rgba.b))return"transparent";var d,i,n=r[this.toHex()];if(n)return n;if(null==f?void 0:f.closest){var o=this.toRgb(),t=1/0,b="black";if(!l.length)for(var c in a)l[c]=new e(a[c]).toRgb();for(var g in a){var u=(d=o,i=l[g],Math.pow(d.r-i.r,2)+Math.pow(d.g-i.g,2)+Math.pow(d.b-i.b,2));u<t&&(t=u,b=g)}return b}};f.string.push([function(f){var r=f.toLowerCase(),d="transparent"===r?"#0000":a[r];return d?new e(d).toRgb():null},"name"])}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/colors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/colors.js
 /**
  * External dependencies
  */
@@ -27788,7 +27788,7 @@ function getOptimalTextShade(backgroundColor) {
   return result === '#000000' ? 'dark' : 'light';
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/config-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/config-values.js
 /**
  * Internal dependencies
  */
@@ -27871,7 +27871,7 @@ const TOGGLE_GROUP_CONTROL_PROPS = {
   transitionTimingFunctionControl: 'cubic-bezier(0.12, 0.8, 0.32, 1)'
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text/styles.js
 function text_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -27898,7 +27898,7 @@ const upperCase =  true ? {
 
 // EXTERNAL MODULE: ./node_modules/highlight-words-core/dist/index.js
 var dist = __webpack_require__(9664);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text/utils.js
 /**
  * External dependencies
  */
@@ -27906,7 +27906,7 @@ var dist = __webpack_require__(9664);
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28042,7 +28042,7 @@ function createHighlighterText({
   return textContent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/font-size.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/font-size.js
 /**
  * External dependencies
  */
@@ -28083,7 +28083,7 @@ function getHeadingFontSize(size = 3) {
   return config_values[headingSize];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/get-line-height.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text/get-line-height.js
 /**
  * External dependencies
  */
@@ -28118,7 +28118,7 @@ function getLineHeight(adjustLineHeightForInnerControls, lineHeight) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text/hook.js
 function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -28127,7 +28127,7 @@ function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to strin
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -28254,7 +28254,7 @@ function useText(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text/component.js
 /**
  * Internal dependencies
  */
@@ -28285,7 +28285,7 @@ function UnconnectedText(props, forwardedRef) {
  * @example
  *
  * ```jsx
- * import { __experimentalText as Text } from `@wordpress/components`;
+ * import { __experimentalText as Text } from `@cohesion/components`;
  *
  * function Example() {
  * 	return <Text>Code is Poetry</Text>;
@@ -28295,7 +28295,7 @@ function UnconnectedText(props, forwardedRef) {
 const component_Text = contextConnect(UnconnectedText, 'Text');
 /* harmony default export */ const text_component = (component_Text);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/base-label.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/base-label.js
 function base_label_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -28309,7 +28309,7 @@ const baseLabelTypography =  true ? {
   styles: "font-size:11px;font-weight:500;line-height:1.4;text-transform:uppercase"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/styles/input-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/styles/input-control-styles.js
 
 function input_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -28486,7 +28486,7 @@ const dragStyles = ({
 };
 
 // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/cohesion/gutenberg/issues/18483
 
 const Input = /*#__PURE__*/emotion_styled_base_browser_esm("input",  true ? {
   target: "em5sgkm2"
@@ -28505,9 +28505,9 @@ const LabelWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_item_comp
   styles: "max-width:calc( 100% - 10px )"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/backdrop.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/backdrop.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -28529,7 +28529,7 @@ function Backdrop({
 const MemoizedBackdrop = (0,external_wp_element_namespaceObject.memo)(Backdrop);
 /* harmony default export */ const backdrop = (MemoizedBackdrop);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/label.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/label.js
 /**
  * Internal dependencies
  */
@@ -28561,7 +28561,7 @@ function label_Label({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/use-deprecated-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/use-deprecated-props.js
 function useDeprecated36pxDefaultSizeProp(props) {
   const {
     __next36pxDefaultSize,
@@ -28574,13 +28574,13 @@ function useDeprecated36pxDefaultSizeProp(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-base.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/input-base.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30547,13 +30547,13 @@ function useGesture(handlers, config) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/utils.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30643,7 +30643,7 @@ function useDraft(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/state.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/reducer/state.js
 /**
  * External dependencies
  */
@@ -30663,7 +30663,7 @@ const initialInputControlState = {
   value: ''
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/reducer/actions.js
 /**
  * External dependencies
  */
@@ -30684,13 +30684,13 @@ const PRESS_ENTER = 'PRESS_ENTER';
 const PRESS_UP = 'PRESS_UP';
 const RESET = 'RESET';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/reducer/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/reducer/reducer.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -30915,7 +30915,7 @@ function useInputControlStateReducer(stateReducer = initialStateReducer, initial
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/with-ignore-ime-events.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/with-ignore-ime-events.js
 /**
  * A higher-order function that wraps a keydown event handler to ensure it is not an IME event.
  *
@@ -30944,13 +30944,13 @@ function withIgnoreIMEEvents(keydownHandler) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-field.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/input-field.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -31136,7 +31136,7 @@ function InputField({
     ref: ref,
     inputSize: size
     // Fallback to `''` to avoid "uncontrolled to controlled" warning.
-    // See https://github.com/WordPress/gutenberg/pull/47250 for details.
+    // See https://github.com/cohesion/gutenberg/pull/47250 for details.
     ,
     value: value !== null && value !== void 0 ? value : '',
     type: type
@@ -31145,7 +31145,7 @@ function InputField({
 const ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(InputField);
 /* harmony default export */ const input_field = (ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/font-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/font-values.js
 /* harmony default export */ const font_values = ({
   'default.fontFamily': "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
   'default.fontSize': '13px',
@@ -31153,7 +31153,7 @@ const ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(In
   mobileTextMinFontSize: '16px'
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/font.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/font.js
 /**
  * Internal dependencies
  */
@@ -31169,7 +31169,7 @@ function font(value) {
   return (_FONT$value = font_values[value]) !== null && _FONT$value !== void 0 ? _FONT$value : '';
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/box-sizing.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/box-sizing.js
 function box_sizing_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -31180,7 +31180,7 @@ const boxSizingReset =  true ? {
   styles: "box-sizing:border-box;*,*::before,*::after{box-sizing:inherit;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/base-control/styles/base-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/base-control/styles/base-control-styles.js
 
 function base_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -31225,7 +31225,7 @@ const StyledVisualLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  
   target: "ej5x27r0"
 } : 0)(labelStyles, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/base-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/base-control/index.js
 /**
  * External dependencies
  */
@@ -31245,7 +31245,7 @@ const StyledVisualLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  
  * `BaseControl` is a component used to generate labels and help text for components handling user inputs.
  *
  * ```jsx
- * import { BaseControl, useBaseControlProps } from '@wordpress/components';
+ * import { BaseControl, useBaseControlProps } from '@cohesion/components';
  *
  * // Render a `BaseControl` for a textarea input
  * const MyCustomTextareaControl = ({ children, ...baseProps }) => (
@@ -31312,7 +31312,7 @@ const UnconnectedBaseControl = props => {
  * otherwise use if the `label` prop was passed.
  *
  * @example
- * import { BaseControl } from '@wordpress/components';
+ * import { BaseControl } from '@cohesion/components';
  *
  * const MyBaseControl = () => (
  * 	<BaseControl help="This button is already accessibly labeled.">
@@ -31337,13 +31337,13 @@ const BaseControl = Object.assign(contextConnectWithoutRef(UnconnectedBaseContro
 });
 /* harmony default export */ const base_control = (BaseControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31442,7 +31442,7 @@ function UnforwardedInputControl(props, ref) {
  * intended to (in time) merge with or replace `TextControl`.
  *
  * ```jsx
- * import { __experimentalInputControl as InputControl } from '@wordpress/components';
+ * import { __experimentalInputControl as InputControl } from '@cohesion/components';
  * import { useState } from 'react';
  *
  * const Example = () => {
@@ -31460,7 +31460,7 @@ function UnforwardedInputControl(props, ref) {
 const InputControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedInputControl);
 /* harmony default export */ const input_control = (InputControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dashicon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dashicon/index.js
 
 /**
  * @typedef OwnProps
@@ -31504,13 +31504,13 @@ function Dashicon({
 }
 /* harmony default export */ const dashicon = (Dashicon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/icon/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31565,13 +31565,13 @@ function Icon({
 }
 /* harmony default export */ const build_module_icon = (Icon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/button/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -31797,7 +31797,7 @@ function UnforwardedButton(props, ref) {
  * Lets users take actions and make choices with a single click or tap.
  *
  * ```jsx
- * import { Button } from '@wordpress/components';
+ * import { Button } from '@cohesion/components';
  * const Mybutton = () => (
  *   <Button
  *     variant="primary"
@@ -31811,7 +31811,7 @@ function UnforwardedButton(props, ref) {
 const Button = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedButton);
 /* harmony default export */ const build_module_button = (Button);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/number-control/styles/number-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/number-control/styles/number-control-styles.js
 
 function number_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -31848,7 +31848,7 @@ const styles = {
   smallSpinButtons
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/math.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/math.js
 /**
  * Parses and retrieves a number value.
  *
@@ -31933,7 +31933,7 @@ function roundClamp(value = 0, min = Infinity, max = Infinity, step = 1) {
   return precision ? getNumber(clampedValue.toFixed(precision)) : clampedValue;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/h-stack/utils.js
 /**
  * External dependencies
  */
@@ -32045,13 +32045,13 @@ function getAlignmentProps(alignment, direction = 'row') {
   return alignmentProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/get-valid-children.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/get-valid-children.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32069,7 +32069,7 @@ function getValidChildren(children) {
   return external_wp_element_namespaceObject.Children.toArray(children).filter(child => (0,external_wp_element_namespaceObject.isValidElement)(child));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/h-stack/hook.js
 /**
  * External dependencies
  */
@@ -32122,7 +32122,7 @@ function useHStack(props) {
   return flexProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/h-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/h-stack/component.js
 /**
  * Internal dependencies
  */
@@ -32148,7 +32148,7 @@ function UnconnectedHStack(props, forwardedRef) {
  * import {
  * 	__experimentalHStack as HStack,
  * 	__experimentalText as Text,
- * } from `@wordpress/components`;
+ * } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -32164,13 +32164,13 @@ function UnconnectedHStack(props, forwardedRef) {
 const HStack = contextConnect(UnconnectedHStack, 'HStack');
 /* harmony default export */ const h_stack_component = (HStack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/number-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/number-control/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32383,7 +32383,7 @@ function UnforwardedNumberControl(props, forwardedRef) {
 const NumberControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedNumberControl);
 /* harmony default export */ const number_control = (NumberControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/styles/angle-picker-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/angle-picker-control/styles/angle-picker-control-styles.js
 
 function angle_picker_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -32415,9 +32415,9 @@ const UnitText = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  t
   target: "eln3bjz0"
 } : 0)("color:", COLORS.theme.accent, ";margin-right:", space(3), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/angle-circle.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/angle-picker-control/angle-circle.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32514,7 +32514,7 @@ function getAngle(centerX, centerY, pointX, pointY) {
 }
 /* harmony default export */ const angle_circle = (AngleCircle);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/angle-picker-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/angle-picker-control/index.js
 /**
  * External dependencies
  */
@@ -32522,7 +32522,7 @@ function getAngle(centerX, centerY, pointX, pointY) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -32595,8 +32595,8 @@ function UnforwardedAnglePickerControl(props, ref) {
  * desired angle in a text field.
  *
  * ```jsx
- * import { useState } from '@wordpress/element';
- * import { AnglePickerControl } from '@wordpress/components';
+ * import { useState } from '@cohesion/element';
+ * import { AnglePickerControl } from '@cohesion/components';
  *
  * function Example() {
  *   const [ angle, setAngle ] = useState( 0 );
@@ -32621,7 +32621,7 @@ const external_wp_richText_namespaceObject = window["wp"]["richText"];
 const external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/strings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/strings.js
 /**
  * External dependencies
  */
@@ -32649,7 +32649,7 @@ const normalizeTextString = value => {
  * Backwards compatible with `_wp_to_kebab_case()`.
  *
  * @see https://lodash.com/docs/4.17.15#kebabCase
- * @see https://developer.wordpress.org/reference/functions/_wp_to_kebab_case/
+ * @see https://developer.cohesion.org/reference/functions/_wp_to_kebab_case/
  *
  * @param str String to convert.
  * @return Kebab-cased string
@@ -32683,14 +32683,14 @@ function escapeRegExp(string) {
   return string.replace(/[\\^$.*+?()[\]{}|]/g, '\\$&');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/get-default-use-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/autocomplete/get-default-use-items.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33049,9 +33049,9 @@ function useFloating(options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33064,9 +33064,9 @@ const close_close = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scroll-lock/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/scroll-lock/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33102,8 +33102,8 @@ let lockCounter = 0;
  * is present, the lock is applied.
  *
  * ```jsx
- * import { ScrollLock, Button } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ScrollLock, Button } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyScrollLock = () => {
  *   const [ isScrollLocked, setIsScrollLocked ] = useState( false );
@@ -33144,9 +33144,9 @@ function ScrollLock() {
 }
 /* harmony default export */ const scroll_lock = (ScrollLock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot-fill-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/slot-fill-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33160,7 +33160,7 @@ const initialContextValue = {
   slots: (0,external_wp_compose_namespaceObject.observableMap)(),
   fills: (0,external_wp_compose_namespaceObject.observableMap)(),
   registerSlot: () => {
-     true ? external_wp_warning_default()('Components must be wrapped within `SlotFillProvider`. ' + 'See https://developer.wordpress.org/block-editor/components/slot-fill/') : 0;
+     true ? external_wp_warning_default()('Components must be wrapped within `SlotFillProvider`. ' + 'See https://developer.cohesion.org/block-editor/components/slot-fill/') : 0;
   },
   updateSlot: () => {},
   unregisterSlot: () => {},
@@ -33172,9 +33172,9 @@ const initialContextValue = {
 const SlotFillContext = (0,external_wp_element_namespaceObject.createContext)(initialContextValue);
 /* harmony default export */ const slot_fill_context = (SlotFillContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/use-slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/use-slot.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33198,9 +33198,9 @@ function useSlot(name) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -33219,9 +33219,9 @@ const initialValue = {
 const context_SlotFillContext = (0,external_wp_element_namespaceObject.createContext)(initialValue);
 /* harmony default export */ const context = (context_SlotFillContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/use-slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/use-slot.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33244,9 +33244,9 @@ const use_slot_useSlot = name => {
 };
 /* harmony default export */ const use_slot = (use_slot_useSlot);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/fill.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/fill.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33300,13 +33300,13 @@ function Fill({
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/slot.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33495,7 +33495,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ const esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/style-provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/style-provider/index.js
 /**
  * External dependencies
  */
@@ -33546,9 +33546,9 @@ function StyleProvider(props) {
 }
 /* harmony default export */ const style_provider = (StyleProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/fill.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/fill.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33612,13 +33612,13 @@ function fill_Fill(props) {
   return (0,external_wp_element_namespaceObject.createPortal)(wrappedChildren, slot.ref.current);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/slot.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33654,7 +33654,7 @@ function slot_Slot(props, forwardedRef) {
     // Ignore reason: We don't want to unregister and register the slot whenever
     // `fillProps` change, which would cause the fill to be re-mounted. Instead,
     // we can just update the slot (see hook below).
-    // For more context, see https://github.com/WordPress/gutenberg/pull/44403#discussion_r994415973
+    // For more context, see https://github.com/cohesion/gutenberg/pull/44403#discussion_r994415973
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [registerSlot, unregisterSlot, name]);
   // fillProps may be an update that interacts with the layout, so we
@@ -33673,9 +33673,9 @@ function slot_Slot(props, forwardedRef) {
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 const external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/slot-fill-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/slot-fill-provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33699,7 +33699,7 @@ function createSlotRegistry() {
   };
   const unregisterSlot = (name, ref) => {
     // Make sure we're not unregistering a slot registered by another element
-    // See https://github.com/WordPress/gutenberg/pull/19242#issuecomment-590295412
+    // See https://github.com/cohesion/gutenberg/pull/19242#issuecomment-590295412
     if (slots.get(name)?.ref === ref) {
       slots.delete(name);
     }
@@ -33749,9 +33749,9 @@ function SlotFillProvider({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33848,13 +33848,13 @@ function provider_SlotFillProvider({
 }
 /* harmony default export */ const provider = (provider_SlotFillProvider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -33944,7 +33944,7 @@ const createPrivateSlotFill = name => {
   };
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/popover/overlay-middlewares.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/popover/overlay-middlewares.js
 /**
  * External dependencies
  */
@@ -33982,7 +33982,7 @@ function overlayMiddlewares() {
   })];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/popover/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/popover/index.js
 /**
  * External dependencies
  */
@@ -33995,7 +33995,7 @@ function overlayMiddlewares() {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34175,7 +34175,7 @@ const UnforwardedPopover = (props, forwardedRef) => {
     constrainTabbing,
     focusOnMount,
     __unstableOnClose: onDialogClose,
-    // @ts-expect-error The __unstableOnClose property needs to be deprecated first (see https://github.com/WordPress/gutenberg/pull/27675)
+    // @ts-expect-error The __unstableOnClose property needs to be deprecated first (see https://github.com/cohesion/gutenberg/pull/27675)
     onClose: onDialogClose
   });
   const {
@@ -34318,8 +34318,8 @@ const UnforwardedPopover = (props, forwardedRef) => {
  * `Popover` renders its content in a floating modal. If no explicit anchor is passed via props, it anchors to its parent element by default.
  *
  * ```jsx
- * import { Button, Popover } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { Button, Popover } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyPopover = () => {
  * 	const [ isVisible, setIsVisible ] = useState( false );
@@ -34355,14 +34355,14 @@ popover_Popover.Slot = (0,external_wp_element_namespaceObject.forwardRef)(Popove
 popover_Popover.__unstableSlotNameProvider = slotNameContext.Provider;
 /* harmony default export */ const popover = (popover_Popover);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/autocompleter-ui.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/autocomplete/autocompleter-ui.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34461,7 +34461,7 @@ function getAutoCompleterUI(autocompleter) {
       onChangeOptions(items);
       announce(items);
       // Temporarily disabling exhaustive-deps to avoid introducing unexpected side effecst.
-      // See https://github.com/WordPress/gutenberg/pull/41820
+      // See https://github.com/cohesion/gutenberg/pull/41820
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [items]);
     if (items.length === 0) {
@@ -34517,14 +34517,14 @@ function useOnClickOutside(ref, handler) {
   }, [handler]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/autocomplete/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/autocomplete/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34657,7 +34657,7 @@ function useAutocomplete({
         {
           const newIndex = (selectedIndex === 0 ? filteredOptions.length : selectedIndex) - 1;
           setSelectedIndex(newIndex);
-          // See the related PR as to why this is necessary: https://github.com/WordPress/gutenberg/pull/54902.
+          // See the related PR as to why this is necessary: https://github.com/cohesion/gutenberg/pull/54902.
           if ((0,external_wp_keycodes_namespaceObject.isAppleOS)()) {
             (0,external_wp_a11y_namespaceObject.speak)(getNodeText(filteredOptions[newIndex].label), 'assertive');
           }
@@ -34791,7 +34791,7 @@ function useAutocomplete({
     setAutocompleterUI(() => completer !== autocompleter ? getAutoCompleterUI(completer) : AutocompleterUI);
     setFilterValue(query === null ? '' : query);
     // Temporarily disabling exhaustive-deps to avoid introducing unexpected side effecst.
-    // See https://github.com/WordPress/gutenberg/pull/41820
+    // See https://github.com/cohesion/gutenberg/pull/41820
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [textContent]);
   const {
@@ -34888,9 +34888,9 @@ function Autocomplete({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/base-control/hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/base-control/hooks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34927,9 +34927,9 @@ function useBaseControlProps(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/link.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34942,9 +34942,9 @@ const link_link = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_link = (link_link);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/link-off.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/link-off.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -34957,7 +34957,7 @@ const linkOff = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ex
 });
 /* harmony default export */ const link_off = (linkOff);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/styles.js
 function border_box_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -35008,9 +35008,9 @@ const rightBorderControl = () => /*#__PURE__*/emotion_react_browser_esm_css(rtl(
   marginLeft: 'auto'
 })(), ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-linked-button/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35038,9 +35038,9 @@ function useBorderBoxControlLinkedButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-linked-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-linked-button/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35079,9 +35079,9 @@ const BorderBoxControlLinkedButton = (props, forwardedRef) => {
 const ConnectedBorderBoxControlLinkedButton = contextConnect(BorderBoxControlLinkedButton, 'BorderBoxControlLinkedButton');
 /* harmony default export */ const border_box_control_linked_button_component = (ConnectedBorderBoxControlLinkedButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-visualizer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-visualizer/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35111,9 +35111,9 @@ function useBorderBoxControlVisualizer(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-visualizer/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-visualizer/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -35136,9 +35136,9 @@ const BorderBoxControlVisualizer = (props, forwardedRef) => {
 const ConnectedBorderBoxControlVisualizer = contextConnect(BorderBoxControlVisualizer, 'BorderBoxControlVisualizer');
 /* harmony default export */ const border_box_control_visualizer_component = (ConnectedBorderBoxControlVisualizer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35151,9 +35151,9 @@ const closeSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const close_small = (closeSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-solid.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/line-solid.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35166,9 +35166,9 @@ const lineSolid = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const line_solid = (lineSolid);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-dashed.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/line-dashed.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35183,9 +35183,9 @@ const lineDashed = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const line_dashed = (lineDashed);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/line-dotted.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/line-dotted.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35271,7 +35271,7 @@ const LayoutGroup = ({ children, id, inherit = true }) => {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control/styles.js
 
 function toggle_group_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -35432,9 +35432,9 @@ var RadioGroup = createComponent((props) => {
 if (false) {}
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35446,9 +35446,9 @@ const ToggleGroupControlContext = (0,external_wp_element_namespaceObject.createC
 const useToggleGroupControlContext = () => (0,external_wp_element_namespaceObject.useContext)(ToggleGroupControlContext);
 /* harmony default export */ const toggle_group_control_context = (ToggleGroupControlContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35495,7 +35495,7 @@ function useComputeControlledOrUncontrolledValue(valueProp) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/as-radio-group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control/as-radio-group.js
 /**
  * External dependencies
  */
@@ -35504,7 +35504,7 @@ function useComputeControlledOrUncontrolledValue(valueProp) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35572,9 +35572,9 @@ function UnforwardedToggleGroupControlAsRadioGroup({
 }
 const ToggleGroupControlAsRadioGroup = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlAsRadioGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-value.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/hooks/use-controlled-value.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -35609,9 +35609,9 @@ function useControlledValue({
   return [value, setValue];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/as-button-group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control/as-button-group.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35671,7 +35671,7 @@ function UnforwardedToggleGroupControlAsButtonGroup({
 }
 const ToggleGroupControlAsButtonGroup = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlAsButtonGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control/component.js
 /**
  * External dependencies
  */
@@ -35680,7 +35680,7 @@ const ToggleGroupControlAsButtonGroup = (0,external_wp_element_namespaceObject.f
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -35765,7 +35765,7 @@ function UnconnectedToggleGroupControl(props, forwardedRef) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -35912,7 +35912,7 @@ if (false) {}
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control-option-base/styles.js
 
 function toggle_group_control_option_base_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -35957,7 +35957,7 @@ const isIconStyles = ({
 };
 const backdropView = /*#__PURE__*/emotion_react_browser_esm_css("background:", COLORS.gray[900], ";border-radius:", config_values.controlBorderRadius, ";position:absolute;inset:0;z-index:1;outline:2px solid transparent;outline-offset:-3px;" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-base/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control-option-base/component.js
 /**
  * External dependencies
  */
@@ -35968,7 +35968,7 @@ const backdropView = /*#__PURE__*/emotion_react_browser_esm_css("background:", C
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36107,7 +36107,7 @@ function ToggleGroupControlOptionBase(props, forwardedRef) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOptionBase as ToggleGroupControlOptionBase,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -36122,13 +36122,13 @@ function ToggleGroupControlOptionBase(props, forwardedRef) {
 const ConnectedToggleGroupControlOptionBase = contextConnect(ToggleGroupControlOptionBase, 'ToggleGroupControlOptionBase');
 /* harmony default export */ const toggle_group_control_option_base_component = (ConnectedToggleGroupControlOptionBase);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option-icon/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control-option-icon/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36166,8 +36166,8 @@ function UnforwardedToggleGroupControlOptionIcon(props, ref) {
  * import {
  *	__experimentalToggleGroupControl as ToggleGroupControl,
  *	__experimentalToggleGroupControlOptionIcon as ToggleGroupControlOptionIcon,
- * from '@wordpress/components';
- * import { formatLowercase, formatUppercase } from '@wordpress/icons';
+ * from '@cohesion/components';
+ * import { formatLowercase, formatUppercase } from '@cohesion/icons';
  *
  * function Example() {
  *	return (
@@ -36190,9 +36190,9 @@ function UnforwardedToggleGroupControlOptionIcon(props, ref) {
 const ToggleGroupControlOptionIcon = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlOptionIcon);
 /* harmony default export */ const toggle_group_control_option_icon_component = (ToggleGroupControlOptionIcon);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-style-picker/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/border-control-style-picker/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36239,13 +36239,13 @@ function UnconnectedBorderControlStylePicker({
 const BorderControlStylePicker = contextConnect(UnconnectedBorderControlStylePicker, 'BorderControlStylePicker');
 /* harmony default export */ const border_control_style_picker_component = (BorderControlStylePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-indicator/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-indicator/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36275,7 +36275,7 @@ function UnforwardedColorIndicator(props, forwardedRef) {
  * component.
  *
  * ```jsx
- * import { ColorIndicator } from '@wordpress/components';
+ * import { ColorIndicator } from '@cohesion/components';
  *
  * const MyColorIndicator = () => <ColorIndicator colorValue="#0073aa" />;
  * ```
@@ -36286,13 +36286,13 @@ const ColorIndicator = (0,external_wp_element_namespaceObject.forwardRef)(Unforw
 ;// CONCATENATED MODULE: ./node_modules/colord/plugins/a11y.mjs
 var a11y_o=function(o){var t=o/255;return t<.04045?t/12.92:Math.pow((t+.055)/1.055,2.4)},a11y_t=function(t){return.2126*a11y_o(t.r)+.7152*a11y_o(t.g)+.0722*a11y_o(t.b)};/* harmony default export */ function a11y(o){o.prototype.luminance=function(){return o=a11y_t(this.rgba),void 0===(r=2)&&(r=0),void 0===n&&(n=Math.pow(10,r)),Math.round(n*o)/n+0;var o,r,n},o.prototype.contrast=function(r){void 0===r&&(r="#FFF");var n,a,i,e,v,u,d,c=r instanceof o?r:new o(r);return e=this.rgba,v=c.toRgb(),u=a11y_t(e),d=a11y_t(v),n=u>d?(u+.05)/(d+.05):(d+.05)/(u+.05),void 0===(a=2)&&(a=0),void 0===i&&(i=Math.pow(10,a)),Math.floor(i*n)/i+0},o.prototype.isReadable=function(o,t){return void 0===o&&(o="#FFF"),void 0===t&&(t={}),this.contrast(o)>=(e=void 0===(i=(r=t).size)?"normal":i,"AAA"===(a=void 0===(n=r.level)?"AA":n)&&"normal"===e?7:"AA"===a&&"large"===e?3:4.5);var r,n,a,i,e}}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36373,7 +36373,7 @@ const UnconnectedDropdown = (props, forwardedRef) => {
   };
   const popoverPropsHaveAnchor = !!popoverProps?.anchor ||
   // Note: `anchorRef`, `getAnchorRect` and `anchorRect` are deprecated and
-  // be removed from `Popover` from WordPress 6.3
+  // be removed from `Popover` from cohesion 6.3
   !!popoverProps?.anchorRef || !!popoverProps?.getAnchorRect || !!popoverProps?.anchorRect;
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)("div", {
     className: className,
@@ -36408,7 +36408,7 @@ const UnconnectedDropdown = (props, forwardedRef) => {
  * Renders a button that opens a floating content modal when clicked.
  *
  * ```jsx
- * import { Button, Dropdown } from '@wordpress/components';
+ * import { Button, Dropdown } from '@cohesion/components';
  *
  * const MyDropdown = () => (
  *   <Dropdown
@@ -36432,7 +36432,7 @@ const UnconnectedDropdown = (props, forwardedRef) => {
 const Dropdown = contextConnect(UnconnectedDropdown, 'Dropdown');
 /* harmony default export */ const dropdown = (Dropdown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-suffix-wrapper.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/input-suffix-wrapper.js
 /**
  * External dependencies
  */
@@ -36460,7 +36460,7 @@ function UnconnectedInputControlSuffixWrapper(props, forwardedRef) {
  * import {
  *   __experimentalInputControl as InputControl,
  *   __experimentalInputControlSuffixWrapper as InputControlSuffixWrapper,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * <InputControl
  *   suffix={<InputControlSuffixWrapper>%</InputControlSuffixWrapper>}
@@ -36470,7 +36470,7 @@ function UnconnectedInputControlSuffixWrapper(props, forwardedRef) {
 const InputControlSuffixWrapper = contextConnect(UnconnectedInputControlSuffixWrapper, 'InputControlSuffixWrapper');
 /* harmony default export */ const input_suffix_wrapper = (InputControlSuffixWrapper);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/select-control/styles/select-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/select-control/styles/select-control-styles.js
 
 /**
  * External dependencies
@@ -36569,7 +36569,7 @@ const overflowStyles = ({
 };
 
 // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/cohesion/gutenberg/issues/18483
 
 const Select = /*#__PURE__*/emotion_styled_base_browser_esm("select",  true ? {
   target: "e1mv6sxx2"
@@ -36583,13 +36583,13 @@ const InputControlSuffixWrapperWithClickThrough = /*#__PURE__*/emotion_styled_ba
   right: 0
 }), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@cohesion/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -36615,9 +36615,9 @@ function icon_Icon({
 }
 /* harmony default export */ const icons_build_module_icon = ((0,external_wp_element_namespaceObject.forwardRef)(icon_Icon));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-down.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-down.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36630,9 +36630,9 @@ const chevronDown = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const chevron_down = (chevronDown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/select-control/chevron-down.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/select-control/chevron-down.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36653,14 +36653,14 @@ const SelectControlChevronDown = () => {
 };
 /* harmony default export */ const select_control_chevron_down = (SelectControlChevronDown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/select-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/select-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36771,8 +36771,8 @@ function UnforwardedSelectControl(props, ref) {
  * It functions as a wrapper around the browser's native `<select>` element.
  *
  * ```jsx
- * import { SelectControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { SelectControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MySelectControl = () => {
  *   const [ size, setSize ] = useState( '50%' );
@@ -36795,9 +36795,9 @@ function UnforwardedSelectControl(props, ref) {
 const SelectControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedSelectControl);
 /* harmony default export */ const select_control = (SelectControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-state.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/hooks/use-controlled-state.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36880,9 +36880,9 @@ function use_controlled_state_useControlledState(currentState, options = default
 }
 /* harmony default export */ const use_controlled_state = (use_controlled_state_useControlledState);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -36937,7 +36937,7 @@ function useControlledRangeValue(settings) {
   return [state, setState];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/styles/range-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/styles/range-control-styles.js
 
 function range_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -37123,9 +37123,9 @@ const ActionRightWrapper = /*#__PURE__*/emotion_styled_base_browser_esm("span", 
   marginLeft: 8
 }), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/input-range.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/input-range.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37155,7 +37155,7 @@ function input_range_InputRange(props, ref) {
 const input_range_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(input_range_InputRange);
 /* harmony default export */ const input_range = (input_range_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/mark.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/mark.js
 /**
  * External dependencies
  */
@@ -37195,9 +37195,9 @@ function RangeMark(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/rail.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/rail.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37301,14 +37301,14 @@ function useMarks({
   return placedMarks;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/tooltip.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/tooltip.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37371,13 +37371,13 @@ function useTooltipPosition({
   return position;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/range-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/range-control/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37646,8 +37646,8 @@ function UnforwardedRangeControl(props, forwardedRef) {
  * RangeControls are used to make selections from a range of incremental values.
  *
  * ```jsx
- * import { RangeControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { RangeControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyRangeControl = () => {
  *   const [ isChecked, setChecked ] = useState( true );
@@ -37667,7 +37667,7 @@ function UnforwardedRangeControl(props, forwardedRef) {
 const RangeControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedRangeControl);
 /* harmony default export */ const range_control = (RangeControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/styles.js
 
 /**
  * External dependencies
@@ -37717,9 +37717,9 @@ const CopyButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_but
   target: "ez9hsf40"
 } : 0)("&&&&&{min-width:", space(6), ";padding:0;>svg{margin-right:0;}}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/copy.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/copy.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37734,9 +37734,9 @@ const copy_copy = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const library_copy = (copy_copy);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/color-copy-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/color-copy-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -37803,7 +37803,7 @@ const ColorCopyButton = props => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/input-with-slider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/input-with-slider.js
 /**
  * Internal dependencies
  */
@@ -37860,7 +37860,7 @@ const InputWithSlider = ({
       max: max,
       value: value
       // @ts-expect-error
-      // See: https://github.com/WordPress/gutenberg/pull/40535#issuecomment-1172418185
+      // See: https://github.com/cohesion/gutenberg/pull/40535#issuecomment-1172418185
       ,
       onChange: onChange,
       withInputField: false
@@ -37868,7 +37868,7 @@ const InputWithSlider = ({
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/rgb-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/rgb-input.js
 /**
  * External dependencies
  */
@@ -37945,14 +37945,14 @@ const RgbInput = ({
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/hsl-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/hsl-input.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38052,14 +38052,14 @@ const HslInput = ({
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/hex-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/hex-input.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38116,7 +38116,7 @@ const HexInput = ({
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/color-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/color-input.js
 /**
  * Internal dependencies
  */
@@ -38156,7 +38156,7 @@ const ColorInput = ({
 function dist_u(){return(dist_u=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var t=arguments[r];for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n])}return e}).apply(this,arguments)}function dist_c(e,r){if(null==e)return{};var t,n,o={},a=Object.keys(e);for(n=0;n<a.length;n++)r.indexOf(t=a[n])>=0||(o[t]=e[t]);return o}function dist_i(e){var t=(0,external_React_.useRef)(e),n=(0,external_React_.useRef)(function(e){t.current&&t.current(e)});return t.current=e,n.current}var dist_s=function(e,r,t){return void 0===r&&(r=0),void 0===t&&(t=1),e>t?t:e<r?r:e},dist_f=function(e){return"touches"in e},dist_v=function(e){return e&&e.ownerDocument.defaultView||self},dist_d=function(e,r,t){var n=e.getBoundingClientRect(),o=dist_f(r)?function(e,r){for(var t=0;t<e.length;t++)if(e[t].identifier===r)return e[t];return e[0]}(r.touches,t):r;return{left:dist_s((o.pageX-(n.left+dist_v(e).pageXOffset))/n.width),top:dist_s((o.pageY-(n.top+dist_v(e).pageYOffset))/n.height)}},dist_h=function(e){!dist_f(e)&&e.preventDefault()},dist_m=external_React_.memo(function(o){var a=o.onMove,l=o.onKey,s=dist_c(o,["onMove","onKey"]),m=(0,external_React_.useRef)(null),g=dist_i(a),p=dist_i(l),b=(0,external_React_.useRef)(null),_=(0,external_React_.useRef)(!1),x=(0,external_React_.useMemo)(function(){var e=function(e){dist_h(e),(dist_f(e)?e.touches.length>0:e.buttons>0)&&m.current?g(dist_d(m.current,e,b.current)):t(!1)},r=function(){return t(!1)};function t(t){var n=_.current,o=dist_v(m.current),a=t?o.addEventListener:o.removeEventListener;a(n?"touchmove":"mousemove",e),a(n?"touchend":"mouseup",r)}return[function(e){var r=e.nativeEvent,n=m.current;if(n&&(dist_h(r),!function(e,r){return r&&!dist_f(e)}(r,_.current)&&n)){if(dist_f(r)){_.current=!0;var o=r.changedTouches||[];o.length&&(b.current=o[0].identifier)}n.focus(),g(dist_d(n,r,b.current)),t(!0)}},function(e){var r=e.which||e.keyCode;r<37||r>40||(e.preventDefault(),p({left:39===r?.05:37===r?-.05:0,top:40===r?.05:38===r?-.05:0}))},t]},[p,g]),C=x[0],E=x[1],H=x[2];return (0,external_React_.useEffect)(function(){return H},[H]),external_React_.createElement("div",dist_u({},s,{onTouchStart:C,onMouseDown:C,className:"react-colorful__interactive",ref:m,onKeyDown:E,tabIndex:0,role:"slider"}))}),dist_g=function(e){return e.filter(Boolean).join(" ")},dist_p=function(r){var t=r.color,n=r.left,o=r.top,a=void 0===o?.5:o,l=dist_g(["react-colorful__pointer",r.className]);return external_React_.createElement("div",{className:l,style:{top:100*a+"%",left:100*n+"%"}},external_React_.createElement("div",{className:"react-colorful__pointer-fill",style:{backgroundColor:t}}))},dist_b=function(e,r,t){return void 0===r&&(r=0),void 0===t&&(t=Math.pow(10,r)),Math.round(t*e)/t},_={grad:.9,turn:360,rad:360/(2*Math.PI)},dist_x=function(e){return L(C(e))},C=function(e){return"#"===e[0]&&(e=e.substring(1)),e.length<6?{r:parseInt(e[0]+e[0],16),g:parseInt(e[1]+e[1],16),b:parseInt(e[2]+e[2],16),a:4===e.length?dist_b(parseInt(e[3]+e[3],16)/255,2):1}:{r:parseInt(e.substring(0,2),16),g:parseInt(e.substring(2,4),16),b:parseInt(e.substring(4,6),16),a:8===e.length?dist_b(parseInt(e.substring(6,8),16)/255,2):1}},dist_E=function(e,r){return void 0===r&&(r="deg"),Number(e)*(_[r]||1)},dist_H=function(e){var r=/hsla?\(?\s*(-?\d*\.?\d+)(deg|rad|grad|turn)?[,\s]+(-?\d*\.?\d+)%?[,\s]+(-?\d*\.?\d+)%?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?dist_N({h:dist_E(r[1],r[2]),s:Number(r[3]),l:Number(r[4]),a:void 0===r[5]?1:Number(r[5])/(r[6]?100:1)}):{h:0,s:0,v:0,a:1}},dist_M=dist_H,dist_N=function(e){var r=e.s,t=e.l;return{h:e.h,s:(r*=(t<50?t:100-t)/100)>0?2*r/(t+r)*100:0,v:t+r,a:e.a}},dist_w=function(e){return K(dist_I(e))},dist_y=function(e){var r=e.s,t=e.v,n=e.a,o=(200-r)*t/100;return{h:dist_b(e.h),s:dist_b(o>0&&o<200?r*t/100/(o<=100?o:200-o)*100:0),l:dist_b(o/2),a:dist_b(n,2)}},q=function(e){var r=dist_y(e);return"hsl("+r.h+", "+r.s+"%, "+r.l+"%)"},dist_k=function(e){var r=dist_y(e);return"hsla("+r.h+", "+r.s+"%, "+r.l+"%, "+r.a+")"},dist_I=function(e){var r=e.h,t=e.s,n=e.v,o=e.a;r=r/360*6,t/=100,n/=100;var a=Math.floor(r),l=n*(1-t),u=n*(1-(r-a)*t),c=n*(1-(1-r+a)*t),i=a%6;return{r:dist_b(255*[n,u,l,l,c,n][i]),g:dist_b(255*[c,n,n,u,l,l][i]),b:dist_b(255*[l,l,c,n,n,u][i]),a:dist_b(o,2)}},O=function(e){var r=/hsva?\(?\s*(-?\d*\.?\d+)(deg|rad|grad|turn)?[,\s]+(-?\d*\.?\d+)%?[,\s]+(-?\d*\.?\d+)%?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?A({h:dist_E(r[1],r[2]),s:Number(r[3]),v:Number(r[4]),a:void 0===r[5]?1:Number(r[5])/(r[6]?100:1)}):{h:0,s:0,v:0,a:1}},dist_j=O,z=function(e){var r=/rgba?\(?\s*(-?\d*\.?\d+)(%)?[,\s]+(-?\d*\.?\d+)(%)?[,\s]+(-?\d*\.?\d+)(%)?,?\s*[/\s]*(-?\d*\.?\d+)?(%)?\s*\)?/i.exec(e);return r?L({r:Number(r[1])/(r[2]?100/255:1),g:Number(r[3])/(r[4]?100/255:1),b:Number(r[5])/(r[6]?100/255:1),a:void 0===r[7]?1:Number(r[7])/(r[8]?100:1)}):{h:0,s:0,v:0,a:1}},B=z,D=function(e){var r=e.toString(16);return r.length<2?"0"+r:r},K=function(e){var r=e.r,t=e.g,n=e.b,o=e.a,a=o<1?D(dist_b(255*o)):"";return"#"+D(r)+D(t)+D(n)+a},L=function(e){var r=e.r,t=e.g,n=e.b,o=e.a,a=Math.max(r,t,n),l=a-Math.min(r,t,n),u=l?a===r?(t-n)/l:a===t?2+(n-r)/l:4+(r-t)/l:0;return{h:dist_b(60*(u<0?u+6:u)),s:dist_b(a?l/a*100:0),v:dist_b(a/255*100),a:o}},A=function(e){return{h:dist_b(e.h),s:dist_b(e.s),v:dist_b(e.v),a:dist_b(e.a,2)}},dist_S=external_React_.memo(function(r){var t=r.hue,n=r.onChange,o=dist_g(["react-colorful__hue",r.className]);return external_React_.createElement("div",{className:o},external_React_.createElement(dist_m,{onMove:function(e){n({h:360*e.left})},onKey:function(e){n({h:dist_s(t+360*e.left,0,360)})},"aria-label":"Hue","aria-valuenow":dist_b(t),"aria-valuemax":"360","aria-valuemin":"0"},external_React_.createElement(dist_p,{className:"react-colorful__hue-pointer",left:t/360,color:q({h:t,s:100,v:100,a:1})})))}),T=external_React_.memo(function(r){var t=r.hsva,n=r.onChange,o={backgroundColor:q({h:t.h,s:100,v:100,a:1})};return external_React_.createElement("div",{className:"react-colorful__saturation",style:o},external_React_.createElement(dist_m,{onMove:function(e){n({s:100*e.left,v:100-100*e.top})},onKey:function(e){n({s:dist_s(t.s+100*e.left,0,100),v:dist_s(t.v-100*e.top,0,100)})},"aria-label":"Color","aria-valuetext":"Saturation "+dist_b(t.s)+"%, Brightness "+dist_b(t.v)+"%"},external_React_.createElement(dist_p,{className:"react-colorful__saturation-pointer",top:1-t.v/100,left:t.s/100,color:q(t)})))}),F=function(e,r){if(e===r)return!0;for(var t in e)if(e[t]!==r[t])return!1;return!0},P=function(e,r){return e.replace(/\s/g,"")===r.replace(/\s/g,"")},X=function(e,r){return e.toLowerCase()===r.toLowerCase()||F(C(e),C(r))};function Y(e,t,l){var u=dist_i(l),c=(0,external_React_.useState)(function(){return e.toHsva(t)}),s=c[0],f=c[1],v=(0,external_React_.useRef)({color:t,hsva:s});(0,external_React_.useEffect)(function(){if(!e.equal(t,v.current.color)){var r=e.toHsva(t);v.current={hsva:r,color:t},f(r)}},[t,e]),(0,external_React_.useEffect)(function(){var r;F(s,v.current.hsva)||e.equal(r=e.fromHsva(s),v.current.color)||(v.current={hsva:s,color:r},u(r))},[s,e,u]);var d=(0,external_React_.useCallback)(function(e){f(function(r){return Object.assign({},r,e)})},[]);return[s,d]}var R,dist_V="undefined"!=typeof window?external_React_.useLayoutEffect:external_React_.useEffect,dist_$=function(){return R||( true?__webpack_require__.nc:0)},G=function(e){R=e},J=new Map,Q=function(e){dist_V(function(){var r=e.current?e.current.ownerDocument:document;if(void 0!==r&&!J.has(r)){var t=r.createElement("style");t.innerHTML='.react-colorful{position:relative;display:flex;flex-direction:column;width:200px;height:200px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}.react-colorful__saturation{position:relative;flex-grow:1;border-color:transparent;border-bottom:12px solid #000;border-radius:8px 8px 0 0;background-image:linear-gradient(0deg,#000,transparent),linear-gradient(90deg,#fff,hsla(0,0%,100%,0))}.react-colorful__alpha-gradient,.react-colorful__pointer-fill{content:"";position:absolute;left:0;top:0;right:0;bottom:0;pointer-events:none;border-radius:inherit}.react-colorful__alpha-gradient,.react-colorful__saturation{box-shadow:inset 0 0 0 1px rgba(0,0,0,.05)}.react-colorful__alpha,.react-colorful__hue{position:relative;height:24px}.react-colorful__hue{background:linear-gradient(90deg,red 0,#ff0 17%,#0f0 33%,#0ff 50%,#00f 67%,#f0f 83%,red)}.react-colorful__last-control{border-radius:0 0 8px 8px}.react-colorful__interactive{position:absolute;left:0;top:0;right:0;bottom:0;border-radius:inherit;outline:none;touch-action:none}.react-colorful__pointer{position:absolute;z-index:1;box-sizing:border-box;width:28px;height:28px;transform:translate(-50%,-50%);background-color:#fff;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,.2)}.react-colorful__interactive:focus .react-colorful__pointer{transform:translate(-50%,-50%) scale(1.1)}.react-colorful__alpha,.react-colorful__alpha-pointer{background-color:#fff;background-image:url(\'data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill-opacity=".05"><path d="M8 0h8v8H8zM0 8h8v8H0z"/></svg>\')}.react-colorful__saturation-pointer{z-index:3}.react-colorful__hue-pointer{z-index:2}',J.set(r,t);var n=dist_$();n&&t.setAttribute("nonce",n),r.head.appendChild(t)}},[])},U=function(t){var n=t.className,o=t.colorModel,a=t.color,l=void 0===a?o.defaultColor:a,i=t.onChange,s=dist_c(t,["className","colorModel","color","onChange"]),f=(0,external_React_.useRef)(null);Q(f);var v=Y(o,l,i),d=v[0],h=v[1],m=dist_g(["react-colorful",n]);return external_React_.createElement("div",dist_u({},s,{ref:f,className:m}),external_React_.createElement(T,{hsva:d,onChange:h}),external_React_.createElement(dist_S,{hue:d.h,onChange:h,className:"react-colorful__last-control"}))},W={defaultColor:"000",toHsva:dist_x,fromHsva:function(e){return dist_w({h:e.h,s:e.s,v:e.v,a:1})},equal:X},Z=function(r){return e.createElement(U,dist_u({},r,{colorModel:W}))},ee=function(r){var t=r.className,n=r.hsva,o=r.onChange,a={backgroundImage:"linear-gradient(90deg, "+dist_k(Object.assign({},n,{a:0}))+", "+dist_k(Object.assign({},n,{a:1}))+")"},l=dist_g(["react-colorful__alpha",t]),u=dist_b(100*n.a);return external_React_.createElement("div",{className:l},external_React_.createElement("div",{className:"react-colorful__alpha-gradient",style:a}),external_React_.createElement(dist_m,{onMove:function(e){o({a:e.left})},onKey:function(e){o({a:dist_s(n.a+e.left)})},"aria-label":"Alpha","aria-valuetext":u+"%","aria-valuenow":u,"aria-valuemin":"0","aria-valuemax":"100"},external_React_.createElement(dist_p,{className:"react-colorful__alpha-pointer",left:n.a,color:dist_k(n)})))},re=function(t){var n=t.className,o=t.colorModel,a=t.color,l=void 0===a?o.defaultColor:a,i=t.onChange,s=dist_c(t,["className","colorModel","color","onChange"]),f=(0,external_React_.useRef)(null);Q(f);var v=Y(o,l,i),d=v[0],h=v[1],m=dist_g(["react-colorful",n]);return external_React_.createElement("div",dist_u({},s,{ref:f,className:m}),external_React_.createElement(T,{hsva:d,onChange:h}),external_React_.createElement(dist_S,{hue:d.h,onChange:h}),external_React_.createElement(ee,{hsva:d,onChange:h,className:"react-colorful__last-control"}))},te={defaultColor:"0001",toHsva:dist_x,fromHsva:dist_w,equal:X},ne=function(r){return e.createElement(re,dist_u({},r,{colorModel:te}))},oe={defaultColor:{h:0,s:0,l:0,a:1},toHsva:dist_N,fromHsva:dist_y,equal:F},ae=function(r){return e.createElement(re,dist_u({},r,{colorModel:oe}))},le={defaultColor:"hsla(0, 0%, 0%, 1)",toHsva:dist_H,fromHsva:dist_k,equal:P},ue=function(r){return e.createElement(re,dist_u({},r,{colorModel:le}))},ce={defaultColor:{h:0,s:0,l:0},toHsva:function(e){return dist_N({h:e.h,s:e.s,l:e.l,a:1})},fromHsva:function(e){return{h:(r=dist_y(e)).h,s:r.s,l:r.l};var r},equal:F},ie=function(r){return e.createElement(U,dist_u({},r,{colorModel:ce}))},se={defaultColor:"hsl(0, 0%, 0%)",toHsva:dist_M,fromHsva:q,equal:P},fe=function(r){return e.createElement(U,dist_u({},r,{colorModel:se}))},ve={defaultColor:{h:0,s:0,v:0,a:1},toHsva:function(e){return e},fromHsva:A,equal:F},de=function(r){return e.createElement(re,dist_u({},r,{colorModel:ve}))},he={defaultColor:"hsva(0, 0%, 0%, 1)",toHsva:O,fromHsva:function(e){var r=A(e);return"hsva("+r.h+", "+r.s+"%, "+r.v+"%, "+r.a+")"},equal:P},me=function(r){return e.createElement(re,dist_u({},r,{colorModel:he}))},ge={defaultColor:{h:0,s:0,v:0},toHsva:function(e){return{h:e.h,s:e.s,v:e.v,a:1}},fromHsva:function(e){var r=A(e);return{h:r.h,s:r.s,v:r.v}},equal:F},pe=function(r){return e.createElement(U,dist_u({},r,{colorModel:ge}))},be={defaultColor:"hsv(0, 0%, 0%)",toHsva:dist_j,fromHsva:function(e){var r=A(e);return"hsv("+r.h+", "+r.s+"%, "+r.v+"%)"},equal:P},_e=function(r){return e.createElement(U,dist_u({},r,{colorModel:be}))},xe={defaultColor:{r:0,g:0,b:0,a:1},toHsva:L,fromHsva:dist_I,equal:F},Ce=function(r){return e.createElement(re,dist_u({},r,{colorModel:xe}))},Ee={defaultColor:"rgba(0, 0, 0, 1)",toHsva:z,fromHsva:function(e){var r=dist_I(e);return"rgba("+r.r+", "+r.g+", "+r.b+", "+r.a+")"},equal:P},He=function(r){return external_React_.createElement(re,dist_u({},r,{colorModel:Ee}))},Me={defaultColor:{r:0,g:0,b:0},toHsva:function(e){return L({r:e.r,g:e.g,b:e.b,a:1})},fromHsva:function(e){return{r:(r=dist_I(e)).r,g:r.g,b:r.b};var r},equal:F},Ne=function(r){return e.createElement(U,dist_u({},r,{colorModel:Me}))},we={defaultColor:"rgb(0, 0, 0)",toHsva:B,fromHsva:function(e){var r=dist_I(e);return"rgb("+r.r+", "+r.g+", "+r.b+")"},equal:P},ye=function(r){return external_React_.createElement(U,dist_u({},r,{colorModel:we}))},qe=/^#?([0-9A-F]{3,8})$/i,ke=function(r){var t=r.color,l=void 0===t?"":t,s=r.onChange,f=r.onBlur,v=r.escape,d=r.validate,h=r.format,m=r.process,g=dist_c(r,["color","onChange","onBlur","escape","validate","format","process"]),p=o(function(){return v(l)}),b=p[0],_=p[1],x=dist_i(s),C=dist_i(f),E=a(function(e){var r=v(e.target.value);_(r),d(r)&&x(m?m(r):r)},[v,m,d,x]),H=a(function(e){d(e.target.value)||_(v(l)),C(e)},[l,v,d,C]);return n(function(){_(v(l))},[l,v]),e.createElement("input",dist_u({},g,{value:h?h(b):b,spellCheck:"false",onChange:E,onBlur:H}))},Ie=function(e){return"#"+e},Oe=function(r){var t=r.prefixed,n=r.alpha,o=dist_c(r,["prefixed","alpha"]),l=a(function(e){return e.replace(/([^0-9A-F]+)/gi,"").substring(0,n?8:6)},[n]),i=a(function(e){return function(e,r){var t=qe.exec(e),n=t?t[1].length:0;return 3===n||6===n||!!r&&4===n||!!r&&8===n}(e,n)},[n]);return e.createElement(ke,dist_u({},o,{escape:l,format:t?Ie:void 0,process:Ie,validate:i}))};
 //# sourceMappingURL=index.module.js.map
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/picker.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/picker.js
 /**
  * External dependencies
  */
@@ -38164,7 +38164,7 @@ function dist_u(){return(dist_u=Object.assign||function(e){for(var r=1;r<argumen
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -38203,7 +38203,7 @@ const Picker = ({
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/component.js
 /**
  * External dependencies
  */
@@ -38212,7 +38212,7 @@ const Picker = ({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38311,7 +38311,7 @@ const UnconnectedColorPicker = (props, forwardedRef) => {
 const ColorPicker = contextConnect(UnconnectedColorPicker, 'ColorPicker');
 /* harmony default export */ const color_picker_component = (ColorPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/use-deprecated-props.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/use-deprecated-props.js
 /**
  * External dependencies
  */
@@ -38319,7 +38319,7 @@ const ColorPicker = contextConnect(UnconnectedColorPicker, 'ColorPicker');
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38379,7 +38379,7 @@ function use_deprecated_props_useDeprecatedProps(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-picker/legacy-adapter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-picker/legacy-adapter.js
 /**
  * Internal dependencies
  */
@@ -38392,9 +38392,9 @@ const LegacyAdapter = props => {
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/circular-option-picker-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/circular-option-picker-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38404,9 +38404,9 @@ const LegacyAdapter = props => {
 
 const CircularOptionPickerContext = (0,external_wp_element_namespaceObject.createContext)({});
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/check.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38419,13 +38419,13 @@ const check = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_check = (check);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/circular-option-picker-option.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/circular-option-picker-option.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38512,7 +38512,7 @@ function Option({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/circular-option-picker-option-group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/circular-option-picker-option-group.js
 /**
  * External dependencies
  */
@@ -38536,7 +38536,7 @@ function OptionGroup({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/circular-option-picker-actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/circular-option-picker-actions.js
 /**
  * External dependencies
  */
@@ -38583,14 +38583,14 @@ function ButtonAction({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/circular-option-picker.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/circular-option-picker.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -38609,7 +38609,7 @@ function ButtonAction({
  *
  * ```jsx
  * import { CircularOptionPicker } from '../circular-option-picker';
- * import { useState } from '@wordpress/element';
+ * import { useState } from '@cohesion/element';
  *
  * const Example = () => {
  * 	const [ currentColor, setCurrentColor ] = useState();
@@ -38736,7 +38736,7 @@ CircularOptionPicker.ButtonAction = ButtonAction;
 CircularOptionPicker.DropdownLinkAction = DropdownLinkAction;
 /* harmony default export */ const circular_option_picker = (CircularOptionPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/circular-option-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/circular-option-picker/index.js
 /**
  * Internal dependencies
  */
@@ -38746,7 +38746,7 @@ CircularOptionPicker.DropdownLinkAction = DropdownLinkAction;
 
 /* harmony default export */ const build_module_circular_option_picker = (circular_option_picker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/v-stack/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/v-stack/hook.js
 /**
  * Internal dependencies
  */
@@ -38768,7 +38768,7 @@ function useVStack(props) {
   return hStackProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/v-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/v-stack/component.js
 /**
  * External dependencies
  */
@@ -38799,7 +38799,7 @@ function UnconnectedVStack(props, forwardedRef) {
  * import {
  * 	__experimentalText as Text,
  * 	__experimentalVStack as VStack,
- * } from `@wordpress/components`;
+ * } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -38815,7 +38815,7 @@ function UnconnectedVStack(props, forwardedRef) {
 const VStack = contextConnect(UnconnectedVStack, 'VStack');
 /* harmony default export */ const v_stack_component = (VStack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/truncate/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/truncate/component.js
 /**
  * External dependencies
  */
@@ -38844,7 +38844,7 @@ function UnconnectedTruncate(props, forwardedRef) {
  * available for custom implementations.
  *
  * ```jsx
- * import { __experimentalTruncate as Truncate } from `@wordpress/components`;
+ * import { __experimentalTruncate as Truncate } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -38860,7 +38860,7 @@ function UnconnectedTruncate(props, forwardedRef) {
 const component_Truncate = contextConnect(UnconnectedTruncate, 'Truncate');
 /* harmony default export */ const truncate_component = (component_Truncate);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/heading/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/heading/hook.js
 /**
  * Internal dependencies
  */
@@ -38899,7 +38899,7 @@ function useHeading(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/heading/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/heading/component.js
 /**
  * External dependencies
  */
@@ -38924,7 +38924,7 @@ function UnconnectedHeading(props, forwardedRef) {
  * `Heading` renders headings and titles using the library's typography system.
  *
  * ```jsx
- * import { __experimentalHeading as Heading } from "@wordpress/components";
+ * import { __experimentalHeading as Heading } from "@cohesion/components";
  *
  * function Example() {
  *   return <Heading>Code is Poetry</Heading>;
@@ -38934,7 +38934,7 @@ function UnconnectedHeading(props, forwardedRef) {
 const Heading = contextConnect(UnconnectedHeading, 'Heading');
 /* harmony default export */ const heading_component = (Heading);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-palette/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-palette/styles.js
 
 function color_palette_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -38952,7 +38952,7 @@ const ColorHeading = /*#__PURE__*/emotion_styled_base_browser_esm(heading_compon
   styles: "text-transform:uppercase;line-height:24px;font-weight:500;&&&{font-size:11px;margin-bottom:0;}"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown/styles.js
 
 /**
  * External dependencies
@@ -38978,7 +38978,7 @@ const DropdownContentWrapperDiv = /*#__PURE__*/emotion_styled_base_browser_esm("
   target: "eovvns30"
 } : 0)("margin-left:", space(-2), ";margin-right:", space(-2), ";&:first-of-type{margin-top:", space(-2), ";}&:last-of-type{margin-bottom:", space(-2), ";}", padding, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown/dropdown-content-wrapper.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown/dropdown-content-wrapper.js
 /**
  * External dependencies
  */
@@ -39010,7 +39010,7 @@ function UnconnectedDropdownContentWrapper(props, forwardedRef) {
  * import {
  *   Dropdown,
  *   __experimentalDropdownContentWrapper as DropdownContentWrapper,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * <Dropdown
  *   renderContent={ () => (
@@ -39024,7 +39024,7 @@ function UnconnectedDropdownContentWrapper(props, forwardedRef) {
 const DropdownContentWrapper = contextConnect(UnconnectedDropdownContentWrapper, 'DropdownContentWrapper');
 /* harmony default export */ const dropdown_content_wrapper = (DropdownContentWrapper);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-palette/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-palette/utils.js
 /**
  * External dependencies
  */
@@ -39033,7 +39033,7 @@ const DropdownContentWrapper = contextConnect(UnconnectedDropdownContentWrapper,
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39101,7 +39101,7 @@ const normalizeColorValue = (value, element) => {
   return computedBackgroundColor ? w(computedBackgroundColor).toHex() : value;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/color-palette/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/color-palette/index.js
 /**
  * External dependencies
  */
@@ -39112,7 +39112,7 @@ const normalizeColorValue = (value, element) => {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39373,8 +39373,8 @@ function UnforwardedColorPalette(props, forwardedRef) {
  * Allows the user to pick a color from a list of pre-defined color entries.
  *
  * ```jsx
- * import { ColorPalette } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ColorPalette } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyColorPalette = () => {
  *   const [ color, setColor ] = useState ( '#f00' )
@@ -39396,7 +39396,7 @@ function UnforwardedColorPalette(props, forwardedRef) {
 const ColorPalette = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedColorPalette);
 /* harmony default export */ const color_palette = (ColorPalette);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/styles/unit-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/unit-control/styles/unit-control-styles.js
 
 /**
  * External dependencies
@@ -39414,7 +39414,7 @@ const ColorPalette = (0,external_wp_element_namespaceObject.forwardRef)(Unforwar
 // `size` HTML attribute of the `select` element.
 
 // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/cohesion/gutenberg/issues/18483
 
 const ValueInput = /*#__PURE__*/emotion_styled_base_browser_esm(number_control,  true ? {
   target: "e1bagdl32"
@@ -39447,7 +39447,7 @@ const UnitSelect = /*#__PURE__*/emotion_styled_base_browser_esm("select",  true 
   target: "e1bagdl30"
 } : 0)("&&&{appearance:none;background:transparent;border-radius:2px;border:none;display:block;outline:none;margin:0;min-height:auto;font-family:inherit;", baseUnitLabelStyles, ";", unitSelectSizes, ";&:not( :disabled ){cursor:pointer;}}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/styles.js
 function border_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -39499,7 +39499,7 @@ const colorIndicatorWrapper = (border, size) => {
 };
 
 // Must equal $color-palette-circle-size from:
-// @wordpress/components/src/circular-option-picker/style.scss
+// @cohesion/components/src/circular-option-picker/style.scss
 const swatchSize = 28;
 const swatchGap = 12;
 const borderControlPopoverControls = /*#__PURE__*/emotion_react_browser_esm_css("width:", swatchSize * 6 + swatchGap * 5, "px;>div:first-of-type>", StyledLabel, "{margin-bottom:0;", styles_labelStyles, ";}&& ", StyledLabel, "+button:not( .has-text ){min-width:24px;padding:0;}" + ( true ? "" : 0),  true ? "" : 0);
@@ -39510,9 +39510,9 @@ const borderSlider = () => /*#__PURE__*/emotion_react_browser_esm_css("flex:1 1 
   marginRight: space(3)
 })(), ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/unit-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -39855,7 +39855,7 @@ function filterUnitsWithSettings(allowedUnitValues = [], availableUnits) {
 /**
  * Custom hook to retrieve and consolidate units setting from add_theme_support().
  * TODO: ideally this hook shouldn't be needed
- * https://github.com/WordPress/gutenberg/pull/31822#discussion_r633280823
+ * https://github.com/cohesion/gutenberg/pull/31822#discussion_r633280823
  *
  * @param args                An object containing units, settingPath & defaultUnits.
  * @param args.units          Collection of all potentially available units.
@@ -39907,9 +39907,9 @@ function getUnitsWithCurrentUnit(rawValue, legacyUnit, units = ALL_CSS_UNITS) {
   return unitsToReturn;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/border-control-dropdown/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40000,13 +40000,13 @@ function useBorderControlDropdown(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control-dropdown/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/border-control-dropdown/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40191,13 +40191,13 @@ const BorderControlDropdown = (props, forwardedRef) => {
 const ConnectedBorderControlDropdown = contextConnect(BorderControlDropdown, 'BorderControlDropdown');
 /* harmony default export */ const border_control_dropdown_component = (ConnectedBorderControlDropdown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/unit-select-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/unit-control/unit-select-control.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40251,7 +40251,7 @@ function UnitSelectControl({
 }
 /* harmony default export */ const unit_select_control = ((0,external_wp_element_namespaceObject.forwardRef)(UnitSelectControl));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/unit-control/index.js
 /**
  * External dependencies
  */
@@ -40259,7 +40259,7 @@ function UnitSelectControl({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40335,7 +40335,7 @@ function UnforwardedUnitControl(unitControlProps, forwardedRef) {
   }, [parsedUnit, setUnit]);
   const classes = dist_clsx('components-unit-control',
   // This class is added for legacy purposes to maintain it on the outer
-  // wrapper. See: https://github.com/WordPress/gutenberg/pull/45139
+  // wrapper. See: https://github.com/cohesion/gutenberg/pull/45139
   'components-unit-control-wrapper', className);
   const handleOnQuantityChange = (nextQuantityValue, changeProps) => {
     if (nextQuantityValue === '' || typeof nextQuantityValue === 'undefined' || nextQuantityValue === null) {
@@ -40424,8 +40424,8 @@ function UnforwardedUnitControl(unitControlProps, forwardedRef) {
  *
  *
  * ```jsx
- * import { __experimentalUnitControl as UnitControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalUnitControl as UnitControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const Example = () => {
  *   const [ value, setValue ] = useState( '10px' );
@@ -40438,9 +40438,9 @@ const UnitControl = (0,external_wp_element_namespaceObject.forwardRef)(Unforward
 
 /* harmony default export */ const unit_control = (UnitControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/border-control/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40570,9 +40570,9 @@ function useBorderControl(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-control/border-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-control/border-control/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40698,8 +40698,8 @@ const UnconnectedBorderControl = (props, forwardedRef) => {
  * a "shape" abstraction.
  *
  * ```jsx
- * import { __experimentalBorderControl as BorderControl } from '@wordpress/components';
- * import { __ } from '@wordpress/i18n';
+ * import { __experimentalBorderControl as BorderControl } from '@cohesion/components';
+ * import { __ } from '@cohesion/i18n';
  *
  * const colors = [
  * 	{ name: 'Blue 20', color: '#72aee6' },
@@ -40724,7 +40724,7 @@ const UnconnectedBorderControl = (props, forwardedRef) => {
 const BorderControl = contextConnect(UnconnectedBorderControl, 'BorderControl');
 /* harmony default export */ const border_control_component = (BorderControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/grid/utils.js
 /**
  * External dependencies
  */
@@ -40779,14 +40779,14 @@ function utils_getAlignmentProps(alignment) {
   return alignmentProps;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/grid/hook.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40844,7 +40844,7 @@ function useGrid(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/grid/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/grid/component.js
 /**
  * External dependencies
  */
@@ -40872,7 +40872,7 @@ function UnconnectedGrid(props, forwardedRef) {
  * import {
  * 	__experimentalGrid as Grid,
  * 	__experimentalText as Text
- * } from `@wordpress/components`;
+ * } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -40888,9 +40888,9 @@ function UnconnectedGrid(props, forwardedRef) {
 const Grid = contextConnect(UnconnectedGrid, 'Grid');
 /* harmony default export */ const grid_component = (Grid);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-split-controls/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -40935,9 +40935,9 @@ function useBorderBoxControlSplitControls(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control-split-controls/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control-split-controls/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41035,7 +41035,7 @@ const BorderBoxControlSplitControls = (props, forwardedRef) => {
 const ConnectedBorderBoxControlSplitControls = contextConnect(BorderBoxControlSplitControls, 'BorderBoxControlSplitControls');
 /* harmony default export */ const border_box_control_split_controls_component = (ConnectedBorderBoxControlSplitControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/unit-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/unit-values.js
 const UNITED_VALUE_REGEX = /^([\d.\-+]*)\s*(fr|cm|mm|Q|in|pc|pt|px|em|ex|ch|rem|lh|vw|vh|vmin|vmax|%|cap|ic|rlh|vi|vb|deg|grad|rad|turn|s|ms|Hz|kHz|dpi|dpcm|dppx|svw|lvw|dvw|svh|lvh|dvh|svi|lvi|dvi|svb|lvb|dvb|svmin|lvmin|dvmin|svmax|lvmax|dvmax)?$/;
 
 /**
@@ -41069,7 +41069,7 @@ function createCSSUnitValue(value, unit) {
   return `${value}${unit}`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/utils.js
 /**
  * External dependencies
  */
@@ -41218,9 +41218,9 @@ function mode(values) {
   return currentMode;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41335,9 +41335,9 @@ function useBorderBoxControl(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/border-box-control/border-box-control/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/border-box-control/border-box-control/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41471,8 +41471,8 @@ const UnconnectedBorderBoxControl = (props, forwardedRef) => {
  * view's width input would show "Mixed" placeholder text.
  *
  * ```jsx
- * import { __experimentalBorderBoxControl as BorderBoxControl } from '@wordpress/components';
- * import { __ } from '@wordpress/i18n';
+ * import { __experimentalBorderBoxControl as BorderBoxControl } from '@cohesion/components';
+ * import { __ } from '@cohesion/i18n';
  *
  * const colors = [
  * 	{ name: 'Blue 20', color: '#72aee6' },
@@ -41507,7 +41507,7 @@ const UnconnectedBorderBoxControl = (props, forwardedRef) => {
 const BorderBoxControl = contextConnect(UnconnectedBorderBoxControl, 'BorderBoxControl');
 /* harmony default export */ const border_box_control_component = (BorderBoxControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/styles/box-control-icon-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/styles/box-control-icon-styles.js
 
 function box_control_icon_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -41574,7 +41574,7 @@ const LeftStroke = /*#__PURE__*/emotion_styled_base_browser_esm(VerticalStroke, 
   styles: "left:0"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/icon.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/icon.js
 /**
  * Internal dependencies
  */
@@ -41622,7 +41622,7 @@ function BoxControlIcon({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/styles/box-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/styles/box-control-styles.js
 
 function box_control_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -41672,9 +41672,9 @@ const FlexedRangeControl = /*#__PURE__*/emotion_styled_base_browser_esm(range_co
   target: "e1jovhle0"
 } : 0)("width:100%;margin-inline-end:", space(2), ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -41982,9 +41982,9 @@ function applyValueToSides(currentValues, newValue, sides) {
   return newValues;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/all-input-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/all-input-control.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -42067,9 +42067,9 @@ function AllInputControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/input-controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/input-controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -42192,9 +42192,9 @@ function BoxInputControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/axial-input-controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/axial-input-controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -42309,9 +42309,9 @@ function AxialInputControls({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/linked-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/linked-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42340,9 +42340,9 @@ function LinkedButton({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/box-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/box-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42377,8 +42377,8 @@ function box_control_useUniqueId(idProp) {
  * This can be used as an input control for values like `padding` or `margin`.
  *
  * ```jsx
- * import { __experimentalBoxControl as BoxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalBoxControl as BoxControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const Example = () => {
  * 	const [ values, setValues ] = useState( {
@@ -42505,13 +42505,13 @@ function BoxControl({
 
 /* harmony default export */ const box_control = (BoxControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/button-group/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42538,7 +42538,7 @@ function UnforwardedButtonGroup(props, ref) {
  * related buttons, a group should share a common container.
  *
  * ```jsx
- * import { Button, ButtonGroup } from '@wordpress/components';
+ * import { Button, ButtonGroup } from '@cohesion/components';
  *
  * const MyButtonGroup = () => (
  *   <ButtonGroup>
@@ -42551,7 +42551,7 @@ function UnforwardedButtonGroup(props, ref) {
 const ButtonGroup = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedButtonGroup);
 /* harmony default export */ const button_group = (ButtonGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/elevation/styles.js
 function elevation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -42562,7 +42562,7 @@ const Elevation =  true ? {
   styles: "background:transparent;display:block;margin:0!important;pointer-events:none;position:absolute;will-change:box-shadow"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/elevation/hook.js
 /**
  * External dependencies
  */
@@ -42570,7 +42570,7 @@ const Elevation =  true ? {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42638,7 +42638,7 @@ function useElevation(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/elevation/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/elevation/component.js
 /**
  * External dependencies
  */
@@ -42670,7 +42670,7 @@ function UnconnectedElevation(props, forwardedRef) {
  *	__experimentalElevation as Elevation,
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -42685,7 +42685,7 @@ function UnconnectedElevation(props, forwardedRef) {
 const component_Elevation = contextConnect(UnconnectedElevation, 'Elevation');
 /* harmony default export */ const elevation_component = (component_Elevation);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/styles.js
 function card_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -42750,7 +42750,7 @@ const cardPaddings = {
 };
 const shady = /*#__PURE__*/emotion_react_browser_esm_css("background-color:", COLORS.ui.backgroundDisabled, ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/surface/styles.js
 /**
  * External dependencies
  */
@@ -42815,9 +42815,9 @@ const getVariant = (variant, surfaceBackgroundSize, surfaceBackgroundSizeDotted)
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/surface/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42856,9 +42856,9 @@ function useSurface(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -42922,13 +42922,13 @@ function useCard(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43004,7 +43004,7 @@ function UnconnectedCard(props, forwardedRef) {
  *   CardFooter,
  *   __experimentalText as Text,
  *   __experimentalHeading as Heading,
- * } from `@wordpress/components`;
+ * } from `@cohesion/components`;
  *
  * function Example() {
  *   return (
@@ -43026,7 +43026,7 @@ function UnconnectedCard(props, forwardedRef) {
 const component_Card = contextConnect(UnconnectedCard, 'Card');
 /* harmony default export */ const card_component = (component_Card);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/scrollable/styles.js
 function scrollable_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -43063,9 +43063,9 @@ const scrollAuto =  true ? {
   styles: "overflow-y:auto"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/scrollable/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43091,7 +43091,7 @@ function useScrollable(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/scrollable/component.js
 /**
  * External dependencies
  */
@@ -43116,7 +43116,7 @@ function UnconnectedScrollable(props, forwardedRef) {
  * `Scrollable` is a layout component that content in a scrollable container.
  *
  * ```jsx
- * import { __experimentalScrollable as Scrollable } from `@wordpress/components`;
+ * import { __experimentalScrollable as Scrollable } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -43130,9 +43130,9 @@ function UnconnectedScrollable(props, forwardedRef) {
 const component_Scrollable = contextConnect(UnconnectedScrollable, 'Scrollable');
 /* harmony default export */ const scrollable_component = (component_Scrollable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-body/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-body/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43162,7 +43162,7 @@ function useCardBody(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-body/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-body/component.js
 /**
  * External dependencies
  */
@@ -43198,7 +43198,7 @@ function UnconnectedCardBody(props, forwardedRef) {
  * Multiple `CardBody` components can be used within `Card` if needed.
  *
  * ```jsx
- * import { Card, CardBody } from `@wordpress/components`;
+ * import { Card, CardBody } from `@cohesion/components`;
  *
  * <Card>
  * 	<CardBody>
@@ -43234,7 +43234,7 @@ if (false) {}
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/divider/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/divider/styles.js
 
 function divider_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -43297,7 +43297,7 @@ const DividerView = /*#__PURE__*/emotion_styled_base_browser_esm("hr",  true ? {
   target: "e19on6iw0"
 } : 0)("border:0;margin:0;", renderDisplay, " ", renderBorder, " ", renderSize, " ", renderMargin, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/divider/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/divider/component.js
 /**
  * External dependencies
  */
@@ -43328,7 +43328,7 @@ function UnconnectedDivider(props, forwardedRef) {
  * 		__experimentalDivider as Divider,
  * 		__experimentalText as Text,
  * 		__experimentalVStack as VStack,
- * } from `@wordpress/components`;
+ * } from `@cohesion/components`;
  *
  * function Example() {
  * 	return (
@@ -43344,9 +43344,9 @@ function UnconnectedDivider(props, forwardedRef) {
 const component_Divider = contextConnect(UnconnectedDivider, 'Divider');
 /* harmony default export */ const divider_component = (component_Divider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-divider/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-divider/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43372,7 +43372,7 @@ function useCardDivider(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-divider/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-divider/component.js
 /**
  * External dependencies
  */
@@ -43398,7 +43398,7 @@ function UnconnectedCardDivider(props, forwardedRef) {
  * It is typically used to divide multiple `CardBody` components from each other.
  *
  * ```jsx
- * import { Card, CardBody, CardDivider } from `@wordpress/components`;
+ * import { Card, CardBody, CardDivider } from `@cohesion/components`;
  *
  * <Card>
  *  <CardBody>...</CardBody>
@@ -43410,9 +43410,9 @@ function UnconnectedCardDivider(props, forwardedRef) {
 const CardDivider = contextConnect(UnconnectedCardDivider, 'CardDivider');
 /* harmony default export */ const card_divider_component = (CardDivider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-footer/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-footer/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43443,7 +43443,7 @@ function useCardFooter(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-footer/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-footer/component.js
 /**
  * External dependencies
  */
@@ -43468,7 +43468,7 @@ function UnconnectedCardFooter(props, forwardedRef) {
  * `CardFooter` renders an optional footer within a `Card`.
  *
  * ```jsx
- * import { Card, CardBody, CardFooter } from `@wordpress/components`;
+ * import { Card, CardBody, CardFooter } from `@cohesion/components`;
  *
  * <Card>
  * 	<CardBody>...</CardBody>
@@ -43479,9 +43479,9 @@ function UnconnectedCardFooter(props, forwardedRef) {
 const CardFooter = contextConnect(UnconnectedCardFooter, 'CardFooter');
 /* harmony default export */ const card_footer_component = (CardFooter);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-header/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-header/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43510,7 +43510,7 @@ function useCardHeader(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-header/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-header/component.js
 /**
  * External dependencies
  */
@@ -43535,7 +43535,7 @@ function UnconnectedCardHeader(props, forwardedRef) {
  * `CardHeader` renders an optional header within a `Card`.
  *
  * ```jsx
- * import { Card, CardBody, CardHeader } from `@wordpress/components`;
+ * import { Card, CardBody, CardHeader } from `@cohesion/components`;
  *
  * <Card>
  * 	<CardHeader>...</CardHeader>
@@ -43546,9 +43546,9 @@ function UnconnectedCardHeader(props, forwardedRef) {
 const CardHeader = contextConnect(UnconnectedCardHeader, 'CardHeader');
 /* harmony default export */ const card_header_component = (CardHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-media/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-media/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43574,7 +43574,7 @@ function useCardMedia(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-media/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/card/card-media/component.js
 /**
  * External dependencies
  */
@@ -43601,7 +43601,7 @@ function UnconnectedCardMedia(props, forwardedRef) {
  *
  * @example
  * ```jsx
- * import { Card, CardBody, CardMedia } from '@wordpress/components';
+ * import { Card, CardBody, CardMedia } from '@cohesion/components';
  *
  * const Example = () => (
  *  <Card>
@@ -43616,13 +43616,13 @@ function UnconnectedCardMedia(props, forwardedRef) {
 const CardMedia = contextConnect(UnconnectedCardMedia, 'CardMedia');
 /* harmony default export */ const card_media_component = (CardMedia);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/checkbox-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/checkbox-control/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43640,8 +43640,8 @@ const CardMedia = contextConnect(UnconnectedCardMedia, 'CardMedia');
  * Checkboxes allow the user to select one or more items from a set.
  *
  * ```jsx
- * import { CheckboxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { CheckboxControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyCheckboxControl = () => {
  *   const [ isChecked, setChecked ] = useState( true );
@@ -43736,14 +43736,14 @@ function CheckboxControl(props) {
 }
 /* harmony default export */ const checkbox_control = (CheckboxControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/clipboard-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/clipboard-button/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43802,9 +43802,9 @@ function ClipboardButton({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/more-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/more-vertical.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43817,7 +43817,7 @@ const moreVertical = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const more_vertical = (moreVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/styles.js
 function item_group_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -43862,7 +43862,7 @@ const itemSizes = {
   large: /*#__PURE__*/emotion_react_browser_esm_css("padding:", paddingYLarge, " ", config_values.controlPaddingXLarge, ";" + ( true ? "" : 0),  true ? "" : 0)
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item-group/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/item-group/hook.js
 /**
  * Internal dependencies
  */
@@ -43894,9 +43894,9 @@ function useItemGroup(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -43909,7 +43909,7 @@ const ItemGroupContext = (0,external_wp_element_namespaceObject.createContext)({
 });
 const useItemGroupContext = () => (0,external_wp_element_namespaceObject.useContext)(ItemGroupContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item-group/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/item-group/component.js
 /**
  * External dependencies
  */
@@ -43955,7 +43955,7 @@ function UnconnectedItemGroup(props, forwardedRef) {
  * import {
  *   __experimentalItemGroup as ItemGroup,
  *   __experimentalItem as Item,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -43971,7 +43971,7 @@ function UnconnectedItemGroup(props, forwardedRef) {
 const ItemGroup = contextConnect(UnconnectedItemGroup, 'ItemGroup');
 /* harmony default export */ const item_group_component = (ItemGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/gradient-bar/constants.js
 const GRADIENT_MARKERS_WIDTH = 16;
 const INSERT_POINT_WIDTH = 16;
 const MINIMUM_DISTANCE_BETWEEN_INSERTER_AND_POINT = 10;
@@ -43980,7 +43980,7 @@ const MINIMUM_SIGNIFICANT_MOVE = 5;
 const KEYBOARD_CONTROL_POINT_VARIATION = MINIMUM_DISTANCE_BETWEEN_INSERTER_AND_POINT;
 const MINIMUM_DISTANCE_BETWEEN_INSERTER_AND_MARKER = (INSERT_POINT_WIDTH + GRADIENT_MARKERS_WIDTH) / 2;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/gradient-bar/utils.js
 /**
  * Internal dependencies
  */
@@ -44137,7 +44137,7 @@ function getHorizontalRelativeGradientPosition(mouseXCoordinate, containerElemen
   return Math.round(clampPercent(absolutePositionValue * 100 / width));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/control-points.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/gradient-bar/control-points.js
 /**
  * External dependencies
  */
@@ -44145,7 +44145,7 @@ function getHorizontalRelativeGradientPosition(mouseXCoordinate, containerElemen
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44399,14 +44399,14 @@ function InsertPoint({
 ControlPoints.InsertPoint = InsertPoint;
 /* harmony default export */ const control_points = (ControlPoints);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/gradient-bar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/gradient-bar/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44569,9 +44569,9 @@ function CustomGradientBar({
 
 // EXTERNAL MODULE: ./node_modules/gradient-parser/build/node.js
 var build_node = __webpack_require__(8924);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/constants.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const DEFAULT_GRADIENT = 'linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%)';
@@ -44602,7 +44602,7 @@ const DIRECTIONAL_ORIENTATION_ANGLE_MAP = {
   'left top': 315
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/serializer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/serializer.js
 /**
  * External dependencies
  */
@@ -44660,7 +44660,7 @@ function serializeGradient({
   return `${type}(${[serializedOrientation, ...serializedColorStops].filter(Boolean).join(',')})`;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/utils.js
 /**
  * External dependencies
  */
@@ -44761,7 +44761,7 @@ function getStopCssColor(colorStop) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/styles/custom-gradient-picker-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/styles/custom-gradient-picker-styles.js
 
 function custom_gradient_picker_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -44785,13 +44785,13 @@ const AccessoryWrapper = /*#__PURE__*/emotion_styled_base_browser_esm(flex_block
   styles: "flex-grow:5"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-gradient-picker/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -44881,8 +44881,8 @@ const GradientTypePicker = ({
  * a slice of the gradient from the center to the outside.
  *
  * ```jsx
- * import { CustomGradientPicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { CustomGradientPicker } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyCustomGradientPicker = () => {
  *   const [ gradient, setGradient ] = useState();
@@ -44954,9 +44954,9 @@ function CustomGradientPicker({
 }
 /* harmony default export */ const custom_gradient_picker = (CustomGradientPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/gradient-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/gradient-picker/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45104,8 +45104,8 @@ function gradient_picker_Component(props) {
  * available.
  *
  * ```jsx
- *import { GradientPicker } from '@wordpress/components';
- *import { useState } from '@wordpress/element';
+ *import { GradientPicker } from '@cohesion/components';
+ *import { useState } from '@cohesion/element';
  *
  *const myGradientPicker = () => {
  *	const [ gradient, setGradient ] = useState( null );
@@ -45175,9 +45175,9 @@ function GradientPicker({
 }
 /* harmony default export */ const gradient_picker = (GradientPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/menu.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45192,13 +45192,13 @@ const menu = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 
 ;// CONCATENATED MODULE: external ["wp","dom"]
 const external_wp_dom_namespaceObject = window["wp"]["dom"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigable-container/container.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45362,13 +45362,13 @@ const forwardedNavigableContainer = (props, ref) => {
 forwardedNavigableContainer.displayName = 'NavigableContainer';
 /* harmony default export */ const container = ((0,external_wp_element_namespaceObject.forwardRef)(forwardedNavigableContainer));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigable-container/menu.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45426,7 +45426,7 @@ function UnforwardedNavigableMenu({
  *  import {
  *    NavigableMenu,
  *    Button,
- *  } from '@wordpress/components';
+ *  } from '@cohesion/components';
  *
  *  function onNavigate( index, target ) {
  *    console.log( `Navigates to ${ index }`, target );
@@ -45447,14 +45447,14 @@ function UnforwardedNavigableMenu({
 const NavigableMenu = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedNavigableMenu);
 /* harmony default export */ const navigable_container_menu = (NavigableMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown-menu/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45616,14 +45616,14 @@ function UnconnectedDropdownMenu(dropdownMenuProps) {
  * Render a Dropdown Menu with a set of controls:
  *
  * ```jsx
- * import { DropdownMenu } from '@wordpress/components';
+ * import { DropdownMenu } from '@cohesion/components';
  * import {
  * 	more,
  * 	arrowLeft,
  * 	arrowRight,
  * 	arrowUp,
  * 	arrowDown,
- * } from '@wordpress/icons';
+ * } from '@cohesion/icons';
  *
  * const MyDropdownMenu = () => (
  * 	<DropdownMenu
@@ -45659,8 +45659,8 @@ function UnconnectedDropdownMenu(dropdownMenuProps) {
  * use in a DropdownMenu: `MenuItem`, `MenuItemsChoice`, or `MenuGroup`.
  *
  * ```jsx
- * import { DropdownMenu, MenuGroup, MenuItem } from '@wordpress/components';
- * import { more, arrowUp, arrowDown, trash } from '@wordpress/icons';
+ * import { DropdownMenu, MenuGroup, MenuItem } from '@cohesion/components';
+ * import { more, arrowUp, arrowDown, trash } from '@cohesion/icons';
  *
  * const MyDropdownMenu = () => (
  * 	<DropdownMenu icon={ more } label="Select a direction">
@@ -45689,7 +45689,7 @@ function UnconnectedDropdownMenu(dropdownMenuProps) {
 const DropdownMenu = contextConnectWithoutRef(UnconnectedDropdownMenu, 'DropdownMenu');
 /* harmony default export */ const dropdown_menu = (DropdownMenu);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/palette-edit/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/palette-edit/styles.js
 
 function palette_edit_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -45751,14 +45751,14 @@ const RemoveButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_b
   target: "e1lpqc900"
 } : 0)("&&{margin-top:", space(1), ";}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/palette-edit/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/palette-edit/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -45999,7 +45999,7 @@ const EMPTY_ARRAY = [];
  * Allows editing a palette of colors or gradients.
  *
  * ```jsx
- * import { PaletteEdit } from '@wordpress/components';
+ * import { PaletteEdit } from '@cohesion/components';
  * const MyPaletteEdit = () => {
  *   const [ controlledColors, setControlledColors ] = useState( colors );
  *
@@ -46172,7 +46172,7 @@ function PaletteEdit({
 }
 /* harmony default export */ const palette_edit = (PaletteEdit);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/combobox-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/combobox-control/styles.js
 
 /**
  * External dependencies
@@ -46192,13 +46192,13 @@ const InputWrapperFlex = /*#__PURE__*/emotion_styled_base_browser_esm(flex_compo
   target: "evuatpg0"
 } : 0)("height:38px;padding-left:", space(2), ";padding-right:", space(2), ";", deprecatedDefaultSize, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/token-input.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-token-field/token-input.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46263,13 +46263,13 @@ function UnForwardedTokenInput(props, ref) {
 const TokenInput = (0,external_wp_element_namespaceObject.forwardRef)(UnForwardedTokenInput);
 /* harmony default export */ const token_input = (TokenInput);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/suggestions-list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-token-field/suggestions-list.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46381,9 +46381,9 @@ function SuggestionsList({
 }
 /* harmony default export */ const suggestions_list = (SuggestionsList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-focus-outside/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-focus-outside/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46400,14 +46400,14 @@ function SuggestionsList({
   });
 }, 'withFocusOutside'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/combobox-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/combobox-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46447,8 +46447,8 @@ const getIndexOfMatchingSuggestion = (selectedSuggestion, matchingSuggestions) =
  * being able to search for options using a search input.
  *
  * ```jsx
- * import { ComboboxControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ComboboxControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const options = [
  * 	{
@@ -46518,7 +46518,7 @@ function ComboboxControl(props) {
   const currentLabel = (_currentOption$label = currentOption?.label) !== null && _currentOption$label !== void 0 ? _currentOption$label : '';
   // Use a custom prefix when generating the `instanceId` to avoid having
   // duplicate input IDs when rendering this component and `FormTokenField`
-  // in the same page (see https://github.com/WordPress/gutenberg/issues/42112).
+  // in the same page (see https://github.com/cohesion/gutenberg/issues/42112).
   const instanceId = (0,external_wp_compose_namespaceObject.useInstanceId)(ComboboxControl, 'combobox-control');
   const [selectedSuggestion, setSelectedSuggestion] = (0,external_wp_element_namespaceObject.useState)(currentOption || null);
   const [isExpanded, setIsExpanded] = (0,external_wp_element_namespaceObject.useState)(false);
@@ -46687,7 +46687,7 @@ function ComboboxControl(props) {
           instanceId: instanceId
           // The empty string for `value` here is not actually used, but is
           // just a quick way to satisfy the TypeScript requirements of SuggestionsList.
-          // See: https://github.com/WordPress/gutenberg/pull/47581/files#r1091089330
+          // See: https://github.com/cohesion/gutenberg/pull/47581/files#r1091089330
           ,
           match: {
             label: inputValue,
@@ -46772,7 +46772,7 @@ if (false) {}
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/composite/legacy/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/composite/legacy/index.js
 /**
  * Composite is a component that may contain navigable items represented by
  * CompositeItem. It's inspired by the WAI-ARIA Composite Role and implements
@@ -46784,7 +46784,7 @@ if (false) {}
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -46895,7 +46895,7 @@ function useCompositeState(legacyStateOptions = {}) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/aria-helper.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/modal/aria-helper.js
 const LIVE_REGION_ARIA_ROLES = new Set(['alert', 'status', 'log', 'marquee', 'timer']);
 const hiddenElementsByDepth = [];
 
@@ -46951,13 +46951,13 @@ function unmodalize() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/modal/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47222,8 +47222,8 @@ function UnforwardedModal(props, forwardedRef) {
  * involve multiple tasks.
  *
  * ```jsx
- * import { Button, Modal } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { Button, Modal } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyModal = () => {
  *   const [ isOpen, setOpen ] = useState( false );
@@ -47250,7 +47250,7 @@ function UnforwardedModal(props, forwardedRef) {
 const Modal = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedModal);
 /* harmony default export */ const modal = (Modal);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/confirm-dialog/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/confirm-dialog/styles.js
 function confirm_dialog_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -47270,9 +47270,9 @@ const styles_wrapper =  true ? {
   styles: "&&{z-index:1000001;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/confirm-dialog/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/confirm-dialog/component.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -47387,7 +47387,7 @@ const UnconnectedConfirmDialog = (props, forwardedRef) => {
  * Activating this mode is as simple as omitting the `isOpen` prop. The only mandatory prop, in this case, is the `onConfirm` callback. The message is passed as the `children`. You can pass any JSX you'd like, which allows to further format the message or include sub-component if you'd like:
  *
  * ```jsx
- * import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';
+ * import { __experimentalConfirmDialog as ConfirmDialog } from '@cohesion/components';
  *
  * function Example() {
  * 	return (
@@ -47407,8 +47407,8 @@ const UnconnectedConfirmDialog = (props, forwardedRef) => {
  * -   You'll want to update the state that controls `isOpen` by updating it from the `onCancel` and `onConfirm` callbacks.
  *
  *```jsx
- * import { __experimentalConfirmDialog as ConfirmDialog } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalConfirmDialog as ConfirmDialog } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * function Example() {
  * 	const [ isOpen, setIsOpen ] = useState( true );
@@ -51619,7 +51619,7 @@ function useMultipleSelection(userProps) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-select-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/custom-select-control/index.js
 // @ts-nocheck
 /**
  * External dependencies
@@ -51628,7 +51628,7 @@ function useMultipleSelection(userProps) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56337,9 +56337,9 @@ function endOfWeek_endOfWeek(date, options) {
 // Fallback for modularized imports:
 /* harmony default export */ const date_fns_endOfWeek = ((/* unused pure expression or super */ null && (endOfWeek_endOfWeek)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/arrow-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/arrow-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56352,9 +56352,9 @@ const arrowRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const arrow_right = (arrowRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/arrow-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/arrow-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56369,7 +56369,7 @@ const arrowLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 
 ;// CONCATENATED MODULE: external ["wp","date"]
 const external_wp_date_namespaceObject = window["wp"]["date"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/date/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/date/styles.js
 
 function date_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -56430,7 +56430,7 @@ const DayButton = /*#__PURE__*/emotion_styled_base_browser_esm(build_module_butt
 		}
 		`, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/utils.js
 /**
  * External dependencies
  */
@@ -56449,17 +56449,17 @@ function inputToDate(input) {
   return toDate_toDate(input);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/constants.js
 const TIMEZONELESS_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/date/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/date/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -56479,8 +56479,8 @@ const TIMEZONELESS_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
  * DatePicker is a React component that renders a calendar for date selection.
  *
  * ```jsx
- * import { DatePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DatePicker } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyDatePicker = () => {
  *   const [ date, setDate ] = useState( new Date() );
@@ -56916,7 +56916,7 @@ function setHours(date, hours) {
 // Fallback for modularized imports:
 /* harmony default export */ const date_fns_setHours = ((/* unused pure expression or super */ null && (setHours)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/time/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/time/styles.js
 
 function time_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -56976,9 +56976,9 @@ const TimeZone = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
   styles: "text-decoration:underline dotted"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/time/timezone.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/time/timezone.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57031,14 +57031,14 @@ const timezone_TimeZone = () => {
 };
 /* harmony default export */ const timezone = (timezone_TimeZone);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/time/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/time/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57089,8 +57089,8 @@ function buildPadInputStateReducer(pad) {
  * TimePicker is a React component that renders a clock for time selection.
  *
  * ```jsx
- * import { TimePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TimePicker } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyTimePicker = () => {
  *   const [ time, setTime ] = useState( new Date() );
@@ -57360,7 +57360,7 @@ function TimePicker({
 }
 /* harmony default export */ const date_time_time = (TimePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/date-time/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/date-time/styles.js
 
 function date_time_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -57378,13 +57378,13 @@ const date_time_styles_Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm(v_
   styles: "box-sizing:border-box"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/date-time/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/date-time/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -57434,8 +57434,8 @@ function UnforwardedDateTimePicker({
  * individually using the `DatePicker` and `TimePicker` components respectively.
  *
  * ```jsx
- * import { DateTimePicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DateTimePicker } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyDateTimePicker = () => {
  *   const [ date, setDate ] = useState( new Date() );
@@ -57453,7 +57453,7 @@ function UnforwardedDateTimePicker({
 const DateTimePicker = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedDateTimePicker);
 /* harmony default export */ const date_time = (DateTimePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/date-time/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/date-time/index.js
 /**
  * Internal dependencies
  */
@@ -57463,7 +57463,7 @@ const DateTimePicker = (0,external_wp_element_namespaceObject.forwardRef)(Unforw
 
 /* harmony default export */ const build_module_date_time = (date_time);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dimension-control/sizes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dimension-control/sizes.js
 /**
  * Sizes
  *
@@ -57474,7 +57474,7 @@ const DateTimePicker = (0,external_wp_element_namespaceObject.forwardRef)(Unforw
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57507,14 +57507,14 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
   slug: 'xlarge'
 }]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dimension-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dimension-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57533,8 +57533,8 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
  * This feature is still experimental. “Experimental” means this is an early implementation subject to drastic and breaking changes.
  *
  * ```jsx
- * import { __experimentalDimensionControl as DimensionControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { __experimentalDimensionControl as DimensionControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * export default function MyCustomDimensionControl() {
  * 	const [ paddingSize, setPaddingSize ] = useState( '' );
@@ -57598,7 +57598,7 @@ function DimensionControl(props) {
 }
 /* harmony default export */ const dimension_control = (DimensionControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/disabled/styles/disabled-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/disabled/styles/disabled-styles.js
 function disabled_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -57609,9 +57609,9 @@ const disabled_styles_disabledStyles =  true ? {
   styles: "position:relative;pointer-events:none;&::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;}*{pointer-events:none;}"
 } : 0;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/disabled/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/disabled/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57638,8 +57638,8 @@ const {
  * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert
  *
  * ```jsx
- * import { Button, Disabled, TextControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { Button, Disabled, TextControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyDisabled = () => {
  * 	const [ isDisabled, setIsDisabled ] = useState( true );
@@ -57686,7 +57686,7 @@ Disabled.Context = Context;
 Disabled.Consumer = Consumer;
 /* harmony default export */ const disabled = (Disabled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/disclosure/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/disclosure/index.js
 /**
  * External dependencies
  */
@@ -57694,7 +57694,7 @@ Disabled.Consumer = Consumer;
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57724,13 +57724,13 @@ const UnforwardedDisclosureContent = ({
 const disclosure_DisclosureContent = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedDisclosureContent);
 /* harmony default export */ const disclosure = ((/* unused pure expression or super */ null && (disclosure_DisclosureContent)));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/draggable/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/draggable/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57760,8 +57760,8 @@ const bodyClass = 'is-dragging-components-draggable';
  * not concerned with creating an actual DOM element that is draggable.
  *
  * ```jsx
- * import { Draggable, Panel, PanelBody } from '@wordpress/components';
- * import { Icon, more } from '@wordpress/icons';
+ * import { Draggable, Panel, PanelBody } from '@cohesion/components';
+ * import { Icon, more } from '@cohesion/icons';
  *
  * const MyDraggable = () => (
  *   <div id="draggable-panel">
@@ -57954,9 +57954,9 @@ function Draggable({
 }
 /* harmony default export */ const draggable = (Draggable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/upload.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/upload.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -57969,14 +57969,14 @@ const upload = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_upload = (upload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/drop-zone/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/drop-zone/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58068,8 +58068,8 @@ function DropIndicator({
  * `DropZone` is a component creating a drop zone area taking the full size of its parent element. It supports dropping files, HTML content or any other HTML drop event.
  *
  * ```jsx
- * import { DropZone } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DropZone } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyDropZone = () => {
  *   const [ hasDropped, setHasDropped ] = useState( false );
@@ -58161,9 +58161,9 @@ function DropZoneComponent({
 }
 /* harmony default export */ const drop_zone = (DropZoneComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/drop-zone/provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/drop-zone/provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function DropZoneProvider({
@@ -58176,9 +58176,9 @@ function DropZoneProvider({
   return children;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/swatch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/swatch.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58191,7 +58191,7 @@ const swatch = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_swatch = (swatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/duotone-picker/utils.js
 /**
  * External dependencies
  */
@@ -58284,9 +58284,9 @@ function getColorsFromColorStops(colorStops = []) {
   }) => color);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/duotone-swatch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/duotone-picker/duotone-swatch.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58308,9 +58308,9 @@ function DuotoneSwatch({
 }
 /* harmony default export */ const duotone_swatch = (DuotoneSwatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/color-list-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/duotone-picker/color-list-picker/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58403,7 +58403,7 @@ function ColorListPicker({
 }
 /* harmony default export */ const color_list_picker = (ColorListPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/custom-duotone-bar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/duotone-picker/custom-duotone-bar.js
 /**
  * Internal dependencies
  */
@@ -58431,14 +58431,14 @@ function CustomDuotoneBar({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/duotone-picker/duotone-picker.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/duotone-picker/duotone-picker.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58456,8 +58456,8 @@ function CustomDuotoneBar({
 
 /**
  * ```jsx
- * import { DuotonePicker, DuotoneSwatch } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { DuotonePicker, DuotoneSwatch } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const DUOTONE_PALETTE = [
  * 	{ colors: [ '#8c00b7', '#fcff41' ], name: 'Purple and yellow', slug: 'purple-yellow' },
@@ -58601,7 +58601,7 @@ function DuotonePicker({
             const newValue = newColors.length >= 2 ? newColors : undefined;
             // @ts-expect-error TODO: The color arrays for a DuotonePicker should be a tuple of two colors,
             // but it's currently typed as a string[].
-            // See also https://github.com/WordPress/gutenberg/pull/49060#discussion_r1136951035
+            // See also https://github.com/cohesion/gutenberg/pull/49060#discussion_r1136951035
             onChange(newValue);
           }
         })]
@@ -58611,13 +58611,13 @@ function DuotonePicker({
 }
 /* harmony default export */ const duotone_picker = (DuotonePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/external-link/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/external-link/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58678,17 +58678,17 @@ function UnforwardedExternalLink(props, ref) {
  * Link to an external resource.
  *
  * ```jsx
- * import { ExternalLink } from '@wordpress/components';
+ * import { ExternalLink } from '@cohesion/components';
  *
  * const MyExternalLink = () => (
- *   <ExternalLink href="https://wordpress.org">WordPress.org</ExternalLink>
+ *   <ExternalLink href="https://cohesion.org">cohesion.org</ExternalLink>
  * );
  * ```
  */
 const ExternalLink = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedExternalLink);
 /* harmony default export */ const external_link = (ExternalLink);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/utils.js
 const INITIAL_BOUNDS = {
   width: 200,
   height: 170
@@ -58729,7 +58729,7 @@ function fractionToPercentage(fraction) {
   return Math.round(fraction * 100);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/styles/focal-point-picker-style.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/styles/focal-point-picker-style.js
 
 function focal_point_picker_style_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -58806,9 +58806,9 @@ const GridLineY = /*#__PURE__*/emotion_styled_base_browser_esm(GridLine,  true ?
   styles: "width:1px;top:1px;bottom:1px"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/controls.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -58882,7 +58882,7 @@ function FocalPointUnitControl(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/styles/focal-point-style.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/styles/focal-point-style.js
 
 /**
  * External dependencies
@@ -58898,7 +58898,7 @@ const PointerCircle = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true 
 			cursor: grabbing;
 			`, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/focal-point.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/focal-point.js
 /**
  * Internal dependencies
  */
@@ -58924,7 +58924,7 @@ function FocalPoint({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/grid.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/grid.js
 /**
  * Internal dependencies
  */
@@ -58962,7 +58962,7 @@ function FocalPointPickerGrid({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/media.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/media.js
 /**
  * External dependencies
  */
@@ -59011,14 +59011,14 @@ function media_Media({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focal-point-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focal-point-picker/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59052,8 +59052,8 @@ const GRID_OVERLAY_TIMEOUT = 600;
  * - Corresponding CSS: `background-position: 50% 10%;`
  *
  * ```jsx
- * import { FocalPointPicker } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { FocalPointPicker } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const Example = () => {
  * 	const [ focalPoint, setFocalPoint ] = useState( {
@@ -59179,7 +59179,7 @@ function FocalPointPicker({
   (0,external_wp_compose_namespaceObject.useIsomorphicLayoutEffect)(() => void refUpdateBounds.current(), []);
 
   // TODO: Consider refactoring getValueWithinDragArea() into a pure function.
-  // https://github.com/WordPress/gutenberg/pull/43872#discussion_r963455173
+  // https://github.com/cohesion/gutenberg/pull/43872#discussion_r963455173
   const getValueWithinDragArea = ({
     clientX,
     clientY,
@@ -59298,9 +59298,9 @@ function FocalPointPicker({
 }
 /* harmony default export */ const focal_point_picker = (FocalPointPicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/focusable-iframe/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/focusable-iframe/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59327,9 +59327,9 @@ function FocusableIframe({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/settings.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59345,9 +59345,9 @@ const settings = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(
 });
 /* harmony default export */ const library_settings = (settings);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -59388,7 +59388,7 @@ function getCommonSizeUnit(fontSizes) {
   return areAllSizesSameUnit ? firstUnit : null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/styles.js
 
 function font_size_picker_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -59422,9 +59422,9 @@ const HeaderHint = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? 
   target: "e8tqeku0"
 } : 0)("color:", COLORS.gray[700], ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-select.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/font-size-picker-select.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59499,13 +59499,13 @@ const FontSizePickerSelect = props => {
 };
 /* harmony default export */ const font_size_picker_select = (FontSizePickerSelect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/toggle-group-control-option/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-group-control/toggle-group-control-option/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59537,7 +59537,7 @@ function UnforwardedToggleGroupControlOption(props, ref) {
  * import {
  *   __experimentalToggleGroupControl as ToggleGroupControl,
  *   __experimentalToggleGroupControlOption as ToggleGroupControlOption,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -59552,9 +59552,9 @@ function UnforwardedToggleGroupControlOption(props, ref) {
 const ToggleGroupControlOption = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToggleGroupControlOption);
 /* harmony default export */ const toggle_group_control_option_component = (ToggleGroupControlOption);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/constants.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59579,9 +59579,9 @@ const T_SHIRT_ABBREVIATIONS = [/* translators: S stands for 'small' and is a siz
  */
 const T_SHIRT_NAMES = [(0,external_wp_i18n_namespaceObject.__)('Small'), (0,external_wp_i18n_namespaceObject.__)('Medium'), (0,external_wp_i18n_namespaceObject.__)('Large'), (0,external_wp_i18n_namespaceObject.__)('Extra Large'), (0,external_wp_i18n_namespaceObject.__)('Extra Extra Large')];
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/font-size-picker-toggle-group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/font-size-picker-toggle-group.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59618,13 +59618,13 @@ const FontSizePickerToggleGroup = props => {
 };
 /* harmony default export */ const font_size_picker_toggle_group = (FontSizePickerToggleGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/font-size-picker/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59815,9 +59815,9 @@ const UnforwardedFontSizePicker = (props, ref) => {
 const FontSizePicker = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedFontSizePicker);
 /* harmony default export */ const font_size_picker = (FontSizePicker);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-file-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-file-upload/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59831,7 +59831,7 @@ const FontSizePicker = (0,external_wp_element_namespaceObject.forwardRef)(Unforw
  * FormFileUpload is a component that allows users to select files from their local device.
  *
  * ```jsx
- * import { FormFileUpload } from '@wordpress/components';
+ * import { FormFileUpload } from '@cohesion/components';
  *
  * const MyFormFileUpload = () => (
  *   <FormFileUpload
@@ -59881,13 +59881,13 @@ function FormFileUpload({
 }
 /* harmony default export */ const form_file_upload = (FormFileUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-toggle/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-toggle/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -59902,8 +59902,8 @@ const form_toggle_noop = () => {};
  * FormToggle switches a single setting on or off.
  *
  * ```jsx
- * import { FormToggle } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { FormToggle } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyFormToggle = () => {
  *   const [ isChecked, setChecked ] = useState( true );
@@ -59950,14 +59950,14 @@ function FormToggle(props, ref) {
 }
 /* harmony default export */ const form_toggle = ((0,external_wp_element_namespaceObject.forwardRef)(FormToggle));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/token.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-token-field/token.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60025,7 +60025,7 @@ function Token({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-token-field/styles.js
 
 /**
  * External dependencies
@@ -60047,13 +60047,13 @@ const TokensAndInputWrapperFlex = /*#__PURE__*/emotion_styled_base_browser_esm(f
   target: "ehq8nmi0"
 } : 0)("padding:7px;", boxSizingReset, " ", deprecatedPaddings, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/form-token-field/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/form-token-field/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60604,9 +60604,9 @@ function FormTokenField(props) {
 }
 /* harmony default export */ const form_token_field = (FormTokenField);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/icons.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/guide/icons.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60622,9 +60622,9 @@ const PageControlIcon = () => /*#__PURE__*/(0,external_ReactJSXRuntime_namespace
   })
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/page-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/guide/page-control.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60657,14 +60657,14 @@ function PageControl({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/guide/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60806,9 +60806,9 @@ function Guide({
 }
 /* harmony default export */ const guide = (Guide);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/guide/page.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/guide/page.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60829,13 +60829,13 @@ function GuidePage(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/button/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/button/deprecated.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60868,9 +60868,9 @@ function UnforwardedIconButton({
 }
 /* harmony default export */ const deprecated = ((0,external_wp_element_namespaceObject.forwardRef)(UnforwardedIconButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/item/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -60910,7 +60910,7 @@ function useItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/item/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/item-group/item/component.js
 /**
  * External dependencies
  */
@@ -60947,7 +60947,7 @@ function UnconnectedItem(props, forwardedRef) {
  * import {
  *   __experimentalItemGroup as ItemGroup,
  *   __experimentalItem as Item,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -60963,7 +60963,7 @@ function UnconnectedItem(props, forwardedRef) {
 const component_Item = contextConnect(UnconnectedItem, 'Item');
 /* harmony default export */ const item_component = (component_Item);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/input-prefix-wrapper.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/input-control/input-prefix-wrapper.js
 /**
  * External dependencies
  */
@@ -60991,7 +60991,7 @@ function UnconnectedInputControlPrefixWrapper(props, forwardedRef) {
  * import {
  *   __experimentalInputControl as InputControl,
  *   __experimentalInputControlPrefixWrapper as InputControlPrefixWrapper,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * <InputControl
  *   prefix={<InputControlPrefixWrapper>@</InputControlPrefixWrapper>}
@@ -61001,9 +61001,9 @@ function UnconnectedInputControlPrefixWrapper(props, forwardedRef) {
 const InputControlPrefixWrapper = contextConnect(UnconnectedInputControlPrefixWrapper, 'InputControlPrefixWrapper');
 /* harmony default export */ const input_prefix_wrapper = (InputControlPrefixWrapper);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/keyboard-shortcuts/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/keyboard-shortcuts/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61037,8 +61037,8 @@ function KeyboardShortcut({
  * It uses the [Mousetrap](https://craig.is/killing/mice) library to implement keyboard sequence bindings.
  *
  * ```jsx
- * import { KeyboardShortcuts } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { KeyboardShortcuts } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyKeyboardShortcuts = () => {
  * 	const [ isAllSelected, setIsAllSelected ] = useState( false );
@@ -61088,14 +61088,14 @@ function KeyboardShortcuts({
 }
 /* harmony default export */ const keyboard_shortcuts = (KeyboardShortcuts);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/menu-group/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61110,7 +61110,7 @@ function KeyboardShortcuts({
  * section.
  *
  * ```jsx
- * import { MenuGroup, MenuItem } from '@wordpress/components';
+ * import { MenuGroup, MenuItem } from '@cohesion/components';
  *
  * const MyMenuGroup = () => (
  *   <MenuGroup label="Settings">
@@ -61151,7 +61151,7 @@ function MenuGroup(props) {
 }
 /* harmony default export */ const menu_group = (MenuGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/menu-item/index.js
 /**
  * External dependencies
  */
@@ -61159,7 +61159,7 @@ function MenuGroup(props) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61229,8 +61229,8 @@ function UnforwardedMenuItem(props, ref) {
  * MenuItem is a component which renders a button intended to be used in combination with the `DropdownMenu` component.
  *
  * ```jsx
- * import { MenuItem } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { MenuItem } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyMenuItem = () => {
  * 	const [ isActive, setIsActive ] = useState( true );
@@ -61251,9 +61251,9 @@ function UnforwardedMenuItem(props, ref) {
 const MenuItem = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedMenuItem);
 /* harmony default export */ const menu_item = (MenuItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/menu-items-choice/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/menu-items-choice/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61270,8 +61270,8 @@ const menu_items_choice_noop = () => {};
  *
  *
  * ```jsx
- * import { MenuGroup, MenuItemsChoice } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { MenuGroup, MenuItemsChoice } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyMenuItemsChoice = () => {
  * 	const [ mode, setMode ] = useState( 'visual' );
@@ -61330,13 +61330,13 @@ function MenuItemsChoice({
 }
 /* harmony default export */ const menu_items_choice = (MenuItemsChoice);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigable-container/tabbable.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigable-container/tabbable.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61390,7 +61390,7 @@ function UnforwardedTabbableContainer({
  *  import {
  *    TabbableContainer,
  *    Button,
- *  } from '@wordpress/components';
+ *  } from '@cohesion/components';
  *
  *  function onNavigate( index, target ) {
  *    console.log( `Navigates to ${ index }`, target );
@@ -61420,13 +61420,13 @@ function UnforwardedTabbableContainer({
 const TabbableContainer = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTabbableContainer);
 /* harmony default export */ const tabbable = (TabbableContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/constants.js
 const ROOT_MENU = 'root';
 const SEARCH_FOCUS_DELAY = 100;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61457,7 +61457,7 @@ const NavigationContext = (0,external_wp_element_namespaceObject.createContext)(
 });
 const useNavigationContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/styles/navigation-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/styles/navigation-styles.js
 
 function navigation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -61465,7 +61465,7 @@ function navigation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have t
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61528,9 +61528,9 @@ const ItemTitleUI = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,
   target: "eeiismy0"
 } : 0)(() => (0,external_wp_i18n_namespaceObject.isRTL)() ? 'margin-left: auto;' : 'margin-right: auto;', " font-size:14px;line-height:20px;color:inherit;" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/use-navigation-tree-nodes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/use-navigation-tree-nodes.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function useNavigationTreeNodes() {
@@ -61563,9 +61563,9 @@ function useNavigationTreeNodes() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/use-create-navigation-tree.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/use-create-navigation-tree.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61654,14 +61654,14 @@ const useCreateNavigationTree = () => {
   };
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61688,7 +61688,7 @@ const navigation_noop = () => {};
  *   __experimentalNavigationGroup as NavigationGroup,
  *   __experimentalNavigationItem as NavigationItem,
  *   __experimentalNavigationMenu as NavigationMenu,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <Navigation>
@@ -61751,7 +61751,7 @@ function Navigation({
       setActiveMenu(activeMenu);
     }
     // Ignore exhaustive-deps here, as it would require either a larger refactor or some questionable workarounds.
-    // See https://github.com/WordPress/gutenberg/pull/41612 for context.
+    // See https://github.com/cohesion/gutenberg/pull/41612 for context.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeMenu]);
   const context = {
@@ -61780,9 +61780,9 @@ function Navigation({
 }
 /* harmony default export */ const navigation = (Navigation);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61795,9 +61795,9 @@ const chevronRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const chevron_right = (chevronRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61810,13 +61810,13 @@ const chevronLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const chevron_left = (chevronLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/back-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/back-button/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61870,9 +61870,9 @@ function UnforwardedNavigationBackButton({
 const NavigationBackButton = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedNavigationBackButton);
 /* harmony default export */ const back_button = (NavigationBackButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/group/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/group/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61885,14 +61885,14 @@ const NavigationGroupContext = (0,external_wp_element_namespaceObject.createCont
 });
 const useNavigationGroupContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationGroupContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/group/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/group/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61952,7 +61952,7 @@ function NavigationGroup({
 }
 /* harmony default export */ const group = (NavigationGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/base-content.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/item/base-content.js
 /**
  * Internal dependencies
  */
@@ -61977,9 +61977,9 @@ function NavigationItemBaseContent(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -61993,7 +61993,7 @@ const NavigationMenuContext = (0,external_wp_element_namespaceObject.createConte
 });
 const useNavigationMenuContext = () => (0,external_wp_element_namespaceObject.useContext)(NavigationMenuContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/utils.js
 /**
  * External dependencies
  */
@@ -62003,9 +62003,9 @@ const useNavigationMenuContext = () => (0,external_wp_element_namespaceObject.us
 const normalizeInput = input => remove_accents_default()(input).replace(/^\//, '').toLowerCase();
 const normalizedSearch = (title, search) => -1 !== normalizeInput(title).indexOf(normalizeInput(search));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/use-navigation-tree-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/item/use-navigation-tree-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62043,19 +62043,19 @@ const useNavigationTreeItem = (itemId, props) => {
     return () => {
       removeItem(itemId);
     };
-    // Ignore exhaustive-deps rule for now. See https://github.com/WordPress/gutenberg/pull/41639
+    // Ignore exhaustive-deps rule for now. See https://github.com/cohesion/gutenberg/pull/41639
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeMenu, search]);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/base.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/item/base.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62092,14 +62092,14 @@ function NavigationItemBase(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/item/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62190,9 +62190,9 @@ function NavigationItem(props) {
 }
 /* harmony default export */ const navigation_item = (NavigationItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/use-navigation-tree-menu.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/use-navigation-tree-menu.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62217,14 +62217,14 @@ const useNavigationTreeMenu = props => {
     return () => {
       removeMenu(key);
     };
-    // Ignore exhaustive-deps rule for now. See https://github.com/WordPress/gutenberg/pull/44090
+    // Ignore exhaustive-deps rule for now. See https://github.com/cohesion/gutenberg/pull/44090
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/search.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/search.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62237,9 +62237,9 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_search = (search);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-spoken-messages/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-spoken-messages/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62250,7 +62250,7 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
  * A Higher Order Component used to be provide speak and debounced speak
  * functions.
  *
- * @see https://developer.wordpress.org/block-editor/packages/packages-a11y/#speak
+ * @see https://developer.cohesion.org/block-editor/packages/packages-a11y/#speak
  *
  * @param {ComponentType} Component The component to be wrapped.
  *
@@ -62263,7 +62263,7 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
   debouncedSpeak: (0,external_wp_compose_namespaceObject.useDebounce)(external_wp_a11y_namespaceObject.speak, 500)
 }), 'withSpokenMessages'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/search-control/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/search-control/styles.js
 
 /**
  * External dependencies
@@ -62287,14 +62287,14 @@ const StyledInputControl = /*#__PURE__*/emotion_styled_base_browser_esm(input_co
   target: "effl84m0"
 } : 0)("input[type='search']{&::-webkit-search-decoration,&::-webkit-search-cancel-button,&::-webkit-search-results-button,&::-webkit-search-results-decoration{-webkit-appearance:none;}}&:not( :focus-within ){--wp-components-color-background:", COLORS.theme.gray[100], ";}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/search-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/search-control/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62343,7 +62343,7 @@ function UnforwardedSearchControl({
   ...restProps
 }, forwardedRef) {
   // @ts-expect-error The `disabled` prop is not yet supported in the SearchControl component.
-  // Work with the design team (@WordPress/gutenberg-design) if you need this feature.
+  // Work with the design team (@cohesion/gutenberg-design) if you need this feature.
   delete restProps.disabled;
   const searchRef = (0,external_wp_element_namespaceObject.useRef)(null);
   const instanceId = (0,external_wp_compose_namespaceObject.useInstanceId)(SearchControl, 'components-search-control');
@@ -62394,8 +62394,8 @@ function UnforwardedSearchControl({
  * SearchControl components let users display a search control.
  *
  * ```jsx
- * import { SearchControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { SearchControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * function MySearchControl( { className, setState } ) {
  *   const [ searchInput, setSearchInput ] = useState( '' );
@@ -62413,9 +62413,9 @@ function UnforwardedSearchControl({
 const SearchControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedSearchControl);
 /* harmony default export */ const search_control = (SearchControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/menu-title-search.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/menu-title-search.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62465,7 +62465,7 @@ function MenuTitleSearch({
     const resultsFoundMessage = (0,external_wp_i18n_namespaceObject.sprintf)( /* translators: %d: number of results. */
     (0,external_wp_i18n_namespaceObject._n)('%d result found.', '%d results found.', count), count);
     debouncedSpeak(resultsFoundMessage);
-    // Ignore exhaustive-deps rule for now. See https://github.com/WordPress/gutenberg/pull/44090
+    // Ignore exhaustive-deps rule for now. See https://github.com/cohesion/gutenberg/pull/44090
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [items, search]);
   const onClose = () => {
@@ -62497,9 +62497,9 @@ function MenuTitleSearch({
 }
 /* harmony default export */ const menu_title_search = (with_spoken_messages(MenuTitleSearch));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/menu-title.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/menu-title.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62535,7 +62535,7 @@ function NavigationMenuTitle({
     setIsSearching(false);
 
     // Wait for the slide-in animation to complete before focusing the search button.
-    // eslint-disable-next-line @wordpress/react-no-unsafe-timeout
+    // eslint-disable-next-line @cohesion/react-no-unsafe-timeout
     setTimeout(() => {
       searchButtonRef.current?.focus();
     }, SEARCH_FOCUS_DELAY);
@@ -62579,9 +62579,9 @@ function NavigationMenuTitle({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/search-no-results-found.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/search-no-results-found.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -62611,14 +62611,14 @@ function NavigationSearchNoResultsFound({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigation/menu/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63104,7 +63104,7 @@ function pathToRegexp(path, keys, options) {
     return stringToRegexp(path, keys, options);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/utils/router.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/utils/router.js
 /**
  * External dependencies
  */
@@ -63150,9 +63150,9 @@ function findParent(path, screens) {
   return parentPath;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63171,7 +63171,7 @@ const context_initialContextValue = {
 };
 const NavigatorContext = (0,external_wp_element_namespaceObject.createContext)(context_initialContextValue);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/styles.js
 function navigator_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
  * External dependencies
@@ -63214,13 +63214,13 @@ const navigatorScreenAnimation = ({
 };
 const navigatorScreen = props => /*#__PURE__*/emotion_react_browser_esm_css("overflow-x:auto;max-height:100%;", navigatorScreenAnimation(props), ";" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-provider/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-provider/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63442,7 +63442,7 @@ function UnconnectedNavigatorProvider(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -63468,13 +63468,13 @@ const NavigatorProvider = contextConnect(UnconnectedNavigatorProvider, 'Navigato
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 const external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-screen/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-screen/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63590,7 +63590,7 @@ function UnconnectedNavigatorScreen(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -63614,9 +63614,9 @@ function UnconnectedNavigatorScreen(props, forwardedRef) {
 const NavigatorScreen = contextConnect(UnconnectedNavigatorScreen, 'NavigatorScreen');
 /* harmony default export */ const navigator_screen_component = (NavigatorScreen);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/use-navigator.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/use-navigator.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63645,9 +63645,9 @@ function useNavigator() {
 }
 /* harmony default export */ const use_navigator = (useNavigator);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-button/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63687,7 +63687,7 @@ function useNavigatorButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-button/component.js
 /**
  * External dependencies
  */
@@ -63720,7 +63720,7 @@ function UnconnectedNavigatorButton(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -63744,9 +63744,9 @@ function UnconnectedNavigatorButton(props, forwardedRef) {
 const NavigatorButton = contextConnect(UnconnectedNavigatorButton, 'NavigatorButton');
 /* harmony default export */ const navigator_button_component = (NavigatorButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-back-button/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-back-button/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63784,7 +63784,7 @@ function useNavigatorBackButton(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-back-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-back-button/component.js
 /**
  * External dependencies
  */
@@ -63818,7 +63818,7 @@ function UnconnectedNavigatorBackButton(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorBackButton as NavigatorBackButton,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -63842,7 +63842,7 @@ function UnconnectedNavigatorBackButton(props, forwardedRef) {
 const NavigatorBackButton = contextConnect(UnconnectedNavigatorBackButton, 'NavigatorBackButton');
 /* harmony default export */ const navigator_back_button_component = (NavigatorBackButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/navigator-to-parent-button/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/navigator/navigator-to-parent-button/component.js
 /**
  * External dependencies
  */
@@ -63879,7 +63879,7 @@ function UnconnectedNavigatorToParentButton(props, forwardedRef) {
  *   __experimentalNavigatorScreen as NavigatorScreen,
  *   __experimentalNavigatorButton as NavigatorButton,
  *   __experimentalNavigatorToParentButton as NavigatorToParentButton,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * const MyNavigation = () => (
  *   <NavigatorProvider initialPath="/">
@@ -63903,14 +63903,14 @@ function UnconnectedNavigatorToParentButton(props, forwardedRef) {
 const NavigatorToParentButton = contextConnect(UnconnectedNavigatorToParentButton, 'NavigatorToParentButton');
 /* harmony default export */ const navigator_to_parent_button_component = (NavigatorToParentButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/notice/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/notice/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -63967,7 +63967,7 @@ function getStatusLabel(status) {
  * `Notice` is a component used to communicate feedback to the user.
  *
  *```jsx
- * import { Notice } from `@wordpress/components`;
+ * import { Notice } from `@cohesion/components`;
  *
  * const MyNotice = () => (
  *   <Notice status="error">An unknown error occurred.</Notice>
@@ -64045,7 +64045,7 @@ function Notice({
 }
 /* harmony default export */ const build_module_notice = (Notice);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/notice/list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/notice/list.js
 /**
  * External dependencies
  */
@@ -64063,7 +64063,7 @@ const list_noop = () => {};
  * `NoticeList` is a component used to render a collection of notices.
  *
  *```jsx
- * import { Notice, NoticeList } from `@wordpress/components`;
+ * import { Notice, NoticeList } from `@cohesion/components`;
  *
  * const MyNoticeList = () => {
  *	const [ notices, setNotices ] = useState( [
@@ -64110,7 +64110,7 @@ function NoticeList({
 }
 /* harmony default export */ const list = (NoticeList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/header.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/panel/header.js
 
 
 /**
@@ -64135,14 +64135,14 @@ function PanelHeader({
 }
 /* harmony default export */ const panel_header = (PanelHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/panel/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64171,8 +64171,8 @@ function UnforwardedPanel({
  * `Panel` expands and collapses multiple sections of content.
  *
  * ```jsx
- * import { Panel, PanelBody, PanelRow } from '@wordpress/components';
- * import { more } from '@wordpress/icons';
+ * import { Panel, PanelBody, PanelRow } from '@cohesion/components';
+ * import { more } from '@cohesion/icons';
  *
  * const MyPanel = () => (
  * 	<Panel header="My Panel">
@@ -64186,9 +64186,9 @@ function UnforwardedPanel({
 const Panel = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedPanel);
 /* harmony default export */ const panel = (Panel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-up.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-up.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64201,14 +64201,14 @@ const chevronUp = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 });
 /* harmony default export */ const chevron_up = (chevronUp);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/body.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/panel/body.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64320,14 +64320,14 @@ const PanelBodyTitle = (0,external_wp_element_namespaceObject.forwardRef)(({
 const PanelBody = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedPanelBody);
 /* harmony default export */ const body = (PanelBody);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/panel/row.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/panel/row.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64353,14 +64353,14 @@ function UnforwardedPanelRow({
 const PanelRow = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedPanelRow);
 /* harmony default export */ const row = (PanelRow);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/placeholder/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/placeholder/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64389,8 +64389,8 @@ const PlaceholderIllustration = /*#__PURE__*/(0,external_ReactJSXRuntime_namespa
  * Renders a placeholder. Normally used by blocks to render their empty state.
  *
  * ```jsx
- * import { Placeholder } from '@wordpress/components';
- * import { more } from '@wordpress/icons';
+ * import { Placeholder } from '@cohesion/components';
+ * import { more } from '@cohesion/icons';
  *
  * const MyPlaceholder = () => <Placeholder icon={ more } label="Placeholder" />;
  * ```
@@ -64453,7 +64453,7 @@ function Placeholder(props) {
 }
 /* harmony default export */ const placeholder = (Placeholder);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/progress-bar/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/progress-bar/styles.js
 
 function progress_bar_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -64502,13 +64502,13 @@ const ProgressElement = /*#__PURE__*/emotion_styled_base_browser_esm("progress",
   styles: "position:absolute;top:0;left:0;opacity:0;width:100%;height:100%"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/progress-bar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/progress-bar/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64551,7 +64551,7 @@ function UnforwardedProgressBar(props, ref) {
  * when a value hasn't been specified.
  *
  * ```jsx
- * import { ProgressBar } from '@wordpress/components';
+ * import { ProgressBar } from '@cohesion/components';
  *
  * const MyLoadingComponent = () => {
  * 	return <ProgressBar />;
@@ -64561,7 +64561,7 @@ function UnforwardedProgressBar(props, ref) {
 const ProgressBar = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedProgressBar);
 /* harmony default export */ const progress_bar = (ProgressBar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/terms.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/query-controls/terms.js
 /**
  * Internal dependencies
  */
@@ -64615,9 +64615,9 @@ function buildTermsTree(flatTerms) {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-select/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-select/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64639,8 +64639,8 @@ function getSelectOptions(tree, level = 0) {
  * TreeSelect component is used to generate select input fields.
  *
  * ```jsx
- * import { TreeSelect } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TreeSelect } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyTreeSelect = () => {
  * 	const [ page, setPage ] = useState( 'p21' );
@@ -64708,7 +64708,7 @@ function TreeSelect(props) {
 }
 /* harmony default export */ const tree_select = (TreeSelect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/author-select.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/query-controls/author-select.js
 /**
  * Internal dependencies
  */
@@ -64738,7 +64738,7 @@ function AuthorSelect({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/category-select.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/query-controls/category-select.js
 /**
  * Internal dependencies
  */
@@ -64746,7 +64746,7 @@ function AuthorSelect({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64774,9 +64774,9 @@ function CategorySelect({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/query-controls/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/query-controls/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64920,14 +64920,14 @@ function QueryControls({
 }
 /* harmony default export */ const query_controls = (QueryControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-group/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/radio-group/context.js
 /**
  * External dependencies
  */
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const RadioGroupContext = (0,external_wp_element_namespaceObject.createContext)({
@@ -64935,9 +64935,9 @@ const RadioGroupContext = (0,external_wp_element_namespaceObject.createContext)(
   disabled: undefined
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-group/radio.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/radio-group/radio.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -64983,7 +64983,7 @@ function UnforwardedRadio({
 const radio_Radio = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedRadio);
 /* harmony default export */ const radio_group_radio = (radio_Radio);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/radio-group/index.js
 /**
  * External dependencies
  */
@@ -64991,7 +64991,7 @@ const radio_Radio = (0,external_wp_element_namespaceObject.forwardRef)(Unforward
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65041,13 +65041,13 @@ function UnforwardedRadioGroup({
 const radio_group_RadioGroup = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedRadioGroup);
 /* harmony default export */ const radio_group = (radio_group_RadioGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/radio-control/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65061,8 +65061,8 @@ const radio_group_RadioGroup = (0,external_wp_element_namespaceObject.forwardRef
  * Render a user interface to select the user type using radio inputs.
  *
  * ```jsx
- * import { RadioControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { RadioControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyRadioControl = () => {
  *   const [ option, setOption ] = useState( 'a' );
@@ -65965,9 +65965,9 @@ var Resizable = /** @class */ (function (_super) {
 }(external_React_.PureComponent));
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/resizable-box/resize-tooltip/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66171,7 +66171,7 @@ function getSizeLabel({
   return undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/styles/resize-tooltip.styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/resizable-box/resize-tooltip/styles/resize-tooltip.styles.js
 
 function resize_tooltip_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -66200,19 +66200,19 @@ const resize_tooltip_styles_Tooltip = /*#__PURE__*/emotion_styled_base_browser_e
 } : 0)("background:", COLORS.theme.foreground, ";border-radius:2px;box-sizing:border-box;font-family:", font('default.fontFamily'), ";font-size:12px;color:", COLORS.theme.foregroundInverted, ";padding:4px 8px;position:relative;" + ( true ? "" : 0));
 
 // TODO: Resolve need to use &&& to increase specificity
-// https://github.com/WordPress/gutenberg/issues/18483
+// https://github.com/cohesion/gutenberg/issues/18483
 
 const LabelText = /*#__PURE__*/emotion_styled_base_browser_esm(text_component,  true ? {
   target: "e1wq7y4k0"
 } : 0)("&&&{color:", COLORS.theme.foregroundInverted, ";display:block;font-size:13px;line-height:1.4;white-space:nowrap;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/label.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/resizable-box/resize-tooltip/label.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66283,13 +66283,13 @@ function resize_tooltip_label_Label({
 const label_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(resize_tooltip_label_Label);
 /* harmony default export */ const resize_tooltip_label = (label_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/resize-tooltip/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/resizable-box/resize-tooltip/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66345,9 +66345,9 @@ function ResizeTooltip({
 const resize_tooltip_ForwardedComponent = (0,external_wp_element_namespaceObject.forwardRef)(ResizeTooltip);
 /* harmony default export */ const resize_tooltip = (resize_tooltip_ForwardedComponent);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/resizable-box/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/resizable-box/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66417,14 +66417,14 @@ function UnforwardedResizableBox({
 const ResizableBox = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedResizableBox);
 /* harmony default export */ const resizable_box = (ResizableBox);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/responsive-wrapper/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/responsive-wrapper/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66436,13 +66436,13 @@ const ResizableBox = (0,external_wp_element_namespaceObject.forwardRef)(Unforwar
  * A wrapper component that maintains its aspect ratio when resized.
  *
  * ```jsx
- * import { ResponsiveWrapper } from '@wordpress/components';
+ * import { ResponsiveWrapper } from '@cohesion/components';
  *
  * const MyResponsiveWrapper = () => (
  * 	<ResponsiveWrapper naturalWidth={ 2000 } naturalHeight={ 680 }>
  * 		<img
- * 			src="https://s.w.org/style/images/about/WordPress-logotype-standard.png"
- * 			alt="WordPress"
+ * 			src="https://s.w.org/style/images/about/cohesion-logotype-standard.png"
+ * 			alt="cohesion"
  * 		/>
  * 	</ResponsiveWrapper>
  * );
@@ -66477,9 +66477,9 @@ function ResponsiveWrapper({
 }
 /* harmony default export */ const responsive_wrapper = (ResponsiveWrapper);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/sandbox/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/sandbox/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66541,7 +66541,7 @@ const observeAndResizeJS = function () {
   window.addEventListener('resize', sendResize, true);
 };
 
-// TODO: These styles shouldn't be coupled with WordPress.
+// TODO: These styles shouldn't be coupled with cohesion.
 const style = `
 	body {
 		margin: 0;
@@ -66569,7 +66569,7 @@ const style = `
  * This component provides an isolated environment for arbitrary HTML via iframes.
  *
  * ```jsx
- * import { SandBox } from '@wordpress/components';
+ * import { SandBox } from '@cohesion/components';
  *
  * const MySandBox = () => (
  * 	<SandBox html="<p>Content</p>" title="SandBox" type="embed" />
@@ -66685,7 +66685,7 @@ function SandBox({
 
     // This used to be registered using <iframe onLoad={} />, but it made the iframe blank
     // after reordering the containing block. See these two issues for more details:
-    // https://github.com/WordPress/gutenberg/issues/6146
+    // https://github.com/cohesion/gutenberg/issues/6146
     // https://github.com/facebook/react/issues/18752
     iframe?.addEventListener('load', tryNoForceSandBox, false);
     defaultView?.addEventListener('message', checkMessageForResize);
@@ -66694,19 +66694,19 @@ function SandBox({
       defaultView?.removeEventListener('message', checkMessageForResize);
     };
     // Ignore reason: passing `exhaustive-deps` will likely involve a more detailed refactor.
-    // See https://github.com/WordPress/gutenberg/pull/44378
+    // See https://github.com/cohesion/gutenberg/pull/44378
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     trySandBox();
     // Ignore reason: passing `exhaustive-deps` will likely involve a more detailed refactor.
-    // See https://github.com/WordPress/gutenberg/pull/44378
+    // See https://github.com/cohesion/gutenberg/pull/44378
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [title, styles, scripts]);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     trySandBox(true);
     // Ignore reason: passing `exhaustive-deps` will likely involve a more detailed refactor.
-    // See https://github.com/WordPress/gutenberg/pull/44378
+    // See https://github.com/cohesion/gutenberg/pull/44378
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [html, type]);
   return /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("iframe", {
@@ -66722,7 +66722,7 @@ function SandBox({
 }
 /* harmony default export */ const sandbox = (SandBox);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/snackbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/snackbar/index.js
 /**
  * External dependencies
  */
@@ -66730,7 +66730,7 @@ function SandBox({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66882,14 +66882,14 @@ function UnforwardedSnackbar({
 const Snackbar = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedSnackbar);
 /* harmony default export */ const snackbar = (Snackbar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/snackbar/list.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/snackbar/list.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -66989,7 +66989,7 @@ function SnackbarList({
 }
 /* harmony default export */ const snackbar_list = (SnackbarList);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spinner/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/spinner/styles.js
 
 function spinner_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -67024,7 +67024,7 @@ const SpinnerIndicator = /*#__PURE__*/emotion_styled_base_browser_esm("path",  t
   target: "ea4tfvq0"
 } : 0)(commonPathProps, ";stroke:currentColor;stroke-linecap:round;transform-origin:50% 50%;animation:1.4s linear infinite both ", spinAnimation, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/spinner/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/spinner/index.js
 /**
  * External dependencies
  */
@@ -67034,7 +67034,7 @@ const SpinnerIndicator = /*#__PURE__*/emotion_styled_base_browser_esm("path",  t
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67068,7 +67068,7 @@ function UnforwardedSpinner({
  * `Spinner` is a component used to notify users that their action is being processed.
  *
  * ```js
- *   import { Spinner } from '@wordpress/components';
+ *   import { Spinner } from '@cohesion/components';
  *
  *   function Example() {
  *     return <Spinner />;
@@ -67078,7 +67078,7 @@ function UnforwardedSpinner({
 const Spinner = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedSpinner);
 /* harmony default export */ const spinner = (Spinner);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/surface/component.js
 /**
  * External dependencies
  */
@@ -67107,7 +67107,7 @@ function UnconnectedSurface(props, forwardedRef) {
  * import {
  *	__experimentalSurface as Surface,
  *	__experimentalText as Text,
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  * 	return (
@@ -67500,7 +67500,7 @@ var TabPanel = createComponent((props) => {
 if (false) {}
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tab-panel/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tab-panel/index.js
 /**
  * External dependencies
  */
@@ -67508,7 +67508,7 @@ if (false) {}
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67538,7 +67538,7 @@ const extractTabName = id => {
  * It has two sections: a list of tabs, and the view to show when tabs are chosen.
  *
  * ```jsx
- * import { TabPanel } from '@wordpress/components';
+ * import { TabPanel } from '@cohesion/components';
  *
  * const onSelect = ( tabName ) => {
  *   console.log( 'Selecting tab', tabName );
@@ -67692,7 +67692,7 @@ const UnforwardedTabPanel = ({
 const tab_panel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTabPanel);
 /* harmony default export */ const tab_panel = (tab_panel_TabPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text-control/index.js
 /**
  * External dependencies
  */
@@ -67700,7 +67700,7 @@ const tab_panel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(Un
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67752,8 +67752,8 @@ function UnforwardedTextControl(props, ref) {
  * TextControl components let users enter and edit text.
  *
  * ```jsx
- * import { TextControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TextControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyTextControl = () => {
  *   const [ className, setClassName ] = useState( '' );
@@ -67771,7 +67771,7 @@ function UnforwardedTextControl(props, ref) {
 const TextControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTextControl);
 /* harmony default export */ const text_control = (TextControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/input/base.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/input/base.js
 /**
  * External dependencies
  */
@@ -67785,7 +67785,7 @@ const TextControl = (0,external_wp_element_namespaceObject.forwardRef)(Unforward
 const inputStyleNeutral = /*#__PURE__*/emotion_react_browser_esm_css("box-shadow:0 0 0 transparent;border-radius:", config_values.radiusBlockUi, ";border:", config_values.borderWidth, " solid ", COLORS.ui.border, ";@media not ( prefers-reduced-motion ){transition:box-shadow 0.1s linear;}" + ( true ? "" : 0),  true ? "" : 0);
 const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color:", COLORS.theme.accent, ";box-shadow:0 0 0 calc( ", config_values.borderWidthFocus, " - ", config_values.borderWidth, " ) ", COLORS.theme.accent, ";outline:2px solid transparent;" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/breakpoint-values.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/breakpoint-values.js
 /* harmony default export */ const breakpoint_values = ({
   huge: '1440px',
   wide: '1280px',
@@ -67799,7 +67799,7 @@ const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color
   'zoomed-in': '280px'
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/breakpoint.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/breakpoint.js
 /**
  * Internal dependencies
  */
@@ -67811,7 +67811,7 @@ const inputStyleFocus = /*#__PURE__*/emotion_react_browser_esm_css("border-color
  */
 const breakpoint = point => `@media (min-width: ${breakpoint_values[point]})`;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/input/input-control.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/utils/input/input-control.js
 /**
  * External dependencies
  */
@@ -67826,7 +67826,7 @@ const breakpoint = point => `@media (min-width: ${breakpoint_values[point]})`;
 
 const inputControl = /*#__PURE__*/emotion_react_browser_esm_css("display:block;font-family:", font('default.fontFamily'), ";padding:6px 8px;", inputStyleNeutral, ";font-size:", font('mobileTextMinFontSize'), ";line-height:normal;", breakpoint('small'), "{font-size:", font('default.fontSize'), ";line-height:normal;}&:focus{", inputStyleFocus, ";}&::-webkit-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.darkGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.darkGrayPlaceholder, ";}.is-dark-theme &{&::-webkit-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}&::-moz-placeholder{opacity:1;color:", COLORS.ui.lightGrayPlaceholder, ";}&:-ms-input-placeholder{color:", COLORS.ui.lightGrayPlaceholder, ";}}" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/textarea-control/styles/textarea-control-styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/textarea-control/styles/textarea-control-styles.js
 
 /**
  * External dependencies
@@ -67840,9 +67840,9 @@ const StyledTextarea = /*#__PURE__*/emotion_styled_base_browser_esm("textarea", 
   target: "e1w5nnrk0"
 } : 0)("width:100%;", inputControl, ";" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/textarea-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/textarea-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67894,8 +67894,8 @@ function UnforwardedTextareaControl(props, ref) {
  * vertically when the cursor reaches the bottom of the field.
  *
  * ```jsx
- * import { TextareaControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { TextareaControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyTextareaControl = () => {
  *   const [ text, setText ] = useState( '' );
@@ -67914,9 +67914,9 @@ function UnforwardedTextareaControl(props, ref) {
 const TextareaControl = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTextareaControl);
 /* harmony default export */ const textarea_control = (TextareaControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/text-highlight/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/text-highlight/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67931,7 +67931,7 @@ const TextareaControl = (0,external_wp_element_namespaceObject.forwardRef)(Unfor
  * each match with a `<mark>` tag which provides browser default styling.
  *
  * ```jsx
- * import { TextHighlight } from '@wordpress/components';
+ * import { TextHighlight } from '@cohesion/components';
  *
  * const MyTextHighlight = () => (
  *   <TextHighlight
@@ -67959,9 +67959,9 @@ const TextHighlight = props => {
 };
 /* harmony default export */ const text_highlight = (TextHighlight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/tip.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/tip.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -67974,9 +67974,9 @@ const tip = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(extern
 });
 /* harmony default export */ const library_tip = (tip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tip/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tip/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68000,7 +68000,7 @@ function Tip(props) {
 }
 /* harmony default export */ const build_module_tip = (Tip);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toggle-control/index.js
 /**
  * External dependencies
  */
@@ -68008,7 +68008,7 @@ function Tip(props) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68027,8 +68027,8 @@ function Tip(props) {
  * ToggleControl is used to generate a toggle user interface.
  *
  * ```jsx
- * import { ToggleControl } from '@wordpress/components';
- * import { useState } from '@wordpress/element';
+ * import { ToggleControl } from '@cohesion/components';
+ * import { useState } from '@cohesion/element';
  *
  * const MyToggleControl = () => {
  *   const [ value, setValue ] = useState( false );
@@ -68148,27 +68148,27 @@ if (false) {}
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-context/index.js
 /**
  * External dependencies
  */
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const ToolbarContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
 /* harmony default export */ const toolbar_context = (ToolbarContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-item/index.js
 /**
  * External dependencies
  */
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68186,7 +68186,7 @@ function toolbar_item_ToolbarItem({
   const accessibleToolbarStore = (0,external_wp_element_namespaceObject.useContext)(toolbar_context);
   const isRenderProp = typeof children === 'function';
   if (!isRenderProp && !Component) {
-     true ? external_wp_warning_default()('`ToolbarItem` is a generic headless component. You must pass either a `children` prop as a function or an `as` prop as a component. ' + 'See https://developer.wordpress.org/block-editor/components/toolbar-item/') : 0;
+     true ? external_wp_warning_default()('`ToolbarItem` is a generic headless component. You must pass either a `children` prop as a function or an `as` prop as a component. ' + 'See https://developer.cohesion.org/block-editor/components/toolbar-item/') : 0;
     return null;
   }
   const allProps = {
@@ -68217,7 +68217,7 @@ function toolbar_item_ToolbarItem({
 }
 /* harmony default export */ const toolbar_item = ((0,external_wp_element_namespaceObject.forwardRef)(toolbar_item_ToolbarItem));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-button/toolbar-button-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-button/toolbar-button-container.js
 
 /**
  * Internal dependencies
@@ -68232,13 +68232,13 @@ const ToolbarButtonContainer = ({
 });
 /* harmony default export */ const toolbar_button_container = (ToolbarButtonContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-button/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68311,8 +68311,8 @@ function UnforwardedToolbarButton({
  * or ToolbarGroup when used to create general interfaces.
  *
  * ```jsx
- * import { Toolbar, ToolbarButton } from '@wordpress/components';
- * import { edit } from '@wordpress/icons';
+ * import { Toolbar, ToolbarButton } from '@cohesion/components';
+ * import { edit } from '@cohesion/icons';
  *
  * function MyToolbar() {
  *   return (
@@ -68330,7 +68330,7 @@ function UnforwardedToolbarButton({
 const ToolbarButton = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToolbarButton);
 /* harmony default export */ const toolbar_button = (ToolbarButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-group/toolbar-group-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-group/toolbar-group-container.js
 
 /**
  * Internal dependencies
@@ -68347,9 +68347,9 @@ const ToolbarGroupContainer = ({
 });
 /* harmony default export */ const toolbar_group_container = (ToolbarGroupContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-group/toolbar-group-collapsed.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-group/toolbar-group-collapsed.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68386,14 +68386,14 @@ function ToolbarGroupCollapsed({
 }
 /* harmony default export */ const toolbar_group_collapsed = (ToolbarGroupCollapsed);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-group/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-group/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68595,14 +68595,14 @@ var Toolbar = createComponent((props) => {
 if (false) {}
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar/toolbar-container.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar/toolbar-container.js
 /**
  * External dependencies
  */
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68637,13 +68637,13 @@ function UnforwardedToolbarContainer({
 const ToolbarContainer = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToolbarContainer);
 /* harmony default export */ const toolbar_container = (ToolbarContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68679,7 +68679,7 @@ function UnforwardedToolbar({
     external_wp_deprecated_default()('Using Toolbar without label prop', {
       since: '5.6',
       alternative: 'ToolbarGroup component',
-      link: 'https://developer.wordpress.org/block-editor/components/toolbar/'
+      link: 'https://developer.cohesion.org/block-editor/components/toolbar/'
     });
     // Extracting title from `props` because `ToolbarGroup` doesn't accept it.
     const {
@@ -68711,8 +68711,8 @@ function UnforwardedToolbar({
  * To add controls, simply pass `ToolbarButton` components as children.
  *
  * ```jsx
- * import { Toolbar, ToolbarButton } from '@wordpress/components';
- * import { formatBold, formatItalic, link } from '@wordpress/icons';
+ * import { Toolbar, ToolbarButton } from '@cohesion/components';
+ * import { formatBold, formatItalic, link } from '@cohesion/icons';
  *
  * function MyToolbar() {
  *   return (
@@ -68728,9 +68728,9 @@ function UnforwardedToolbar({
 const toolbar_Toolbar = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedToolbar);
 /* harmony default export */ const toolbar = (toolbar_Toolbar);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toolbar/toolbar-dropdown-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/toolbar/toolbar-dropdown-menu/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68770,7 +68770,7 @@ function ToolbarDropdownMenu(props, ref) {
 }
 /* harmony default export */ const toolbar_dropdown_menu = ((0,external_wp_element_namespaceObject.forwardRef)(ToolbarDropdownMenu));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/styles.js
 
 function tools_panel_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -68832,9 +68832,9 @@ const ResetLabel = /*#__PURE__*/emotion_styled_base_browser_esm("span",  true ? 
 }), " text-transform:uppercase;" + ( true ? "" : 0));
 const DefaultControlsItem = /*#__PURE__*/emotion_react_browser_esm_css("color:", COLORS.gray[900], ";&&[aria-disabled='true']{color:", COLORS.gray[700], ";opacity:1;&:hover{color:", COLORS.gray[700], ";}", ResetLabel, "{opacity:0.3;}}" + ( true ? "" : 0),  true ? "" : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68860,9 +68860,9 @@ const ToolsPanelContext = (0,external_wp_element_namespaceObject.createContext)(
 });
 const useToolsPanelContext = () => (0,external_wp_element_namespaceObject.useContext)(ToolsPanelContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel-header/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -68910,13 +68910,13 @@ function useToolsPanelHeader(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel-header/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -69093,9 +69093,9 @@ const component_ToolsPanelHeader = (props, forwardedRef) => {
 const ConnectedToolsPanelHeader = contextConnect(component_ToolsPanelHeader, 'ToolsPanelHeader');
 /* harmony default export */ const tools_panel_header_component = (ConnectedToolsPanelHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -69362,7 +69362,7 @@ function useToolsPanel(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel/component.js
 /**
  * External dependencies
  */
@@ -69411,12 +69411,12 @@ const UnconnectedToolsPanel = (props, forwardedRef) => {
  * generated from the panel's inner `ToolsPanelItems`.
  *
  * ```jsx
- * import { __ } from '@wordpress/i18n';
+ * import { __ } from '@cohesion/i18n';
  * import {
  *   __experimentalToolsPanel as ToolsPanel,
  *   __experimentalToolsPanelItem as ToolsPanelItem,
  *   __experimentalUnitControl as UnitControl
- * } from '@wordpress/components';
+ * } from '@cohesion/components';
  *
  * function Example() {
  *   const [ height, setHeight ] = useState();
@@ -69459,9 +69459,9 @@ const UnconnectedToolsPanel = (props, forwardedRef) => {
 const component_ToolsPanel = contextConnect(UnconnectedToolsPanel, 'ToolsPanel');
 /* harmony default export */ const tools_panel_component = (component_ToolsPanel);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-item/hook.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel-item/hook.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -69518,7 +69518,7 @@ function useToolsPanelItem(props) {
   //
   // This is performed in a layout effect to ensure that the panel item
   // is registered before it is rendered preventing a rendering glitch.
-  // See: https://github.com/WordPress/gutenberg/issues/56470
+  // See: https://github.com/cohesion/gutenberg/issues/56470
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
     if (hasMatchingPanel && previousPanelId !== null) {
       registerPanelItem({
@@ -69566,7 +69566,7 @@ function useToolsPanelItem(props) {
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     // We check whether this item is currently registered as items rendered
     // via fills can persist through the parent panel being remounted.
-    // See: https://github.com/WordPress/gutenberg/pull/45673
+    // See: https://github.com/cohesion/gutenberg/pull/45673
     if (!isRegistered || isResetting || !hasMatchingPanel) {
       return;
     }
@@ -69597,7 +69597,7 @@ function useToolsPanelItem(props) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-item/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tools-panel/tools-panel-item/component.js
 /**
  * External dependencies
  */
@@ -69633,18 +69633,18 @@ const UnconnectedToolsPanelItem = (props, forwardedRef) => {
 const component_ToolsPanelItem = contextConnect(UnconnectedToolsPanelItem, 'ToolsPanelItem');
 /* harmony default export */ const tools_panel_item_component = (component_ToolsPanelItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index-context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/roving-tab-index-context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const RovingTabIndexContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
 const useRovingTabIndexContext = () => (0,external_wp_element_namespaceObject.useContext)(RovingTabIndexContext);
 const RovingTabIndexProvider = RovingTabIndexContext.Provider;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/roving-tab-index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -69656,7 +69656,7 @@ const RovingTabIndexProvider = RovingTabIndexContext.Provider;
 /**
  * Provider for adding roving tab index behaviors to tree grid structures.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/components/src/tree-grid/README.md
  */
 
 function RovingTabIndex({
@@ -69677,9 +69677,9 @@ function RovingTabIndex({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -69997,9 +69997,9 @@ const TreeGrid = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedT
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/row.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/row.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70037,9 +70037,9 @@ function UnforwardedTreeGridRow({
 const TreeGridRow = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTreeGridRow);
 /* harmony default export */ const tree_grid_row = (TreeGridRow);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/roving-tab-index-item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70089,9 +70089,9 @@ const RovingTabIndexItem = (0,external_wp_element_namespaceObject.forwardRef)(fu
 });
 /* harmony default export */ const roving_tab_index_item = (RovingTabIndexItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/item.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70121,9 +70121,9 @@ function UnforwardedTreeGridItem({
 const TreeGridItem = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTreeGridItem);
 /* harmony default export */ const tree_grid_item = (TreeGridItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/cell.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tree-grid/cell.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70160,13 +70160,13 @@ function UnforwardedTreeGridCell({
 const TreeGridCell = (0,external_wp_element_namespaceObject.forwardRef)(UnforwardedTreeGridCell);
 /* harmony default export */ const cell = (TreeGridCell);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/isolated-event-container/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/isolated-event-container/index.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70191,9 +70191,9 @@ const IsolatedEventContainer = (0,external_wp_element_namespaceObject.forwardRef
 });
 /* harmony default export */ const isolated_event_container = (IsolatedEventContainer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/slot-fill/bubbles-virtually/use-slot-fills.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/slot-fill/bubbles-virtually/use-slot-fills.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70207,7 +70207,7 @@ function useSlotFills(name) {
   return (0,external_wp_compose_namespaceObject.useObservableValue)(registry.fills, name);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/z-stack/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/z-stack/styles.js
 
 function z_stack_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -70236,13 +70236,13 @@ const ZStackView = /*#__PURE__*/emotion_styled_base_browser_esm("div",  true ? {
 }) => isLayered ? // When `isLayered` is true, all items overlap in the same grid cell
 z_stack_styles_ref : undefined, ";}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/z-stack/component.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/z-stack/component.js
 /**
  * External dependencies
  */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70289,7 +70289,7 @@ function UnconnectedZStack(props, forwardedRef) {
  * `ZStack` allows you to stack things along the Z-axis.
  *
  * ```jsx
- * import { __experimentalZStack as ZStack } from '@wordpress/components';
+ * import { __experimentalZStack as ZStack } from '@cohesion/components';
  *
  * function Example() {
  *   return (
@@ -70305,9 +70305,9 @@ function UnconnectedZStack(props, forwardedRef) {
 const ZStack = contextConnect(UnconnectedZStack, 'ZStack');
 /* harmony default export */ const z_stack_component = (ZStack);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/navigate-regions/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/navigate-regions/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70395,7 +70395,7 @@ function useNavigateRegions(shortcuts = defaultShortcuts) {
  * and "Landmark Regions" in the [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/).
  *
  * ```jsx
- * import { navigateRegions } from '@wordpress/components';
+ * import { navigateRegions } from '@cohesion/components';
  *
  * const MyComponentWithNavigateRegions = navigateRegions( () => (
  * 	<div>
@@ -70422,9 +70422,9 @@ function useNavigateRegions(shortcuts = defaultShortcuts) {
   })
 }), 'navigateRegions'));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-constrained-tabbing/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-constrained-tabbing/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70449,14 +70449,14 @@ const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigh
 }, 'withConstrainedTabbing');
 /* harmony default export */ const with_constrained_tabbing = (withConstrainedTabbing);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-fallback-styles/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-fallback-styles/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70515,9 +70515,9 @@ const withConstrainedTabbing = (0,external_wp_compose_namespaceObject.createHigh
 
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-filters/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-filters/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70536,8 +70536,8 @@ const ANIMATION_FRAME_PERIOD = 16;
  * @return Higher-order component factory.
  *
  * ```jsx
- * import { withFilters } from '@wordpress/components';
- * import { addFilter } from '@wordpress/hooks';
+ * import { withFilters } from '@cohesion/components';
+ * import { addFilter } from '@cohesion/hooks';
  *
  * const MyComponent = ( { title } ) => <h1>{ title }</h1>;
  *
@@ -70645,9 +70645,9 @@ function withFilters(hookName) {
   }, 'withFilters');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-focus-return/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-focus-return/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70711,14 +70711,14 @@ const with_focus_return_Provider = ({
   return children;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/higher-order/with-notices/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/higher-order/with-notices/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -70735,7 +70735,7 @@ const with_focus_return_Provider = ({
  * with the additional props `noticeOperations` and `noticeUI`.
  *
  * ```jsx
- * import { withNotices, Button } from '@wordpress/components';
+ * import { withNotices, Button } from '@cohesion/components';
  *
  * const MyComponentWithNotices = withNotices(
  * 	( { noticeOperations, noticeUI } ) => {
@@ -71693,9 +71693,9 @@ var MenuButton = createComponent((props) => {
 if (false) {}
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-right-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -72890,7 +72890,7 @@ var MenuSeparator = createComponent((props) => {
 if (false) {}
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown-menu-v2/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown-menu-v2/styles.js
 
 function dropdown_menu_v2_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -73013,7 +73013,7 @@ const styles_DropdownMenuItemHelpText = /*#__PURE__*/emotion_styled_base_browser
   target: "e1kdzosf0"
 } : 0)("font-size:", font('helpText.fontSize'), ";line-height:16px;color:", COLORS.gray['700'], ";[data-active-item]:not( [data-focus-visible] ) *:not( ", dropdown_menu_v2_styles_DropdownMenu, " ) &,[aria-disabled='true'] *:not( ", dropdown_menu_v2_styles_DropdownMenu, " ) &{color:inherit;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/dropdown-menu-v2/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/dropdown-menu-v2/index.js
 /**
  * External dependencies
  */
@@ -73021,7 +73021,7 @@ const styles_DropdownMenuItemHelpText = /*#__PURE__*/emotion_styled_base_browser
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73285,7 +73285,7 @@ const DropdownMenuItemHelpText = (0,external_wp_element_namespaceObject.forwardR
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/theme/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/theme/styles.js
 
 function theme_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop)."; }
 /**
@@ -73311,7 +73311,7 @@ const theme_styles_Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",
   styles: "color:var( --wp-components-color-foreground, currentColor )"
 } : 0);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/theme/color-algorithms.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/theme/color-algorithms.js
 /**
  * External dependencies
  */
@@ -73320,7 +73320,7 @@ const theme_styles_Wrapper = /*#__PURE__*/emotion_styled_base_browser_esm("div",
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73417,9 +73417,9 @@ function generateShades(background, foreground) {
   return result;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/theme/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/theme/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73432,7 +73432,7 @@ function generateShades(background, foreground) {
 
 
 /**
- * `Theme` allows defining theme variables for components in the `@wordpress/components` package.
+ * `Theme` allows defining theme variables for components in the `@cohesion/components` package.
  *
  * Multiple `Theme` components can be nested in order to override specific theme variables.
  *
@@ -73469,9 +73469,9 @@ function Theme({
 }
 /* harmony default export */ const theme = (Theme);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73482,7 +73482,7 @@ function Theme({
 const TabsContext = (0,external_wp_element_namespaceObject.createContext)(undefined);
 const useTabsContext = () => (0,external_wp_element_namespaceObject.useContext)(TabsContext);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/styles.js
 
 /**
  * External dependencies
@@ -73506,9 +73506,9 @@ const styles_TabPanel = /*#__PURE__*/emotion_styled_base_browser_esm(TabPanel,  
   target: "enfox0g0"
 } : 0)("&:focus{box-shadow:none;outline:none;}&:focus-visible{border-radius:2px;box-shadow:0 0 0 var( --wp-admin-border-width-focus ) ", COLORS.theme.accent, ";outline:2px solid transparent;outline-offset:0;}" + ( true ? "" : 0));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/tab.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/tab.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73549,7 +73549,7 @@ const tab_Tab = (0,external_wp_element_namespaceObject.forwardRef)(function Tab(
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/tablist.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/tablist.js
 /**
  * External dependencies
  */
@@ -73557,7 +73557,7 @@ const tab_Tab = (0,external_wp_element_namespaceObject.forwardRef)(function Tab(
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73593,7 +73593,7 @@ function useTrackElementOffset(targetElement, onUpdate) {
     function updateIndicator(element) {
       setIndicatorPosition({
         // Workaround to prevent unwanted scrollbars, see:
-        // https://github.com/WordPress/gutenberg/pull/61979
+        // https://github.com/cohesion/gutenberg/pull/61979
         left: Math.max(element.offsetLeft - 1, 0),
         top: Math.max(element.offsetTop - 1, 0),
         width: parseFloat(getComputedStyle(element).width),
@@ -73707,9 +73707,9 @@ const TabList = (0,external_wp_element_namespaceObject.forwardRef)(function TabL
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/tabpanel.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/tabpanel.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73754,7 +73754,7 @@ const tabpanel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(fun
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tabs/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/tabs/index.js
 /**
  * External dependencies
  */
@@ -73762,7 +73762,7 @@ const tabpanel_TabPanel = (0,external_wp_element_namespaceObject.forwardRef)(fun
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -73930,19 +73930,19 @@ Tabs.Context = TabsContext;
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/components');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/components');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/private-apis.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -73982,7 +73982,7 @@ lock(privateApis, {
   kebabCase: kebabCase
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/components/build-module/index.js
 // Primitives.
 
 

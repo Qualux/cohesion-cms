@@ -2,12 +2,12 @@
 /**
  * Action handler for Multisite administration panels.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Multisite
  * @since 3.0.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load cohesion Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 $action = ( isset( $_GET['action'] ) ) ? $_GET['action'] : '';

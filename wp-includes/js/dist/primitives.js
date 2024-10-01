@@ -61,14 +61,14 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/svg/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/primitives/build-module/svg/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -175,16 +175,16 @@ const SVG = (0,external_wp_element_namespaceObject.forwardRef)(
 });
 SVG.displayName = 'SVG';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/horizontal-rule/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/primitives/build-module/horizontal-rule/index.js
 const HorizontalRule = 'hr';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/block-quotation/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/primitives/build-module/block-quotation/index.js
 const BlockQuotation = 'blockquote';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/view/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/primitives/build-module/view/index.js
 const View = 'div';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/primitives/build-module/index.js
 
 
 

@@ -136,7 +136,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external "React"
 const external_React_namespaceObject = window["React"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/create-interpolate-element.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/create-interpolate-element.js
 /**
  * Internal dependencies
  */
@@ -446,7 +446,7 @@ function closeOuterElement(endOffset) {
 }
 /* harmony default export */ const create_interpolate_element = (createInterpolateElement);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/react.js
 /**
  * External dependencies
  */
@@ -494,7 +494,7 @@ function closeOuterElement(endOffset) {
 
 
 /**
- * A base class to create WordPress Components (Refs, state and lifecycle hooks)
+ * A base class to create cohesion Components (Refs, state and lifecycle hooks)
  */
 
 
@@ -713,7 +713,7 @@ function switchChildrenNodeName(children, nodeName) {
 var external_ReactDOM_ = __webpack_require__(5795);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(4140);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react-platform.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/react-platform.js
 /**
  * External dependencies
  */
@@ -748,7 +748,7 @@ var client = __webpack_require__(4140);
 /**
  * Renders a given element into the target DOM node.
  *
- * @deprecated since WordPress 6.2.0. Use `createRoot` instead.
+ * @deprecated since cohesion 6.2.0. Use `createRoot` instead.
  * @see https://react.dev/reference/react-dom/render
  */
 
@@ -756,7 +756,7 @@ var client = __webpack_require__(4140);
 /**
  * Hydrates a given element into the target DOM node.
  *
- * @deprecated since WordPress 6.2.0. Use `hydrateRoot` instead.
+ * @deprecated since cohesion 6.2.0. Use `hydrateRoot` instead.
  * @see https://react.dev/reference/react-dom/hydrate
  */
 
@@ -764,7 +764,7 @@ var client = __webpack_require__(4140);
 /**
  * Creates a new React root for the target DOM node.
  *
- * @since 6.2.0 Introduced in WordPress core.
+ * @since 6.2.0 Introduced in cohesion core.
  * @see https://react.dev/reference/react-dom/client/createRoot
  */
 
@@ -772,7 +772,7 @@ var client = __webpack_require__(4140);
 /**
  * Creates a new React root for the target DOM node and hydrates it with a pre-generated markup.
  *
- * @since 6.2.0 Introduced in WordPress core.
+ * @since 6.2.0 Introduced in cohesion core.
  * @see https://react.dev/reference/react-dom/client/hydrateRoot
  */
 
@@ -780,12 +780,12 @@ var client = __webpack_require__(4140);
 /**
  * Removes any mounted element from the target DOM node.
  *
- * @deprecated since WordPress 6.2.0. Use `root.unmount()` instead.
+ * @deprecated since cohesion 6.2.0. Use `root.unmount()` instead.
  * @see https://react.dev/reference/react-dom/unmountComponentAtNode
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/utils.js
 /**
  * Checks if the provided WP element is empty.
  *
@@ -802,7 +802,7 @@ const isEmptyElement = element => {
   return !element;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/platform.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/platform.js
 /**
  * Parts of this source were derived and modified from react-native-web,
  * released under the MIT license.
@@ -827,7 +827,7 @@ const Platform = {
  * Here is an example of how to use the select method:
  * @example
  * ```js
- * import { Platform } from '@wordpress/element';
+ * import { Platform } from '@cohesion/element';
  *
  * const placeholderLabel = Platform.select( {
  *   native: __( 'Add media' ),
@@ -1344,7 +1344,7 @@ function paramCase(input, options) {
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 const external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/raw-html.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/raw-html.js
 /**
  * Internal dependencies
  */
@@ -1387,7 +1387,7 @@ function RawHTML({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/serialize.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/serialize.js
 /**
  * Parts of this source were derived and modified from fast-react-render,
  * released under the MIT license.
@@ -1422,7 +1422,7 @@ function RawHTML({
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1880,7 +1880,7 @@ function renderStyle(style) {
 }
 /* harmony default export */ const serialize = (renderElement);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/element/build-module/index.js
 
 
 

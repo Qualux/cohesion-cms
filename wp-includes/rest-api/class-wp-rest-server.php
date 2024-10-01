@@ -2,13 +2,13 @@
 /**
  * REST API: WP_REST_Server class
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage REST_API
  * @since 4.4.0
  */
 
 /**
- * Core class used to implement the WordPress REST API server.
+ * Core class used to implement the cohesion REST API server.
  *
  * @since 4.4.0
  */
@@ -1327,7 +1327,7 @@ class WP_REST_Server {
 		}
 
 		if ( rest_is_field_included( '_links', $fields ) || rest_is_field_included( '_embedded', $fields ) ) {
-			$response->add_link( 'help', 'https://developer.wordpress.org/rest-api/' );
+			$response->add_link( 'help', 'https://developer.cohesion.org/rest-api/' );
 			$this->add_active_theme_link_to_index( $response );
 			$this->add_site_logo_to_index( $response );
 			$this->add_site_icon_to_index( $response );
@@ -1386,7 +1386,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes the site logo through the WordPress REST API.
+	 * Exposes the site logo through the cohesion REST API.
 	 *
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
@@ -1402,7 +1402,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes the site icon through the WordPress REST API.
+	 * Exposes the site icon through the cohesion REST API.
 	 *
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
@@ -1420,7 +1420,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes an image through the WordPress REST API.
+	 * Exposes an image through the cohesion REST API.
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
 	 *

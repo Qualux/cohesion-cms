@@ -169,14 +169,14 @@ const external_wp_components_namespaceObject = window["wp"]["components"];
 const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/server-side-render.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/server-side-render/build-module/server-side-render.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -385,9 +385,9 @@ function ServerSideRender(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/server-side-render/build-module/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -403,9 +403,9 @@ function ServerSideRender(props) {
 
 const build_module_EMPTY_OBJECT = {};
 const ExportedServerSideRender = (0,external_wp_data_namespaceObject.withSelect)(select => {
-  // FIXME: @wordpress/server-side-render should not depend on @wordpress/editor.
+  // FIXME: @cohesion/server-side-render should not depend on @cohesion/editor.
   // It is used by blocks that can be loaded into a *non-post* block editor.
-  // eslint-disable-next-line @wordpress/data-no-store-string-literals
+  // eslint-disable-next-line @cohesion/data-no-store-string-literals
   const coreEditorSelect = select('core/editor');
   if (coreEditorSelect) {
     const currentPostId = coreEditorSelect.getCurrentPostId();

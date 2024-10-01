@@ -4,7 +4,7 @@
  *
  * Generates the sitemap index.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Sitemaps
  * @since 5.5.0
  */
@@ -80,7 +80,7 @@ class WP_Sitemaps_Index {
 	 *
 	 * @since 5.5.0
 	 *
-	 * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+	 * @global WP_Rewrite $wp_rewrite cohesion rewrite component.
 	 *
 	 * @return string The sitemap index URL.
 	 */

@@ -407,7 +407,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wp-admin-bar-my-account > .ab-item:before {
-	content: "\f110";
+
 	top: 2px;
 	float: right;
 	margin-left: 6px;
@@ -501,7 +501,6 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
-	content: "\f120";
 	top: 2px;
 }
 
@@ -532,7 +531,6 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar .quicklinks li div.blavatar:before {
-	content: "\f120";
 	display: inline-block;
 }
 
@@ -540,34 +538,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 	margin-top: -12px;
 }
 
-#wpadminbar #wp-admin-bar-my-sites > .ab-item:before,
-#wpadminbar #wp-admin-bar-site-name > .ab-item:before {
-	content: "\f541";
-	top: 2px;
-}
 
-#wpadminbar #wp-admin-bar-site-editor > .ab-item:before {
-	content: "\f100";
-	top: 2px;
-}
-
-#wpadminbar #wp-admin-bar-customize > .ab-item:before {
-	content: "\f540";
-	top: 2px;
-}
-
-#wpadminbar #wp-admin-bar-edit > .ab-item:before {
-	content: "\f464";
-	top: 2px;
-}
-
-#wpadminbar #wp-admin-bar-site-name > .ab-item:before {
-	content: "\f226";
-}
-
-.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before {
-	content: "\f102";
-}
 
 
 
@@ -579,7 +550,7 @@ html:lang(he-il) .rtl #wpadminbar * {
 }
 
 #wpadminbar #wp-admin-bar-comments .ab-icon:before {
-	content: "\f101";
+
 	top: 3px;
 }
 
@@ -591,7 +562,7 @@ html:lang(he-il) .rtl #wpadminbar * {
  * New Content
  */
 #wpadminbar #wp-admin-bar-new-content .ab-icon:before {
-	content: "\f132";
+
 	top: 4px;
 }
 
@@ -599,7 +570,7 @@ html:lang(he-il) .rtl #wpadminbar * {
  * Updates
  */
 #wpadminbar #wp-admin-bar-updates .ab-icon:before {
-	content: "\f463";
+
 	top: 2px;
 }
 

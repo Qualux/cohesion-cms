@@ -302,7 +302,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 // EXTERNAL MODULE: ./node_modules/requestidlecallback/index.js
 var requestidlecallback = __webpack_require__(5033);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/priority-queue/build-module/request-idle-callback.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/priority-queue/build-module/request-idle-callback.js
 /**
  * External dependencies
  */
@@ -325,7 +325,7 @@ function createRequestIdleCallback() {
 }
 /* harmony default export */ const request_idle_callback = (createRequestIdleCallback());
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/priority-queue/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/priority-queue/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -378,7 +378,7 @@ function createRequestIdleCallback() {
  *
  * @example
  *```js
- * import { createQueue } from '@wordpress/priority-queue';
+ * import { createQueue } from '@cohesion/priority-queue';
  *
  * const queue = createQueue();
  *

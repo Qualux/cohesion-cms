@@ -2,15 +2,15 @@
 /**
  * About This Version administration panel.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/** cohesion Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // Used in the HTML title tag.
-/* translators: Page title of the About WordPress page in the admin. */
+/* translators: Page title of the About cohesion page in the admin. */
 $title = _x( 'About', 'page title' );
 
 list( $display_version ) = explode( '-', get_bloginfo( 'version' ) );
@@ -25,7 +25,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Version number. */
-						__( 'WordPress %s' ),
+						__( 'cohesion %s' ),
 						$display_version
 					);
 					?>
@@ -47,7 +47,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: 1: WordPress version number, 2: Plural number of bugs. */
+						/* translators: 1: cohesion version number, 2: Plural number of bugs. */
 						_n(
 							'<strong>Version %1$s</strong> addressed %2$s bug.',
 							'<strong>Version %1$s</strong> addressed %2$s bugs.',
@@ -62,8 +62,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						/* translators: %s: HelpHub URL. */
 						__( 'For more information, see <a href="%s">the release notes</a>.' ),
 						sprintf(
-							/* translators: %s: WordPress version. */
-							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+							/* translators: %s: cohesion version. */
+							esc_url( __( 'https://cohesion.org/support/cohesion-version/version-%s/' ) ),
 							sanitize_title( '6.6.2' )
 						)
 					);
@@ -72,7 +72,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: 1: WordPress version number, 2: Plural number of bugs. */
+						/* translators: 1: cohesion version number, 2: Plural number of bugs. */
 						_n(
 							'<strong>Version %1$s</strong> addressed %2$s bug.',
 							'<strong>Version %1$s</strong> addressed %2$s bugs.',
@@ -87,8 +87,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 						/* translators: %s: HelpHub URL. */
 						__( 'For more information, see <a href="%s">the release notes</a>.' ),
 						sprintf(
-							/* translators: %s: WordPress version. */
-							esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+							/* translators: %s: cohesion version. */
+							esc_url( __( 'https://cohesion.org/support/cohesion-version/version-%s/' ) ),
 							sanitize_title( '6.6.1' )
 						)
 					);
@@ -103,13 +103,13 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Version number. */
-						__( 'Welcome to WordPress %s' ),
+						__( 'Welcome to cohesion %s' ),
 						$display_version
 					);
 					?>
 				</h2>
 				<p class="is-subheading">
-					<?php _e( 'Create and deploy beautiful and coherent design elements across your sites with WordPress 6.6. A new rollback option for auto-updating plugins gives you control, flexibility, and peace of mind.' ); ?>
+					<?php _e( 'Create and deploy beautiful and coherent design elements across your sites with cohesion 6.6. A new rollback option for auto-updating plugins gives you control, flexibility, and peace of mind.' ); ?>
 				</p>
 			</div>
 		</div>
@@ -181,7 +181,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %1$s: code-formatted "WP_Theme_JSON", %2$s: code-formatted "data-wp-on-async", %%: escaped percent sign, leave as %%. */
-						__( 'WordPress 6.6 includes important updates like removing redundant %1$s calls, disabling autoload for large options, eliminating unnecessary polyfill dependencies, lazy loading post embeds, introducing the %2$s directive, and a 33%% reduction in template loading time in the editor.' ),
+						__( 'cohesion 6.6 includes important updates like removing redundant %1$s calls, disabling autoload for large options, eliminating unnecessary polyfill dependencies, lazy loading post embeds, introducing the %2$s directive, and a 33%% reduction in template loading time in the editor.' ),
 						'<code>WP_Theme_JSON</code>',
 						'<code>data-wp-on-async</code>'
 					);
@@ -196,7 +196,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					</svg>
 				</div>
 				<h3><?php _e( 'Accessibility improvements' ); ?></h3>
-				<p><?php _e( '55+ accessibility fixes and enhancements focus on foundational aspects of the WordPress experience, particularly the data views component powering the new site editing experience and areas like the Inserter that provide a key way of interacting with blocks and patterns.' ); ?></p>
+				<p><?php _e( '55+ accessibility fixes and enhancements focus on foundational aspects of the cohesion experience, particularly the data views component powering the new site editing experience and areas like the Inserter that provide a key way of interacting with blocks and patterns.' ); ?></p>
 			</div>
 		</div>
 
@@ -205,11 +205,11 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns is-wider-left is-feature" style="background-color:var(--background);border-radius:var(--border-radius);">
 			<h3 class="is-section-header"><?php _e( 'And much more' ); ?></h3>
 			<div class="column">
-				<p><?php _e( 'For a comprehensive overview of all the new features and enhancements in WordPress 6.6, please visit the feature-showcase website.' ); ?></p>
+				<p><?php _e( 'For a comprehensive overview of all the new features and enhancements in cohesion 6.6, please visit the feature-showcase website.' ); ?></p>
 			</div>
 			<div class="column aligncenter">
 				<div class="about__image">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/download/releases/6-6/' ) ); ?>" class="button button-primary button-hero"><?php _e( 'See everything new' ); ?></a>
+					<a href="<?php echo esc_url( __( 'https://cohesion.org/download/releases/6-6/' ) ); ?>" class="button button-primary button-hero"><?php _e( 'See everything new' ); ?></a>
 				</div>
 			</div>
 		</div>
@@ -225,7 +225,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 					<?php
 					printf(
 						/* translators: %s: Version number. */
-						__( 'Learn more about WordPress %s' ),
+						__( 'Learn more about cohesion %s' ),
 						$display_version
 					);
 					?>
@@ -233,10 +233,10 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p>
 					<?php
 					printf(
-						/* translators: 1: Learn WordPress link, 2: Workshops link. */
-						__( '<a href="%1$s">Learn WordPress</a> is a free resource for new and experienced WordPress users. Learn is stocked with how-to videos on using various features in WordPress, <a href="%2$s">interactive workshops</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPress.' ),
-						'https://learn.wordpress.org/',
-						'https://learn.wordpress.org/online-workshops/'
+						/* translators: 1: Learn cohesion link, 2: Workshops link. */
+						__( '<a href="%1$s">Learn cohesion</a> is a free resource for new and experienced cohesion users. Learn is stocked with how-to videos on using various features in cohesion, <a href="%2$s">interactive workshops</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of cohesion.' ),
+						'https://learn.cohesion.org/',
+						'https://learn.cohesion.org/online-workshops/'
 					);
 					?>
 				</p>
@@ -254,9 +254,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p style="margin-top:calc(var(--gap) / 2);">
 					<?php
 					printf(
-						/* translators: 1: WordPress Field Guide link, 2: WordPress version number. */
-						__( 'Explore the <a href="%1$s">WordPress %2$s Field Guide</a>. Learn about the changes in this release with detailed developer notes to help you build with WordPress.' ),
-						esc_url( __( 'https://make.wordpress.org/core/wordpress-6-6-field-guide/' ) ),
+						/* translators: 1: cohesion Field Guide link, 2: cohesion version number. */
+						__( 'Explore the <a href="%1$s">cohesion %2$s Field Guide</a>. Learn about the changes in this release with detailed developer notes to help you build with cohesion.' ),
+						esc_url( __( 'https://make.cohesion.org/core/cohesion-6-6-field-guide/' ) ),
 						'6.6'
 					);
 					?>
@@ -273,11 +273,11 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				<p style="margin-top:calc(var(--gap) / 2);">
 					<?php
 					printf(
-						/* translators: 1: WordPress Release Notes link, 2: WordPress version number. */
-						__( '<a href="%1$s">Read the WordPress %2$s Release Notes</a> for information on installation, enhancements, fixed issues, release contributors, learning resources, and the list of file changes.' ),
+						/* translators: 1: cohesion Release Notes link, 2: cohesion version number. */
+						__( '<a href="%1$s">Read the cohesion %2$s Release Notes</a> for information on installation, enhancements, fixed issues, release contributors, learning resources, and the list of file changes.' ),
 						sprintf(
-							/* translators: %s: WordPress version number. */
-							esc_url( __( 'https://wordpress.org/documentation/wordpress-version/version-%s/' ) ),
+							/* translators: %s: cohesion version number. */
+							esc_url( __( 'https://cohesion.org/documentation/cohesion-version/version-%s/' ) ),
 							'6-6'
 						),
 						'6.6'
@@ -324,24 +324,24 @@ __( 'Security Releases' );
 __( 'Maintenance and Security Release' );
 __( 'Maintenance and Security Releases' );
 
-/* translators: %s: WordPress version number. */
+/* translators: %s: cohesion version number. */
 __( '<strong>Version %s</strong> addressed one security issue.' );
-/* translators: %s: WordPress version number. */
+/* translators: %s: cohesion version number. */
 __( '<strong>Version %s</strong> addressed some security issues.' );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. */
+/* translators: 1: cohesion version number, 2: Plural number of bugs. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed %2$s bugs.'
 );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. Singular security issue. */
+/* translators: 1: cohesion version number, 2: Plural number of bugs. Singular security issue. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs.'
 );
 
-/* translators: 1: WordPress version number, 2: Plural number of bugs. More than one security issue. */
+/* translators: 1: cohesion version number, 2: Plural number of bugs. More than one security issue. */
 _n_noop(
 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.'
@@ -350,14 +350,14 @@ _n_noop(
 /* translators: %s: Documentation URL. */
 __( 'For more information, see <a href="%s">the release notes</a>.' );
 
-/* translators: 1: WordPress version number, 2: Link to update WordPress */
-__( 'Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
+/* translators: 1: cohesion version number, 2: Link to update cohesion */
+__( 'Important! Your version of cohesion (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href="%2$s">update to the latest version of cohesion</a>.' );
 
-/* translators: 1: WordPress version number, 2: Link to update WordPress */
-__( 'Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
+/* translators: 1: cohesion version number, 2: Link to update cohesion */
+__( 'Important! Your version of cohesion (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href="%2$s">update to the latest version of cohesion</a>.' );
 
-/* translators: %s: The major version of WordPress for this branch. */
-__( 'This is the final release of WordPress %s' );
+/* translators: %s: The major version of cohesion for this branch. */
+__( 'This is the final release of cohesion %s' );
 
-/* translators: The localized WordPress download URL. */
-__( 'https://wordpress.org/download/' );
+/* translators: The localized cohesion download URL. */
+__( 'https://cohesion.org/download/' );

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Privacy Tools API.
+ * cohesion Administration Privacy Tools API.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 

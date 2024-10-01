@@ -5902,7 +5902,7 @@ __webpack_require__.d(__webpack_exports__, {
   withBlockContentContext: () => (/* reexport */ withBlockContentContext)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/blocks/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -5927,7 +5927,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   isMatchingSearchTerm: () => (isMatchingSearchTerm)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/private-selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/blocks/build-module/store/private-selectors.js
 var private_selectors_namespaceObject = {};
 __webpack_require__.r(private_selectors_namespaceObject);
 __webpack_require__.d(private_selectors_namespaceObject, {
@@ -5938,7 +5938,7 @@ __webpack_require__.d(private_selectors_namespaceObject, {
   getUnprocessedBlockTypes: () => (getUnprocessedBlockTypes)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/blocks/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -5960,7 +5960,7 @@ __webpack_require__.d(actions_namespaceObject, {
   updateCategory: () => (updateCategory)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/blocks/build-module/store/private-actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/blocks/build-module/store/private-actions.js
 var private_actions_namespaceObject = {};
 __webpack_require__.r(private_actions_namespaceObject);
 __webpack_require__.d(private_actions_namespaceObject, {
@@ -6478,7 +6478,7 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_dom_namespaceObject = window["wp"]["dom"];
 ;// CONCATENATED MODULE: external ["wp","richText"]
 const external_wp_richText_namespaceObject = window["wp"]["richText"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/constants.js
 const BLOCK_ICON_DEFAULT = 'block-default';
 
 /**
@@ -6771,21 +6771,21 @@ const __EXPERIMENTAL_PATHS_WITH_OVERRIDE = {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/blocks');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/blocks');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/registration.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/registration.js
 /* eslint no-console: [ 'error', { allow: [ 'error', 'warn' ] } ] */
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -6815,7 +6815,7 @@ const i18nBlockSchema = {
  *
  * @typedef {(string|Element|Component)} WPIcon
  *
- * @see https://developer.wordpress.org/resource/dashicons/
+ * @see https://developer.cohesion.org/resource/dashicons/
  */
 
 /**
@@ -6970,15 +6970,15 @@ function getBlockSettingsFromMetadata({
  * editor interface where blocks are implemented.
  *
  * For more in-depth information on registering a custom block see the
- * [Create a block tutorial](https://developer.wordpress.org/block-editor/getting-started/create-block/).
+ * [Create a block tutorial](https://developer.cohesion.org/block-editor/getting-started/create-block/).
  *
  * @param {string|Object} blockNameOrMetadata Block type name or its metadata.
  * @param {Object}        settings            Block settings.
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { registerBlockType } from '@wordpress/blocks'
+ * import { __ } from '@cohesion/i18n';
+ * import { registerBlockType } from '@cohesion/blocks'
  *
  * registerBlockType( 'namespace/block-name', {
  *     title: __( 'My First Block' ),
@@ -7027,7 +7027,7 @@ function registerBlockType(blockNameOrMetadata, settings) {
  */
 function translateBlockSettingUsingI18nSchema(i18nSchema, settingValue, textdomain) {
   if (typeof i18nSchema === 'string' && typeof settingValue === 'string') {
-    // eslint-disable-next-line @wordpress/i18n-no-variables, @wordpress/i18n-text-domain
+    // eslint-disable-next-line @cohesion/i18n-no-variables, @cohesion/i18n-text-domain
     return (0,external_wp_i18n_namespaceObject._x)(settingValue, i18nSchema, textdomain);
   }
   if (Array.isArray(i18nSchema) && i18nSchema.length && Array.isArray(settingValue)) {
@@ -7056,8 +7056,8 @@ function translateBlockSettingUsingI18nSchema(i18nSchema, settingValue, textdoma
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { registerBlockCollection, registerBlockType } from '@wordpress/blocks';
+ * import { __ } from '@cohesion/i18n';
+ * import { registerBlockCollection, registerBlockType } from '@cohesion/blocks';
  *
  * // Register the collection.
  * registerBlockCollection( 'my-collection', {
@@ -7086,7 +7086,7 @@ function registerBlockCollection(namespace, {
  *
  * @example
  * ```js
- * import { unregisterBlockCollection } from '@wordpress/blocks';
+ * import { unregisterBlockCollection } from '@cohesion/blocks';
  *
  * unregisterBlockCollection( 'my-collection' );
  * ```
@@ -7102,8 +7102,8 @@ function unregisterBlockCollection(namespace) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { unregisterBlockType } from '@wordpress/blocks';
+ * import { __ } from '@cohesion/i18n';
+ * import { unregisterBlockType } from '@cohesion/blocks';
  *
  * const ExampleComponent = () => {
  *     return (
@@ -7185,7 +7185,7 @@ function getUnregisteredTypeHandlerName() {
  *
  * @example
  * ```js
- * import { setDefaultBlockName } from '@wordpress/blocks';
+ * import { setDefaultBlockName } from '@cohesion/blocks';
  *
  * const ExampleComponent = () => {
  *
@@ -7206,13 +7206,13 @@ function setDefaultBlockName(name) {
  *
  * This function lets you select a different block to group other blocks in instead of the
  * default `core/group` block. This function must be used in a component or when the DOM is fully
- * loaded. See https://developer.wordpress.org/block-editor/reference-guides/packages/packages-dom-ready/
+ * loaded. See https://developer.cohesion.org/block-editor/reference-guides/packages/packages-dom-ready/
  *
  * @param {string} name Block name.
  *
  * @example
  * ```js
- * import { setGroupingBlockName } from '@wordpress/blocks';
+ * import { setGroupingBlockName } from '@cohesion/blocks';
  *
  * const ExampleComponent = () => {
  *
@@ -7349,16 +7349,16 @@ const hasChildBlocksWithInserterSupport = blockName => {
  * Registers a new block style for the given block types.
  *
  * For more information on connecting the styles with CSS
- * [the official documentation](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-styles/#styles).
+ * [the official documentation](https://developer.cohesion.org/block-editor/reference-guides/block-api/block-styles/#styles).
  *
  * @param {string|Array} blockNames     Name of blocks e.g. “core/latest-posts” or `["core/group", "core/columns"]`.
  * @param {Object}       styleVariation Object containing `name` which is the class name applied to the block and `label` which identifies the variation to the user.
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { registerBlockStyle } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { registerBlockStyle } from '@cohesion/blocks';
+ * import { Button } from '@cohesion/components';
  *
  *
  * const ExampleComponent = () => {
@@ -7389,9 +7389,9 @@ const registerBlockStyle = (blockNames, styleVariation) => {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { unregisterBlockStyle } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { unregisterBlockStyle } from '@cohesion/blocks';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     return (
@@ -7412,7 +7412,7 @@ const unregisterBlockStyle = (blockName, styleVariationName) => {
 
 /**
  * Returns an array with the variations of a given block type.
- * Ignored from documentation as the recommended usage is via useSelect from @wordpress/data.
+ * Ignored from documentation as the recommended usage is via useSelect from @cohesion/data.
  *
  * @ignore
  *
@@ -7429,16 +7429,16 @@ const getBlockVariations = (blockName, scope) => {
  * Registers a new block variation for the given block type.
  *
  * For more information on block variations see
- * [the official documentation ](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-variations/).
+ * [the official documentation ](https://developer.cohesion.org/block-editor/reference-guides/block-api/block-variations/).
  *
  * @param {string}           blockName Name of the block (example: “core/columns”).
  * @param {WPBlockVariation} variation Object describing a block variation.
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { registerBlockVariation } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { registerBlockVariation } from '@cohesion/blocks';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     return (
@@ -7472,9 +7472,9 @@ const registerBlockVariation = (blockName, variation) => {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { unregisterBlockVariation } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { unregisterBlockVariation } from '@cohesion/blocks';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     return (
@@ -7493,7 +7493,7 @@ const unregisterBlockVariation = (blockName, variationName) => {
   (0,external_wp_data_namespaceObject.dispatch)(store).removeBlockVariations(blockName, variationName);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/utils.js
 /**
  * External dependencies
  */
@@ -7502,7 +7502,7 @@ const unregisterBlockVariation = (blockName, variationName) => {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7787,14 +7787,14 @@ function omit(object, keys) {
   return Object.fromEntries(Object.entries(object).filter(([key]) => !keys.includes(key)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/reducer.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7870,7 +7870,7 @@ function bootstrappedBlockTypes(state = {}, action) {
       if (serverDefinition) {
         // The `blockHooks` prop is not yet included in the server provided
         // definitions and needs to be polyfilled. This can be removed when the
-        // minimum supported WordPress is >= 6.4.
+        // minimum supported cohesion is >= 6.4.
         if (serverDefinition.blockHooks === undefined && blockType.blockHooks) {
           newDefinition = {
             ...serverDefinition,
@@ -7881,7 +7881,7 @@ function bootstrappedBlockTypes(state = {}, action) {
 
         // The `allowedBlocks` prop is not yet included in the server provided
         // definitions and needs to be polyfilled. This can be removed when the
-        // minimum supported WordPress is >= 6.5.
+        // minimum supported cohesion is >= 6.5.
         if (serverDefinition.allowedBlocks === undefined && blockType.allowedBlocks) {
           newDefinition = {
             ...serverDefinition,
@@ -8142,7 +8142,7 @@ function blockBindingsSources(state = {}, action) {
 // EXTERNAL MODULE: ./node_modules/remove-accents/index.js
 var remove_accents = __webpack_require__(9681);
 var remove_accents_default = /*#__PURE__*/__webpack_require__.n(remove_accents);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/utils.js
 /**
  * Helper util to return a value from a certain path of the object.
  * Path is specified as either:
@@ -8186,14 +8186,14 @@ function matchesAttributes(blockAttributes, variationAttributes) {
   return blockAttributes === variationAttributes;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/selectors.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -8225,8 +8225,8 @@ const getNormalizedBlockType = (state, nameOrType) => 'string' === typeof nameOr
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const blockTypes = useSelect(
@@ -8256,8 +8256,8 @@ const selectors_getBlockTypes = (0,external_wp_data_namespaceObject.createSelect
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlock = useSelect( ( select ) =>
@@ -8297,8 +8297,8 @@ function selectors_getBlockType(state, name) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const buttonBlockStyles = useSelect( ( select ) =>
@@ -8332,8 +8332,8 @@ function getBlockStyles(state, name) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const socialLinkVariations = useSelect( ( select ) =>
@@ -8385,10 +8385,10 @@ const selectors_getBlockVariations = (0,external_wp_data_namespaceObject.createS
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { store as blockEditorStore } from '@wordpress/block-editor';
- * import { useSelect } from '@wordpress/data';
+ * import { __ } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { store as blockEditorStore } from '@cohesion/block-editor';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     // This example assumes that a core/embed block is the first block in the Block Editor.
@@ -8472,9 +8472,9 @@ function getActiveBlockVariation(state, blockName, attributes, scope) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const defaultEmbedBlockVariation = useSelect( ( select ) =>
@@ -8512,8 +8512,8 @@ function getDefaultBlockVariation(state, blockName, scope) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect, } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect, } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const blockCategories = useSelect( ( select ) =>
@@ -8544,8 +8544,8 @@ function getCategories(state) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const blockCollections = useSelect( ( select ) =>
@@ -8577,9 +8577,9 @@ function getCollections(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const defaultBlockName = useSelect( ( select ) =>
@@ -8610,9 +8610,9 @@ function selectors_getDefaultBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const freeformFallbackBlockName = useSelect( ( select ) =>
@@ -8646,9 +8646,9 @@ function getFreeformFallbackBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const unregisteredFallbackBlockName = useSelect( ( select ) =>
@@ -8682,9 +8682,9 @@ function getUnregisteredFallbackBlockName(state) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const groupingBlockName = useSelect( ( select ) =>
@@ -8719,8 +8719,8 @@ function selectors_getGroupingBlockName(state) {
  *
  * @example
  * ```js
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const childBlockNames = useSelect( ( select ) =>
@@ -8760,9 +8760,9 @@ const selectors_getChildBlockNames = (0,external_wp_data_namespaceObject.createS
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlockSupportValue = useSelect( ( select ) =>
@@ -8802,9 +8802,9 @@ const selectors_getBlockSupport = (state, nameOrType, feature, defaultSupports) 
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const paragraphBlockSupportClassName = useSelect( ( select ) =>
@@ -8849,9 +8849,9 @@ function getNormalizedSearchTerm(term) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const termFound = useSelect(
@@ -8893,9 +8893,9 @@ function isMatchingSearchTerm(state, nameOrType, searchTerm = '') {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const navigationBlockHasChildBlocks = useSelect( ( select ) =>
@@ -8928,9 +8928,9 @@ const selectors_hasChildBlocks = (state, blockName) => {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as blocksStore } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as blocksStore } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *     const navigationBlockHasChildBlocksWithInserterSupport = useSelect( ( select ) =>
@@ -8975,9 +8975,9 @@ const __experimentalHasContentRoleAttribute = (0,external_wp_data_namespaceObjec
   }]) => __experimentalRole === 'content');
 }, (state, blockTypeName) => [state.blockTypes[blockTypeName]?.attributes]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/private-selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/private-selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -9161,7 +9161,7 @@ function isPlainObject(o) {
 var react_is = __webpack_require__(8529);
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/process-block-type.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/process-block-type.js
 /**
  * External dependencies
  */
@@ -9169,7 +9169,7 @@ const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -9305,15 +9305,15 @@ const processBlockType = (name, blockSettings) => ({
   }
   settings.icon = normalizeIconObject(settings.icon);
   if (!isValidIcon(settings.icon.src)) {
-    error('The icon passed is invalid. ' + 'The icon should be a string, an element, a function, or an object following the specifications documented in https://developer.wordpress.org/block-editor/developers/block-api/block-registration/#icon-optional');
+    error('The icon passed is invalid. ' + 'The icon should be a string, an element, a function, or an object following the specifications documented in https://developer.cohesion.org/block-editor/developers/block-api/block-registration/#icon-optional');
     return;
   }
   return settings;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/actions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -9328,7 +9328,7 @@ const processBlockType = (name, blockSettings) => ({
 
 /**
  * Returns an action object used in signalling that block types have been added.
- * Ignored from documentation as the recommended usage for this action through registerBlockType from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through registerBlockType from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9386,7 +9386,7 @@ function __experimentalReapplyBlockFilters() {
 
 /**
  * Returns an action object used to remove a registered block type.
- * Ignored from documentation as the recommended usage for this action through unregisterBlockType from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through unregisterBlockType from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9404,7 +9404,7 @@ function removeBlockTypes(names) {
 
 /**
  * Returns an action object used in signalling that new block styles have been added.
- * Ignored from documentation as the recommended usage for this action through registerBlockStyle from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through registerBlockStyle from @cohesion/blocks.
  *
  * @param {string|Array} blockNames Block names to register new styles for.
  * @param {Array|Object} styles     Block style object or array of block style objects.
@@ -9423,7 +9423,7 @@ function addBlockStyles(blockNames, styles) {
 
 /**
  * Returns an action object used in signalling that block styles have been removed.
- * Ignored from documentation as the recommended usage for this action through unregisterBlockStyle from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through unregisterBlockStyle from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9442,7 +9442,7 @@ function removeBlockStyles(blockName, styleNames) {
 
 /**
  * Returns an action object used in signalling that new block variations have been added.
- * Ignored from documentation as the recommended usage for this action through registerBlockVariation from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through registerBlockVariation from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9461,7 +9461,7 @@ function addBlockVariations(blockName, variations) {
 
 /**
  * Returns an action object used in signalling that block variations have been removed.
- * Ignored from documentation as the recommended usage for this action through unregisterBlockVariation from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through unregisterBlockVariation from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9480,7 +9480,7 @@ function removeBlockVariations(blockName, variationNames) {
 
 /**
  * Returns an action object used to set the default block name.
- * Ignored from documentation as the recommended usage for this action through setDefaultBlockName from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through setDefaultBlockName from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9498,7 +9498,7 @@ function actions_setDefaultBlockName(name) {
 /**
  * Returns an action object used to set the name of the block used as a fallback
  * for non-block content.
- * Ignored from documentation as the recommended usage for this action through setFreeformContentHandlerName from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through setFreeformContentHandlerName from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9516,7 +9516,7 @@ function setFreeformFallbackBlockName(name) {
 /**
  * Returns an action object used to set the name of the block used as a fallback
  * for unregistered blocks.
- * Ignored from documentation as the recommended usage for this action through setUnregisteredTypeHandlerName from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through setUnregisteredTypeHandlerName from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9535,7 +9535,7 @@ function setUnregisteredFallbackBlockName(name) {
  * Returns an action object used to set the name of the block used
  * when grouping other blocks
  * eg: in "Group/Ungroup" interactions
- * Ignored from documentation as the recommended usage for this action through setGroupingBlockName from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through setGroupingBlockName from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9552,7 +9552,7 @@ function actions_setGroupingBlockName(name) {
 
 /**
  * Returns an action object used to set block categories.
- * Ignored from documentation as the recommended usage for this action through setCategories from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through setCategories from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9569,7 +9569,7 @@ function setCategories(categories) {
 
 /**
  * Returns an action object used to update a category.
- * Ignored from documentation as the recommended usage for this action through updateCategory from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through updateCategory from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9588,7 +9588,7 @@ function updateCategory(slug, category) {
 
 /**
  * Returns an action object used to add block collections
- * Ignored from documentation as the recommended usage for this action through registerBlockCollection from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through registerBlockCollection from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9609,7 +9609,7 @@ function addBlockCollection(namespace, title, icon) {
 
 /**
  * Returns an action object used to remove block collections
- * Ignored from documentation as the recommended usage for this action through unregisterBlockCollection from @wordpress/blocks.
+ * Ignored from documentation as the recommended usage for this action through unregisterBlockCollection from @cohesion/blocks.
  *
  * @ignore
  *
@@ -9624,7 +9624,7 @@ function removeBlockCollection(namespace) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/private-actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/private-actions.js
 /**
  * Internal dependencies
  */
@@ -9690,12 +9690,12 @@ function registerBlockBindingsSource(source) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/constants.js
 const STORE_NAME = 'core/blocks';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -9713,7 +9713,7 @@ const STORE_NAME = 'core/blocks';
 /**
  * Store definition for the blocks namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -9814,14 +9814,14 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ const esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/factory.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/factory.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10266,7 +10266,7 @@ const external_wp_autop_namespaceObject = window["wp"]["autop"];
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 const external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/serialize-raw-block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/serialize-raw-block.js
 /**
  * Internal dependencies
  */
@@ -10284,15 +10284,15 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
  * CAVEAT: This function is intended for re-serializing blocks as parsed by
  * valid parsers and skips any validation steps. This is NOT a generic
  * serialization function for in-memory blocks. For most purposes, see the
- * following functions available in the `@wordpress/blocks` package:
+ * following functions available in the `@cohesion/blocks` package:
  *
  * @see serializeBlock
  * @see serialize
  *
  * For more on the format of block nodes as returned by valid parsers:
  *
- * @see `@wordpress/block-serialization-default-parser` package
- * @see `@wordpress/block-serialization-spec-parser` package
+ * @see `@cohesion/block-serialization-default-parser` package
+ * @see `@cohesion/block-serialization-spec-parser` package
  *
  * @param {WPRawBlock} rawBlock     A block node as returned by a valid parser.
  * @param {Options}    [options={}] Serialization options.
@@ -10318,9 +10318,9 @@ function serializeRawBlock(rawBlock, options = {}) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/serializer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/serializer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -10352,7 +10352,7 @@ const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
 
 function getBlockDefaultClassName(blockName) {
   // Generated HTML classes for blocks follow the `wp-block-{name}` nomenclature.
-  // Blocks provided by WordPress drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
+  // Blocks provided by cohesion drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
   const className = 'wp-block-' + blockName.replace(/\//, '-').replace(/^core-/, '');
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockDefaultClassName', className, blockName);
 }
@@ -10366,7 +10366,7 @@ function getBlockDefaultClassName(blockName) {
  */
 function getBlockMenuDefaultClassName(blockName) {
   // Generated HTML classes for blocks follow the `editor-block-list-item-{name}` nomenclature.
-  // Blocks provided by WordPress drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
+  // Blocks provided by cohesion drop the prefixes 'core/' or 'core-' (historically used in 'core-embed/').
   const className = 'editor-block-list-item-' + blockName.replace(/\//, '-').replace(/^core-/, '');
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockMenuDefaultClassName', className, blockName);
 }
@@ -10556,7 +10556,7 @@ function serializeAttributes(attributes) {
   // Bypass server stripslashes behavior which would unescape stringify's
   // escaping of quotation mark.
   //
-  // See: https://developer.wordpress.org/reference/functions/wp_kses_stripslashes/
+  // See: https://developer.cohesion.org/reference/functions/wp_kses_stripslashes/
   .replace(/\\"/g, '\\u0022');
 }
 
@@ -11568,7 +11568,7 @@ var es6 = __webpack_require__(7734);
 var es6_default = /*#__PURE__*/__webpack_require__.n(es6);
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/validation/logger.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/validation/logger.js
 /**
  * @typedef LoggerItem
  * @property {Function}   log  Which logger recorded the message
@@ -11630,7 +11630,7 @@ function createQueuedLogger() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/validation/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/validation/index.js
 /**
  * External dependencies
  */
@@ -11638,7 +11638,7 @@ function createQueuedLogger() {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -12253,7 +12253,7 @@ function isValidBlockContent(blockTypeOrName, attributes, originalBlockContent) 
   return isValid;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/convert-legacy-block.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/convert-legacy-block.js
 /**
  * Convert legacy blocks to their canonical form. This function is used
  * both in the parser level for previous content and to convert such blocks
@@ -12278,10 +12278,10 @@ function convertLegacyBlockNameAndAttributes(name, attributes) {
     name = 'core/paragraph';
   }
 
-  // Convert derivative blocks such as 'core/social-link-wordpress' to the
+  // Convert derivative blocks such as 'core/social-link-cohesion' to the
   // canonical form 'core/social-link'.
   if (name && name.indexOf('core/social-link-') === 0) {
-    // Capture `social-link-wordpress` into `{"service":"wordpress"}`
+    // Capture `social-link-cohesion` into `{"service":"cohesion"}`
     newAttributes.service = name.substring(17);
     name = 'core/social-link';
   }
@@ -12298,14 +12298,14 @@ function convertLegacyBlockNameAndAttributes(name, attributes) {
     newAttributes.providerNameSlug = providerSlug in deprecated ? deprecated[providerSlug] : providerSlug;
     // This is needed as the `responsive` attribute was passed
     // in a different way before the refactoring to block variations.
-    if (!['amazon-kindle', 'wordpress'].includes(providerSlug)) {
+    if (!['amazon-kindle', 'cohesion'].includes(providerSlug)) {
       newAttributes.responsive = true;
     }
     name = 'core/embed';
   }
 
   // Convert Post Comment blocks in existing content to Comment blocks.
-  // TODO: Remove these checks when WordPress 6.0 is released.
+  // TODO: Remove these checks when cohesion 6.0 is released.
   if (name === 'core/post-comment-author') {
     name = 'core/comment-author-name';
   }
@@ -12678,14 +12678,14 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/matchers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/matchers.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -12725,9 +12725,9 @@ const richText = (selector, preserveWhiteSpace) => el => {
   }) : external_wp_richText_namespaceObject.RichTextData.empty();
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/node.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/node.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -12760,7 +12760,7 @@ function isNodeOfType(node, type) {
   external_wp_deprecated_default()('wp.blocks.node.isNodeOfType', {
     since: '6.1',
     version: '6.3',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return node && node.type === type;
 }
@@ -12802,7 +12802,7 @@ function fromDOM(domNode) {
     since: '6.1',
     version: '6.3',
     alternative: 'wp.richText.create',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   if (domNode.nodeType === domNode.TEXT_NODE) {
     return domNode.nodeValue;
@@ -12831,7 +12831,7 @@ function toHTML(node) {
     since: '6.1',
     version: '6.3',
     alternative: 'wp.richText.toHTMLString',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return children_toHTML([node]);
 }
@@ -12849,7 +12849,7 @@ function matcher(selector) {
     since: '6.1',
     version: '6.3',
     alternative: 'html source',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return domNode => {
     let match = domNode;
@@ -12868,7 +12868,7 @@ function matcher(selector) {
  * Object of utility functions used in managing block attribute values of
  * source `node`.
  *
- * @see https://github.com/WordPress/gutenberg/pull/10439
+ * @see https://github.com/cohesion/gutenberg/pull/10439
  *
  * @deprecated since 4.0. The `node` source should not be used, and can be
  *             replaced by the `html` source.
@@ -12882,9 +12882,9 @@ function matcher(selector) {
   matcher
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/children.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/children.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -12901,7 +12901,7 @@ function matcher(selector) {
  */
 
 /**
- * Given block children, returns a serialize-capable WordPress element.
+ * Given block children, returns a serialize-capable cohesion element.
  *
  * @param {WPBlockChildren} children Block children object to convert.
  *
@@ -12928,7 +12928,7 @@ function getChildrenArray(children) {
   external_wp_deprecated_default()('wp.blocks.children.getChildrenArray', {
     since: '6.1',
     version: '6.3',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
 
   // The fact that block children are compatible with the element serializer
@@ -12950,7 +12950,7 @@ function concat(...blockNodes) {
     since: '6.1',
     version: '6.3',
     alternative: 'wp.richText.concat',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   const result = [];
   for (let i = 0; i < blockNodes.length; i++) {
@@ -12981,7 +12981,7 @@ function children_fromDOM(domNodes) {
     since: '6.1',
     version: '6.3',
     alternative: 'wp.richText.create',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   const result = [];
   for (let i = 0; i < domNodes.length; i++) {
@@ -13006,7 +13006,7 @@ function children_toHTML(children) {
     since: '6.1',
     version: '6.3',
     alternative: 'wp.richText.toHTMLString',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   const element = getSerializeCapableElement(children);
   return (0,external_wp_element_namespaceObject.renderToString)(element);
@@ -13025,7 +13025,7 @@ function children_matcher(selector) {
     since: '6.1',
     version: '6.3',
     alternative: 'html source',
-    link: 'https://developer.wordpress.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
+    link: 'https://developer.cohesion.org/block-editor/how-to-guides/block-tutorial/introducing-attributes-and-editable-fields/'
   });
   return domNode => {
     let match = domNode;
@@ -13043,7 +13043,7 @@ function children_matcher(selector) {
  * Object of utility functions used in managing block attribute values of
  * source `children`.
  *
- * @see https://github.com/WordPress/gutenberg/pull/10439
+ * @see https://github.com/cohesion/gutenberg/pull/10439
  *
  * @deprecated since 4.0. The `children` source should not be used, and can be
  *             replaced by the `html` source.
@@ -13058,7 +13058,7 @@ function children_matcher(selector) {
   matcher: children_matcher
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/get-block-attributes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/get-block-attributes.js
 /**
  * External dependencies
  */
@@ -13066,7 +13066,7 @@ function children_matcher(selector) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13296,7 +13296,7 @@ function getBlockAttributes(blockTypeOrName, innerHTML, attributes = {}) {
   return (0,external_wp_hooks_namespaceObject.applyFilters)('blocks.getBlockAttributes', blockAttributes, blockType, innerHTML, attributes);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/fix-custom-classname.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/fix-custom-classname.js
 /**
  * Internal dependencies
  */
@@ -13358,7 +13358,7 @@ function fixCustomClassname(blockAttributes, blockType, innerHTML) {
   return blockAttributes;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/apply-built-in-validation-fixes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/apply-built-in-validation-fixes.js
 /**
  * Internal dependencies
  */
@@ -13383,7 +13383,7 @@ function applyBuiltInValidationFixes(block, blockType) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/apply-block-deprecated-versions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/apply-block-deprecated-versions.js
 /**
  * Internal dependencies
  */
@@ -13494,9 +13494,9 @@ function applyBlockDeprecatedVersions(block, rawBlock, blockType) {
   return block;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/parser/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/parser/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13704,7 +13704,7 @@ function parseRawBlock(rawBlock, options) {
 
   // Parse inner blocks recursively.
   const parsedInnerBlocks = normalizedBlock.innerBlocks.map(innerBlock => parseRawBlock(innerBlock, options))
-  // See https://github.com/WordPress/gutenberg/pull/17164.
+  // See https://github.com/cohesion/gutenberg/pull/17164.
   .filter(innerBlock => !!innerBlock);
 
   // Get the fully parsed block.
@@ -13758,7 +13758,7 @@ function parseRawBlock(rawBlock, options) {
  * content within the blocks.
  *
  * @see
- * https://developer.wordpress.org/block-editor/packages/packages-block-serialization-default-parser/
+ * https://developer.cohesion.org/block-editor/packages/packages-block-serialization-default-parser/
  *
  * @param {string}       content The post content.
  * @param {ParseOptions} options Extra options for handling block parsing.
@@ -13775,7 +13775,7 @@ function parser_parse(content, options) {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/get-raw-transforms.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/get-raw-transforms.js
 /**
  * Internal dependencies
  */
@@ -13791,9 +13791,9 @@ function getRawTransforms() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/html-to-blocks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/html-to-blocks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -13848,9 +13848,9 @@ function htmlToBlocks(html, handler) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/normalise-blocks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/normalise-blocks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function normaliseBlocks(HTML, options = {}) {
@@ -13909,9 +13909,9 @@ function normaliseBlocks(HTML, options = {}) {
   return accu.innerHTML;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/special-comment-converter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/special-comment-converter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14007,9 +14007,9 @@ function createNextpage(doc) {
   return node;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/list-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/list-reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function isList(node) {
@@ -14061,7 +14061,7 @@ function listReducer(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/blockquote-normaliser.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/blockquote-normaliser.js
 /**
  * Internal dependencies
  */
@@ -14075,9 +14075,9 @@ function blockquoteNormaliser(options) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/figure-content-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/figure-content-reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14169,9 +14169,9 @@ function figureContentReducer(node, doc, schema) {
 
 ;// CONCATENATED MODULE: external ["wp","shortcode"]
 const external_wp_shortcode_namespaceObject = window["wp"]["shortcode"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/shortcode-converter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/shortcode-converter.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14225,7 +14225,7 @@ function segmentHTMLToShortcodeBlock(HTML, lastIndex = 0, excludedBlockNames = [
       // Passing all of `match` as second argument is intentionally broad
       // but shouldn't be too relied upon.
       //
-      // See: https://github.com/WordPress/gutenberg/pull/3610#discussion_r152546926
+      // See: https://github.com/cohesion/gutenberg/pull/3610#discussion_r152546926
       blocks = [].concat(transformation.transform(match.shortcode.attrs, match));
 
       // Applying the built-in fixes can enhance the attributes with missing content like "className".
@@ -14238,7 +14238,7 @@ function segmentHTMLToShortcodeBlock(HTML, lastIndex = 0, excludedBlockNames = [
       // Passing all of `match` as second argument is intentionally broad
       // but shouldn't be too relied upon.
       //
-      // See: https://github.com/WordPress/gutenberg/pull/3610#discussion_r152546926
+      // See: https://github.com/cohesion/gutenberg/pull/3610#discussion_r152546926
       .map(([key, schema]) => [key, schema.shortcode(match.shortcode.attrs, match)]));
       const blockType = getBlockType(transformation.blockName);
       if (!blockType) {
@@ -14261,9 +14261,9 @@ function segmentHTMLToShortcodeBlock(HTML, lastIndex = 0, excludedBlockNames = [
 }
 /* harmony default export */ const shortcode_converter = (segmentHTMLToShortcodeBlock);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/utils.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14446,9 +14446,9 @@ function getSibling(node, which) {
   return getSibling(parentNode, which);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14527,9 +14527,9 @@ function rawHandler({
   }).flat().filter(Boolean);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/comment-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/comment-remover.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14545,9 +14545,9 @@ function commentRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/is-inline-content.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/is-inline-content.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -14584,9 +14584,9 @@ function isInlineContent(HTML, contextTag) {
   return !nodes.some(isDoubleBR) && deepCheck(nodes, contextTag);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/phrasing-content-reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/phrasing-content-reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function phrasingContentReducer(node, doc) {
@@ -14644,7 +14644,7 @@ function phrasingContentReducer(node, doc) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/head-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/head-remover.js
 function headRemover(node) {
   if (node.nodeName !== 'SCRIPT' && node.nodeName !== 'NOSCRIPT' && node.nodeName !== 'TEMPLATE' && node.nodeName !== 'STYLE') {
     return;
@@ -14652,7 +14652,7 @@ function headRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/ms-list-ignore.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/ms-list-ignore.js
 /**
  * Looks for comments, and removes them.
  *
@@ -14679,7 +14679,7 @@ function msListIgnore(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/ms-list-converter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/ms-list-converter.js
 /**
  * Internal dependencies
  */
@@ -14743,9 +14743,9 @@ function msListConverter(node, doc) {
 
 ;// CONCATENATED MODULE: external ["wp","blob"]
 const external_wp_blob_namespaceObject = window["wp"]["blob"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/image-corrector.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/image-corrector.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function imageCorrector(node) {
@@ -14790,7 +14790,7 @@ function imageCorrector(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/div-normaliser.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/div-normaliser.js
 /**
  * Internal dependencies
  */
@@ -14805,7 +14805,7 @@ function divNormaliser(node) {
 // EXTERNAL MODULE: ./node_modules/showdown/dist/showdown.js
 var showdown = __webpack_require__(1030);
 var showdown_default = /*#__PURE__*/__webpack_require__.n(showdown);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/markdown-converter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/markdown-converter.js
 /**
  * External dependencies
  */
@@ -14850,7 +14850,7 @@ function markdownConverter(text) {
   return converter.makeHtml(slackMarkdownVariantCorrector(bulletsToAsterisks(text)));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/iframe-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/iframe-remover.js
 /**
  * Removes iframes.
  *
@@ -14865,9 +14865,9 @@ function iframeRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/google-docs-uid-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/google-docs-uid-remover.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function googleDocsUIdRemover(node) {
@@ -14884,7 +14884,7 @@ function googleDocsUIdRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/html-formatting-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/html-formatting-remover.js
 /**
  * Internal dependencies
  */
@@ -14952,7 +14952,7 @@ function htmlFormattingRemover(node) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/br-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/br-remover.js
 /**
  * Internal dependencies
  */
@@ -14973,7 +14973,7 @@ function brRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/empty-paragraph-remover.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/empty-paragraph-remover.js
 /**
  * Removes empty paragraph elements.
  *
@@ -14989,7 +14989,7 @@ function emptyParagraphRemover(node) {
   node.parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/slack-paragraph-corrector.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/slack-paragraph-corrector.js
 /**
  * Replaces Slack paragraph markup with a double line break (later converted to
  * a proper paragraph).
@@ -15011,9 +15011,9 @@ function slackParagraphCorrector(node) {
   parentNode.removeChild(node);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/raw-handling/paste-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/raw-handling/paste-handler.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15111,8 +15111,8 @@ function pasteHandler({
   // Not normalizing the content will only affect older browsers and won't
   // entirely break the app.
   // See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
-  // See: https://core.trac.wordpress.org/ticket/30130
-  // See: https://github.com/WordPress/gutenberg/pull/6983#pullrequestreview-125151075
+  // See: https://core.trac.cohesion.org/ticket/30130
+  // See: https://github.com/cohesion/gutenberg/pull/6983#pullrequestreview-125151075
   if (String.prototype.normalize) {
     HTML = HTML.normalize();
   }
@@ -15196,9 +15196,9 @@ function pasteHandler({
   return blocks;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/categories.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/categories.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15211,7 +15211,7 @@ function pasteHandler({
 
 /**
  * Returns all the block categories.
- * Ignored from documentation as the recommended usage is via useSelect from @wordpress/data.
+ * Ignored from documentation as the recommended usage is via useSelect from @cohesion/data.
  *
  * @ignore
  *
@@ -15228,10 +15228,10 @@ function categories_getCategories() {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { store as blocksStore, setCategories } from '@wordpress/blocks';
- * import { useSelect } from '@wordpress/data';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { store as blocksStore, setCategories } from '@cohesion/blocks';
+ * import { useSelect } from '@cohesion/data';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     // Retrieve the list of current categories.
@@ -15269,9 +15269,9 @@ function categories_setCategories(categories) {
  *
  * @example
  * ```js
- * import { __ } from '@wordpress/i18n';
- * import { updateCategory } from '@wordpress/blocks';
- * import { Button } from '@wordpress/components';
+ * import { __ } from '@cohesion/i18n';
+ * import { updateCategory } from '@cohesion/blocks';
+ * import { Button } from '@cohesion/components';
  *
  * const ExampleComponent = () => {
  *     return (
@@ -15290,9 +15290,9 @@ function categories_updateCategory(slug, category) {
   (0,external_wp_data_namespaceObject.dispatch)(store).updateCategory(slug, category);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/templates.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/templates.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15391,7 +15391,7 @@ function synchronizeBlocksWithTemplate(blocks = [], template) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/api/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/api/index.js
 // The blocktype is the most important concept within the block API. It defines
 // all aspects of the block configuration and its interfaces, including `edit`
 // and `save`. The transforms specification allows converting one blocktype to
@@ -15489,9 +15489,9 @@ function synchronizeBlocksWithTemplate(blocks = [], template) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/deprecated.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -15511,7 +15511,7 @@ function withBlockContentContext(OriginalComponent) {
   return OriginalComponent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/blocks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/blocks/build-module/index.js
 // A "block" is the abstract term used to describe units of markup that,
 // when composed together, form the content or layout of a page.
 // The API for blocks is exposed via `wp.blocks`.

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Widgets Administration API
+ * cohesion Widgets Administration API
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 

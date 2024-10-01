@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   count: () => (/* binding */ count)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/defaultSettings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/defaultSettings.js
 /** @typedef {import('./index').WPWordCountStrategy} WPWordCountStrategy */
 
 /** @typedef {Partial<{type: WPWordCountStrategy, shortcodes: string[]}>} WPWordCountL10n */
@@ -59,7 +59,7 @@ __webpack_require__.d(__webpack_exports__, {
  * @property {RegExp}              wordsRegExp                       Regular expression that matches words
  * @property {RegExp}              characters_excluding_spacesRegExp Regular expression that matches characters excluding spaces
  * @property {RegExp}              characters_including_spacesRegExp Regular expression that matches characters including spaces
- * @property {RegExp}              shortcodesRegExp                  Regular expression that matches WordPress shortcodes
+ * @property {RegExp}              shortcodesRegExp                  Regular expression that matches cohesion shortcodes
  * @property {string[]}            shortcodes                        List of all shortcodes
  * @property {WPWordCountStrategy} type                              Describes what and how are we counting
  * @property {WPWordCountL10n}     l10n                              Object with human translations
@@ -144,7 +144,7 @@ const defaultSettings = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripTags.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripTags.js
 /**
  * Replaces items matched in the regex with new line
  *
@@ -157,7 +157,7 @@ function stripTags(settings, text) {
   return text.replace(settings.HTMLRegExp, '\n');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/transposeAstralsToCountableChar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/transposeAstralsToCountableChar.js
 /**
  * Replaces items matched in the regex with character.
  *
@@ -170,7 +170,7 @@ function transposeAstralsToCountableChar(settings, text) {
   return text.replace(settings.astralRegExp, 'a');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripHTMLEntities.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripHTMLEntities.js
 /**
  * Removes items matched in the regex.
  *
@@ -183,7 +183,7 @@ function stripHTMLEntities(settings, text) {
   return text.replace(settings.HTMLEntityRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripConnectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripConnectors.js
 /**
  * Replaces items matched in the regex with spaces.
  *
@@ -196,7 +196,7 @@ function stripConnectors(settings, text) {
   return text.replace(settings.connectorRegExp, ' ');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripRemovables.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripRemovables.js
 /**
  * Removes items matched in the regex.
  *
@@ -209,7 +209,7 @@ function stripRemovables(settings, text) {
   return text.replace(settings.removeRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripHTMLComments.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripHTMLComments.js
 /**
  * Removes items matched in the regex.
  *
@@ -222,7 +222,7 @@ function stripHTMLComments(settings, text) {
   return text.replace(settings.HTMLcommentRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripShortcodes.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripShortcodes.js
 /**
  * Replaces items matched in the regex with a new line.
  *
@@ -238,7 +238,7 @@ function stripShortcodes(settings, text) {
   return text;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripSpaces.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/stripSpaces.js
 /**
  * Replaces items matched in the regex with spaces.
  *
@@ -251,7 +251,7 @@ function stripSpaces(settings, text) {
   return text.replace(settings.spaceRegExp, ' ');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/transposeHTMLEntitiesToCountableChars.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/transposeHTMLEntitiesToCountableChars.js
 /**
  * Replaces items matched in the regex with a single character.
  *
@@ -264,7 +264,7 @@ function transposeHTMLEntitiesToCountableChars(settings, text) {
   return text.replace(settings.HTMLEntityRegExp, 'a');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/wordcount/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -353,7 +353,7 @@ function countCharacters(text, regex, settings) {
  *
  * @example
  * ```js
- * import { count } from '@wordpress/wordcount';
+ * import { count } from '@cohesion/wordcount';
  * const numberOfWords = count( 'Words to count', 'words', {} )
  * ```
  *

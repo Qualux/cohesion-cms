@@ -2,7 +2,7 @@
 /**
  * Deprecated. No longer needed.
  *
- * @package WordPress
+ * @package cohesion
  * @deprecated 2.1.0
  */
 

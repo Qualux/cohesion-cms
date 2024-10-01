@@ -4,7 +4,7 @@
  *
  * Provides utility functions for working with font families.
  *
- * @package    WordPress
+ * @package    cohesion
  * @subpackage Fonts
  * @since      6.5.0
  */

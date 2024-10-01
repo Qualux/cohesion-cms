@@ -82,7 +82,7 @@ __webpack_require__.d(__webpack_exports__, {
   useAnchorRef: () => (/* reexport */ useAnchorRef)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/rich-text/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/rich-text/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -92,7 +92,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   getFormatTypes: () => (getFormatTypes)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/rich-text/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/rich-text/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -102,9 +102,9 @@ __webpack_require__.d(actions_namespaceObject, {
 
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -136,9 +136,9 @@ function formatTypes(state = {}, action) {
   formatTypes
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -149,9 +149,9 @@ function formatTypes(state = {}, action) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as richTextStore } from '@cohesion/rich-text';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypes } = useSelect(
@@ -185,9 +185,9 @@ const getFormatTypes = (0,external_wp_data_namespaceObject.createSelector)(state
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as richTextStore } from '@cohesion/rich-text';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatType } = useSelect(
@@ -227,9 +227,9 @@ function getFormatType(state, name) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as richTextStore } from '@cohesion/rich-text';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypeForBareElement } = useSelect(
@@ -269,9 +269,9 @@ function getFormatTypeForBareElement(state, bareElementTagName) {
  *
  * @example
  * ```js
- * import { __, sprintf } from '@wordpress/i18n';
- * import { store as richTextStore } from '@wordpress/rich-text';
- * import { useSelect } from '@wordpress/data';
+ * import { __, sprintf } from '@cohesion/i18n';
+ * import { store as richTextStore } from '@cohesion/rich-text';
+ * import { useSelect } from '@cohesion/data';
  *
  * const ExampleComponent = () => {
  *    const { getFormatTypeForClassName } = useSelect(
@@ -298,11 +298,11 @@ function getFormatTypeForClassName(state, elementClassName) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/store/actions.js
 /**
  * Returns an action object used in signalling that format types have been
  * added.
- * Ignored from documentation as registerFormatType should be used instead from @wordpress/rich-text
+ * Ignored from documentation as registerFormatType should be used instead from @cohesion/rich-text
  *
  * @ignore
  *
@@ -320,7 +320,7 @@ function addFormatTypes(formatTypes) {
 /**
  * Returns an action object used to remove a registered format type.
  *
- * Ignored from documentation as unregisterFormatType should be used instead from @wordpress/rich-text
+ * Ignored from documentation as unregisterFormatType should be used instead from @cohesion/rich-text
  *
  * @ignore
  *
@@ -335,9 +335,9 @@ function removeFormatTypes(names) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -352,7 +352,7 @@ const STORE_NAME = 'core/rich-text';
 /**
  * Store definition for the rich-text namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -363,7 +363,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-format-equal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/is-format-equal.js
 /** @typedef {import('./types').RichTextFormat} RichTextFormat */
 
 /**
@@ -416,7 +416,7 @@ function isFormatEqual(format1, format2) {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/normalise-formats.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/normalise-formats.js
 /**
  * Internal dependencies
  */
@@ -454,7 +454,7 @@ function normaliseFormats(value) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/apply-format.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/apply-format.js
 /**
  * Internal dependencies
  */
@@ -542,7 +542,7 @@ function applyFormat(value, format, startIndex = value.start, endIndex = value.e
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/create-element.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/create-element.js
 /**
  * Parse the given HTML into a body element.
  *
@@ -569,7 +569,7 @@ function createElement({
   return createElement.body;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/special-characters.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/special-characters.js
 /**
  * Object replacement character, used as a placeholder for objects.
  */
@@ -583,7 +583,7 @@ const ZWNBSP = '\ufeff';
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 const external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-formats.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/get-active-formats.js
 /** @typedef {import('./types').RichTextValue} RichTextValue */
 /** @typedef {import('./types').RichTextFormatList} RichTextFormatList */
 
@@ -667,9 +667,9 @@ function getActiveFormats(value, EMPTY_ACTIVE_FORMATS = []) {
   return _activeFormats || EMPTY_ACTIVE_FORMATS;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/get-format-type.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -690,7 +690,7 @@ function get_format_type_getFormatType(name) {
   return (0,external_wp_data_namespaceObject.select)(store).getFormatType(name);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-tree.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/to-tree.js
 /**
  * Internal dependencies
  */
@@ -966,9 +966,9 @@ function toTree({
   return tree;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-html-string.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/to-html-string.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1079,7 +1079,7 @@ function createChildrenHTML(children = []) {
   }).join('');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-text-content.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/get-text-content.js
 /**
  * Internal dependencies
  */
@@ -1101,9 +1101,9 @@ function getTextContent({
   return text.replace(OBJECT_REPLACEMENT_CHARACTER, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/create.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/create.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1687,7 +1687,7 @@ function getAttributes({
   return accumulator;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/concat.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/concat.js
 /**
  * Internal dependencies
  */
@@ -1725,7 +1725,7 @@ function concat(...values) {
   return normaliseFormats(values.reduce(mergePair, create()));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-format.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/get-active-format.js
 /**
  * Internal dependencies
  */
@@ -1752,7 +1752,7 @@ function getActiveFormat(value, formatType) {
   }) => type === formatType);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-active-object.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/get-active-object.js
 /**
  * Internal dependencies
  */
@@ -1781,7 +1781,7 @@ function getActiveObject({
   return replacements[start];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-collapsed.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/is-collapsed.js
 /**
  * Internal dependencies
  */
@@ -1807,7 +1807,7 @@ function isCollapsed({
   return start === end;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-empty.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/is-empty.js
 /** @typedef {import('./types').RichTextValue} RichTextValue */
 
 /**
@@ -1824,7 +1824,7 @@ function isEmpty({
   return text.length === 0;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/join.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/join.js
 /**
  * Internal dependencies
  */
@@ -1861,9 +1861,9 @@ function join(values, separator = '') {
   })));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/register-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/register-format-type.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -1952,7 +1952,7 @@ function registerFormatType(name, settings) {
   return settings;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/remove-format.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/remove-format.js
 /**
  * Internal dependencies
  */
@@ -2023,7 +2023,7 @@ function filterFormats(formats, index, formatType) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/insert.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/insert.js
 /**
  * Internal dependencies
  */
@@ -2067,7 +2067,7 @@ function insert(value, valueToInsert, startIndex = value.start, endIndex = value
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/remove.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/remove.js
 /**
  * Internal dependencies
  */
@@ -2091,7 +2091,7 @@ function remove_remove(value, startIndex, endIndex) {
   return insert(value, create(), startIndex, endIndex);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/replace.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/replace.js
 /**
  * Internal dependencies
  */
@@ -2158,7 +2158,7 @@ function replace_replace({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/insert-object.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/insert-object.js
 /**
  * Internal dependencies
  */
@@ -2190,7 +2190,7 @@ function insertObject(value, formatToInsert, startIndex, endIndex) {
   return insert(value, valueToInsert, startIndex, endIndex);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/slice.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/slice.js
 /** @typedef {import('./types').RichTextValue} RichTextValue */
 
 /**
@@ -2222,7 +2222,7 @@ function slice(value, startIndex = value.start, endIndex = value.end) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/split.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/split.js
 /**
  * Internal dependencies
  */
@@ -2298,7 +2298,7 @@ function splitAtSelection({
   return [before, after];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/is-range-equal.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/is-range-equal.js
 /**
  * Returns true if two ranges are equal, or false otherwise. Ranges are
  * considered equal if their start and end occur in the same container and
@@ -2313,7 +2313,7 @@ function isRangeEqual(a, b) {
   return a === b || a && b && a.startContainer === b.startContainer && a.startOffset === b.startOffset && a.endContainer === b.endContainer && a.endOffset === b.endOffset;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-dom.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/to-dom.js
 /**
  * Internal dependencies
  */
@@ -2600,9 +2600,9 @@ function applySelection({
 const external_wp_a11y_namespaceObject = window["wp"]["a11y"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/toggle-format.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/toggle-format.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2644,9 +2644,9 @@ function toggleFormat(value, format) {
   return applyFormat(value, format);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/unregister-format-type.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/unregister-format-type.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2681,9 +2681,9 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-anchor-ref.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/use-anchor-ref.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2695,7 +2695,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
 
 /**
  * @template T
- * @typedef {import('@wordpress/element').RefObject<T>} RefObject<T>
+ * @typedef {import('@cohesion/element').RefObject<T>} RefObject<T>
  */
 /** @typedef {import('../register-format-type').WPFormat} WPFormat */
 /** @typedef {import('../types').RichTextValue} RichTextValue */
@@ -2759,9 +2759,9 @@ function useAnchorRef({
 
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-anchor.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/use-anchor.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2944,9 +2944,9 @@ function useAnchor({
   return anchor;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-default-style.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/use-default-style.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2987,9 +2987,9 @@ function useDefaultStyle() {
   }, []);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-boundary-style.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/use-boundary-style.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3043,7 +3043,7 @@ function useBoundaryStyle({
   return ref;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/copy-handler.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/copy-handler.js
 /**
  * Internal dependencies
  */
@@ -3086,7 +3086,7 @@ function useBoundaryStyle({
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/select-object.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/select-object.js
 /* harmony default export */ const select_object = (() => element => {
   function onClick(event) {
     const {
@@ -3135,9 +3135,9 @@ function useBoundaryStyle({
 
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/format-boundaries.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/format-boundaries.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3237,9 +3237,9 @@ const EMPTY_ACTIVE_FORMATS = [];
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/delete.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/delete.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3281,7 +3281,7 @@ const EMPTY_ACTIVE_FORMATS = [];
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/update-formats.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/update-formats.js
 /**
  * Internal dependencies
  */
@@ -3338,7 +3338,7 @@ function updateFormats({
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/input-and-selection.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/input-and-selection.js
 /**
  * Internal dependencies
  */
@@ -3574,7 +3574,7 @@ function fixPlaceholderSelection(defaultView) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/selection-change-compat.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/selection-change-compat.js
 /**
  * Internal dependencies
  */
@@ -3625,9 +3625,9 @@ function fixPlaceholderSelection(defaultView) {
   };
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/event-listeners/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/event-listeners/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3654,9 +3654,9 @@ function useEventListeners(props) {
   }, [refEffects]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/component/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3854,7 +3854,7 @@ function useRichText({
 }
 function __experimentalRichText() {}
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/rich-text/build-module/index.js
 
 
 
@@ -3884,7 +3884,7 @@ function __experimentalRichText() {}
 
 
 /**
- * An object which represents a formatted string. See main `@wordpress/rich-text`
+ * An object which represents a formatted string. See main `@cohesion/rich-text`
  * documentation for more information.
  */
 

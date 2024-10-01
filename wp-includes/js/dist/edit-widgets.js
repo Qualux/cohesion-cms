@@ -57,7 +57,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store_store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/interface/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/interface/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -73,7 +73,7 @@ __webpack_require__.d(actions_namespaceObject, {
   unpinItem: () => (unpinItem)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/interface/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/interface/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -84,7 +84,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   isModalActive: () => (isModalActive)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/edit-widgets/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/edit-widgets/build-module/store/actions.js
 var store_actions_namespaceObject = {};
 __webpack_require__.r(store_actions_namespaceObject);
 __webpack_require__.d(store_actions_namespaceObject, {
@@ -101,7 +101,7 @@ __webpack_require__.d(store_actions_namespaceObject, {
   setWidgetIdForClientId: () => (setWidgetIdForClientId)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/edit-widgets/build-module/store/resolvers.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/edit-widgets/build-module/store/resolvers.js
 var resolvers_namespaceObject = {};
 __webpack_require__.r(resolvers_namespaceObject);
 __webpack_require__.d(resolvers_namespaceObject, {
@@ -109,7 +109,7 @@ __webpack_require__.d(resolvers_namespaceObject, {
   getWidgets: () => (getWidgets)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/edit-widgets/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/edit-widgets/build-module/store/selectors.js
 var store_selectors_namespaceObject = {};
 __webpack_require__.r(store_selectors_namespaceObject);
 __webpack_require__.d(store_selectors_namespaceObject, {
@@ -128,7 +128,7 @@ __webpack_require__.d(store_selectors_namespaceObject, {
   isSavingWidgetAreas: () => (isSavingWidgetAreas)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/edit-widgets/build-module/store/private-selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/edit-widgets/build-module/store/private-selectors.js
 var private_selectors_namespaceObject = {};
 __webpack_require__.r(private_selectors_namespaceObject);
 __webpack_require__.d(private_selectors_namespaceObject, {
@@ -136,7 +136,7 @@ __webpack_require__.d(private_selectors_namespaceObject, {
   getListViewToggleRef: () => (getListViewToggleRef)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/edit-widgets/build-module/blocks/widget-area/index.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/edit-widgets/build-module/blocks/widget-area/index.js
 var widget_area_namespaceObject = {};
 __webpack_require__.r(widget_area_namespaceObject);
 __webpack_require__.d(widget_area_namespaceObject, {
@@ -165,9 +165,9 @@ const external_wp_preferences_namespaceObject = window["wp"]["preferences"];
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
 const external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -289,9 +289,9 @@ const external_wp_components_namespaceObject = window["wp"]["components"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/check.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -304,9 +304,9 @@ const check = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 });
 /* harmony default export */ const library_check = (check);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/star-filled.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/star-filled.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -319,9 +319,9 @@ const starFilled = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const star_filled = (starFilled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/star-empty.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/star-empty.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -340,9 +340,9 @@ const starEmpty = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(
 const external_wp_viewport_namespaceObject = window["wp"]["viewport"];
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close-small.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close-small.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -355,9 +355,9 @@ const closeSmall = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const close_small = (closeSmall);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/deprecated.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/deprecated.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function normalizeComplementaryAreaScope(scope) {
@@ -389,9 +389,9 @@ function normalizeComplementaryAreaName(scope, name) {
   return name;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/actions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -597,9 +597,9 @@ function closeModal() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -689,9 +689,9 @@ function isModalActive(state, modalName) {
   return state.activeModal === modalName;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function complementaryAreas(state = {}, action) {
@@ -749,7 +749,7 @@ function activeModal(state = null, action) {
   activeModal
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -757,9 +757,9 @@ function activeModal(state = null, action) {
  */
 const STORE_NAME = 'core/interface';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -774,7 +774,7 @@ const STORE_NAME = 'core/interface';
 /**
  * Store definition for the interface namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -790,9 +790,9 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 
 ;// CONCATENATED MODULE: external ["wp","plugins"]
 const external_wp_plugins_namespaceObject = window["wp"]["plugins"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-context/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/complementary-area-context/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /* harmony default export */ const complementary_area_context = ((0,external_wp_plugins_namespaceObject.withPluginContext)((context, ownProps) => {
@@ -802,9 +802,9 @@ const external_wp_plugins_namespaceObject = window["wp"]["plugins"];
   };
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-toggle/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/complementary-area-toggle/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -845,14 +845,14 @@ function ComplementaryAreaToggle({
 }
 /* harmony default export */ const complementary_area_toggle = (complementary_area_context(ComplementaryAreaToggle));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-header/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/complementary-area-header/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -889,9 +889,9 @@ const ComplementaryAreaHeader = ({
 };
 /* harmony default export */ const complementary_area_header = (ComplementaryAreaHeader);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/action-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/action-item/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -917,7 +917,7 @@ function ActionItemSlot({
       // It ensures that menu items created by plugin authors aren't
       // duplicated with automatically injected menu items coming
       // from pinnable plugin sidebars.
-      // @see https://github.com/WordPress/gutenberg/issues/14457
+      // @see https://github.com/cohesion/gutenberg/issues/14457
       const initializedByPlugins = [];
       external_wp_element_namespaceObject.Children.forEach(fills, ({
         props: {
@@ -966,9 +966,9 @@ function ActionItem({
 ActionItem.Slot = ActionItemSlot;
 /* harmony default export */ const action_item = (ActionItem);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-more-menu-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/complementary-area-more-menu-item/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -982,7 +982,7 @@ ActionItem.Slot = ActionItemSlot;
 const PluginsMenuItem = ({
   // Menu item is marked with unstable prop for backward compatibility.
   // They are removed so they don't leak to DOM elements.
-  // @see https://github.com/WordPress/gutenberg/issues/14457
+  // @see https://github.com/cohesion/gutenberg/issues/14457
   __unstableExplicitMenuItem,
   __unstableTarget,
   ...restProps
@@ -1013,14 +1013,14 @@ function ComplementaryAreaMoreMenuItem({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/pinned-items/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/pinned-items/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1050,14 +1050,14 @@ function PinnedItemsSlot({
 PinnedItems.Slot = PinnedItemsSlot;
 /* harmony default export */ const pinned_items = (PinnedItems);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/complementary-area/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1319,7 +1319,7 @@ const ComplementaryAreaWrapped = complementary_area_context(ComplementaryArea);
 ComplementaryAreaWrapped.Slot = ComplementaryAreaSlot;
 /* harmony default export */ const complementary_area = (ComplementaryAreaWrapped);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/navigable-region/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/navigable-region/index.js
 /**
  * External dependencies
  */
@@ -1342,14 +1342,14 @@ function NavigableRegion({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/interface-skeleton/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/interface-skeleton/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1535,7 +1535,7 @@ function InterfaceSkeleton({
 }
 /* harmony default export */ const interface_skeleton = ((0,external_wp_element_namespaceObject.forwardRef)(InterfaceSkeleton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/components/index.js
 
 
 
@@ -1544,15 +1544,15 @@ function InterfaceSkeleton({
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interface/build-module/index.js
 
 
 
 ;// CONCATENATED MODULE: external ["wp","blockEditor"]
 const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/transformers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/transformers.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1623,7 +1623,7 @@ function transformBlockToWidget(block, relatedWidget = {}) {
   return widget;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/utils.js
 /**
  * "Kind" of the navigation post.
  *
@@ -1702,15 +1702,15 @@ const createStubPost = (id, blocks) => ({
   }
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/constants.js
 /**
  * Module Constants
  */
 const constants_STORE_NAME = 'core/edit-widgets';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/actions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1817,7 +1817,7 @@ const saveWidgetArea = widgetAreaId => async ({
 
   // Remove all duplicate reference widget instances for legacy widgets.
   // Why? We filter out the widgets with duplicate IDs to prevent adding more than one instance of a widget
-  // implemented using a function. WordPress doesn't support having more than one instance of these, if you try to
+  // implemented using a function. cohesion doesn't support having more than one instance of these, if you try to
   // save multiple instances of these in different sidebars you will run into undefined behaviors.
   const usedReferenceWidgets = [];
   const widgetsBlocks = post.blocks.filter(block => {
@@ -2061,9 +2061,9 @@ const moveBlockToWidgetArea = (clientId, widgetAreaId) => async ({
   registry.dispatch(external_wp_blockEditor_namespaceObject.store).moveBlocksToPosition([clientId], sourceRootClientId, destinationRootClientId, destinationIndex);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/resolvers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/resolvers.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2145,9 +2145,9 @@ const getWidgets = () => async ({
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2376,7 +2376,7 @@ function isListViewOpened(state) {
   return state.listViewPanel;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/private-selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/private-selectors.js
 function getListViewToggleRef(state) {
   return state.listViewToggleRef;
 }
@@ -2386,19 +2386,19 @@ function getInserterSidebarToggleRef(state) {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/edit-widgets');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/edit-widgets');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2417,7 +2417,7 @@ const {
 /**
  * Block editor data store configuration.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#register
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#register
  *
  * @type {Object}
  */
@@ -2431,7 +2431,7 @@ const storeConfig = {
 /**
  * Store definition for the edit widgets namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -2451,9 +2451,9 @@ unlock(store_store).registerPrivateSelectors(private_selectors_namespaceObject);
 
 ;// CONCATENATED MODULE: external ["wp","hooks"]
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/move-to-widget-area.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/filters/move-to-widget-area.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2514,29 +2514,29 @@ const withMoveToWidgetAreaToolbarItem = (0,external_wp_compose_namespaceObject.c
 
 ;// CONCATENATED MODULE: external ["wp","mediaUtils"]
 const external_wp_mediaUtils_namespaceObject = window["wp"]["mediaUtils"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/replace-media-upload.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/filters/replace-media-upload.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
 const replaceMediaUpload = () => external_wp_mediaUtils_namespaceObject.MediaUpload;
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.MediaUpload', 'core/edit-widgets/replace-media-upload', replaceMediaUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/filters/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/filters/index.js
 /**
  * Internal dependencies
  */
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/blocks/widget-area/edit/use-is-dragging-within.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/blocks/widget-area/edit/use-is-dragging-within.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@cohesion/element').RefObject} RefObject */
 
 /**
  * A React hook to determine if it's dragging within the target element.
@@ -2584,14 +2584,14 @@ const useIsDraggingWithin = elementRef => {
 };
 /* harmony default export */ const use_is_dragging_within = (useIsDraggingWithin);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/blocks/widget-area/edit/inner-blocks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/blocks/widget-area/edit/inner-blocks.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2630,9 +2630,9 @@ function WidgetAreaInnerBlocks({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/blocks/widget-area/edit/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/blocks/widget-area/edit/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2646,7 +2646,7 @@ function WidgetAreaInnerBlocks({
 
 
 
-/** @typedef {import('@wordpress/element').RefObject} RefObject */
+/** @typedef {import('@cohesion/element').RefObject} RefObject */
 
 function WidgetAreaEdit({
   clientId,
@@ -2740,9 +2740,9 @@ const useIsDragging = elementRef => {
   return isDragging;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/blocks/widget-area/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/blocks/widget-area/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2788,9 +2788,9 @@ const settings = {
   edit: WidgetAreaEdit
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/error-boundary/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/error-boundary/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2856,9 +2856,9 @@ const external_wp_patterns_namespaceObject = window["wp"]["patterns"];
 const external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
 const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcuts/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/keyboard-shortcuts/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2978,9 +2978,9 @@ function KeyboardShortcutsRegister() {
 KeyboardShortcuts.Register = KeyboardShortcutsRegister;
 /* harmony default export */ const keyboard_shortcuts = (KeyboardShortcuts);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/hooks/use-last-selected-widget-area.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/hooks/use-last-selected-widget-area.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3028,13 +3028,13 @@ const useLastSelectedWidgetArea = () => (0,external_wp_data_namespaceObject.useS
 }, []);
 /* harmony default export */ const use_last_selected_widget_area = (useLastSelectedWidgetArea);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/constants.js
 const ALLOW_REUSABLE_BLOCKS = false;
 const ENABLE_EXPERIMENTAL_FSE_BLOCKS = false;
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/widget-areas-block-editor-provider/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/widget-areas-block-editor-provider/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3147,9 +3147,9 @@ function WidgetAreasBlockEditorProvider({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/drawer-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/drawer-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3166,9 +3166,9 @@ const drawerLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const drawer_left = (drawerLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/drawer-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/drawer-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3185,9 +3185,9 @@ const drawerRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const drawer_right = (drawerRight);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/block-default.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/block-default.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3204,9 +3204,9 @@ const blockDefault = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 const external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: external ["wp","dom"]
 const external_wp_dom_namespaceObject = window["wp"]["dom"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/sidebar/widget-areas.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/sidebar/widget-areas.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3246,8 +3246,8 @@ function WidgetAreas({
         children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("p", {
           // Use `dangerouslySetInnerHTML` to keep backwards
           // compatibility. Basic markup in the description is an
-          // established feature of WordPress.
-          // @see https://github.com/WordPress/gutenberg/issues/33106
+          // established feature of cohesion.
+          // @see https://github.com/cohesion/gutenberg/issues/33106
           dangerouslySetInnerHTML: {
             __html: (0,external_wp_dom_namespaceObject.safeHTML)(description)
           }
@@ -3266,9 +3266,9 @@ function WidgetAreas({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/sidebar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/sidebar/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3444,9 +3444,9 @@ function Sidebar() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plus.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/plus.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3459,9 +3459,9 @@ const plus = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_plus = (plus);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/list-view.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/list-view.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3474,9 +3474,9 @@ const listView = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const list_view = (listView);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/undo.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/undo.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3489,9 +3489,9 @@ const undo = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_undo = (undo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/redo.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/redo.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3504,9 +3504,9 @@ const redo = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_redo = (redo);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/header/undo-redo/undo.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/header/undo-redo/undo.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3529,7 +3529,7 @@ function UndoButton(props, ref) {
     shortcut: external_wp_keycodes_namespaceObject.displayShortcut.primary('z')
     // If there are no undo levels we don't want to actually disable this
     // button, because it will remove focus for keyboard users.
-    // See: https://github.com/WordPress/gutenberg/issues/3486
+    // See: https://github.com/cohesion/gutenberg/issues/3486
     ,
     "aria-disabled": !hasUndo,
     onClick: hasUndo ? undo : undefined,
@@ -3538,9 +3538,9 @@ function UndoButton(props, ref) {
 }
 /* harmony default export */ const undo_redo_undo = ((0,external_wp_element_namespaceObject.forwardRef)(UndoButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/header/undo-redo/redo.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/header/undo-redo/redo.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3564,7 +3564,7 @@ function RedoButton(props, ref) {
     shortcut: shortcut
     // If there are no undo levels we don't want to actually disable this
     // button, because it will remove focus for keyboard users.
-    // See: https://github.com/WordPress/gutenberg/issues/3486
+    // See: https://github.com/cohesion/gutenberg/issues/3486
     ,
     "aria-disabled": !hasRedo,
     onClick: hasRedo ? redo : undefined,
@@ -3573,9 +3573,9 @@ function RedoButton(props, ref) {
 }
 /* harmony default export */ const undo_redo_redo = ((0,external_wp_element_namespaceObject.forwardRef)(RedoButton));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/header/document-tools/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/header/document-tools/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3662,9 +3662,9 @@ function DocumentTools() {
 }
 /* harmony default export */ const document_tools = (DocumentTools);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/save-button/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/save-button/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3704,9 +3704,9 @@ function SaveButton() {
 }
 /* harmony default export */ const save_button = (SaveButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/more-vertical.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/more-vertical.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3719,9 +3719,9 @@ const moreVertical = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const more_vertical = (moreVertical);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/external.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/external.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3734,9 +3734,9 @@ const external = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(e
 });
 /* harmony default export */ const library_external = (external);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcut-help-modal/config.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/keyboard-shortcut-help-modal/config.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const textFormattingShortcuts = [{
@@ -3810,9 +3810,9 @@ const textFormattingShortcuts = [{
   description: (0,external_wp_i18n_namespaceObject.__)('Add non breaking space.')
 }];
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcut-help-modal/shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/keyboard-shortcut-help-modal/shortcut.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3866,9 +3866,9 @@ function Shortcut({
 }
 /* harmony default export */ const keyboard_shortcut_help_modal_shortcut = (Shortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcut-help-modal/dynamic-shortcut.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/keyboard-shortcut-help-modal/dynamic-shortcut.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3908,14 +3908,14 @@ function DynamicShortcut({
 }
 /* harmony default export */ const dynamic_shortcut = (DynamicShortcut);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/keyboard-shortcut-help-modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/keyboard-shortcut-help-modal/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4022,9 +4022,9 @@ function KeyboardShortcutHelpModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/more-menu/tools-more-menu-group.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/more-menu/tools-more-menu-group.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4040,9 +4040,9 @@ ToolsMoreMenuGroup.Slot = ({
 });
 /* harmony default export */ const tools_more_menu_group = (ToolsMoreMenuGroup);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/more-menu/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/more-menu/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4104,7 +4104,7 @@ function MoreMenu() {
           }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(external_wp_components_namespaceObject.MenuItem, {
             role: "menuitem",
             icon: library_external,
-            href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/documentation/article/block-based-widgets-editor/'),
+            href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/documentation/article/block-based-widgets-editor/'),
             target: "_blank",
             rel: "noopener noreferrer",
             children: [(0,external_wp_i18n_namespaceObject.__)('Help'), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.VisuallyHidden, {
@@ -4148,9 +4148,9 @@ function MoreMenu() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/header/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/header/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4212,9 +4212,9 @@ function Header() {
 }
 /* harmony default export */ const header = (Header);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/notices/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/notices/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4264,9 +4264,9 @@ function Notices() {
 }
 /* harmony default export */ const notices = (Notices);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/widget-areas-block-editor-content/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/widget-areas-block-editor-content/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4308,9 +4308,9 @@ function WidgetAreasBlockEditorContent({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4323,9 +4323,9 @@ const close_close = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/hooks/use-widget-library-insertion-point.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/hooks/use-widget-library-insertion-point.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4379,9 +4379,9 @@ const useWidgetLibraryInsertionPoint = () => {
 };
 /* harmony default export */ const use_widget_library_insertion_point = (useWidgetLibraryInsertionPoint);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/secondary-sidebar/inserter-sidebar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/secondary-sidebar/inserter-sidebar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4440,9 +4440,9 @@ function InserterSidebar() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/secondary-sidebar/list-view-sidebar.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/secondary-sidebar/list-view-sidebar.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4510,9 +4510,9 @@ function ListViewSidebar() {
   );
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/secondary-sidebar/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/secondary-sidebar/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 /**
@@ -4549,9 +4549,9 @@ function SecondarySidebar() {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/layout/interface.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/layout/interface.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4650,9 +4650,9 @@ function Interface({
 }
 /* harmony default export */ const layout_interface = (Interface);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/layout/unsaved-changes-warning.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/layout/unsaved-changes-warning.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4701,9 +4701,9 @@ function UnsavedChangesWarning() {
   return null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/welcome-guide/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/welcome-guide/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4762,7 +4762,7 @@ function WelcomeGuide() {
             children: [/*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)("strong", {
               children: (0,external_wp_i18n_namespaceObject.__)('Want to stick with the old widgets?')
             }), ' ', /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ExternalLink, {
-              href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/plugins/classic-widgets/'),
+              href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/plugins/classic-widgets/'),
               children: (0,external_wp_i18n_namespaceObject.__)('Get the Classic Widgets plugin.')
             })]
           })]
@@ -4814,7 +4814,7 @@ function WelcomeGuide() {
         }), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)("p", {
           className: "edit-widgets-welcome-guide__text",
           children: [(0,external_wp_i18n_namespaceObject.__)('New to the block editor? Want to learn more about using it? '), /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(external_wp_components_namespaceObject.ExternalLink, {
-            href: (0,external_wp_i18n_namespaceObject.__)('https://wordpress.org/documentation/article/wordpress-block-editor/'),
+            href: (0,external_wp_i18n_namespaceObject.__)('https://cohesion.org/documentation/article/cohesion-block-editor/'),
             children: (0,external_wp_i18n_namespaceObject.__)("Here's a detailed guide.")
           })]
         })]
@@ -4840,9 +4840,9 @@ function WelcomeGuideImage({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/components/layout/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/components/layout/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4883,9 +4883,9 @@ function Layout({
 }
 /* harmony default export */ const layout = (Layout);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/edit-widgets/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/edit-widgets/build-module/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4937,7 +4937,7 @@ function initializeEditor(id, settings) {
   // As we are unregistering `core/freeform` to avoid the Classic block, we must
   // replace it with something as the default freeform content handler. Failure to
   // do this will result in errors in the default block parser.
-  // see: https://github.com/WordPress/gutenberg/issues/33097
+  // see: https://github.com/cohesion/gutenberg/issues/33097
   (0,external_wp_blocks_namespaceObject.setFreeformContentHandlerName)('core/html');
   root.render( /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(layout, {
     blockEditorSettings: settings

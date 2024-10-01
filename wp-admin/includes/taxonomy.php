@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Taxonomy Administration API.
+ * cohesion Taxonomy Administration API.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 

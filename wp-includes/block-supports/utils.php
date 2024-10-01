@@ -2,7 +2,7 @@
 /**
  * Block support utility functions.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Block Supports
  * @since 6.0.0
  */

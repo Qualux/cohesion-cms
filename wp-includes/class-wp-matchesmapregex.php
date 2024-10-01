@@ -2,7 +2,7 @@
 /**
  * WP_MatchesMapRegex helper class
  *
- * @package WordPress
+ * @package cohesion
  * @since 4.7.0
  */
 

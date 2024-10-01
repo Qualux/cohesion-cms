@@ -56,7 +56,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/preferences/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/preferences/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -66,7 +66,7 @@ __webpack_require__.d(actions_namespaceObject, {
   toggle: () => (toggle)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/preferences/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/preferences/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -83,9 +83,9 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/check.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/check.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -100,9 +100,9 @@ const check = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exte
 
 ;// CONCATENATED MODULE: external ["wp","a11y"]
 const external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -195,7 +195,7 @@ const preferences = withPersistenceLayer((state = {}, action) => {
   preferences
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/store/actions.js
 /**
  * Returns an action object used in signalling that a preference should be
  * toggled.
@@ -285,9 +285,9 @@ async function setPersistenceLayer(persistenceLayer) {
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const withDeprecatedKeys = originalGet => (state, scope, name) => {
@@ -317,7 +317,7 @@ const get = withDeprecatedKeys((state, scope, name) => {
   return value !== undefined ? value : state.defaults[scope]?.[name];
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -325,9 +325,9 @@ const get = withDeprecatedKeys((state, scope, name) => {
  */
 const STORE_NAME = 'core/preferences';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -342,7 +342,7 @@ const STORE_NAME = 'core/preferences';
 /**
  * Store definition for the preferences namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -353,9 +353,9 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preference-toggle-menu-item/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preference-toggle-menu-item/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -413,12 +413,12 @@ function PreferenceToggleMenuItem({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preference-base-option/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preference-base-option/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -443,9 +443,9 @@ function BaseOption({
 }
 /* harmony default export */ const preference_base_option = (BaseOption);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preference-toggle-control/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preference-toggle-control/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -478,9 +478,9 @@ function PreferenceToggleControl(props) {
 }
 /* harmony default export */ const preference_toggle_control = (PreferenceToggleControl);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preferences-modal/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preferences-modal/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -497,7 +497,7 @@ function PreferencesModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preferences-modal-section/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preferences-modal-section/index.js
 
 
 const Section = ({
@@ -526,13 +526,13 @@ const Section = ({
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external ["wp","element"]
 const external_wp_element_namespaceObject = window["wp"]["element"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/icon/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
-/** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
+/** @typedef {{icon: JSX.Element, size?: number} & import('@cohesion/primitives').SVGProps} IconProps */
 
 /**
  * Return an SVG icon.
@@ -558,9 +558,9 @@ function Icon({
 }
 /* harmony default export */ const icon = ((0,external_wp_element_namespaceObject.forwardRef)(Icon));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-left.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-left.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -573,9 +573,9 @@ const chevronLeft = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const chevron_left = (chevronLeft);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/chevron-right.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/chevron-right.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -590,19 +590,19 @@ const chevronRight = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/preferences');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/preferences');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/components/preferences-modal-tabs/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/components/preferences-modal-tabs/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -746,7 +746,7 @@ function PreferencesModalTabs({
   return modalContent;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/private-apis.js
 /**
  * Internal dependencies
  */
@@ -765,7 +765,7 @@ lock(privateApis, {
   PreferencesModalTabs: PreferencesModalTabs
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences/build-module/index.js
 
 
 

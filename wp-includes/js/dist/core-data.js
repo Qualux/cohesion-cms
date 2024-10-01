@@ -11,7 +11,7 @@
 /* harmony import */ var _wordpress_is_shallow_equal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(923);
 /* harmony import */ var _wordpress_is_shallow_equal__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_is_shallow_equal__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -676,7 +676,7 @@ __webpack_require__.d(__webpack_exports__, {
   useResourcePermissions: () => (/* reexport */ useResourcePermissions)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/core-data/build-module/actions.js
 var build_module_actions_namespaceObject = {};
 __webpack_require__.r(build_module_actions_namespaceObject);
 __webpack_require__.d(build_module_actions_namespaceObject, {
@@ -708,7 +708,7 @@ __webpack_require__.d(build_module_actions_namespaceObject, {
   undo: () => (undo)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/core-data/build-module/selectors.js
 var build_module_selectors_namespaceObject = {};
 __webpack_require__.r(build_module_selectors_namespaceObject);
 __webpack_require__.d(build_module_selectors_namespaceObject, {
@@ -765,7 +765,7 @@ __webpack_require__.d(build_module_selectors_namespaceObject, {
   isSavingEntityRecord: () => (isSavingEntityRecord)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/private-selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/core-data/build-module/private-selectors.js
 var private_selectors_namespaceObject = {};
 __webpack_require__.r(private_selectors_namespaceObject);
 __webpack_require__.d(private_selectors_namespaceObject, {
@@ -774,7 +774,7 @@ __webpack_require__.d(private_selectors_namespaceObject, {
   getUndoManager: () => (getUndoManager)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/core-data/build-module/resolvers.js
 var resolvers_namespaceObject = {};
 __webpack_require__.r(resolvers_namespaceObject);
 __webpack_require__.d(resolvers_namespaceObject, {
@@ -812,9 +812,9 @@ var es6 = __webpack_require__(7734);
 var es6_default = /*#__PURE__*/__webpack_require__.n(es6);
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-// EXTERNAL MODULE: ./node_modules/@wordpress/undo-manager/build-module/index.js
+// EXTERNAL MODULE: ./node_modules/@cohesion/undo-manager/build-module/index.js
 var build_module = __webpack_require__(6689);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/if-matching-action.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/if-matching-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -834,7 +834,7 @@ const ifMatchingAction = isMatch => reducer => (state, action) => {
 };
 /* harmony default export */ const if_matching_action = (ifMatchingAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/replace-action.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/replace-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -850,7 +850,7 @@ const replaceAction = replacer => reducer => (state, action) => {
 };
 /* harmony default export */ const replace_action = (replaceAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/conservative-map-item.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/conservative-map-item.js
 /**
  * External dependencies
  */
@@ -896,7 +896,7 @@ function conservativeMapItem(item, nextItem) {
   return result;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/on-sub-key.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/on-sub-key.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -1520,7 +1520,7 @@ const external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/set-nested-value.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/set-nested-value.js
 /**
  * Sets the value at path of object.
  * If a portion of path doesn’t exist, it’s created.
@@ -1537,7 +1537,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
  *
  * @see https://lodash.com/docs/4.17.15#set
  *
- * @todo Needs to be deduplicated with its copy in `@wordpress/edit-site`.
+ * @todo Needs to be deduplicated with its copy in `@cohesion/edit-site`.
  *
  * @param {Object}       object Object to modify
  * @param {Array|string} path   Path of the property to set.
@@ -1564,7 +1564,7 @@ function setNestedValue(object, path, value) {
   return object;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/get-nested-value.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/get-nested-value.js
 /**
  * Helper util to return a value from a certain path of the object.
  * Path is specified as either:
@@ -1589,7 +1589,7 @@ function getNestedValue(object, path, defaultValue) {
   return value !== undefined ? value : defaultValue;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/queried-data/actions.js
 /**
  * Returns an action object used in signalling that items have been received.
  *
@@ -1646,9 +1646,9 @@ function receiveQueriedItems(items, query = {}, edits, meta) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/default-processor.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/batch/default-processor.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -1724,7 +1724,7 @@ async function defaultProcessor(requests) {
   return results;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/create-batch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/batch/create-batch.js
 /**
  * Internal dependencies
  */
@@ -1732,7 +1732,7 @@ async function defaultProcessor(requests) {
 
 /**
  * Creates a batch, which can be used to combine multiple API requests into one
- * API request using the WordPress batch processing API (/v1/batch).
+ * API request using the cohesion batch processing API (/v1/batch).
  *
  * ```
  * const batch = createBatch();
@@ -1889,7 +1889,7 @@ class ObservableSet {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/name.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/name.js
 /**
  * The reducer key used by core data in store registration.
  * This is defined in a separate file to avoid cycle-dependency
@@ -1898,7 +1898,7 @@ class ObservableSet {
  */
 const STORE_NAME = 'core';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/actions.js
 /**
  * External dependencies
  */
@@ -1906,7 +1906,7 @@ const STORE_NAME = 'core';
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2099,7 +2099,7 @@ function receiveThemeSupports() {
  * Returns an action object used in signalling that the theme global styles CPT post revisions have been received.
  * Ignored from documentation as it's internal to the data store.
  *
- * @deprecated since WordPress 6.5.0. Callers should use `dispatch( 'core' ).receiveRevision` instead.
+ * @deprecated since cohesion 6.5.0. Callers should use `dispatch( 'core' ).receiveRevision` instead.
  *
  * @ignore
  *
@@ -2715,14 +2715,14 @@ const receiveRevisions = (kind, name, recordKey, records, query, invalidateCache
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entities.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/entities.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3225,7 +3225,7 @@ const getOrLoadEntitiesConfig = (kind, name) => async ({
   return configs;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/get-normalized-comma-separable.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/get-normalized-comma-separable.js
 /**
  * Given a value which can be specified as one or the other of a comma-separated
  * string or an array, returns a value normalized to an array of strings, or
@@ -3245,7 +3245,7 @@ function getNormalizedCommaSeparable(value) {
 }
 /* harmony default export */ const get_normalized_comma_separable = (getNormalizedCommaSeparable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/with-weak-map-cache.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/with-weak-map-cache.js
 /**
  * Given a function, returns an enhanced function which caches the result and
  * tracks in WeakMap. The result is only cached if the original function is
@@ -3276,9 +3276,9 @@ function withWeakMapCache(fn) {
 }
 /* harmony default export */ const with_weak_map_cache = (withWeakMapCache);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/get-query-parts.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/queried-data/get-query-parts.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3380,9 +3380,9 @@ function getQueryParts(query) {
 }
 /* harmony default export */ const get_query_parts = (with_weak_map_cache(getQueryParts));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/queried-data/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3616,14 +3616,14 @@ const queries = (state = {}, action) => {
   queries
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/reducer.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4195,14 +4195,14 @@ function defaultTemplates(state = {}, action) {
 // EXTERNAL MODULE: ./node_modules/equivalent-key-map/equivalent-key-map.js
 var equivalent_key_map = __webpack_require__(3249);
 var equivalent_key_map_default = /*#__PURE__*/__webpack_require__.n(equivalent_key_map);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/queried-data/selectors.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4330,7 +4330,7 @@ function getQueriedTotalPages(state, query = {}) {
   return (_state$queries$contex2 = state.queries?.[context]?.[stableKey]?.meta?.totalPages) !== null && _state$queries$contex2 !== void 0 ? _state$queries$contex2 : null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/is-numeric-id.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/is-numeric-id.js
 /**
  * Checks argument to determine if it's a numeric ID.
  * For example, '123' is a numeric ID, but '123abc' is not.
@@ -4342,7 +4342,7 @@ function isNumericID(id) {
   return /^\s*\d+\s*$/.test(id);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/is-raw-attribute.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/is-raw-attribute.js
 /**
  * Checks whether the attribute is a "raw" attribute or not.
  *
@@ -4355,9 +4355,9 @@ function isRawAttribute(entity, attribute) {
   return (entity.rawAttributes || []).includes(attribute);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4374,7 +4374,7 @@ function isRawAttribute(entity, attribute) {
 // This is an incomplete, high-level approximation of the State type.
 // It makes the selectors slightly more safe, but is intended to evolve
 // into a more detailed representation over time.
-// See https://github.com/WordPress/gutenberg/pull/40025#discussion_r865410589 for more context.
+// See https://github.com/cohesion/gutenberg/pull/40025#discussion_r865410589 for more context.
 
 /**
  * HTTP Query parameters sent with the API request to fetch the entity records.
@@ -4413,7 +4413,7 @@ const isRequestingEmbedPreview = (0,external_wp_data_namespaceObject.createRegis
  *
  * @param      state Data state.
  * @param      query Optional object of query parameters to
- *                   include with request. For valid query parameters see the [Users page](https://developer.wordpress.org/rest-api/reference/users/) in the REST API Handbook and see the arguments for [List Users](https://developer.wordpress.org/rest-api/reference/users/#list-users) and [Retrieve a User](https://developer.wordpress.org/rest-api/reference/users/#retrieve-a-user).
+ *                   include with request. For valid query parameters see the [Users page](https://developer.cohesion.org/rest-api/reference/users/) in the REST API Handbook and see the arguments for [List Users](https://developer.cohesion.org/rest-api/reference/users/#list-users) and [Retrieve a User](https://developer.cohesion.org/rest-api/reference/users/#retrieve-a-user).
  * @return Authors list.
  */
 function getAuthors(state, query) {
@@ -4453,7 +4453,7 @@ const getUserQueryResults = (0,external_wp_data_namespaceObject.createSelector)(
 /**
  * Returns the loaded entities for the given kind.
  *
- * @deprecated since WordPress 6.0. Use getEntitiesConfig instead
+ * @deprecated since cohesion 6.0. Use getEntitiesConfig instead
  * @param      state Data state.
  * @param      kind  Entity kind.
  *
@@ -4479,7 +4479,7 @@ const getEntitiesConfig = (0,external_wp_data_namespaceObject.createSelector)((s
 /**
  * Returns the entity config given its kind and name.
  *
- * @deprecated since WordPress 6.0. Use getEntityConfig instead
+ * @deprecated since cohesion 6.0. Use getEntityConfig instead
  * @param      state Data state.
  * @param      kind  Entity kind.
  * @param      name  Entity name.
@@ -4529,7 +4529,7 @@ function getEntityConfig(state, kind, name) {
  * The signature without the state parameter shipped as CurriedSignature
  * is used in the return value of `select( coreStore )`.
  *
- * See https://github.com/WordPress/gutenberg/pull/41578 for more details.
+ * See https://github.com/cohesion/gutenberg/pull/41578 for more details.
  */
 
 /**
@@ -4542,7 +4542,7 @@ function getEntityConfig(state, kind, name) {
  * @param name  Entity name.
  * @param key   Record's key
  * @param query Optional query. If requesting specific
- *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.wordpress.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available "Retrieve a [Entity kind]".
+ *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.cohesion.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available "Retrieve a [Entity kind]".
  *
  * @return Record.
  */
@@ -4649,7 +4649,7 @@ const getRawEntityRecord = (0,external_wp_data_namespaceObject.createSelector)((
  * @param state State tree
  * @param kind  Entity kind.
  * @param name  Entity name.
- * @param query Optional terms query. For valid query parameters see the [Reference](https://developer.wordpress.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
+ * @param query Optional terms query. For valid query parameters see the [Reference](https://developer.cohesion.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
  *
  * @return  Whether entity records have been received.
  */
@@ -4663,7 +4663,7 @@ function hasEntityRecords(state, kind, name, query) {
  * allow currying generic functions.
  *
  * @see GetEntityRecord
- * @see https://github.com/WordPress/gutenberg/pull/41578
+ * @see https://github.com/cohesion/gutenberg/pull/41578
  */
 
 /**
@@ -4673,7 +4673,7 @@ function hasEntityRecords(state, kind, name, query) {
  * @param kind  Entity kind.
  * @param name  Entity name.
  * @param query Optional terms query. If requesting specific
- *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.wordpress.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
+ *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.cohesion.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
  *
  * @return Records.
  */
@@ -4694,7 +4694,7 @@ const getEntityRecords = (state, kind, name, query) => {
  * @param kind  Entity kind.
  * @param name  Entity name.
  * @param query Optional terms query. If requesting specific
- *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.wordpress.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
+ *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.cohesion.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
  *
  * @return number | null.
  */
@@ -4715,7 +4715,7 @@ const getEntityRecordsTotalItems = (state, kind, name, query) => {
  * @param kind  Entity kind.
  * @param name  Entity name.
  * @param query Optional terms query. If requesting specific
- *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.wordpress.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
+ *              fields, fields must always include the ID. For valid query parameters see the [Reference](https://developer.cohesion.org/rest-api/reference/) in the REST API Handbook and select the entity kind. Then see the arguments available for "List [Entity kind]s".
  *
  * @return number | null.
  */
@@ -5091,7 +5091,7 @@ function getEmbedPreview(state, url) {
 /**
  * Determines if the returned preview is an oEmbed link fallback.
  *
- * WordPress can be configured to return a simple link to a URL if it is not embeddable.
+ * cohesion can be configured to return a simple link to a URL if it is not embeddable.
  * We need to be able to determine if a URL is embeddable or not, based on what we
  * get back from the oEmbed preview API.
  *
@@ -5116,7 +5116,7 @@ function isPreviewEmbedFallback(state, url) {
  * Calling this may trigger an OPTIONS request to the REST API via the
  * `canUser()` resolver.
  *
- * https://developer.wordpress.org/rest-api/reference/
+ * https://developer.cohesion.org/rest-api/reference/
  *
  * @param state    Data state.
  * @param action   Action to check. One of: 'create', 'read', 'update', 'delete'.
@@ -5137,7 +5137,7 @@ function canUser(state, action, resource, id) {
  * Calling this may trigger an OPTIONS request to the REST API via the
  * `canUser()` resolver.
  *
- * https://developer.wordpress.org/rest-api/reference/
+ * https://developer.cohesion.org/rest-api/reference/
  *
  * @param state    Data state.
  * @param kind     Entity kind.
@@ -5309,7 +5309,7 @@ function getUserPatternCategories(state) {
 /**
  * Returns the revisions of the current global styles theme.
  *
- * @deprecated since WordPress 6.5.0. Callers should use `select( 'core' ).getRevisions( 'root', 'globalStyles', ${ recordKey } )` instead, where `recordKey` is the id of the global styles parent post.
+ * @deprecated since cohesion 6.5.0. Callers should use `select( 'core' ).getRevisions( 'root', 'globalStyles', ${ recordKey } )` instead, where `recordKey` is the id of the global styles parent post.
  *
  * @param      state Data state.
  *
@@ -5347,7 +5347,7 @@ function getDefaultTemplateId(state, query) {
  * @param name      Entity name.
  * @param recordKey The key of the entity record whose revisions you want to fetch.
  * @param query     Optional query. If requesting specific
- *                  fields, fields must always include the ID. For valid query parameters see revisions schema in [the REST API Handbook](https://developer.wordpress.org/rest-api/reference/). Then see the arguments available "Retrieve a [Entity kind]".
+ *                  fields, fields must always include the ID. For valid query parameters see revisions schema in [the REST API Handbook](https://developer.cohesion.org/rest-api/reference/). Then see the arguments available "Retrieve a [Entity kind]".
  *
  * @return Record.
  */
@@ -5368,7 +5368,7 @@ const getRevisions = (state, kind, name, recordKey, query) => {
  * @param recordKey   The key of the entity record whose revisions you want to fetch.
  * @param revisionKey The revision's key.
  * @param query       Optional query. If requesting specific
- *                    fields, fields must always include the ID. For valid query parameters see revisions schema in [the REST API Handbook](https://developer.wordpress.org/rest-api/reference/). Then see the arguments available "Retrieve a [entity kind]".
+ *                    fields, fields must always include the ID. For valid query parameters see revisions schema in [the REST API Handbook](https://developer.cohesion.org/rest-api/reference/). Then see the arguments available "Retrieve a [entity kind]".
  *
  * @return Record.
  */
@@ -5408,9 +5408,9 @@ const getRevision = (0,external_wp_data_namespaceObject.createSelector)((state, 
   return [state.entities.records?.[kind]?.[name]?.revisions?.[recordKey]?.items?.[context]?.[revisionKey], state.entities.records?.[kind]?.[name]?.revisions?.[recordKey]?.itemIsComplete?.[context]?.[revisionKey]];
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/private-selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/private-selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -5464,7 +5464,7 @@ function camelCase(input, options) {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/forward-resolver.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/utils/forward-resolver.js
 /**
  * Higher-order function which forward the resolution to another resolver with the same arguments.
  *
@@ -5479,9 +5479,9 @@ const forwardResolver = resolverName => (...args) => async ({
 };
 /* harmony default export */ const forward_resolver = (forwardResolver);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -5547,7 +5547,7 @@ const forwardResolver = resolverName => (...args) => async ({
  *
  * @example
  * ```js
- * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@wordpress/core-data';
+ * import { __experimentalFetchLinkSuggestions as fetchLinkSuggestions } from '@cohesion/core-data';
  *
  * //...
  *
@@ -5694,9 +5694,9 @@ const fetchLinkSuggestions = async (search, searchOptions = {}, settings = {}) =
 };
 /* harmony default export */ const _experimental_fetch_link_suggestions = (fetchLinkSuggestions);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-url-data.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/fetch/__experimental-fetch-url-data.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -5723,7 +5723,7 @@ const CACHE = new Map();
  * @param {Object?} options any options to pass to the underlying fetch.
  * @example
  * ```js
- * import { __experimentalFetchUrlData as fetchUrlData } from '@wordpress/core-data';
+ * import { __experimentalFetchUrlData as fetchUrlData } from '@cohesion/core-data';
  *
  * //...
  *
@@ -5763,14 +5763,14 @@ const fetchUrlData = async (url, options = {}) => {
 };
 /* harmony default export */ const _experimental_fetch_url_data = (fetchUrlData);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/fetch/index.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -5785,14 +5785,14 @@ async function fetchBlockPatterns() {
   return restPatterns.map(pattern => Object.fromEntries(Object.entries(pattern).map(([key, value]) => [camelCase(key), value])));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/resolvers.js
 /**
  * External dependencies
  */
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -5879,7 +5879,7 @@ const resolvers_getEntityRecord = (kind, name, key = '', query) => async ({
       // modifications are relevant to how the data is tracked in state, and not
       // for how the request is made to the REST API.
 
-      // eslint-disable-next-line @wordpress/no-unused-vars-before-return
+      // eslint-disable-next-line @cohesion/no-unused-vars-before-return
       const path = (0,external_wp_url_namespaceObject.addQueryArgs)(entityConfig.baseURL + (key ? '/' + key : ''), {
         ...entityConfig.baseURLParams,
         ...query
@@ -5987,7 +5987,7 @@ const resolvers_getEntityRecords = (kind, name, query = {}) => async ({
 
       // When requesting all fields, the list of results can be used to
       // resolve the `getEntityRecord` selector in addition to `getEntityRecords`.
-      // See https://github.com/WordPress/gutenberg/pull/26575
+      // See https://github.com/cohesion/gutenberg/pull/26575
       if (!query?._fields && !query.context) {
         const key = entityConfig.key || DEFAULT_ENTITY_KEY;
         const resolutionsArgs = records.filter(record => record?.[key]).map(record => [kind, name, record[key]]);
@@ -6473,7 +6473,7 @@ const resolvers_getRevision = (kind, name, recordKey, revisionKey, query) => asy
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/locks/utils.js
 function deepCopyLocksTreePath(tree, path) {
   const newTree = {
     ...tree
@@ -6535,7 +6535,7 @@ function hasConflictingLock({
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/locks/reducer.js
 /**
  * Internal dependencies
  */
@@ -6606,7 +6606,7 @@ function locks(state = DEFAULT_STATE, action) {
   return state;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/locks/selectors.js
 /**
  * Internal dependencies
  */
@@ -6647,7 +6647,7 @@ function isLockAvailable(state, store, path, {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/engine.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/locks/engine.js
 /**
  * Internal dependencies
  */
@@ -6709,7 +6709,7 @@ function createLocks() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/locks/actions.js
 /**
  * Internal dependencies
  */
@@ -6732,15 +6732,15 @@ function createLocksActions() {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/private-apis.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/core-data');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/core-data');
 
 ;// CONCATENATED MODULE: external ["wp","element"]
 const external_wp_element_namespaceObject = window["wp"]["element"];
@@ -6748,9 +6748,9 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external ["wp","blockEditor"]
 const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/get-rich-text-values-cached.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/footnotes/get-rich-text-values-cached.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -6768,7 +6768,7 @@ const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 // `block-editor`. What follows is a workaround that defers the `unlock` call
 // to prevent native code from failing.
 //
-// Fix once https://github.com/WordPress/gutenberg/issues/52692 is closed.
+// Fix once https://github.com/cohesion/gutenberg/issues/52692 is closed.
 let unlockedApis;
 const cache = new WeakMap();
 function getRichTextValuesCached(block) {
@@ -6782,7 +6782,7 @@ function getRichTextValuesCached(block) {
   return cache.get(block);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/get-footnotes-order.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/footnotes/get-footnotes-order.js
 /**
  * Internal dependencies
  */
@@ -6818,9 +6818,9 @@ function getFootnotesOrder(blocks) {
   return blocks.flatMap(getBlockFootnotesOrder);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/footnotes/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -6928,9 +6928,9 @@ function updateFootnotesFromMeta(blocks, meta) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entity-provider.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/entity-provider.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -6942,7 +6942,7 @@ const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
 
 
 
-/** @typedef {import('@wordpress/blocks').WPBlock} WPBlock */
+/** @typedef {import('@cohesion/blocks').WPBlock} WPBlock */
 
 const EMPTY_ARRAY = [];
 const EntityContext = (0,external_wp_element_namespaceObject.createContext)({});
@@ -7317,7 +7317,7 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/memoize.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/memoize.js
 /**
  * External dependencies
  */
@@ -7326,7 +7326,7 @@ function memize(fn, options) {
 // re-export due to restrictive esModuleInterop setting
 /* harmony default export */ const memoize = (memize);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/constants.js
 let Status = /*#__PURE__*/function (Status) {
   Status["Idle"] = "IDLE";
   Status["Resolving"] = "RESOLVING";
@@ -7335,9 +7335,9 @@ let Status = /*#__PURE__*/function (Status) {
   return Status;
 }({});
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-query-select.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/use-query-select.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7351,7 +7351,7 @@ const META_SELECTORS = ['getIsResolving', 'hasStartedResolution', 'hasFinishedRe
  * Like useSelect, but the selectors return objects containing
  * both the original data AND the resolution info.
  *
- * @since 6.1.0 Introduced in WordPress core.
+ * @since 6.1.0 Introduced in cohesion core.
  * @private
  *
  * @param {Function} mapQuerySelect see useSelect
@@ -7359,8 +7359,8 @@ const META_SELECTORS = ['getIsResolving', 'hasStartedResolution', 'hasFinishedRe
  *
  * @example
  * ```js
- * import { useQuerySelect } from '@wordpress/data';
- * import { store as coreDataStore } from '@wordpress/core-data';
+ * import { useQuerySelect } from '@cohesion/data';
+ * import { store as coreDataStore } from '@cohesion/core-data';
  *
  * function PageTitleDisplay( { id } ) {
  *   const { data: page, isResolving } = useQuerySelect( ( query ) => {
@@ -7441,9 +7441,9 @@ const enrichSelectors = memoize(selectors => {
   return resolvers;
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-record.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/use-entity-record.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7459,7 +7459,7 @@ const use_entity_record_EMPTY_OBJECT = {};
 /**
  * Resolves the specified entity record.
  *
- * @since 6.1.0 Introduced in WordPress core.
+ * @since 6.1.0 Introduced in cohesion core.
  *
  * @param    kind     Kind of the entity, e.g. `root` or a `postType`. See rootEntitiesConfig in ../entities.ts for a list of available kinds.
  * @param    name     Name of the entity, e.g. `plugin` or a `post`. See rootEntitiesConfig in ../entities.ts for a list of available names.
@@ -7467,7 +7467,7 @@ const use_entity_record_EMPTY_OBJECT = {};
  * @param    options  Optional hook options.
  * @example
  * ```js
- * import { useEntityRecord } from '@wordpress/core-data';
+ * import { useEntityRecord } from '@cohesion/core-data';
  *
  * function PageTitleDisplay( { id } ) {
  *   const { record, isResolving } = useEntityRecord( 'postType', 'page', id );
@@ -7490,11 +7490,11 @@ const use_entity_record_EMPTY_OBJECT = {};
  * @example
  * ```js
  * import { useCallback } from 'react';
- * import { useDispatch } from '@wordpress/data';
- * import { __ } from '@wordpress/i18n';
- * import { TextControl } from '@wordpress/components';
- * import { store as noticeStore } from '@wordpress/notices';
- * import { useEntityRecord } from '@wordpress/core-data';
+ * import { useDispatch } from '@cohesion/data';
+ * import { __ } from '@cohesion/i18n';
+ * import { TextControl } from '@cohesion/components';
+ * import { store as noticeStore } from '@cohesion/notices';
+ * import { useEntityRecord } from '@cohesion/core-data';
  *
  * function PageRenameForm( { id } ) {
  * 	const page = useEntityRecord( 'postType', 'page', id );
@@ -7604,9 +7604,9 @@ function __experimentalUseEntityRecord(kind, name, recordId, options) {
   return useEntityRecord(kind, name, recordId, options);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-records.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/use-entity-records.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7622,7 +7622,7 @@ const use_entity_records_EMPTY_ARRAY = [];
 /**
  * Resolves the specified entity records.
  *
- * @since 6.1.0 Introduced in WordPress core.
+ * @since 6.1.0 Introduced in cohesion core.
  *
  * @param    kind      Kind of the entity, e.g. `root` or a `postType`. See rootEntitiesConfig in ../entities.ts for a list of available kinds.
  * @param    name      Name of the entity, e.g. `plugin` or a `post`. See rootEntitiesConfig in ../entities.ts for a list of available names.
@@ -7630,7 +7630,7 @@ const use_entity_records_EMPTY_ARRAY = [];
  * @param    options   Optional hook options.
  * @example
  * ```js
- * import { useEntityRecords } from '@wordpress/core-data';
+ * import { useEntityRecords } from '@cohesion/core-data';
  *
  * function PageTitlesList() {
  *   const { records, isResolving } = useEntityRecords( 'postType', 'page' );
@@ -7709,9 +7709,9 @@ function __experimentalUseEntityRecords(kind, name, queryArgs, options) {
   return useEntityRecords(kind, name, queryArgs, options);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-resource-permissions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/use-resource-permissions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7729,14 +7729,14 @@ function __experimentalUseEntityRecords(kind, name, queryArgs, options) {
 /**
  * Resolves resource permissions.
  *
- * @since 6.1.0 Introduced in WordPress core.
+ * @since 6.1.0 Introduced in cohesion core.
  *
  * @param    resource The resource in question, e.g. media.
  * @param    id       ID of a specific resource entry, if needed, e.g. 10.
  *
  * @example
  * ```js
- * import { useResourcePermissions } from '@wordpress/core-data';
+ * import { useResourcePermissions } from '@cohesion/core-data';
  *
  * function PagesList() {
  *   const { canCreate, isResolving } = useResourcePermissions( 'pages' );
@@ -7759,7 +7759,7 @@ function __experimentalUseEntityRecords(kind, name, queryArgs, options) {
  *
  * @example
  * ```js
- * import { useResourcePermissions } from '@wordpress/core-data';
+ * import { useResourcePermissions } from '@cohesion/core-data';
  *
  * function Page({ pageId }) {
  *   const {
@@ -7848,14 +7848,14 @@ function __experimentalUseResourcePermissions(resource, id) {
   return useResourcePermissions(resource, id);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/hooks/index.js
 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-data/build-module/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -7932,7 +7932,7 @@ const storeConfig = () => ({
 /**
  * Store definition for the code data namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  */
 const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, storeConfig());
 unlock(store).registerPrivateSelectors(private_selectors_namespaceObject);

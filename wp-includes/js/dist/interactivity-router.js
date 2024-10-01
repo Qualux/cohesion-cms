@@ -1,4 +1,4 @@
-import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@wordpress/interactivity";
+import * as __WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__ from "@cohesion/interactivity";
 /******/ // The require scope
 /******/ var __webpack_require__ = {};
 /******/ 
@@ -29,16 +29,16 @@ __webpack_require__.d(__webpack_exports__, {
   w: () => (/* binding */ state)
 });
 
-;// CONCATENATED MODULE: external "@wordpress/interactivity"
+;// CONCATENATED MODULE: external "@cohesion/interactivity"
 var x = (y) => {
 	var x = {}; __webpack_require__.d(x, y); return x
 } 
 var y = (x) => (() => (x))
 const interactivity_namespaceObject = x({ ["getConfig"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.getConfig), ["privateApis"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.privateApis), ["store"]: () => (__WEBPACK_EXTERNAL_MODULE__wordpress_interactivity_8e89b257__.store) });
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity-router/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity-router/build-module/index.js
 var _getConfig$navigation;
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -55,7 +55,7 @@ const {
   parseInitialData,
   populateInitialData,
   batch
-} = (0,interactivity_namespaceObject.privateApis)('I acknowledge that using private APIs means my theme or plugin will inevitably break in the next version of WordPress.');
+} = (0,interactivity_namespaceObject.privateApis)('I acknowledge that using private APIs means my theme or plugin will inevitably break in the next version of cohesion.');
 // Check if the navigation mode is full page or region based.
 const navigationMode = (_getConfig$navigation = (0,interactivity_namespaceObject.getConfig)('core/router').navigationMode) !== null && _getConfig$navigation !== void 0 ? _getConfig$navigation : 'regionBased';
 
@@ -285,8 +285,8 @@ const {
         }
         if (screenReaderAnnouncement) {
           // Announce that the page has been loaded. If the message is the
-          // same, we use a no-break space similar to the @wordpress/a11y
-          // package: https://github.com/WordPress/gutenberg/blob/c395242b8e6ee20f8b06c199e4fc2920d7018af1/packages/a11y/src/filter-message.js#L20-L26
+          // same, we use a no-break space similar to the @cohesion/a11y
+          // package: https://github.com/cohesion/gutenberg/blob/c395242b8e6ee20f8b06c199e4fc2920d7018af1/packages/a11y/src/filter-message.js#L20-L26
           navigation.message = navigation.texts.loaded + (navigation.message === navigation.texts.loaded ? '\u00A0' : '');
         }
 

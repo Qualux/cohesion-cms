@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/search` block.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 /**
@@ -86,12 +86,12 @@ function render_block_core_search( $attributes ) {
 			}
 
 			wp_register_script_module(
-				'@wordpress/block-library/search',
+				'@cohesion/block-library/search',
 				isset( $module_url ) ? $module_url : includes_url( "blocks/search/view{$suffix}.js" ),
-				array( '@wordpress/interactivity' ),
+				array( '@cohesion/interactivity' ),
 				defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 			);
-			wp_enqueue_script_module( '@wordpress/block-library/search' );
+			wp_enqueue_script_module( '@cohesion/block-library/search' );
 
 			$input->set_attribute( 'data-wp-bind--aria-hidden', '!context.isSearchInputVisible' );
 			$input->set_attribute( 'data-wp-bind--tabindex', 'state.tabindex' );

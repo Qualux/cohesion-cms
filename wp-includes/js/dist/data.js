@@ -561,7 +561,7 @@ __webpack_require__.d(__webpack_exports__, {
   withSelect: () => (/* reexport */ with_select)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/data/build-module/redux-store/metadata/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/data/build-module/redux-store/metadata/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -577,7 +577,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   isResolving: () => (isResolving)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/data/build-module/redux-store/metadata/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/data/build-module/redux-store/metadata/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -592,7 +592,7 @@ __webpack_require__.d(actions_namespaceObject, {
   startResolutions: () => (startResolutions)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/data/build-module/plugins/index.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/data/build-module/plugins/index.js
 var plugins_namespaceObject = {};
 __webpack_require__.r(plugins_namespaceObject);
 __webpack_require__.d(plugins_namespaceObject, {
@@ -1371,7 +1371,7 @@ const external_wp_reduxRoutine_namespaceObject = window["wp"]["reduxRoutine"];
 var external_wp_reduxRoutine_default = /*#__PURE__*/__webpack_require__.n(external_wp_reduxRoutine_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/combine-reducers.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/combine-reducers.js
 function combine_reducers_combineReducers(reducers) {
   const keys = Object.keys(reducers);
   return function combinedReducer(state = {}, action) {
@@ -1388,7 +1388,7 @@ function combine_reducers_combineReducers(reducers) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/factory.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/factory.js
 /**
  * Creates a selector function that takes additional curried argument with the
  * registry `select` function. While a regular selector has signature
@@ -1404,8 +1404,8 @@ function combine_reducers_combineReducers(reducers) {
  *
  * @example
  * ```js
- * import { store as coreStore } from '@wordpress/core-data';
- * import { store as editorStore } from '@wordpress/editor';
+ * import { store as coreStore } from '@cohesion/core-data';
+ * import { store as editorStore } from '@cohesion/editor';
  *
  * const getCurrentPostId = createRegistrySelector( ( select ) => ( state ) => {
  *   return select( editorStore ).getCurrentPostId();
@@ -1483,7 +1483,7 @@ function createRegistryControl(registryControl) {
   return registryControl;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/controls.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/controls.js
 /**
  * Internal dependencies
  */
@@ -1510,7 +1510,7 @@ function isObject(object) {
  *
  * @example
  * ```js
- * import { controls } from '@wordpress/data';
+ * import { controls } from '@cohesion/data';
  *
  * // Action generator using `select`.
  * export function* myAction() {
@@ -1543,7 +1543,7 @@ function controls_select(storeNameOrDescriptor, selectorName, ...args) {
  *
  * @example
  * ```js
- * import { controls } from '@wordpress/data';
+ * import { controls } from '@cohesion/data';
  *
  * // Action generator using resolveSelect
  * export function* myAction() {
@@ -1572,7 +1572,7 @@ function resolveSelect(storeNameOrDescriptor, selectorName, ...args) {
  *
  * @example
  * ```js
- * import { controls } from '@wordpress/data-controls';
+ * import { controls } from '@cohesion/data-controls';
  *
  * // Action generator using dispatch
  * export function* myAction() {
@@ -1619,22 +1619,22 @@ const builtinControls = {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/data');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/data');
 
 ;// CONCATENATED MODULE: ./node_modules/is-promise/index.mjs
 function isPromise(obj) {
   return !!obj && (typeof obj === 'object' || typeof obj === 'function') && typeof obj.then === 'function';
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/promise-middleware.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/promise-middleware.js
 /**
  * External dependencies
  */
@@ -1657,7 +1657,7 @@ const promiseMiddleware = () => next => action => {
 };
 /* harmony default export */ const promise_middleware = (promiseMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/resolvers-cache-middleware.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/resolvers-cache-middleware.js
 /** @typedef {import('./registry').WPDataRegistry} WPDataRegistry */
 
 /**
@@ -1701,7 +1701,7 @@ const createResolversCacheMiddleware = (registry, storeName) => () => next => ac
 };
 /* harmony default export */ const resolvers_cache_middleware = (createResolversCacheMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/thunk-middleware.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/thunk-middleware.js
 function createThunkMiddleware(args) {
   return () => next => action => {
     if (typeof action === 'function') {
@@ -1711,7 +1711,7 @@ function createThunkMiddleware(args) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/metadata/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/metadata/utils.js
 /**
  * External dependencies
  */
@@ -1762,7 +1762,7 @@ function selectorArgsToStateKey(args) {
   return idx === len ? args : args.slice(0, idx);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/metadata/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/metadata/reducer.js
 /**
  * External dependencies
  */
@@ -2186,9 +2186,9 @@ function isShallowEqual(a, b, fromIndex) {
 	return /** @type {S & EnhancedSelector} */ (callSelector);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/metadata/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/metadata/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2381,7 +2381,7 @@ const countSelectorsByStatus = rememo(state => {
   return selectorsByStatus;
 }, state => [state]);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/metadata/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/metadata/actions.js
 /**
  * Returns an action object used in signalling that selector resolution has
  * started.
@@ -2535,7 +2535,7 @@ function invalidateResolutionForStoreSelector(selectorName) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/redux-store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/redux-store/index.js
 /**
  * External dependencies
  */
@@ -2543,7 +2543,7 @@ function invalidateResolutionForStoreSelector(selectorName) {
 
 
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -2650,7 +2650,7 @@ function createBindingCache(bind) {
  *
  * @example
  * ```js
- * import { createReduxStore } from '@wordpress/data';
+ * import { createReduxStore } from '@cohesion/data';
  *
  * const store = createReduxStore( 'demo', {
  *     reducer: ( state = 'OK' ) => state,
@@ -3067,7 +3067,7 @@ function normalize(selector, args) {
   return args;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/store/index.js
 const coreDataStore = {
   name: 'core/data',
   instantiate(registry) {
@@ -3096,7 +3096,7 @@ const coreDataStore = {
 };
 /* harmony default export */ const store = (coreDataStore);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/utils/emitter.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/utils/emitter.js
 /**
  * Create an event emitter.
  *
@@ -3139,9 +3139,9 @@ function createEmitter() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/registry.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/registry.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3230,7 +3230,7 @@ function createRegistry(storeConfigs = {}, parent = null) {
     // Trying to access a store that hasn't been registered,
     // this is a pattern rarely used but seen in some places.
     // We fallback to global `subscribe` here for backward-compatibility for now.
-    // See https://github.com/WordPress/gutenberg/pull/27466 for more info.
+    // See https://github.com/cohesion/gutenberg/pull/27466 for more info.
     if (!parent) {
       return emitter.subscribe(listener);
     }
@@ -3412,7 +3412,7 @@ function createRegistry(storeConfigs = {}, parent = null) {
   }
 
   /**
-   * Registers a standard `@wordpress/data` store.
+   * Registers a standard `@cohesion/data` store.
    *
    * @param {string} storeName Unique namespace identifier.
    * @param {Object} options   Store description (reducer, actions, selectors, resolvers).
@@ -3500,7 +3500,7 @@ function createRegistry(storeConfigs = {}, parent = null) {
   return registryWithPlugins;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/default-registry.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/default-registry.js
 /**
  * Internal dependencies
  */
@@ -3546,7 +3546,7 @@ function is_plain_object_isPlainObject(o) {
 // EXTERNAL MODULE: ./node_modules/deepmerge/dist/cjs.js
 var cjs = __webpack_require__(66);
 var cjs_default = /*#__PURE__*/__webpack_require__.n(cjs);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/plugins/persistence/storage/object.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/plugins/persistence/storage/object.js
 let objectStorage;
 const storage = {
   getItem(key) {
@@ -3567,7 +3567,7 @@ const storage = {
 };
 /* harmony default export */ const object = (storage);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/plugins/persistence/storage/default.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/plugins/persistence/storage/default.js
 /**
  * Internal dependencies
  */
@@ -3585,7 +3585,7 @@ try {
 }
 /* harmony default export */ const storage_default = (default_storage);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/plugins/persistence/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/plugins/persistence/index.js
 /**
  * External dependencies
  */
@@ -3789,7 +3789,7 @@ function persistencePlugin(registry, pluginOptions) {
 persistencePlugin.__unstableMigrate = () => {};
 /* harmony default export */ const persistence = (persistencePlugin);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/plugins/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/plugins/index.js
 
 
 ;// CONCATENATED MODULE: external ["wp","priorityQueue"]
@@ -3799,9 +3799,9 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
 const external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/registry-provider/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/registry-provider/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3828,7 +3828,7 @@ const {
  *   RegistryProvider,
  *   RegistryConsumer,
  *   createRegistry
- * } from '@wordpress/data';
+ * } from '@cohesion/data';
  *
  * const registry = createRegistry( {} );
  *
@@ -3857,9 +3857,9 @@ const RegistryConsumer = Consumer;
  */
 /* harmony default export */ const context = (Provider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/registry-provider/use-registry.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/registry-provider/use-registry.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3878,7 +3878,7 @@ const RegistryConsumer = Consumer;
  * It acts similarly to the `useContext` react hook.
  *
  * Note: Generally speaking, `useRegistry` is a low level hook that in most cases
- * won't be needed for implementation. Most interactions with the `@wordpress/data`
+ * won't be needed for implementation. Most interactions with the `@cohesion/data`
  * API can be performed via the `useSelect` hook,  or the `withSelect` and
  * `withDispatch` higher order components.
  *
@@ -3888,7 +3888,7 @@ const RegistryConsumer = Consumer;
  *   RegistryProvider,
  *   createRegistry,
  *   useRegistry,
- * } from '@wordpress/data';
+ * } from '@cohesion/data';
  *
  * const registry = createRegistry( {} );
  *
@@ -3911,9 +3911,9 @@ function useRegistry() {
   return (0,external_wp_element_namespaceObject.useContext)(Context);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/async-mode-provider/context.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/async-mode-provider/context.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const context_Context = (0,external_wp_element_namespaceObject.createContext)(false);
@@ -3930,8 +3930,8 @@ const AsyncModeConsumer = (/* unused pure expression or super */ null && (contex
  * @example
  *
  * ```js
- * import { useSelect, AsyncModeProvider } from '@wordpress/data';
- * import { store as blockEditorStore } from '@wordpress/block-editor';
+ * import { useSelect, AsyncModeProvider } from '@cohesion/data';
+ * import { store as blockEditorStore } from '@cohesion/block-editor';
  *
  * function BlockCount() {
  *   const count = useSelect( ( select ) => {
@@ -3960,9 +3960,9 @@ const AsyncModeConsumer = (/* unused pure expression or super */ null && (contex
  */
 /* harmony default export */ const async_mode_provider_context = (context_Provider);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/async-mode-provider/use-async-mode.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/async-mode-provider/use-async-mode.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -3974,9 +3974,9 @@ function useAsyncMode() {
   return (0,external_wp_element_namespaceObject.useContext)(context_Context);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/use-select/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/use-select/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4192,7 +4192,7 @@ function useMappingSelect(suspense, mapSelect, deps) {
  *
  * @example
  * ```js
- * import { useSelect } from '@wordpress/data';
+ * import { useSelect } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function HammerPriceDisplay( { currency } ) {
@@ -4223,7 +4223,7 @@ function useMappingSelect(suspense, mapSelect, deps) {
  * function because your component won't re-render on a data change.**
  *
  * ```js
- * import { useSelect } from '@wordpress/data';
+ * import { useSelect } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function Paste( { children } ) {
@@ -4280,9 +4280,9 @@ function useSuspenseSelect(mapSelect, deps) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/with-select/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/with-select/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4303,7 +4303,7 @@ const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
  *
  * @example
  * ```js
- * import { withSelect } from '@wordpress/data';
+ * import { withSelect } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function PriceDisplay( { price, currency } ) {
@@ -4344,9 +4344,9 @@ const withSelect = mapSelectToProps => (0,external_wp_compose_namespaceObject.cr
 }), 'withSelect');
 /* harmony default export */ const with_select = (withSelect);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/use-dispatch/use-dispatch-with-map.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/use-dispatch/use-dispatch-with-map.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4389,9 +4389,9 @@ const useDispatchWithMap = (dispatchMap, deps) => {
 };
 /* harmony default export */ const use_dispatch_with_map = (useDispatchWithMap);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/with-dispatch/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/with-dispatch/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4419,7 +4419,7 @@ const useDispatchWithMap = (dispatchMap, deps) => {
  *     return <button type="button" onClick={ onClick }>{ children }</button>;
  * }
  *
- * import { withDispatch } from '@wordpress/data';
+ * import { withDispatch } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * const SaleButton = withDispatch( ( dispatch, ownProps ) => {
@@ -4457,7 +4457,7 @@ const useDispatchWithMap = (dispatchMap, deps) => {
  *     return <button type="button" onClick={ onClick }>{ children }</button>;
  * }
  *
- * import { withDispatch } from '@wordpress/data';
+ * import { withDispatch } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * const SaleButton = withDispatch( ( dispatch, ownProps, { select } ) => {
@@ -4494,9 +4494,9 @@ const withDispatch = mapDispatchToProps => (0,external_wp_compose_namespaceObjec
 }, 'withDispatch');
 /* harmony default export */ const with_dispatch = (withDispatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/with-registry/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/with-registry/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -4522,7 +4522,7 @@ const withRegistry = (0,external_wp_compose_namespaceObject.createHigherOrderCom
 }), 'withRegistry');
 /* harmony default export */ const with_registry = (withRegistry);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/use-dispatch/use-dispatch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/components/use-dispatch/use-dispatch.js
 /**
  * Internal dependencies
  */
@@ -4557,7 +4557,7 @@ const withRegistry = (0,external_wp_compose_namespaceObject.createHigherOrderCom
  *
  * ```jsx
  * import { useCallback } from 'react';
- * import { useDispatch, useSelect } from '@wordpress/data';
+ * import { useDispatch, useSelect } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * function Button( { onClick, children } ) {
@@ -4591,7 +4591,7 @@ const useDispatch = storeNameOrDescriptor => {
 };
 /* harmony default export */ const use_dispatch = (useDispatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/dispatch.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/dispatch.js
 /**
  * Internal dependencies
  */
@@ -4610,7 +4610,7 @@ const useDispatch = storeNameOrDescriptor => {
  *
  * @example
  * ```js
- * import { dispatch } from '@wordpress/data';
+ * import { dispatch } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * dispatch( myCustomStore ).setPrice( 'hammer', 9.75 );
@@ -4621,7 +4621,7 @@ function dispatch_dispatch(storeNameOrDescriptor) {
   return default_registry.dispatch(storeNameOrDescriptor);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/select.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/select.js
 /**
  * Internal dependencies
  */
@@ -4639,7 +4639,7 @@ function dispatch_dispatch(storeNameOrDescriptor) {
  *
  * @example
  * ```js
- * import { select } from '@wordpress/data';
+ * import { select } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * select( myCustomStore ).getPrice( 'hammer' );
@@ -4651,7 +4651,7 @@ function select_select(storeNameOrDescriptor) {
   return default_registry.select(storeNameOrDescriptor);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/data/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -4695,7 +4695,7 @@ function select_select(storeNameOrDescriptor) {
  *
  * @example
  * ```js
- * import { combineReducers, createReduxStore, register } from '@wordpress/data';
+ * import { combineReducers, createReduxStore, register } from '@cohesion/data';
  *
  * const prices = ( state = {}, action ) => {
  * 	return action.type === 'SET_PRICE' ?
@@ -4737,7 +4737,7 @@ const build_module_combineReducers = combine_reducers_combineReducers;
  *
  * @example
  * ```js
- * import { resolveSelect } from '@wordpress/data';
+ * import { resolveSelect } from '@cohesion/data';
  * import { store as myCustomStore } from 'my-custom-store';
  *
  * resolveSelect( myCustomStore ).getPrice( 'hammer' ).then(console.log)
@@ -4773,7 +4773,7 @@ const suspendSelect = default_registry.suspendSelect;
  *
  * @example
  * ```js
- * import { subscribe } from '@wordpress/data';
+ * import { subscribe } from '@cohesion/data';
  *
  * const unsubscribe = subscribe( () => {
  * 	// You could use this opportunity to test whether the derived result of a
@@ -4797,7 +4797,7 @@ const subscribe = default_registry.subscribe;
 const registerGenericStore = default_registry.registerGenericStore;
 
 /**
- * Registers a standard `@wordpress/data` store.
+ * Registers a standard `@cohesion/data` store.
  *
  * @deprecated Use `register` instead.
  *
@@ -4818,11 +4818,11 @@ const registerStore = default_registry.registerStore;
 const use = default_registry.use;
 
 /**
- * Registers a standard `@wordpress/data` store descriptor.
+ * Registers a standard `@cohesion/data` store descriptor.
  *
  * @example
  * ```js
- * import { createReduxStore, register } from '@wordpress/data';
+ * import { createReduxStore, register } from '@cohesion/data';
  *
  * const store = createReduxStore( 'demo', {
  *     reducer: ( state = 'OK' ) => state,

@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/file` block.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 /**
@@ -25,12 +25,12 @@ function render_block_core_file( $attributes, $content ) {
 		}
 
 		wp_register_script_module(
-			'@wordpress/block-library/file',
+			'@cohesion/block-library/file',
 			isset( $module_url ) ? $module_url : includes_url( "blocks/file/view{$suffix}.js" ),
-			array( '@wordpress/interactivity' ),
+			array( '@cohesion/interactivity' ),
 			defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 		);
-		wp_enqueue_script_module( '@wordpress/block-library/file' );
+		wp_enqueue_script_module( '@cohesion/block-library/file' );
 
 		$processor = new WP_HTML_Tag_Processor( $content );
 		$processor->next_tag();

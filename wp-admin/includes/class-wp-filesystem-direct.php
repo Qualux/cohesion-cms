@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Direct Filesystem.
+ * cohesion Direct Filesystem.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for direct PHP file and folder manipulation.
+ * cohesion Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
  *

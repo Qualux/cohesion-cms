@@ -2,7 +2,7 @@
 /**
  * Used to set up all core blocks used with the block editor.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 define( 'BLOCKS_PATH', ABSPATH . WPINC . '/blocks/' );
@@ -21,7 +21,7 @@ require BLOCKS_PATH . 'require-dynamic-blocks.php';
  *
  * @since 6.3.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The cohesion version string.
  */
 function register_core_block_style_handles() {
 	global $wp_version;
@@ -55,7 +55,7 @@ function register_core_block_style_handles() {
 	if ( $can_use_cached ) {
 		$cached_files = get_transient( $transient_name );
 
-		// Check the validity of cached values by checking against the current WordPress version.
+		// Check the validity of cached values by checking against the current cohesion version.
 		if (
 			is_array( $cached_files )
 			&& isset( $cached_files['version'] )

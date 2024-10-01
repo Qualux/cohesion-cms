@@ -50,9 +50,9 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/plus.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/plus.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -65,9 +65,9 @@ const plus = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_plus = (plus);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/admin-navigation-commands.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/admin-navigation-commands.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -97,9 +97,9 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_data_namespaceObject = window["wp"]["data"];
 ;// CONCATENATED MODULE: external ["wp","coreData"]
 const external_wp_coreData_namespaceObject = window["wp"]["coreData"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/post.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/post.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -112,9 +112,9 @@ const post = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_post = (post);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/page.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/page.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -130,9 +130,9 @@ const page = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsxs)(exte
 });
 /* harmony default export */ const library_page = (page);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/layout.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/layout.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -145,9 +145,9 @@ const layout = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_layout = (layout);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol-filled.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/symbol-filled.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -160,9 +160,9 @@ const symbolFilled = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.js
 });
 /* harmony default export */ const symbol_filled = (symbolFilled);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/navigation.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/navigation.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -175,9 +175,9 @@ const navigation = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)
 });
 /* harmony default export */ const library_navigation = (navigation);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/styles.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/styles.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -190,9 +190,9 @@ const styles = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_styles = (styles);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/symbol.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -211,9 +211,9 @@ const external_wp_router_namespaceObject = window["wp"]["router"];
 const external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/hooks.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -223,17 +223,17 @@ function useIsBlockBasedTheme() {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   lock,
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/core-commands');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/core-commands');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/utils/order-entity-records-by-search.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/utils/order-entity-records-by-search.js
 function orderEntityRecordsBySearch(records = [], search = '') {
   if (!Array.isArray(records) || !records.length) {
     return [];
@@ -254,9 +254,9 @@ function orderEntityRecordsBySearch(records = [], search = '') {
   return priority.concat(nonPriority);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/site-editor-navigation-commands.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/site-editor-navigation-commands.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -603,7 +603,7 @@ function useSiteEditorNavigationCommands() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/private-apis.js
 /**
  * Internal dependencies
  */
@@ -619,7 +619,7 @@ lock(privateApis, {
   useCommands
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-commands/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/core-commands/build-module/index.js
 
 
 (window.wp = window.wp || {}).coreCommands = __webpack_exports__;

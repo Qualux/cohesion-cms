@@ -2,7 +2,7 @@
 /**
  * Server-side rendering of the `core/query` block.
  *
- * @package WordPress
+ * @package cohesion
  */
 
 /**
@@ -30,21 +30,21 @@ function render_block_core_query( $attributes, $content, $block ) {
 		}
 
 		wp_register_script_module(
-			'@wordpress/block-library/query',
+			'@cohesion/block-library/query',
 			isset( $module_url ) ? $module_url : includes_url( "blocks/query/view{$suffix}.js" ),
 			array(
 				array(
-					'id'     => '@wordpress/interactivity',
+					'id'     => '@cohesion/interactivity',
 					'import' => 'static',
 				),
 				array(
-					'id'     => '@wordpress/interactivity-router',
+					'id'     => '@cohesion/interactivity-router',
 					'import' => 'dynamic',
 				),
 			),
 			defined( 'GUTENBERG_VERSION' ) ? GUTENBERG_VERSION : get_bloginfo( 'version' )
 		);
-		wp_enqueue_script_module( '@wordpress/block-library/query' );
+		wp_enqueue_script_module( '@cohesion/block-library/query' );
 
 		$p = new WP_HTML_Tag_Processor( $content );
 		if ( $p->next_tag() ) {

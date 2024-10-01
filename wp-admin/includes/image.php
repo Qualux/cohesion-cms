@@ -2,7 +2,7 @@
 /**
  * File contains all the administration image manipulation functions.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 
@@ -838,7 +838,7 @@ function wp_read_image_metadata( $file ) {
 			) {
 				$iptc = iptcparse( $info['APP13'] );
 			} else {
-				// Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
+				// Silencing notice and warning is intentional. See https://core.trac.cohesion.org/ticket/42480
 				$iptc = @iptcparse( $info['APP13'] );
 			}
 
@@ -911,7 +911,7 @@ function wp_read_image_metadata( $file ) {
 		) {
 			$exif = exif_read_data( $file );
 		} else {
-			// Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
+			// Silencing notice and warning is intentional. See https://core.trac.cohesion.org/ticket/42480
 			$exif = @exif_read_data( $file );
 		}
 

@@ -43,7 +43,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/reusable-blocks/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/reusable-blocks/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -53,7 +53,7 @@ __webpack_require__.d(actions_namespaceObject, {
   __experimentalSetEditingReusableBlock: () => (__experimentalSetEditingReusableBlock)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/reusable-blocks/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/reusable-blocks/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -68,9 +68,9 @@ const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
 const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/store/actions.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -163,9 +163,9 @@ function __experimentalSetEditingReusableBlock(clientId, isEditing) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 function isEditingReusableBlock(state = {}, action) {
@@ -181,7 +181,7 @@ function isEditingReusableBlock(state = {}, action) {
   isEditingReusableBlock
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/store/selectors.js
 /**
  * Returns true if reusable block is in the editing state.
  *
@@ -193,9 +193,9 @@ function __experimentalIsEditingReusableBlock(state, clientId) {
   return state.isEditingReusableBlock[clientId];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -210,7 +210,7 @@ const STORE_NAME = 'core/reusable-blocks';
 /**
  * Store definition for the reusable blocks namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -229,9 +229,9 @@ const external_wp_components_namespaceObject = window["wp"]["components"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/symbol.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -250,18 +250,18 @@ const external_wp_notices_namespaceObject = window["wp"]["notices"];
 const external_wp_coreData_namespaceObject = window["wp"]["coreData"];
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/lock-unlock.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 const {
   unlock
-} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/reusable-blocks');
+} = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of cohesion.', '@cohesion/reusable-blocks');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-block-convert-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-block-convert-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -418,9 +418,9 @@ function ReusableBlockConvertButton({
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 const external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-blocks-manage-button.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/components/reusable-blocks-menu-items/reusable-blocks-manage-button.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -486,9 +486,9 @@ function ReusableBlocksManageButton({
 }
 /* harmony default export */ const reusable_blocks_manage_button = (ReusableBlocksManageButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/reusable-blocks-menu-items/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/components/reusable-blocks-menu-items/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -519,10 +519,10 @@ function ReusableBlocksMenuItems({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/components/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/reusable-blocks/build-module/index.js
 
 
 

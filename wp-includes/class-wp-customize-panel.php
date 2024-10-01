@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Panel classes
+ * cohesion Customize Panel classes
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Customize
  * @since 4.0.0
  */

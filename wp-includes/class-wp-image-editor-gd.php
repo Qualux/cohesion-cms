@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress GD Image Editor
+ * cohesion GD Image Editor
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Image_Editor
  */
 
 /**
- * WordPress Image Editor Class for Image Manipulation through GD
+ * cohesion Image Editor Class for Image Manipulation through GD
  *
  * @since 3.5.0
  *

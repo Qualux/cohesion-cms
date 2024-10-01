@@ -55,7 +55,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/nux/build-module/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -65,7 +65,7 @@ __webpack_require__.d(actions_namespaceObject, {
   triggerGuide: () => (triggerGuide)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@cohesion/nux/build-module/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -79,9 +79,9 @@ const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -150,7 +150,7 @@ const preferences = (0,external_wp_data_namespaceObject.combineReducers)({
   preferences
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/store/actions.js
 /**
  * Returns an action object that, when dispatched, presents a guide that takes
  * the user through a series of tips step by step.
@@ -204,9 +204,9 @@ function enableTips() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/store/selectors.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -278,9 +278,9 @@ function selectors_areTipsEnabled(state) {
   return state.preferences.areTipsEnabled;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/store/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -295,7 +295,7 @@ const STORE_NAME = 'core/nux';
 /**
  * Store definition for the nux namespace.
  *
- * @see https://github.com/WordPress/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
+ * @see https://github.com/cohesion/gutenberg/blob/HEAD/packages/data/README.md#createReduxStore
  *
  * @type {Object}
  */
@@ -327,9 +327,9 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/icons/build-module/library/close.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -342,9 +342,9 @@ const close_close = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/components/dot-tip/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/components/dot-tip/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -438,9 +438,9 @@ function DotTip({
   };
 }))(DotTip));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/nux/build-module/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 

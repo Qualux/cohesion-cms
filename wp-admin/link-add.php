@@ -2,11 +2,11 @@
 /**
  * Add Link Administration Screen.
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load cohesion Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_links' ) ) {

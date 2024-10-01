@@ -2,7 +2,7 @@
 /**
  * Taxonomy API: Walker_Category class
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Template
  * @since 4.4.0
  */

@@ -59,7 +59,7 @@ var signals_core_module_i=Symbol.for("preact-signals");function signals_core_mod
 var signals_module_v,signals_module_s;function signals_module_l(n,i){preact_module_l[n]=i.bind(null,preact_module_l[n]||function(){})}function signals_module_d(n){if(signals_module_s)signals_module_s();signals_module_s=n&&n.S()}function signals_module_p(n){var r=this,f=n.data,o=useSignal(f);o.value=f;var e=hooks_module_q(function(){var n=r.__v;while(n=n.__)if(n.__c){n.__c.__$f|=4;break}r.__$u.c=function(){var n;if(!preact_module_t(e.peek())&&3===(null==(n=r.base)?void 0:n.nodeType))r.base.data=e.peek();else{r.__$f|=1;r.setState({})}};return signals_core_module_w(function(){var n=o.value.value;return 0===n?0:!0===n?"":n||""})},[]);return e.value}signals_module_p.displayName="_st";Object.defineProperties(signals_core_module_u.prototype,{constructor:{configurable:!0,value:void 0},type:{configurable:!0,value:signals_module_p},props:{configurable:!0,get:function(){return{data:this}}},__b:{configurable:!0,value:1}});signals_module_l("__b",function(n,r){if("string"==typeof r.type){var i,t=r.props;for(var f in t)if("children"!==f){var o=t[f];if(o instanceof signals_core_module_u){if(!i)r.__np=i={};i[f]=o;t[f]=o.peek()}}}n(r)});signals_module_l("__r",function(n,r){signals_module_d();var i,t=r.__c;if(t){t.__$f&=-2;if(void 0===(i=t.__$u))t.__$u=i=function(n){var r;signals_core_module_E(function(){r=this});r.c=function(){t.__$f|=1;t.setState({})};return r}()}signals_module_v=t;signals_module_d(i);n(r)});signals_module_l("__e",function(n,r,i,t){signals_module_d();signals_module_v=void 0;n(r,i,t)});signals_module_l("diffed",function(n,r){signals_module_d();signals_module_v=void 0;var i;if("string"==typeof r.type&&(i=r.__e)){var t=r.__np,f=r.props;if(t){var o=i.U;if(o)for(var e in o){var u=o[e];if(void 0!==u&&!(e in t)){u.d();o[e]=void 0}}else i.U=o={};for(var a in t){var c=o[a],s=t[a];if(void 0===c){c=signals_module_(i,a,s,f);o[a]=c}else c.o(s,f)}}}n(r)});function signals_module_(n,r,i,t){var f=r in n&&void 0===n.ownerSVGElement,o=signals_core_module_d(i);return{o:function(n,r){o.value=n;t=r},d:signals_core_module_E(function(){var i=o.value.value;if(t[r]!==i){t[r]=i;if(f)n[r]=i;else if(i)n.setAttribute(r,i);else n.removeAttribute(r)}})}}signals_module_l("unmount",function(n,r){if("string"==typeof r.type){var i=r.__e;if(i){var t=i.U;if(t){i.U=void 0;for(var f in t){var o=t[f];if(o)o.d()}}}}else{var e=r.__c;if(e){var u=e.__$u;if(u){e.__$u=void 0;u.d()}}}n(r)});signals_module_l("__h",function(n,r,i,t){if(t<3||9===t)r.__$f|=2;n(r,i,t)});b.prototype.shouldComponentUpdate=function(n,r){var i=this.__$u;if(!(i&&void 0!==i.s||4&this.__$f))return!0;if(3&this.__$f)return!0;for(var t in r)return!0;for(var f in n)if("__source"!==f&&n[f]!==this.props[f])return!0;for(var o in this.props)if(!(o in n))return!0;return!1};function useSignal(n){return hooks_module_q(function(){return signals_core_module_d(n)},[])}function useComputed(n){var r=f(n);r.current=n;signals_module_v.__$f|=4;return t(function(){return u(function(){return r.current()})},[])}function useSignalEffect(n){var r=f(n);r.current=n;o(function(){return c(function(){return r.current()})},[])}
 ;// CONCATENATED MODULE: ./node_modules/deepsignal/dist/deepsignal.module.js
 var deepsignal_module_a=new WeakMap,deepsignal_module_o=new WeakMap,deepsignal_module_s=new WeakMap,deepsignal_module_u=new WeakSet,deepsignal_module_c=new WeakMap,deepsignal_module_f=/^\$/,deepsignal_module_i=Object.getOwnPropertyDescriptor,deepsignal_module_l=!1,deepsignal_module_g=function(e){if(!deepsignal_module_k(e))throw new Error("This object can't be observed.");return deepsignal_module_o.has(e)||deepsignal_module_o.set(e,deepsignal_module_v(e,deepsignal_module_d)),deepsignal_module_o.get(e)},deepsignal_module_p=function(e,t){deepsignal_module_l=!0;var r=e[t];try{deepsignal_module_l=!1}catch(e){}return r};function deepsignal_module_h(e){return deepsignal_module_u.add(e),e}var deepsignal_module_v=function(e,t){var r=new Proxy(e,t);return deepsignal_module_u.add(r),r},deepsignal_module_y=function(){throw new Error("Don't mutate the signals directly.")},deepsignal_module_w=function(e){return function(t,u,c){var g;if(deepsignal_module_l)return Reflect.get(t,u,c);var p=e||"$"===u[0];if(!e&&p&&Array.isArray(t)){if("$"===u)return deepsignal_module_s.has(t)||deepsignal_module_s.set(t,deepsignal_module_v(t,deepsignal_module_m)),deepsignal_module_s.get(t);p="$length"===u}deepsignal_module_a.has(c)||deepsignal_module_a.set(c,new Map);var h=deepsignal_module_a.get(c),y=p?u.replace(deepsignal_module_f,""):u;if(h.has(y)||"function"!=typeof(null==(g=deepsignal_module_i(t,y))?void 0:g.get)){var w=Reflect.get(t,y,c);if(p&&"function"==typeof w)return;if("symbol"==typeof y&&deepsignal_module_b.has(y))return w;h.has(y)||(deepsignal_module_k(w)&&(deepsignal_module_o.has(w)||deepsignal_module_o.set(w,deepsignal_module_v(w,deepsignal_module_d)),w=deepsignal_module_o.get(w)),h.set(y,signals_core_module_d(w)))}else h.set(y,signals_core_module_w(function(){return Reflect.get(t,y,c)}));return p?h.get(y):h.get(y).value}},deepsignal_module_d={get:deepsignal_module_w(!1),set:function(e,n,s,u){var l;if("function"==typeof(null==(l=deepsignal_module_i(e,n))?void 0:l.set))return Reflect.set(e,n,s,u);deepsignal_module_a.has(u)||deepsignal_module_a.set(u,new Map);var g=deepsignal_module_a.get(u);if("$"===n[0]){s instanceof signals_core_module_u||deepsignal_module_y();var p=n.replace(deepsignal_module_f,"");return g.set(p,s),Reflect.set(e,p,s.peek(),u)}var h=s;deepsignal_module_k(s)&&(deepsignal_module_o.has(s)||deepsignal_module_o.set(s,deepsignal_module_v(s,deepsignal_module_d)),h=deepsignal_module_o.get(s));var w=!(n in e),m=Reflect.set(e,n,s,u);return g.has(n)?g.get(n).value=h:g.set(n,signals_core_module_d(h)),w&&deepsignal_module_c.has(e)&&deepsignal_module_c.get(e).value++,Array.isArray(e)&&g.has("length")&&(g.get("length").value=e.length),m},deleteProperty:function(e,t){"$"===t[0]&&deepsignal_module_y();var r=deepsignal_module_a.get(deepsignal_module_o.get(e)),n=Reflect.deleteProperty(e,t);return r&&r.has(t)&&(r.get(t).value=void 0),deepsignal_module_c.has(e)&&deepsignal_module_c.get(e).value++,n},ownKeys:function(e){return deepsignal_module_c.has(e)||deepsignal_module_c.set(e,signals_core_module_d(0)),deepsignal_module_c._=deepsignal_module_c.get(e).value,Reflect.ownKeys(e)}},deepsignal_module_m={get:deepsignal_module_w(!0),set:deepsignal_module_y,deleteProperty:deepsignal_module_y},deepsignal_module_b=new Set(Object.getOwnPropertyNames(Symbol).map(function(e){return Symbol[e]}).filter(function(e){return"symbol"==typeof e})),R=new Set([Object,Array]),deepsignal_module_k=function(e){return"object"==typeof e&&null!==e&&R.has(e.constructor)&&!deepsignal_module_u.has(e)},deepsignal_module_M=function(t){return e(function(){return deepsignal_module_g(t)},[])};
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/store.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/store.js
 /**
  * External dependencies
  */
@@ -311,7 +311,7 @@ function store(namespace, {
 const parseInitialData = (dom = document) => {
   var _dom$getElementById;
   const jsonDataScriptTag = // Preferred Script Module data passing form
-  (_dom$getElementById = dom.getElementById('wp-script-module-data-@wordpress/interactivity')) !== null && _dom$getElementById !== void 0 ? _dom$getElementById :
+  (_dom$getElementById = dom.getElementById('wp-script-module-data-@cohesion/interactivity')) !== null && _dom$getElementById !== void 0 ? _dom$getElementById :
   // Legacy form
   dom.getElementById('wp-interactivity-data');
   if (jsonDataScriptTag?.textContent) {
@@ -342,7 +342,7 @@ const populateInitialData = data => {
 const data = parseInitialData();
 populateInitialData(data);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/hooks.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/hooks.js
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react-hooks/exhaustive-deps */
 
@@ -430,7 +430,7 @@ const resetNamespace = () => {
   namespaceStack.pop();
 };
 
-// WordPress Directives.
+// cohesion Directives.
 const directiveCallbacks = {};
 const directivePriorities = {};
 
@@ -655,7 +655,7 @@ preact_module_l.vnode = vnode => {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/utils.js
 /**
  * External dependencies
  */
@@ -755,7 +755,7 @@ function utils_useSignalEffect(callback) {
  * available inside hook callbacks.
  *
  * Asyncronous functions should use generators that yield promises instead of awaiting them.
- * See the documentation for details: https://developer.wordpress.org/block-editor/reference-guides/packages/packages-interactivity/packages-interactivity-api-reference/#the-store
+ * See the documentation for details: https://developer.cohesion.org/block-editor/reference-guides/packages/packages-interactivity/packages-interactivity-api-reference/#the-store
  *
  * @param func The passed function.
  * @return The wrapped function.
@@ -943,7 +943,7 @@ const logged = new Set();
 /**
  * Shows a warning with `message` if environment is not `production`.
  *
- * Based on the `@wordpress/warning` package.
+ * Based on the `@cohesion/warning` package.
  *
  * @param message Message to show in the warning.
  */
@@ -967,7 +967,7 @@ const warn = message => {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/directives.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/directives.js
 // eslint-disable-next-line eslint-comments/disable-enable-pair
 /* eslint-disable react-hooks/exhaustive-deps */
 
@@ -1579,10 +1579,10 @@ const getGlobalAsyncEventDirective = type => {
   });
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/constants.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/constants.js
 const directivePrefix = 'wp';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/vdom.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/vdom.js
 /**
  * External dependencies
  */
@@ -1752,7 +1752,7 @@ function toVdom(root) {
   return walk(treeWalker.currentNode);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/init.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/init.js
 /**
  * External dependencies
  */
@@ -1794,7 +1794,7 @@ const init = async () => {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/index.js
 /**
  * External dependencies
  */
@@ -1815,7 +1815,7 @@ const init = async () => {
 
 
 
-const requiredConsent = 'I acknowledge that using private APIs means my theme or plugin will inevitably break in the next version of WordPress.';
+const requiredConsent = 'I acknowledge that using private APIs means my theme or plugin will inevitably break in the next version of cohesion.';
 const privateApis = lock => {
   if (lock === requiredConsent) {
     return {
@@ -1841,7 +1841,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await init();
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/interactivity/build-module/debug.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/interactivity/build-module/debug.js
 /**
  * External dependencies
  */

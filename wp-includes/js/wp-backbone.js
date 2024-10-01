@@ -7,7 +7,7 @@ window.wp = window.wp || {};
 
 (function ($) {
 	/**
-	 * Create the WordPress Backbone namespace.
+	 * Create the cohesion Backbone namespace.
 	 *
 	 * @namespace wp.Backbone
 	 */

@@ -4,7 +4,7 @@
  *
  * @since 2.6.0
  *
- * @package WordPress
+ * @package cohesion
  * @subpackage Dependencies
  */
 

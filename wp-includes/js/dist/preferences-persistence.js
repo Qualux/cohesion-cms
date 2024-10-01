@@ -58,7 +58,7 @@ __webpack_require__.d(__webpack_exports__, {
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
 const external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/create/debounce-async.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/create/debounce-async.js
 /**
  * Performs a leading edge debounce of async functions.
  *
@@ -67,7 +67,7 @@ var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_w
  * - The second is never called.
  * - The third happens `delayMS` milliseconds after the first has resolved.
  *
- * This is distinct from `{ debounce } from @wordpress/compose` in that it
+ * This is distinct from `{ debounce } from @cohesion/compose` in that it
  * waits for promise resolution.
  *
  * @param {Function} func    A function that returns a promise.
@@ -127,9 +127,9 @@ function debounceAsync(func, delayMS) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/create/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/create/index.js
 /**
- * WordPress dependencies
+ * cohesion dependencies
  */
 
 
@@ -141,7 +141,7 @@ const EMPTY_OBJECT = {};
 const localStorage = window.localStorage;
 
 /**
- * Creates a persistence layer that stores data in WordPress user meta via the
+ * Creates a persistence layer that stores data in cohesion user meta via the
  * REST API.
  *
  * @param {Object}  options
@@ -155,7 +155,7 @@ const localStorage = window.localStorage;
  *                                                 minimum every `requestDebounceMS` milliseconds, and don't
  *                                                 swamp the server. Defaults to 2500ms.
  *
- * @return {Object} A persistence layer for WordPress user meta.
+ * @return {Object} A persistence layer for cohesion user meta.
  */
 function create({
   preloadedData,
@@ -229,7 +229,7 @@ function create({
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-feature-preferences.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-feature-preferences.js
 /**
  * Move the 'features' object in local storage from the sourceStoreName to the
  * preferences store data structure.
@@ -354,7 +354,7 @@ function moveFeaturePreferences(state, sourceStoreName) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-third-party-feature-preferences.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-third-party-feature-preferences.js
 /**
  * The interface package previously had a public API that could be used by
  * plugins to set persisted boolean 'feature' preferences.
@@ -440,7 +440,7 @@ function moveThirdPartyFeaturePreferencesToPreferences(state) {
   }, state);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-individual-preference.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-individual-preference.js
 const identity = arg => arg;
 
 /**
@@ -526,7 +526,7 @@ function moveIndividualPreferenceToPreferences(state, {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-interface-enable-items.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/move-interface-enable-items.js
 /**
  * Migrates interface 'enableItems' data to the preferences store.
  *
@@ -636,7 +636,7 @@ function moveInterfaceEnableItems(state) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/convert-edit-post-panels.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/convert-edit-post-panels.js
 /**
  * Convert the post editor's panels state from:
  * ```
@@ -686,7 +686,7 @@ function convertEditPostPanels(preferences) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/legacy-local-storage-data/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/legacy-local-storage-data/index.js
 /**
  * Internal dependencies
  */
@@ -710,7 +710,7 @@ function getLegacyData(userId) {
 }
 
 /**
- * Converts data from the old `@wordpress/data` package format.
+ * Converts data from the old `@cohesion/data` package format.
  *
  * @param {Object | null | undefined} data The legacy data in its original format.
  *
@@ -783,7 +783,7 @@ function convertLegacyLocalStorageData(userId) {
   return convertLegacyData(data);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/preferences-package-data/convert-complementary-areas.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/preferences-package-data/convert-complementary-areas.js
 function convertComplementaryAreas(state) {
   return Object.keys(state).reduce((stateAccumulator, scope) => {
     const scopeData = state[scope];
@@ -802,7 +802,7 @@ function convertComplementaryAreas(state) {
   }, state);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/preferences-package-data/convert-editor-settings.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/preferences-package-data/convert-editor-settings.js
 /**
  * Internal dependencies
  */
@@ -835,7 +835,7 @@ function convertEditorSettings(data) {
   return newData;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/migrations/preferences-package-data/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/migrations/preferences-package-data/index.js
 /**
  * Internal dependencies
  */
@@ -847,7 +847,7 @@ function convertPreferencesPackageData(data) {
   return newData;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/preferences-persistence/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@cohesion/preferences-persistence/build-module/index.js
 /**
  * Internal dependencies
  */
@@ -862,7 +862,7 @@ function convertPreferencesPackageData(data) {
  * It prioritizes any data from the server, but falls back first to localStorage
  * restore data, and then to any legacy data.
  *
- * This function is used internally by WordPress in an inline script, so
+ * This function is used internally by cohesion in an inline script, so
  * prefixed with `__unstable`.
  *
  * @param {Object} serverData Preferences data preloaded from the server.
