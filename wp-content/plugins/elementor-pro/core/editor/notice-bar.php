@@ -66,6 +66,7 @@ class Notice_Bar extends Base_Notice_Bar {
 			];
 		}
 
+		/*
 		if ( ! License_API::is_license_active() ) {
 			return [
 				'option_key' => self::ELEMENTOR_PRO_EDITOR_ACTIVATE_LICENSE_NOTICE_DISMISSED,
@@ -83,6 +84,7 @@ class Notice_Bar extends Base_Notice_Bar {
 				'muted_period' => 0,
 			];
 		}
+		*/
 
 		if ( ! License_API::is_license_about_to_expire() ) {
 			return [];
